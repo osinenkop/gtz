@@ -245,6 +245,67 @@ The older numerical classifier is still useful as a diagnostic:
   --out code/sage/out/classify_s6_ansatz_cplusd_numeric_s800.json
 ```
 
+The hard over-tied size-7/8 refined roots can be screened for exact-looking
+relations with:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_refined_root_relations.py \
+  code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p2200.json \
+  code/sage/out/refine_overtie_s8_79656_t10_11_15_p3000.json \
+  --precision 1400 --max-linear-terms 4 --height-cap 1000000 \
+  --min-digits 120 \
+  --out code/sage/out/relations_overtie_s7_s8_linear_p1400.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_refined_root_relations.py \
+  code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p2200.json \
+  code/sage/out/refine_overtie_s8_79656_t10_11_15_p3000.json \
+  --precision 1400 --max-linear-terms 3 --max-monomial-terms 3 \
+  --monomial-degree 2 --height-cap 1000000 --min-digits 120 \
+  --out code/sage/out/relations_overtie_s7_s8_quad3_p1400.json
+```
+
+The observed Plucker-pattern loci can then be probed over a finite field:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/probe_overtie_plucker_locus.py \
+  --case s7_78612 --characteristic 32003 \
+  --out code/sage/out/plucker_locus_s7_78612_p32003.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/probe_overtie_plucker_ansatz.py \
+  --case s8_79656 --characteristic 32003 \
+  --out code/sage/out/plucker_ansatz_s8_79656_p32003.json
+```
+
+Extract modular `q` relations without full lex conversion:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/compute_q_power_relation.py \
+  --basis-json code/sage/out/plucker_locus_s7_78612_p32003.json \
+  --variable q \
+  --out code/sage/out/qrel_plucker_locus_s7_78612_p32003.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/compute_q_power_relation.py \
+  --basis-json code/sage/out/plucker_ansatz_s8_79656_p32003.json \
+  --variable q \
+  --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/factor_q_relation.py \
+  --input code/sage/out/qrel_plucker_locus_s7_78612_p32003.json \
+  --out code/sage/out/qrel_plucker_locus_s7_78612_p32003_factors.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/factor_q_relation.py \
+  --input code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json \
+  --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

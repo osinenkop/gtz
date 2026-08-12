@@ -1665,3 +1665,104 @@ classification on the certified `(c+d)^2=5` branch.
 Combining the empty `a=0` real branch with the certified `(c+d)^2=5` branch
 excludes the full four-parameter structured ansatz for the selected six-active
 and five-outside-tie threshold pattern.
+
+## Plucker-pattern probes for the hard size-7 and size-8 over-tied roots
+
+The high-precision over-tied roots
+
+```text
+code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p2200.json
+code/sage/out/refine_overtie_s8_79656_t10_11_15_p3000.json
+```
+
+were screened for small integer relations by
+`screen_refined_root_relations.py`.  No affine linear relations among
+`q,z0,...,z8` were found up to four terms and coefficient height `10^6`.
+However, both roots satisfy five height-one quadratic monomial relations at the
+precision floor:
+
+```text
+code/sage/out/relations_overtie_s7_s8_quad3_p1400.json
+```
+
+For `s7_78612` these are
+
+```text
+z8 - z3*z7 + z4*z6 = 0
+1 + z0*z7 - z1*z6 = 0
+z2 + z0*z4 - z1*z3 = 0
+z3 + z0*z8 - z2*z6 = 0
+z4 + z1*z8 - z2*z7 = 0
+```
+
+For `s8_79656` they are
+
+```text
+z8 + z0*z7 - z1*z6 = 0
+z0 + z3*z8 - z5*z6 = 0
+1 - z3*z7 + z4*z6 = 0
+z1 + z4*z8 - z5*z7 = 0
+z5 + z0*z4 - z1*z3 = 0
+```
+
+These are naturally interpreted as equalities among raw Plucker coordinates of
+the standard `Y=[I;Z]` chart.
+
+Adding these Plucker relations to the active/tie determinant systems gives
+finite modular loci over `F_32003`:
+
+| Case | Output | Dimension | Degree | Basis size |
+| --- | --- | ---: | ---: | ---: |
+| `s7_78612` | `code/sage/out/plucker_locus_s7_78612_p32003.json` | `0` | `4992` | `2728` |
+| `s8_79656` | `code/sage/out/plucker_locus_s8_79656_p32003.json` | `0` | `2832` | `1952` |
+| `s8_79656` reduced ansatz | `code/sage/out/plucker_ansatz_s8_79656_p32003.json` | `0` | `2832` | `1901` |
+
+The denominator-cleared `s8` patch probe produced a positive-dimensional
+artifact (`dimension=5`) and its large raw output was discarded; this patch
+model should not be used as a certificate without saturation/inversion cleanup.
+
+The grevlex bases above do not expose a univariate `q` polynomial directly.
+The helper `compute_q_power_relation.py` instead computes the first exact
+relation among `1,q,q^2,...` in the quotient algebra.  This gives compact
+modular `q` eliminants:
+
+| Case | Quotient degree | q-relation degree | Residual | Factor summary |
+| --- | ---: | ---: | --- | --- |
+| `s7_78612` | `4992` | `510` | zero | `44` factors over `F_32003`; largest degrees `62,64` |
+| `s8_79656` | `2832` | `326` | zero | `23` factors over `F_32003`; largest degrees `92,101` |
+
+The output files are:
+
+```text
+code/sage/out/qrel_plucker_locus_s7_78612_p32003.json
+code/sage/out/qrel_plucker_locus_s7_78612_p32003_factors.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json
+```
+
+This is not yet a proof of infeasibility for these Plucker loci.  It is a
+substantial compression: the next realistic step is to repeat the modular
+q-relation computation at additional primes, identify stable factors
+corresponding to the numerical roots, and then attempt rational reconstruction
+or direct modular sign/separation tests factor-by-factor.
+
+## Relaxed interval bound calibration
+
+Lowering the target threshold did not close the interval branch-and-bound
+route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
+and `min_radius=0.25`, the center-high runs gave:
+
+| Output | Threshold | Certified | GTZ-certified | Split | Queue | Inverse failures |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| `verify/out/v19_relaxed_010_cascade_2000.json` | `0.1` | `840` | `628` | `1160` | `340` | `167` |
+| `verify/out/v19_relaxed_0125_cascade_2000.json` | `0.125` | `836` | `700` | `1164` | `348` | `167` |
+
+Adding the determinant-domain filter did not help at this granularity:
+
+| Output | Priority | Threshold | Certified | Outside | Queue | Inverse failures |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `verify/out/v19_relaxed_010_domain_high_2000.json` | center-high | `0.1` | `0` | `879` | `262` | `1071` |
+| `verify/out/v19_relaxed_010_domain_low_2000.json` | center-low | `0.1` | `0` | `472` | `408` | `1528` |
+
+Thus the present interval route is limited by chart/enclosure conditioning near
+the chart-domain frontier, not by the exact value of the relaxed threshold.

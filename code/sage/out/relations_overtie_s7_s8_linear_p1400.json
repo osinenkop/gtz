@@ -1,0 +1,66 @@
+{
+ "precision_bits": 1400,
+ "max_linear_terms": 4,
+ "max_monomial_terms": 0,
+ "monomial_degree": 2,
+ "height_cap": 1000000,
+ "min_digits": 120.0,
+ "inputs": [
+  {
+   "input": "code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p2200.json",
+   "q_decimal_30": "1.25562034501219654814008208632",
+   "margin_decimal_30": "0.0426033908353660797918571745413",
+   "active": [
+    0,
+    1,
+    5,
+    8,
+    15,
+    16,
+    17
+   ],
+   "ties": [
+    2,
+    7,
+    10,
+    19
+   ],
+   "homogeneous_linear": [],
+   "affine_linear": [],
+   "monomial_relations": [],
+   "counts": {
+    "homogeneous_linear": 0,
+    "affine_linear": 0,
+    "monomial_relations": 0
+   }
+  },
+  {
+   "input": "code/sage/out/refine_overtie_s8_79656_t10_11_15_p3000.json",
+   "q_decimal_30": "1.31540189337751134424081556062",
+   "margin_decimal_30": "0.0525669822295852240401359267707",
+   "active": [
+    0,
+    1,
+    2,
+    6,
+    14,
+    16,
+    18,
+    19
+   ],
+   "ties": [
+    10,
+    11,
+    15
+   ],
+   "homogeneous_linear": [],
+   "affine_linear": [],
+   "monomial_relations": [],
+   "counts": {
+    "homogeneous_linear": 0,
+    "affine_linear": 0,
+    "monomial_relations": 0
+   }
+  }
+ ]
+}

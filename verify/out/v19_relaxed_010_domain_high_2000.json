@@ -1,0 +1,32 @@
+{
+ "precision_bits": 160,
+ "threshold": "0.1",
+ "known_smoke": null,
+ "random_smoke": null,
+ "chart_bnb": {
+  "charts": 20,
+  "frontier_input": null,
+  "max_boxes": 2000,
+  "min_radius": 0.25,
+  "priority": "center-high",
+  "domain_filter": true,
+  "bound_mode": "hybrid",
+  "projector_mode": "cascade",
+  "threshold": "0.1",
+  "processed": 2000,
+  "certified": 0,
+  "certified_gtz": 0,
+  "split": 1121,
+  "unresolved": 0,
+  "inverse_failures": 1071,
+  "domain_outside": 879,
+  "domain_unknown": 1121,
+  "affine_evaluations": 50,
+  "affine_vertex_checks": 0,
+  "best_lower": -0.23047259415034205,
+  "best_center_F": 1.0,
+  "smallest_unresolved_radius": null,
+  "unresolved_examples": [],
+  "queue_remaining": 262
+ }
+}

@@ -1740,6 +1740,8 @@ modular `q` eliminants:
 | `s7_78612` | `32009` | `4992` | `510` | zero | `38` factors; largest degrees `88,112` |
 | `s8_79656` | `32003` | `2832` | `326` | zero | `23` factors; largest degrees `92,101` |
 | `s8_79656` | `32009` | `2832` | `326` | zero | `27` factors; largest degrees `70,130` |
+| `s8_79656` | `32027` | `2832` | `326` | zero | `28` factors; largest degrees `60,114` |
+| `s8_79656` | `32029` | `2832` | `326` | zero | `30` factors; largest degrees `77,132` |
 
 The output files are:
 
@@ -1752,7 +1754,27 @@ code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json
 code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json
 code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json
 code/sage/out/qrel_plucker_ansatz_s8_79656_p32009_factors.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32027.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32027_factors.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32029.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32029_factors.json
 ```
+
+The helper `summarize_qrel_crt.py` does coefficientwise CRT lifts of these
+modular q-polynomials.  With primes `32003,32009,32027,32029` for `s8_79656`,
+the modulus has decimal size about `10^18`, but full-polynomial rational
+reconstruction is still incomplete (`201` coefficients reconstruct and `126`
+fail).  This suggests that reconstructing the entire degree-326 q-eliminant is
+less realistic than isolating stable lower-degree factors/components.
+
+The previous high-precision `algdep` hints were also tested directly against
+the exact modular q-eliminants.  The script `screen_algdep_against_qrel.py`
+reduces each candidate polynomial modulo the available primes and computes its
+gcd with the exact modular q-relation.  For the top twelve `q` candidates from
+both hard roots, all gcd degrees were zero: for `s7_78612` over
+`32003,32009`, and for `s8_79656` over `32003,32009,32027`.  Thus the apparent
+low-degree `algdep` relations do not define components of the exact Plucker
+q-eliminants.
 
 This is not yet a proof of infeasibility for these Plucker loci.  It is a
 substantial compression: the next realistic step is to repeat the modular

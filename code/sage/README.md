@@ -345,6 +345,31 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32009_factors.json
 ```
 
+Coefficientwise CRT summaries of modular q-relations:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/summarize_qrel_crt.py \
+  --out code/sage/out/qrel_plucker_s8_79656_crt_32003_32009_32027_32029.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32027.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32029.json
+```
+
+Check numerical `algdep` q-candidates against exact modular q-eliminants:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_algdep_against_qrel.py \
+  --algdep-json code/sage/out/algdep_overtie_s8_79656_p1400_deg64.json \
+  --best 12 \
+  --out code/sage/out/algdep_vs_qrel_s8_79656_q_best12.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32027.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

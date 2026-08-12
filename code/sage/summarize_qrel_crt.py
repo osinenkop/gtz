@@ -11,6 +11,16 @@ from pathlib import Path
 from sage.all import QQ, ZZ, PolynomialRing, crt
 
 
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def display_path(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
 def infer_prime(path: Path, data: dict) -> int:
     characteristic = int(data.get("characteristic") or 0)
     if characteristic:
@@ -51,12 +61,12 @@ def read_record(path: Path) -> dict:
     if fpath.exists():
         fdata = json.loads(fpath.read_text())
         factors = {
-            "path": str(fpath),
+            "path": display_path(fpath),
             "factor_count": int(fdata["factor_count"]),
             "factor_degrees": [int(x) for x in fdata["factor_degrees"]],
         }
     return {
-        "path": str(path),
+        "path": display_path(path),
         "prime": prime,
         "degree": int(data["relation_degree"]),
         "quotient_degree": int(data["quotient_degree"]),

@@ -189,12 +189,20 @@ against the exact grevlex branch basis:
   --characteristic 0 --branch cplusd_sq5 \
   --out code/sage/out/s6_ansatz_cplusd_QQ.json
 
+~/miniforge3/bin/mamba run -n sage python code/sage/probe_s6_ansatz.py \
+  --characteristic 0 --branch a_zero \
+  --out code/sage/out/s6_ansatz_azero_QQ.json
+
 ~/miniforge3/bin/mamba run -n sage python code/sage/verify_s6_ansatz_eliminant.py
 ```
 
 Convert the exact branch basis to small lex bases and certify the real signs:
 
 ```bash
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --basis-json code/sage/out/s6_ansatz_azero_QQ.json \
+  --out-prefix code/sage/out/s6_ansatz_azero_fglm_QQ
+
 ~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
   --out-prefix code/sage/out/s6_ansatz_cplusd_fglm_QQ
 
@@ -219,6 +227,14 @@ Convert the exact branch basis to small lex bases and certify the real signs:
   --lex-basis code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ_lex_basis.txt \
   --lex-basis code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt \
   --out code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json
+
+~/miniforge3/bin/mamba run -n sage python code/sage/certify_s6_ansatz_signs.py \
+  --lex-basis code/sage/out/s6_ansatz_azero_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_octic_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt \
+  --out code/sage/out/s6_ansatz_structured_sign_cert_QQ.json
 ```
 
 The older numerical classifier is still useful as a diagnostic:

@@ -61,8 +61,7 @@ classifies the remaining finite residue in the chart.  We also include exact
 finite-branch computations for the two size-twelve equality strata and a
 zero-dimensional chart computation for the thirteen-active out-of-family
 stratum.  For the most persistent structured size-six low-active survivor, we
-also give an exact finite-branch exclusion of its numerically relevant
-nonzero-\(a\) branch.
+also give an exact finite-branch exclusion of the full four-parameter ansatz.
 As background, we include a self-contained Perron-free proof of the weighted
 Frobenius inequality behind the known $k=2$ case.
 The remaining global problem is isolated precisely as the exclusion of critical
@@ -987,7 +986,12 @@ outside-tie determinant equations gives a zero-dimensional system of degree
   a^2((c+d)^2-5)=0,\qquad
   ((c+d)^2-5)((c-d)^2-5)=0.
 \]
-The numerically relevant branch has \(a\ne0\), hence \((c+d)^2=5\).
+Consequently every real point of the ansatz system lies either on \(a=0\) or
+on \((c+d)^2=5\).  The \(a=0\) branch is zero-dimensional of degree \(96\);
+an exact FGLM conversion gives a six-polynomial lex basis, and Sage
+enumeration over the algebraic real field finds no real points.  It remains to
+handle \((c+d)^2=5\), which is the branch containing the refined numerical
+root.
 
 On this branch, an exact \(\mathbb Q\) grevlex computation gives quotient
 degree \(184\), matching the modular computation.  Modular lex computations over
@@ -1044,23 +1048,25 @@ so the tied inactive triples sit above the threshold by
   \frac{q-1}{6}=0.030115972794\ldots.
 \]
 
-\begin{theorem}[Exclusion of the structured \(a\ne0\), \((c+d)^2=5\) branch]
-There is no real point on the structured ansatz branch
-\[
-  a\ne0,\qquad (c+d)^2=5
-\]
-which realizes the selected threshold pattern: the six selected triples at
-threshold with \(P_{TT}-I/6\succeq0\), and every inactive triple satisfying
+\begin{theorem}[Exclusion of the structured size-six ansatz]
+There is no real point in the four-parameter structured ansatz above which
+realizes the selected threshold pattern: the six selected triples at threshold
+with \(P_{TT}-I/6\succeq0\), and every inactive triple satisfying
 \(\lambda_{\min}(P_{TT})\le 1/6\).
 \end{theorem}
 
 \begin{proof}
-The exact \(\mathbb Q\) branch ideal has quotient dimension \(184\) and its
-\(q\)-eliminant is the certified degree-\(22\) polynomial above.  The non-real
-quadratic nuisance factors have no real points.  The cubic residual factor has
-no real points because the exact lex basis on that component contains
-\(b^2+1\).  It remains to inspect the octic residual factor and the real
-nuisance factors \(q=3\) and \(q=5\).
+The tail relation \(a^2((c+d)^2-5)=0\) splits the ansatz system into the
+\(a=0\) branch and the \((c+d)^2=5\) branch.  The \(a=0\) branch has an exact
+zero-dimensional lex basis of quotient dimension \(96\), and exact enumeration
+over the algebraic real field gives no real points.
+
+On the \((c+d)^2=5\) branch, the exact \(\mathbb Q\) branch ideal has quotient
+dimension \(184\), and its \(q\)-eliminant is the certified degree-\(22\)
+polynomial above.  The non-real quadratic nuisance factors have no real points.
+The cubic residual factor has no real points because the exact lex basis on
+that component contains \(b^2+1\).  It remains to inspect the octic residual
+factor and the real nuisance factors \(q=3\) and \(q=5\).
 
 For these three lex systems, Sage enumeration over the algebraic real field
 finds \(16\), \(8\), and \(16\) real points respectively.  At each point we
@@ -1085,16 +1091,15 @@ component, all \(16\) real points have an inactive positive-definite shifted
 block.  There are no unclassified real points.
 \end{proof}
 
-A deterministic numerical classifier using these lifted \(q\)-values found the
-same \(40\)-point real-root profile in two independent runs.  This is now only a
-diagnostic cross-check; the exclusion above is the exact real-algebraic
-certificate for this branch.
+A deterministic numerical classifier using the lifted \(q\)-values on the
+\((c+d)^2=5\) branch found the same \(40\)-point real-root profile in two
+independent runs.  This is now only a diagnostic cross-check; the exclusion
+above is the exact real-algebraic certificate for the structured ansatz.
 
 \begin{remark}
-This theorem excludes only the numerically relevant nonzero-\(a\) branch of the
-four-parameter structured ansatz.  It does not exclude the other branches in
-the tail relations above, and it does not prove the full inequality
-\eqref{eq:gtz63}.
+This theorem excludes only the displayed four-parameter structured ansatz for
+the selected size-six active and outside-tie pattern.  It does not prove the
+full inequality \eqref{eq:gtz63}.
 \end{remark}
 
 \section{What remains}
@@ -1198,6 +1203,8 @@ The principal output artifacts are:
 \path{code/sage/out/gb_det_mask31215_QQmod.json}\\
 \path{code/sage/out/lex_det_mask32243_QQmod_u_pos_z0.json}\\
 \path{code/sage/out/lex_det_mask31215_QQmod_u_pos_z2.json}\\
+\path{code/sage/out/s6_ansatz_azero_QQ.json}\\
+\path{code/sage/out/s6_ansatz_azero_fglm_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_q_residual_crt_6primes.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_eliminant_verify_QQ.json}\\
@@ -1206,6 +1213,7 @@ The principal output artifacts are:
 \path{code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json}\\
+\path{code/sage/out/s6_ansatz_structured_sign_cert_QQ.json}\\
 \path{code/sage/out/classify_s6_ansatz_cplusd_numeric_s800.json}
 \end{quote}
 The exact claims in this paper are reproducible by running

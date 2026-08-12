@@ -1,0 +1,55 @@
+{
+ "basis_json": "code/sage/out/s6_ansatz_cdiff_QQ.json",
+ "q_factor": "",
+ "timeout_seconds": 900,
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "script": "code/sage/out/s6_ansatz_cdiff_fglm_QQ.sing",
+ "lex_last_variable": "q",
+ "lex_variable_order": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "q"
+ ],
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 0.00951963197439909,
+  "stdout": "basis_size\n17\ndimension\n// ** G is no standard basis\n0\nvdim\n// ** G is no standard basis\n96\ndegree\n// ** G is no standard basis\n// dimension (affine) = 0\n// degree (affine)  = 96\nq_factor\n<none>\nlex_variable_order\na,b,c,d,q\n// ** G is no standard basis\nlex_basis_size\n6\nlex_vdim\n96\nlex_first_poly\n4q10-136q9+2053q8-18126q7+103773q6-403542q5+1083519q4-1989522q3+2384235q2-1656450q+486000\nlex_last_poly\na2\nlex_basis_path\ncode/sage/out/s6_ansatz_cdiff_fglm_QQ_lex_basis.txt\ntimer\n0\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "basis_size": 17,
+   "dimension": "// ** G is no standard basis",
+   "vdim": "// ** G is no standard basis",
+   "degree": "// ** G is no standard basis",
+   "degree_value": 96,
+   "q_factor": "<none>",
+   "lex_variable_order": "a,b,c,d,q",
+   "lex_basis_size": 6,
+   "lex_vdim": 96,
+   "lex_first_poly": "4q10-136q9+2053q8-18126q7+103773q6-403542q5+1083519q4-1989522q3+2384235q2-1656450q+486000",
+   "lex_last_poly": "a2",
+   "lex_basis_path": "code/sage/out/s6_ansatz_cdiff_fglm_QQ_lex_basis.txt",
+   "timer": 0
+  }
+ },
+ "lex_basis": {
+  "exists": true,
+  "path": "code/sage/out/s6_ansatz_cdiff_fglm_QQ_lex_basis.txt",
+  "polynomial_count": 6,
+  "univariate_polynomials": [
+   {
+    "index": 1,
+    "variable": "q",
+    "polynomial": "4q10-136q9+2053q8-18126q7+103773q6-403542q5+1083519q4-1989522q3+2384235q2-1656450q+486000"
+   },
+   {
+    "index": 6,
+    "variable": "a",
+    "polynomial": "a2"
+   }
+  ]
+ }
+}

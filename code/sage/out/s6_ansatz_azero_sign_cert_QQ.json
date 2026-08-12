@@ -1,0 +1,65 @@
+{
+ "active": [
+  0,
+  1,
+  9,
+  15,
+  16,
+  17
+ ],
+ "active_triples": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   3
+  ],
+  [
+   0,
+   4,
+   5
+  ],
+  [
+   1,
+   4,
+   5
+  ],
+  [
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   3,
+   5
+  ]
+ ],
+ "branches": [
+  {
+   "lex_basis_path": "code/sage/out/s6_ansatz_azero_fglm_QQ_lex_basis.txt",
+   "polynomial_count": 6,
+   "ideal_dimension": 0,
+   "ideal_vdim": 96,
+   "counts": {
+    "real_points": 0,
+    "active_failure": 0,
+    "inactive_pd_failure": 0,
+    "unclassified": 0,
+    "certified_infeasible": 0
+   },
+   "roots": []
+  }
+ ],
+ "total": {
+  "real_points": 0,
+  "active_failure": 0,
+  "inactive_pd_failure": 0,
+  "unclassified": 0,
+  "certified_infeasible": 0
+ }
+}

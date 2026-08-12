@@ -1494,8 +1494,33 @@ a^2((c+d)^2-5) = 0,
 ((c+d)^2-5)((c-d)^2-5) = 0.
 ```
 
-The numerically relevant nonzero-`a` branch is therefore `(c+d)^2=5`.  On this
-branch, the exact `QQ` grevlex computation also finishes:
+Thus every real point lies on either `a=0` or `(c+d)^2=5`.  The `a=0` branch
+also finishes exactly:
+
+```text
+code/sage/out/s6_ansatz_azero_QQ.json
+code/sage/out/s6_ansatz_azero_fglm_QQ.json
+```
+
+It has quotient degree `96`; FGLM gives a six-polynomial lex basis, and exact
+enumeration over Sage's algebraic real field finds no real points:
+
+```text
+code/sage/out/s6_ansatz_azero_sign_cert_QQ.json
+```
+
+As a redundant check, the `(c-d)^2=5` branch also has quotient degree `96`, its
+grevlex basis contains `a^2`, and its lex real enumeration is empty:
+
+```text
+code/sage/out/s6_ansatz_cdiff_QQ.json
+code/sage/out/s6_ansatz_cdiff_fglm_QQ.json
+code/sage/out/s6_ansatz_cdiff_sign_cert_QQ.json
+```
+
+It remains to inspect the `(c+d)^2=5` branch, which contains the refined
+over-tied numerical root.  On this branch, the exact `QQ` grevlex computation
+also finishes:
 
 ```text
 code/sage/out/s6_ansatz_cplusd_QQ.json
@@ -1566,8 +1591,8 @@ code/sage/out/s6_ansatz_cplusd_eliminant_verify_QQ.json
 ```
 
 Thus this degree-22 polynomial is an exact element of the branch elimination
-ideal over `QQ`; the remaining issue is no longer the modular reconstruction,
-but the real-root sign certification.
+ideal over `QQ`; the remaining issue on this branch is no longer the modular
+reconstruction, but the real-root sign certification.
 
 The real-root sign certification is now also exact on this branch.  Starting
 from the exact `QQ` grevlex branch basis, the helper
@@ -1604,6 +1629,7 @@ certificates.  Its output is:
 
 ```text
 code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json
+code/sage/out/s6_ansatz_structured_sign_cert_QQ.json
 ```
 
 It certifies all `40` real points in the octic, `q=3`, and `q=5` branches as
@@ -1634,4 +1660,8 @@ equations found the same real-root profile with 250 and 800 starts:
 Per q-value, the active-PSD real roots occur only at `q=1.180695836766579...`
 and `q=5`; all fail inactive inequalities.  The smaller real q-values fail
 active PSD.  The exact sign certificate above confirms this numerical
-classification on the certified branch.
+classification on the certified `(c+d)^2=5` branch.
+
+Combining the empty `a=0` real branch with the certified `(c+d)^2=5` branch
+excludes the full four-parameter structured ansatz for the selected six-active
+and five-outside-tie threshold pattern.

@@ -181,6 +181,17 @@ dividing the visible nuisance factor:
   code/sage/out/s6_ansatz_cplusd_lex_p32057.json
 ```
 
+Verify the reconstructed full degree-22 q-eliminant over `QQ` by reducing it
+against the exact grevlex branch basis:
+
+```bash
+~/miniforge3/bin/mamba run -n sage python code/sage/probe_s6_ansatz.py \
+  --characteristic 0 --branch cplusd_sq5 \
+  --out code/sage/out/s6_ansatz_cplusd_QQ.json
+
+~/miniforge3/bin/mamba run -n sage python code/sage/verify_s6_ansatz_eliminant.py
+```
+
 Classify the resulting real q-values numerically:
 
 ```bash

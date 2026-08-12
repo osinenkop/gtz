@@ -1495,8 +1495,16 @@ a^2((c+d)^2-5) = 0,
 ```
 
 The numerically relevant nonzero-`a` branch is therefore `(c+d)^2=5`.  On this
-branch, lex computations over six primes all have the same shape: quotient
-degree `184`, basis size `10`, and a degree-22 eliminant in `q`:
+branch, the exact `QQ` grevlex computation also finishes:
+
+```text
+code/sage/out/s6_ansatz_cplusd_QQ.json
+```
+
+It has quotient degree `184` and basis size `51`, matching the modular
+`F_32003` grevlex run.  Lex computations over six primes all have the same
+shape: quotient degree `184`, basis size `10`, and a degree-22 eliminant in
+`q`:
 
 ```text
 code/sage/out/s6_ansatz_cplusd_lex_p32003.json
@@ -1513,13 +1521,13 @@ After dividing the visible nuisance factor
 (q-3)(q-5)^2(q^2-3q+6)^2(q^2-9q+24)^2
 ```
 
-the six-prime CRT reconstruction gives a rational candidate lift:
+the six-prime CRT reconstruction gives a rational lift:
 
 ```text
 code/sage/out/s6_ansatz_cplusd_q_residual_crt_6primes.json
 ```
 
-The candidate residual degree-11 polynomial is
+The residual degree-11 polynomial is
 
 ```text
 q^11 - 575/16*q^10 + 562849/1024*q^9 - 4768527/1024*q^8
@@ -1543,6 +1551,24 @@ The target over-tied root has
 `q = 1.180695836766...`, the largest real root of the octic, giving inactive
 overshoot `(q-1)/6 = 0.0301159727944...`.
 
+The CRT lift has now been checked over characteristic zero.  The helper
+`verify_s6_ansatz_eliminant.py` reduces the full degree-22 product
+
+```text
+(q-3)(q-5)^2(q^2-3q+6)^2(q^2-9q+24)^2 * residual(q)
+```
+
+against the exact `QQ` grevlex basis for the `(c+d)^2=5` branch.  The normal
+form is zero:
+
+```text
+code/sage/out/s6_ansatz_cplusd_eliminant_verify_QQ.json
+```
+
+Thus this degree-22 polynomial is an exact element of the branch elimination
+ideal over `QQ`; the remaining issue is no longer the modular reconstruction,
+but the real-root sign certification.
+
 A deterministic numerical classifier using the lifted q-values and the ansatz
 equations found the same real-root profile with 250 and 800 starts:
 
@@ -1554,8 +1580,6 @@ equations found the same real-root profile with 250 and 800 starts:
 Per q-value, the active-PSD real roots occur only at `q=1.180695836766...`
 and `q=5`; all fail inactive inequalities.  The smaller real q-values fail
 active PSD.  This is not yet a formal real-algebraic certificate: the next exact
-check is membership/normal-form verification of the reconstructed q-factor over
-`QQ`.  Even so, it turns the size-six low-active obstruction into a concrete
-finite branch problem: isolate the real roots of the cubic/octic factors and
-certify either `q>1` on the active-PSD roots or a signed active minor on the
-`q<1` roots.
+check is to isolate the real roots of the certified cubic/octic factors and
+prove, using exact branch reductions or interval arithmetic, either `q>1` on
+the active-PSD roots or a signed active minor on the `q<1` roots.

@@ -987,9 +987,11 @@ outside-tie determinant equations gives a zero-dimensional system of degree
 \]
 The numerically relevant branch has \(a\ne0\), hence \((c+d)^2=5\).
 
-On this branch, modular lex computations over six primes have stable quotient
-degree \(184\) and a degree-\(22\) eliminant in the tie parameter \(q\), where
-the tied outside triples have least eigenvalue \(q/6\).  The visible factor
+On this branch, an exact \(\mathbb Q\) grevlex computation gives quotient
+degree \(184\), matching the modular computation.  Modular lex computations over
+six primes have stable quotient degree \(184\) and a degree-\(22\) eliminant in
+the tie parameter \(q\), where the tied outside triples have least eigenvalue
+\(q/6\).  The visible factor
 \[
   (q-3)(q-5)^2(q^2-3q+6)^2(q^2-9q+24)^2
 \]
@@ -1018,6 +1020,11 @@ which factors over \(\mathbb Q\) as a cubic times an octic:
 +\frac{5625}{64}\right).
 \end{split}
 \]
+Multiplying this residual factor by the visible nuisance factor and reducing
+against the exact \(\mathbb Q\) grevlex basis of the branch gives zero normal
+form.  Thus the degree-\(22\) \(q\)-polynomial is certified in characteristic
+zero; the CRT step is no longer only modular evidence.
+
 The refined numerical root corresponds to the real octic root
 \[
   q=1.180695836766\ldots,
@@ -1035,10 +1042,10 @@ positive inactive overshoot.  The smaller real \(q\)-values fail active
 positive semidefiniteness.
 
 \begin{remark}
-This subsection is evidence, not a proof.  The remaining exact step is to
-certify the reconstructed \(q\)-factor by a characteristic-zero normal-form or
-membership computation, then isolate the real roots and prove the indicated sign
-conditions with rational interval arithmetic.
+This subsection is still not a proof of the full inequality.  The exact
+remaining step is to isolate the real roots on the certified branch and prove
+the indicated active/inactive sign conditions with rational interval
+arithmetic or an equivalent real-algebraic certificate.
 \end{remark}
 
 \section{What remains}
@@ -1119,6 +1126,7 @@ Sage/Singular helpers in \texttt{code/sage/}.
 \texttt{dump\_determinant\_gb.py} & exact determinant Groebner bases\\
 \texttt{dump\_facstd\_components.py} & modular component diagnostics\\
 \texttt{probe\_s6\_ansatz.py} & structured size-six ansatz probes\\
+\texttt{verify\_s6\_ansatz\_eliminant.py} & exact \(q\)-eliminant normal-form check\\
 \texttt{classify\_s6\_ansatz\_numeric.py} & numerical classification of ansatz roots
 \end{tabular}
 \end{center}
@@ -1139,7 +1147,9 @@ The principal output artifacts are:
 \path{code/sage/out/gb_det_mask31215_QQmod.json}\\
 \path{code/sage/out/lex_det_mask32243_QQmod_u_pos_z0.json}\\
 \path{code/sage/out/lex_det_mask31215_QQmod_u_pos_z2.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_q_residual_crt_6primes.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_eliminant_verify_QQ.json}\\
 \path{code/sage/out/classify_s6_ansatz_cplusd_numeric_s800.json}
 \end{quote}
 The exact claims in this paper are reproducible by running

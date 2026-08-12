@@ -1,0 +1,60 @@
+{
+ "basis_json": "code/sage/out/s6_ansatz_cplusd_QQ.json",
+ "q_factor": "q^3 - 9*q^2 + 81/4*q - 45/4",
+ "timeout_seconds": 600,
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "script": "code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ.sing",
+ "lex_last_variable": "q",
+ "lex_variable_order": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "q"
+ ],
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 0.07576958206482232,
+  "stdout": "basis_size\n8\ndimension\n0\nvdim\n24\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 24\nq_factor\nq^3 - 9*q^2 + 81/4*q - 45/4\nlex_variable_order\na,b,c,d,q\nlex_basis_size\n5\nlex_vdim\n24\nlex_first_poly\n4q3-36q2+81q-45\nlex_last_poly\na2\nlex_basis_path\ncode/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ_lex_basis.txt\ntimer\n0\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "basis_size": 8,
+   "dimension": 0,
+   "vdim": 24,
+   "degree": "// dimension (affine) = 0",
+   "degree_value": 24,
+   "q_factor": "q^3 - 9*q^2 + 81/4*q - 45/4",
+   "lex_variable_order": "a,b,c,d,q",
+   "lex_basis_size": 5,
+   "lex_vdim": 24,
+   "lex_first_poly": "4q3-36q2+81q-45",
+   "lex_last_poly": "a2",
+   "lex_basis_path": "code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ_lex_basis.txt",
+   "timer": 0
+  }
+ },
+ "lex_basis": {
+  "exists": true,
+  "path": "code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ_lex_basis.txt",
+  "polynomial_count": 5,
+  "univariate_polynomials": [
+   {
+    "index": 1,
+    "variable": "q",
+    "polynomial": "4q3-36q2+81q-45"
+   },
+   {
+    "index": 4,
+    "variable": "b",
+    "polynomial": "b2+1"
+   },
+   {
+    "index": 5,
+    "variable": "a",
+    "polynomial": "a2"
+   }
+  ]
+ }
+}

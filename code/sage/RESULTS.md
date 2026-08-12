@@ -1548,7 +1548,7 @@ and factors as
 ```
 
 The target over-tied root has
-`q = 1.180695836766...`, the largest real root of the octic, giving inactive
+`q = 1.180695836766579...`, the largest real root of the octic, giving inactive
 overshoot `(q-1)/6 = 0.0301159727944...`.
 
 The CRT lift has now been checked over characteristic zero.  The helper
@@ -1569,6 +1569,60 @@ Thus this degree-22 polynomial is an exact element of the branch elimination
 ideal over `QQ`; the remaining issue is no longer the modular reconstruction,
 but the real-root sign certification.
 
+The real-root sign certification is now also exact on this branch.  Starting
+from the exact `QQ` grevlex branch basis, the helper
+`lexify_s6_ansatz_basis.py` converts to lex order by FGLM without recomputing
+the determinant ideal.  The full branch conversion has lex quotient dimension
+`184`:
+
+```text
+code/sage/out/s6_ansatz_cplusd_fglm_QQ.json
+code/sage/out/s6_ansatz_cplusd_fglm_QQ_lex_basis.txt
+```
+
+Splitting by residual factors gives small exact lex systems:
+
+| Branch | Lex dimension | Real interpretation |
+| --- | ---: | --- |
+| cubic `q^3-9q^2+81/4 q-45/4` | `24` | no real points, since the lex basis contains `b^2+1` and `a^2` |
+| octic residual factor | `32` | `16` real points |
+| nuisance `q=3` | `32` | `8` real points |
+| nuisance `q=5` | `32` | `16` real points |
+
+The exact lex bases are:
+
+```text
+code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ.json
+code/sage/out/s6_ansatz_cplusd_octic_fglm_QQ.json
+code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ.json
+code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ.json
+```
+
+The helper `certify_s6_ansatz_signs.py` enumerates the real algebraic points
+from these lex bases in Sage's algebraic real field and checks principal-minor
+certificates.  Its output is:
+
+```text
+code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json
+```
+
+It certifies all `40` real points in the octic, `q=3`, and `q=5` branches as
+infeasible for the GTZ inequalities:
+
+| Branch | Real points | Active-PSD failure | Inactive positive-definite failure | Unclassified |
+| --- | ---: | ---: | ---: | ---: |
+| octic residual factor | `16` | `12` | `4` | `0` |
+| `q=3` | `8` | `8` | `0` | `0` |
+| `q=5` | `16` | `0` | `16` | `0` |
+| total | `40` | `20` | `20` | `0` |
+
+For the octic branch, the real `q` values are approximately
+`0.249409271817`, `0.342580053484`, `0.605330032909`, and
+`1.180695836767`.  The first three are excluded by negative active principal
+minors; the last is excluded by an inactive positive-definite block.  The
+`q=3` branch is excluded by active minors, and the `q=5` branch by inactive
+positive-definite blocks.
+
 A deterministic numerical classifier using the lifted q-values and the ansatz
 equations found the same real-root profile with 250 and 800 starts:
 
@@ -1577,9 +1631,7 @@ equations found the same real-root profile with 250 and 800 starts:
 | `classify_s6_ansatz_cplusd_numeric_s250.json` | 40 | 20 | 0 | 0 |
 | `classify_s6_ansatz_cplusd_numeric_s800.json` | 40 | 20 | 0 | 0 |
 
-Per q-value, the active-PSD real roots occur only at `q=1.180695836766...`
+Per q-value, the active-PSD real roots occur only at `q=1.180695836766579...`
 and `q=5`; all fail inactive inequalities.  The smaller real q-values fail
-active PSD.  This is not yet a formal real-algebraic certificate: the next exact
-check is to isolate the real roots of the certified cubic/octic factors and
-prove, using exact branch reductions or interval arithmetic, either `q>1` on
-the active-PSD roots or a signed active minor on the `q<1` roots.
+active PSD.  The exact sign certificate above confirms this numerical
+classification on the certified branch.

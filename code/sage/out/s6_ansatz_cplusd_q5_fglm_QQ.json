@@ -1,0 +1,55 @@
+{
+ "basis_json": "code/sage/out/s6_ansatz_cplusd_QQ.json",
+ "q_factor": "q - 5",
+ "timeout_seconds": 600,
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "script": "code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ.sing",
+ "lex_last_variable": "q",
+ "lex_variable_order": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "q"
+ ],
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 0.022031828062608838,
+  "stdout": "basis_size\n10\ndimension\n0\nvdim\n32\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 32\nq_factor\nq - 5\nlex_variable_order\na,b,c,d,q\nlex_basis_size\n6\nlex_vdim\n32\nlex_first_poly\nq-5\nlex_last_poly\n207934135740825600000000a2-1598655421391370598207d10+21731798437534725186735d8-117773745184476750354150d6+353166634030125515460750d4-605877884359552064016875d2+335365887493046105521875\nlex_basis_path\ncode/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt\ntimer\n0\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "basis_size": 10,
+   "dimension": 0,
+   "vdim": 32,
+   "degree": "// dimension (affine) = 0",
+   "degree_value": 32,
+   "q_factor": "q - 5",
+   "lex_variable_order": "a,b,c,d,q",
+   "lex_basis_size": 6,
+   "lex_vdim": 32,
+   "lex_first_poly": "q-5",
+   "lex_last_poly": "207934135740825600000000a2-1598655421391370598207d10+21731798437534725186735d8-117773745184476750354150d6+353166634030125515460750d4-605877884359552064016875d2+335365887493046105521875",
+   "lex_basis_path": "code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt",
+   "timer": 0
+  }
+ },
+ "lex_basis": {
+  "exists": true,
+  "path": "code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt",
+  "polynomial_count": 6,
+  "univariate_polynomials": [
+   {
+    "index": 1,
+    "variable": "q",
+    "polynomial": "q-5"
+   },
+   {
+    "index": 2,
+    "variable": "d",
+    "polynomial": "6937723849d12-89253943390d10+437070899775d8-1059339370500d6+1357547744375d4-880223618750d2+227171390625"
+   }
+  ]
+ }
+}

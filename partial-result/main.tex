@@ -60,7 +60,9 @@ which eliminates its positive-dimensional residual determinant branches and
 classifies the remaining finite residue in the chart.  We also include exact
 finite-branch computations for the two size-twelve equality strata and a
 zero-dimensional chart computation for the thirteen-active out-of-family
-stratum.
+stratum.  For the most persistent structured size-six low-active survivor, we
+also give an exact finite-branch exclusion of its numerically relevant
+nonzero-\(a\) branch.
 As background, we include a self-contained Perron-free proof of the weighted
 Frobenius inequality behind the known $k=2$ case.
 The remaining global problem is isolated precisely as the exclusion of critical
@@ -124,10 +126,10 @@ Thus the seven certified projectors are isolated equality points.
 \item We enumerate active-set orbits under row relabelling and run numerical KKT
 screens over these orbits.  These screens found no sub-threshold critical point.
 \item For the hardest observed size-six low-active survivor, we identify a
-four-parameter structured ansatz.  Modular lex computations and CRT
-reconstruction reduce the relevant branch to a degree-eleven candidate
-eliminant in the margin parameter; numerical classification of its real roots
-finds no point satisfying both active and inactive inequalities.
+four-parameter structured ansatz.  Exact characteristic-zero Groebner and FGLM
+computations reduce its numerically relevant branch to finite lexicographic
+systems, and exact real-algebraic sign checks exclude all real points on that
+branch from satisfying the active and inactive threshold inequalities.
 \item For the active set of the base extremal $P(S(e,e,e),e,e,e)$, we record an
 exact CAD-style cascade: component relations plus active positive
 semidefiniteness reduce the positive-dimensional determinant locus to a finite
@@ -1025,27 +1027,74 @@ against the exact \(\mathbb Q\) grevlex basis of the branch gives zero normal
 form.  Thus the degree-\(22\) \(q\)-polynomial is certified in characteristic
 zero; the CRT step is no longer only modular evidence.
 
+Converting the exact branch basis to lexicographic order by FGLM gives quotient
+dimension \(184\), again matching the grevlex and modular computations.  After
+adjoining the residual factors separately, the cubic branch has lex quotient
+dimension \(24\) and no real points: its lex basis contains \(b^2+1\) and
+\(a^2\).  The octic branch has lex quotient dimension \(32\) and contains
+\(16\) real points.  The nuisance factors \(q=3\) and \(q=5\) have lex quotient
+dimension \(32\) each, with \(8\) and \(16\) real points respectively.
+
 The refined numerical root corresponds to the real octic root
 \[
-  q=1.180695836766\ldots,
+  q=1.180695836766579\ldots,
 \]
 so the tied inactive triples sit above the threshold by
 \[
   \frac{q-1}{6}=0.030115972794\ldots.
 \]
 
-A deterministic numerical classifier using these lifted \(q\)-values found
-\(40\) real ansatz roots in two independent runs.  Twenty pass active positive
-semidefiniteness, but none pass the inactive inequalities.  The active-PSD roots
-occur only at \(q=1.180695836766\ldots\) and \(q=5\), and both cases have
-positive inactive overshoot.  The smaller real \(q\)-values fail active
-positive semidefiniteness.
+\begin{theorem}[Exclusion of the structured \(a\ne0\), \((c+d)^2=5\) branch]
+There is no real point on the structured ansatz branch
+\[
+  a\ne0,\qquad (c+d)^2=5
+\]
+which realizes the selected threshold pattern: the six selected triples at
+threshold with \(P_{TT}-I/6\succeq0\), and every inactive triple satisfying
+\(\lambda_{\min}(P_{TT})\le 1/6\).
+\end{theorem}
+
+\begin{proof}
+The exact \(\mathbb Q\) branch ideal has quotient dimension \(184\) and its
+\(q\)-eliminant is the certified degree-\(22\) polynomial above.  The non-real
+quadratic nuisance factors have no real points.  The cubic residual factor has
+no real points because the exact lex basis on that component contains
+\(b^2+1\).  It remains to inspect the octic residual factor and the real
+nuisance factors \(q=3\) and \(q=5\).
+
+For these three lex systems, Sage enumeration over the algebraic real field
+finds \(16\), \(8\), and \(16\) real points respectively.  At each point we
+compute the exact numerator
+\[
+  N=Y\,\operatorname{adj}(Y^TY)\,Y^T,\qquad d=\det(Y^TY)>0,
+\]
+so that \(P_{TT}-I/6\succeq0\) is equivalent to
+\[
+  6N_{TT}-dI\succeq0 .
+\]
+For an active triple, a negative principal minor of this shifted block excludes
+the point.  For an inactive triple, a positive-definite shifted block certifies
+\(\lambda_{\min}(P_{TT})>1/6\), also excluding a point from the desired
+threshold pattern.
+
+The exact sign certificate classifies all \(40\) real points.  On the octic
+component, \(12\) points have a negative active principal minor and \(4\) points
+have an inactive positive-definite shifted block.  On the \(q=3\) component,
+all \(8\) real points fail active positive semidefiniteness.  On the \(q=5\)
+component, all \(16\) real points have an inactive positive-definite shifted
+block.  There are no unclassified real points.
+\end{proof}
+
+A deterministic numerical classifier using these lifted \(q\)-values found the
+same \(40\)-point real-root profile in two independent runs.  This is now only a
+diagnostic cross-check; the exclusion above is the exact real-algebraic
+certificate for this branch.
 
 \begin{remark}
-This subsection is still not a proof of the full inequality.  The exact
-remaining step is to isolate the real roots on the certified branch and prove
-the indicated active/inactive sign conditions with rational interval
-arithmetic or an equivalent real-algebraic certificate.
+This theorem excludes only the numerically relevant nonzero-\(a\) branch of the
+four-parameter structured ansatz.  It does not exclude the other branches in
+the tail relations above, and it does not prove the full inequality
+\eqref{eq:gtz63}.
 \end{remark}
 
 \section{What remains}
@@ -1127,6 +1176,8 @@ Sage/Singular helpers in \texttt{code/sage/}.
 \texttt{dump\_facstd\_components.py} & modular component diagnostics\\
 \texttt{probe\_s6\_ansatz.py} & structured size-six ansatz probes\\
 \texttt{verify\_s6\_ansatz\_eliminant.py} & exact \(q\)-eliminant normal-form check\\
+\texttt{lexify\_s6\_ansatz\_basis.py} & exact FGLM conversion of ansatz branches\\
+\texttt{certify\_s6\_ansatz\_signs.py} & exact real sign checks on ansatz branches\\
 \texttt{classify\_s6\_ansatz\_numeric.py} & numerical classification of ansatz roots
 \end{tabular}
 \end{center}
@@ -1150,6 +1201,11 @@ The principal output artifacts are:
 \path{code/sage/out/s6_ansatz_cplusd_QQ.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_q_residual_crt_6primes.json}\\
 \path{code/sage/out/s6_ansatz_cplusd_eliminant_verify_QQ.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_fglm_QQ.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_octic_fglm_QQ.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json}\\
 \path{code/sage/out/classify_s6_ansatz_cplusd_numeric_s800.json}
 \end{quote}
 The exact claims in this paper are reproducible by running

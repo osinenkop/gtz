@@ -192,7 +192,36 @@ against the exact grevlex branch basis:
 ~/miniforge3/bin/mamba run -n sage python code/sage/verify_s6_ansatz_eliminant.py
 ```
 
-Classify the resulting real q-values numerically:
+Convert the exact branch basis to small lex bases and certify the real signs:
+
+```bash
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --out-prefix code/sage/out/s6_ansatz_cplusd_fglm_QQ
+
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --q-factor 'q^3 - 9*q^2 + 81/4*q - 45/4' \
+  --out-prefix code/sage/out/s6_ansatz_cplusd_cubic_fglm_QQ
+
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --q-factor 'q^8 - 431/16*q^7 + 293857/1024*q^6 - 776859/512*q^5 + 2094513/512*q^4 - 1353145/256*q^3 + 3301125/1024*q^2 - 453375/512*q + 5625/64' \
+  --out-prefix code/sage/out/s6_ansatz_cplusd_octic_fglm_QQ
+
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --q-factor 'q - 3' \
+  --out-prefix code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ
+
+~/miniforge3/bin/mamba run -n sage python code/sage/lexify_s6_ansatz_basis.py \
+  --q-factor 'q - 5' \
+  --out-prefix code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ
+
+~/miniforge3/bin/mamba run -n sage python code/sage/certify_s6_ansatz_signs.py \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_octic_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_q3_fglm_QQ_lex_basis.txt \
+  --lex-basis code/sage/out/s6_ansatz_cplusd_q5_fglm_QQ_lex_basis.txt \
+  --out code/sage/out/s6_ansatz_cplusd_sign_cert_QQ.json
+```
+
+The older numerical classifier is still useful as a diagnostic:
 
 ```bash
 .venv/bin/python code/sage/classify_s6_ansatz_numeric.py \

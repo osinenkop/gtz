@@ -1709,7 +1709,7 @@ These are naturally interpreted as equalities among raw Plucker coordinates of
 the standard `Y=[I;Z]` chart.
 
 Adding these Plucker relations to the active/tie determinant systems gives
-finite modular loci over `F_32003`:
+finite modular loci.  The first full basis computations over `F_32003` were:
 
 | Case | Output | Dimension | Degree | Basis size |
 | --- | --- | ---: | ---: | ---: |
@@ -1721,23 +1721,37 @@ The denominator-cleared `s8` patch probe produced a positive-dimensional
 artifact (`dimension=5`) and its large raw output was discarded; this patch
 model should not be used as a certificate without saturation/inversion cleanup.
 
+A second-prime check over `F_32009` reproduced the two relevant quotient
+degrees without adding the large raw Groebner basis dumps to the repository:
+
+| Case | Formulation | Dimension | Degree |
+| --- | --- | ---: | ---: |
+| `s7_78612` | full Plucker locus | `0` | `4992` |
+| `s8_79656` | reduced Plucker ansatz | `0` | `2832` |
+
 The grevlex bases above do not expose a univariate `q` polynomial directly.
 The helper `compute_q_power_relation.py` instead computes the first exact
 relation among `1,q,q^2,...` in the quotient algebra.  This gives compact
 modular `q` eliminants:
 
-| Case | Quotient degree | q-relation degree | Residual | Factor summary |
-| --- | ---: | ---: | --- | --- |
-| `s7_78612` | `4992` | `510` | zero | `44` factors over `F_32003`; largest degrees `62,64` |
-| `s8_79656` | `2832` | `326` | zero | `23` factors over `F_32003`; largest degrees `92,101` |
+| Case | Prime | Quotient degree | q-relation degree | Residual | Factor summary |
+| --- | ---: | ---: | ---: | --- | --- |
+| `s7_78612` | `32003` | `4992` | `510` | zero | `44` factors; largest degrees `62,64` |
+| `s7_78612` | `32009` | `4992` | `510` | zero | `38` factors; largest degrees `88,112` |
+| `s8_79656` | `32003` | `2832` | `326` | zero | `23` factors; largest degrees `92,101` |
+| `s8_79656` | `32009` | `2832` | `326` | zero | `27` factors; largest degrees `70,130` |
 
 The output files are:
 
 ```text
 code/sage/out/qrel_plucker_locus_s7_78612_p32003.json
 code/sage/out/qrel_plucker_locus_s7_78612_p32003_factors.json
+code/sage/out/qrel_plucker_locus_s7_78612_p32009.json
+code/sage/out/qrel_plucker_locus_s7_78612_p32009_factors.json
 code/sage/out/qrel_plucker_ansatz_s8_79656_p32003.json
 code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json
+code/sage/out/qrel_plucker_ansatz_s8_79656_p32009_factors.json
 ```
 
 This is not yet a proof of infeasibility for these Plucker loci.  It is a

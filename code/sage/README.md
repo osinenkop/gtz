@@ -306,6 +306,45 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json
 ```
 
+For additional-prime checks, put the raw Groebner basis JSONs in `/tmp` and
+commit only the compact `q` relation and factor outputs:
+
+```bash
+mkdir -p /tmp/gtz_plucker
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/probe_overtie_plucker_locus.py \
+  --case s7_78612 --characteristic 32009 \
+  --out /tmp/gtz_plucker/plucker_locus_s7_78612_p32009.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/compute_q_power_relation.py \
+  --basis-json /tmp/gtz_plucker/plucker_locus_s7_78612_p32009.json \
+  --variable q \
+  --out code/sage/out/qrel_plucker_locus_s7_78612_p32009.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/factor_q_relation.py \
+  --input code/sage/out/qrel_plucker_locus_s7_78612_p32009.json \
+  --out code/sage/out/qrel_plucker_locus_s7_78612_p32009_factors.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/probe_overtie_plucker_ansatz.py \
+  --case s8_79656 --characteristic 32009 \
+  --out /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/compute_q_power_relation.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --variable q \
+  --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/factor_q_relation.py \
+  --input code/sage/out/qrel_plucker_ansatz_s8_79656_p32009.json \
+  --out code/sage/out/qrel_plucker_ansatz_s8_79656_p32009_factors.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

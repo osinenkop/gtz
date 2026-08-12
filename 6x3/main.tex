@@ -1,0 +1,507 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\St}{\operatorname{St}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\smin}{\sigma_{\min}}
+\newcommand{\lmin}{\lambda_{\min}}
+\newcommand{\one}{\mathbf{1}}
+
+\title{Notes Toward the Goreinov--Tyrtyshnikov--Zamarashkin Hypothesis in the First Open Case}
+\author{Draft template for the case $(n,k)=(6,3)$}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This is a working template for a proof attempt in the first open case of the
+Goreinov--Tyrtyshnikov--Zamarashkin row-selection hypothesis.  The target is the
+statement that every real $6\times 3$ matrix with orthonormal columns contains a
+$3\times 3$ row submatrix whose least singular value is at least $1/\sqrt 6$.
+
+The document deliberately separates proved reductions and structural lemmas from
+conjectural or numerical material.  It records: the formulation in terms of
+principal submatrices of a rank-three orthoprojector; the single-pair extension
+mechanism; the equal-leverage slice and its involution model; two obstructions to
+natural proof strategies; and a minimax/KKT reformulation that appears to be the
+most promising remaining route.
+\end{abstract}
+
+\tableofcontents
+
+\section{The target}
+
+Let
+\[
+  \St(n,k)=\{A\in\R^{n\times k}: A^T A=I_k\}.
+\]
+For $A\in\St(n,k)$ write its rows as $r_1,\ldots,r_n\in\R^k$, set
+\[
+  P=AA^T,\qquad \ell_i=P_{ii}=\|r_i\|^2,\qquad c_{ij}=P_{ij}=\langle r_i,r_j\rangle.
+\]
+Thus $P$ is a rank-$k$ orthogonal projector.  For $I\subset[n]$ let $P_{II}$ be
+the corresponding principal submatrix.  If $|I|=k$, then
+\[
+  P_{II}=A_I A_I^T,
+\]
+so the eigenvalues of $P_{II}$ are the squared singular values of $A_I$.
+
+\begin{conjecture}[GTZ in the first open case]\label{conj:gtz63}
+For every $A\in\St(6,3)$ there is a triple $I\subset[6]$ such that
+\[
+  \lmin(P_{II})\ge \frac16.
+\]
+Equivalently, $\smin(A_I)\ge 1/\sqrt6$ for some $3\times3$ row submatrix.
+\end{conjecture}
+
+It is useful to write
+\[
+  F(A)=\max_{|I|=3}\lmin(P_{II}),\qquad f(A)=\max_{|I|=3}\smin(A_I).
+\]
+Then $F(A)=f(A)^2$, and Conjecture~\ref{conj:gtz63} is
+\[
+  \min_{A\in\St(6,3)} F(A)\ge \frac16.
+\]
+
+\section{Small leverage reduction}
+
+The standard Case A reduction works for all $k$.  In the present case it says
+that rows with leverage at most $1/6$ can be removed at no loss, provided the
+smaller instance is known.
+
+\begin{proposition}[Case A reduction, specialized]\label{prop:caseA}
+Let $A\in\St(6,3)$ and suppose some row has $\ell_i\le 1/6$.  Rotate columns so
+that this row is $(b,0,0)$, where $b^2=\ell_i$, delete the row, and renormalize
+the first column by $(1-\ell_i)^{-1/2}$.  This gives a matrix
+$\widetilde B\in\St(5,3)$.  For every triple $J$ of rows of $\widetilde B$,
+with corresponding triple $\varphi(J)\subset[6]\setminus\{i\}$,
+\[
+  \sqrt{1-\ell_i}\,\smin(\widetilde B_J)
+  \le \smin(A_{\varphi(J)})
+  \le \smin(\widetilde B_J).
+\]
+Consequently, if the GTZ bound is known for $(5,3)$, then it holds for every
+$A\in\St(6,3)$ with a row of leverage at most $1/6$.
+\end{proposition}
+
+\begin{proof}
+After the rotation and deletion, the remaining columns have Gram matrix
+$\diag(1-\ell_i,1,1)$.  Multiplication of the first column by
+$(1-\ell_i)^{-1/2}$ restores orthonormality.  Pulling a triple back multiplies
+on the right by $\diag(\sqrt{1-\ell_i},1,1)$, and the displayed singular value
+bounds follow from the min--max principle.  If
+$\smin(\widetilde B_J)\ge 1/\sqrt5$, then
+\[
+  \smin(A_{\varphi(J)})
+  \ge \sqrt{1-\ell_i}\,\frac1{\sqrt5}
+  \ge \sqrt{\frac56}\,\frac1{\sqrt5}
+  =\frac1{\sqrt6}.
+\]
+\end{proof}
+
+\begin{remark}
+This reduction is useful but does not by itself settle $(6,3)$, since it uses
+the neighboring case $(5,3)$.  By spectral duality, $(5,3)$ is equivalent to
+$(5,2)$, which is covered by the known $k=2$ theorem.  Thus the genuinely new
+part of $(6,3)$ may be restricted to the core region
+\[
+  \ell_i>1/6\quad\text{for every }i.
+\]
+\end{remark}
+
+\section{The single-pair extension mechanism}
+
+Fix $A\in\St(6,3)$ and a pair $\{i,j\}$.  Let
+\[
+  \Gamma=P_{\{i,j\}\{i,j\}}
+  =
+  \begin{pmatrix}
+    \ell_i & c_{ij}\\
+    c_{ij} & \ell_j
+  \end{pmatrix},
+  \qquad
+  \spec(\Gamma)=\{\mu_1,\mu_2\},\quad \mu_1\ge\mu_2.
+\]
+For $p\notin\{i,j\}$ set
+\[
+  v_p=(c_{ip},c_{jp})^T.
+\]
+Assume $\mu_2>1/6$, so $\Gamma-\frac16 I_2$ is positive definite, and define
+\[
+  q(p)=\ell_p-\frac16
+  -v_p^T\left(\Gamma-\frac16 I_2\right)^{-1}v_p.
+\]
+
+\begin{lemma}[Schur criterion]\label{lem:schur}
+For $p\notin\{i,j\}$,
+\[
+  \lmin(P_{\{i,j,p\},\{i,j,p\}})\ge\frac16
+  \quad\Longleftrightarrow\quad
+  q(p)\ge0.
+\]
+\end{lemma}
+
+\begin{proof}
+Subtract $\frac16 I_3$ from the triple Gram matrix and take the Schur
+complement of the positive block $\Gamma-\frac16 I_2$.
+\end{proof}
+
+Define, for $\mu>1/6$,
+\[
+  h(\mu)=\frac{1-\mu}{6\mu-1}.
+\]
+
+\begin{lemma}[Extension lemma]\label{lem:extension}
+If a pair satisfies
+\[
+  \mu_2>\frac16,\qquad h(\mu_1)+h(\mu_2)\le\frac13,
+\]
+then some triple containing that pair is $1/6$-good.
+\end{lemma}
+
+\begin{proof}
+The moment identity
+\[
+  \sum_{p\notin\{i,j\}} v_pv_p^T=\Gamma-\Gamma^2
+\]
+and $\sum_p\ell_p=3$ give
+\[
+  \sum_{p\notin\{i,j\}} q(p)
+  =
+  \frac73
+  -
+  \frac{5\mu_1}{6\mu_1-1}
+  -
+  \frac{5\mu_2}{6\mu_2-1}
+  =
+  \frac13-h(\mu_1)-h(\mu_2).
+\]
+Thus the assumed inequality makes the sum of the four Schur slacks nonnegative.
+At least one $q(p)$ is nonnegative, and Lemma~\ref{lem:schur} applies.
+\end{proof}
+
+\begin{corollary}[A trace branch]\label{cor:trace}
+If some pair satisfies
+\[
+  \ell_i+\ell_j\ge\frac{13}{9},
+\]
+then Conjecture~\ref{conj:gtz63} holds for $A$.
+\end{corollary}
+
+\begin{proof}
+Let $T=\ell_i+\ell_j=\mu_1+\mu_2$.  Since $\mu_1\le1$, the inequality
+$T\ge13/9$ implies $\mu_2\ge4/9>1/6$.  The function $h$ is decreasing and
+convex on $(1/6,\infty)$.  The maximum of
+$h(\mu_1)+h(13/9-\mu_1)$ on the admissible interval occurs at an endpoint,
+and the endpoint values give at most $1/3$.  Lemma~\ref{lem:extension}
+finishes the proof.
+\end{proof}
+
+\section{The equal-leverage slice}
+
+The slice
+\[
+  \ell_1=\cdots=\ell_6=\frac12
+\]
+has a particularly rigid form.  Put
+\[
+  J=2P-I_6.
+\]
+Then $J$ is a symmetric orthogonal involution with zero diagonal and
+\[
+  \spec(J)=\{+1,+1,+1,-1,-1,-1\}.
+\]
+Conversely, any such $J$ gives a rank-three projector $P=(I+J)/2$ with
+diagonal entries $1/2$.
+
+Write
+\[
+  a_{ij}=J_{ij}\quad (i\ne j).
+\]
+Equivalently, after setting $u_i=\sqrt2\,r_i$, the $u_i$ are unit vectors in
+$\R^3$ with
+\[
+  \sum_{i=1}^6 u_i u_i^T=2I_3,\qquad a_{ij}=\langle u_i,u_j\rangle.
+\]
+The involution identity gives the useful row and flow equations
+\[
+  \sum_{k\ne i}a_{ik}^2=1,\qquad
+  \sum_{m\notin\{i,j\}}a_{im}a_{jm}=0.
+\]
+
+\begin{lemma}[Slice criterion for a good triple]\label{lem:slicecriterion}
+For a triple $T=\{i,j,k\}$ set
+\[
+  p_T=a_{ij}^2+a_{ik}^2+a_{jk}^2,\qquad q_T=a_{ij}a_{ik}a_{jk}.
+\]
+Then $T$ is $1/6$-good if and only if
+\[
+  q_T\ge \frac{p_T}{3}-\frac4{27}.
+\]
+\end{lemma}
+
+\begin{proof}
+On the slice,
+\[
+  P_{TT}=\frac12(I_3+J_{TT}).
+\]
+Thus $T$ is $1/6$-good iff $\lmin(J_{TT})\ge-2/3$.  The zero-diagonal
+$3\times3$ matrix $J_{TT}$ has characteristic polynomial
+\[
+  x^3-p_Tx-2q_T.
+\]
+Since $J_{TT}$ is a principal submatrix of an involution, its eigenvalues lie
+in $[-1,1]$ and have sum zero, so at most one can be below $-2/3$.  Therefore
+the sign of $\det(J_{TT}+\frac23 I_3)$ detects whether the least eigenvalue is
+at least $-2/3$.  But
+\[
+  \det(J_{TT}+\tfrac23 I_3)=\frac8{27}-\frac23p_T+2q_T,
+\]
+which gives the criterion.
+\end{proof}
+
+The Veronese reformulation is also useful.  Let
+\[
+  w_i=u_i u_i^T-\frac13I_3\in\operatorname{Sym}_0(\R^3).
+\]
+Then $\sum_iw_i=0$ and, for a triple $T=\{i,j,k\}$,
+\[
+  \tau_T=\tr(w_iw_jw_k)=q_T-\frac{p_T}{3}+\frac29.
+\]
+Thus Lemma~\ref{lem:slicecriterion} is equivalent to
+\[
+  T\text{ is good}\quad\Longleftrightarrow\quad \tau_T\ge\frac2{27}.
+\]
+Moreover,
+\[
+  \sum_{|T|=3}\tau_T=\frac49,\qquad
+  \sum_{|T|=3}p_T=12,\qquad
+  \sum_{|T|=3}q_T=0.
+\]
+
+\begin{remark}[Why averaging alone fails]
+The mean value of $\tau_T$ over the $20$ triples is $1/45$, which is below
+the required threshold $2/27$.  Therefore the slice theorem, if true, must use
+more than unsigned averaging of the $\tau_T$.
+\end{remark}
+
+\section{Pinned block spectra}
+
+The involution model also gives exact spectra for large principal blocks.
+These facts are potential constraints in an active-set or algebraic proof.
+
+\begin{lemma}[Five-by-five blocks]
+Let $J$ be any symmetric involution with
+\[
+  \spec(J)=\{+1,+1,+1,-1,-1,-1\},
+\]
+not necessarily with zero diagonal.  If $F=[6]\setminus\{v\}$ and $d_v=J_{vv}$,
+then
+\[
+  \spec(J_{FF})=\{1,1,-d_v,-1,-1\}.
+\]
+\end{lemma}
+
+\begin{proof}
+This follows from Cauchy interlacing.  The first two and last two eigenvalues
+are pinned at $1,1$ and $-1,-1$, and the remaining eigenvalue is determined by
+the trace.
+\end{proof}
+
+\begin{lemma}[Four-by-four blocks on the slice]
+Assume $J$ lies on the slice.  If $F=[6]\setminus\{v,w\}$, then
+\[
+  \spec(J_{FF})=\{1,t,-t,-1\},\qquad t=|a_{vw}|.
+\]
+\end{lemma}
+
+\begin{proof}
+Interlacing pins one eigenvalue at $1$ and one at $-1$.  The trace of $J_{FF}$
+is zero on the slice, so the remaining two eigenvalues sum to zero.  Their
+squared sum is fixed by the Frobenius norm of $J_{FF}$, which is controlled by
+the row-mass identities and equals $2t^2$ for the remaining pair.
+\end{proof}
+
+\section{Known obstructions}
+
+The following observations are intended as guardrails for the proof attempt.
+
+\begin{proposition}[Single-pair boundary obstruction; informal statement]\label{prop:boundary}
+There is no universal $\delta_0>0$ such that every qualifying pair in
+$\St(6,3)$ with
+\[
+  0<h(\mu_1)+h(\mu_2)-\frac13\le\delta_0
+\]
+extends to a $1/6$-good triple through that pair.
+\end{proposition}
+
+\begin{proof}[Proof status]
+This is a recorded exact-arithmetic obstruction in the accompanying notes.  It
+is obtained by perturbing a Nesterenko extremal along a Grassmann tangent
+direction.  The selected pair moves into positive excess, all four triples
+through it move below the threshold to first order, while an external active
+triple moves upward and preserves the global GTZ value locally.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:boundary} says that Lemma~\ref{lem:extension} is
+essentially the maximal reach of any proof using only one pair and its
+second-moment data.
+\end{remark}
+
+\begin{proposition}[The icosahedral obstruction]\label{prop:ico}
+On the equal-leverage icosahedral frame, every pair satisfies
+\[
+  h(\mu_1)+h(\mu_2)=\frac{13}{11}>\frac13,
+\]
+so no pair lies in the extension branch of Lemma~\ref{lem:extension}.  However
+good triples exist; indeed the coherent triples are precisely the good triples.
+\end{proposition}
+
+\begin{proof}
+For the icosahedral equiangular tight frame, $\ell_i=1/2$ and
+$c_{ij}^2=1/20$ for all $i\ne j$.  Hence each pair has eigenvalues
+\[
+  \mu_{1,2}=\frac12\pm\frac1{\sqrt{20}},
+\]
+and a direct substitution gives the displayed $h$-sum.  For a triple, the
+off-diagonal signs can be switched to either all positive or all negative
+according to the sign of $c_{ij}c_{ik}c_{jk}$.  The all-positive case has
+least eigenvalue $1/2-1/\sqrt{20}>1/6$, while the all-negative case has least
+eigenvalue $1/2-2/\sqrt{20}<1/6$.
+\end{proof}
+
+\section{A minimax/KKT reformulation}
+
+The obstruction above suggests replacing a single-pair view by the active set
+of triples for the nonsmooth objective
+\[
+  F(A)=\max_{|T|=3}\lmin(P_{TT}).
+\]
+Let $\mathcal A(A)$ denote the active triples at $A$:
+\[
+  \mathcal A(A)=\{T: \lmin(P_{TT})=F(A)\}.
+\]
+
+\begin{definition}
+A point $A\in\St(6,3)$ is called a KKT point of $F$ if it is Clarke-stationary
+for the maximum of the active eigenvalue functions.  At points where the active
+least eigenvalues are simple, this means
+\[
+  0\in\conv\{\nabla \lmin(P_{TT}):T\in\mathcal A(A)\}
+  \subset T_A^*\St(6,3),
+\]
+with gradients projected to the Stiefel tangent space.
+\end{definition}
+
+\begin{proposition}[KKT reduction]\label{prop:kkt}
+Conjecture~\ref{conj:gtz63} is equivalent to the assertion that no KKT point of
+$F$ has value below $1/6$.
+\end{proposition}
+
+\begin{proof}
+Since $\St(6,3)$ is compact and $F$ is continuous, $F$ attains a global
+minimum.  Every global minimizer is KKT/Clarke-stationary.  Hence if no KKT
+point has value below $1/6$, the global minimum is at least $1/6$.  The converse
+is immediate.
+\end{proof}
+
+\begin{remark}[Local extremals]
+Numerical evidence in the notes suggests that the known equality examples are
+strict local minima of $F$: their active triple gradients positively span the
+tangent dual.  A useful finite task is to turn this into exact certificates,
+one equality type at a time.
+\end{remark}
+
+\section{A possible route for the proof}
+
+The observations above suggest the following work plan.
+
+\begin{enumerate}[label=\textbf{Step \arabic*.},leftmargin=*]
+\item Use Case A and duality to restrict attention to the core region
+$\ell_i>1/6$.
+
+\item Prove the equal-leverage slice theorem:
+for every zero-diagonal symmetric orthogonal $J$ with spectrum $(+1)^3(-1)^3$,
+some triple satisfies the criterion of Lemma~\ref{lem:slicecriterion}.
+The current candidate extremal inside the slice is the pentagonal matching
+configuration, which appears to have margin about $0.0394$ above $1/6$.
+
+\item Prove exact local KKT certificates at the known equality configurations.
+This should be a finite algebraic problem: compute the active gradients and
+exhibit an exact positive convex dependence.
+
+\item Enumerate possible active-set types for a hypothetical KKT point with
+$F<1/6$ and rule them out, using the pinned block spectra, complementarity, and
+the Schur slack identities.
+
+\item If the previous step becomes too large, set up a symmetry-reduced SOS
+certificate with the equality manifold imposed as equations.  Low-degree
+generic relaxations are expected to be too weak because averaging alone is too
+weak on the slice.
+\end{enumerate}
+
+\section{Checklist of statements and status}
+
+\begin{center}
+\begin{tabular}{p{0.66\linewidth}p{0.22\linewidth}}
+\hline
+Statement & Current status\\
+\hline
+Case A reduction & proved\\
+Schur criterion and extension lemma & proved\\
+Trace branch $\ell_i+\ell_j\ge13/9$ & proved\\
+Equal-leverage involution model & proved\\
+Slice triple criterion & proved\\
+Pinned $5\times5$ and $4\times4$ spectra & proved\\
+Single-pair boundary obstruction & proved in accompanying notes\\
+Icosahedral obstruction and coherent rescue & proved\\
+Equal-leverage slice theorem & open / numerically supported\\
+Exact KKT positive spanning at equality examples & numerical evidence\\
+No KKT point below $1/6$ & open\\
+Full Conjecture~\ref{conj:gtz63} & open\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{thebibliography}{9}
+
+\bibitem{GTZ1997}
+S.~A. Goreinov, E.~E. Tyrtyshnikov, and N.~L. Zamarashkin.
+\newblock A theory of pseudoskeleton approximations.
+\newblock \emph{Linear Algebra and its Applications}, 261:1--21, 1997.
+
+\bibitem{SenguptaPautov}
+R.~Sengupta and M.~Pautov.
+\newblock On the submatrices with the best-bounded inverses.
+\newblock arXiv:2604.05944, 2026.
+
+\bibitem{Nesterenko}
+Y.~Nesterenko.
+\newblock Submatrices with the best-bounded inverses: revisiting the hypothesis.
+\newblock arXiv preprint.
+
+\end{thebibliography}
+
+\end{document}

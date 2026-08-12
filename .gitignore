@@ -329,3 +329,27 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+## Python/local environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+## MLCore runtime artifacts
+code/mlcore/downloads/
+code/mlcore/watch/raw/
+code/mlcore/watch/logs/
+code/mlcore/watch/**/*.pid
+code/mlcore/watch/**/watcher_stdout.log
+code/mlcore/watch/**/watcher_start.log
+
+## Generated archives and scratch algebra dumps
+GTZ_OUT*.zip
+code/sage/out/*.sing
+code/sage/out/*_components/
+code/sage/out/screen_known_base_size*_all_p*/
+code/sage/out/screen_known_base_size*_sample*_p*/

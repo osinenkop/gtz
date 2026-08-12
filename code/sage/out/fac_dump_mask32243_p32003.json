@@ -1,0 +1,429 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    2,
+    3
+   ],
+   [
+    0,
+    2,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    0,
+    3,
+    5
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    4
+   ],
+   [
+    1,
+    3,
+    5
+   ]
+  ],
+  "active_size": 12,
+  "row_pairs": [],
+  "n_equalities": 13,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 32243,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "characteristic": 32003,
+ "timeout_seconds": 240,
+ "script": "code/sage/out/fac_dump_mask32243_p32003.sing",
+ "component_dir": "code/sage/out/fac_dump_mask32243_p32003_components",
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 51.81237525586039,
+  "stdout": "//used time: 51.78 sec\nfacstd_components\n40\ncomponent\n1\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n2\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n3\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n4\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n5\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n6\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n7\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n8\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n9\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n10\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n11\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n12\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n13\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n14\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n15\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n16\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n17\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_17_std_basis.txt\ncomponent\n18\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_18_std_basis.txt\ncomponent\n19\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_19_std_basis.txt\ncomponent\n20\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_20_std_basis.txt\ncomponent\n21\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n22\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n23\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n24\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n25\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n26\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n27\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n28\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n29\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n30\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n31\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n32\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n33\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n34\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n35\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n36\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n10\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 1\ncomponent\n37\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_37_std_basis.txt\ncomponent\n38\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_38_std_basis.txt\ncomponent\n39\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_39_std_basis.txt\ncomponent\n40\n// ** redefining G (  ideal G = std(L[k]);) code/sage/out/fac_dump_mask32243_p32003.sing:29\nbasis_size\n9\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 2\n// ** redefining p (c_dump_mask32243_p32003_components/component_\" + string(k) + \"_std_basis.txt\";) code/sage/out/fac_dump_mask32243_p32003.sing:36\nbasis_path\ncode/sage/out/fac_dump_mask32243_p32003_components/component_40_std_basis.txt\ntimer\n52\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "facstd_components": 40,
+   "timer": 52,
+   "components": [
+    {
+     "component": 1,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 2,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 3,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 4,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 5,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 6,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 7,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 8,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 9,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 10,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 11,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 12,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 13,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 14,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 15,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 16,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 17,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_17_std_basis.txt"
+    },
+    {
+     "component": 18,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_18_std_basis.txt"
+    },
+    {
+     "component": 19,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_19_std_basis.txt"
+    },
+    {
+     "component": 20,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_20_std_basis.txt"
+    },
+    {
+     "component": 21,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 22,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 23,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 24,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 25,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 26,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 27,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 28,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 29,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 30,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 31,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 32,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 33,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 34,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 35,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 36,
+     "basis_size": 10,
+     "dimension": 0,
+     "degree": "// dimension (affine) = 0",
+     "degree_value": 1
+    },
+    {
+     "component": 37,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_37_std_basis.txt"
+    },
+    {
+     "component": 38,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_38_std_basis.txt"
+    },
+    {
+     "component": 39,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_39_std_basis.txt"
+    },
+    {
+     "component": 40,
+     "basis_size": 9,
+     "dimension": 1,
+     "degree": "// dimension (proj.)  = 0",
+     "degree_value": 2,
+     "basis_path": "code/sage/out/fac_dump_mask32243_p32003_components/component_40_std_basis.txt"
+    }
+   ]
+  }
+ }
+}

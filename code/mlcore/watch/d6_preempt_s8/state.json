@@ -1,0 +1,330 @@
+{
+  "created_at": "2026-08-11T09:13:33+00:00",
+  "interval_seconds": 300,
+  "jobs": {
+    "gtz-d6pre-s8-p32009-c6-xjcprh": {
+      "artifacts_downloaded": true,
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32009_support6_allcand.json"
+      ],
+      "last_artifact_download": {
+        "finished_at": "2026-08-11T09:53:06+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_get": {
+        "finished_at": "2026-08-11T18:22:26+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_logs": {
+        "finished_at": "2026-08-11T18:22:27+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "log_signal": {
+        "candidate_count": 262,
+        "first_passing_abs_value": "97776.541300550023868483788154816798751479733983534668011368",
+        "first_passing_basis_index": 0,
+        "generator_rank": 79071,
+        "kernel_dimension": 1072,
+        "matrix": "655873 x 80399",
+        "matrix_rank": 79327,
+        "passing_candidate_count": 262,
+        "separator_rank_defect": 63,
+        "wrote": "out/local_separator_s8_79656_omit_active0_D6_S6_32009_support6_allcand.json"
+      },
+      "separator_jsons": [
+        {
+          "candidate_count": 262,
+          "characteristic": 32009,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32009_support6_allcand.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1072,
+          "matrix_rank": 79327,
+          "max_separator_abs_basis_index": 993,
+          "max_separator_abs_value": "266573.41179945919146891783230527812014049712562599346871267",
+          "multiplier_degree": 6,
+          "passing_candidate_count": 262,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 63,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true,
+      "status": {
+        "createTime": "2026-08-11T09:10:52.210349Z",
+        "endTime": "2026-08-11T09:52:04.591339Z",
+        "name": "gtz-d6pre-s8-p32009-c6-xjcprh",
+        "phase": "ENDED",
+        "project": "aida",
+        "state": "SUCCEEDED",
+        "terminationReason": "JobCompleted",
+        "uiLink": "https://mlcore.t-tech.team/projects/aida/jobs/gtz-d6pre-s8-p32009-c6-xjcprh"
+      }
+    },
+    "gtz-d6pre-s8-p32027-c6-a2qh7a": {
+      "artifacts_downloaded": true,
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32027_support6_allcand.json"
+      ],
+      "last_artifact_download": {
+        "finished_at": "2026-08-11T10:19:46+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_get": {
+        "finished_at": "2026-08-11T18:22:28+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_logs": {
+        "finished_at": "2026-08-11T18:22:29+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "log_signal": {
+        "candidate_count": 262,
+        "first_passing_abs_value": "59937.207620143442652497914321718821648345276345920177579120",
+        "first_passing_basis_index": 0,
+        "generator_rank": 79071,
+        "kernel_dimension": 1072,
+        "matrix": "655873 x 80399",
+        "matrix_rank": 79327,
+        "passing_candidate_count": 262,
+        "separator_rank_defect": 63,
+        "wrote": "out/local_separator_s8_79656_omit_active0_D6_S6_32027_support6_allcand.json"
+      },
+      "separator_jsons": [
+        {
+          "candidate_count": 262,
+          "characteristic": 32027,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32027_support6_allcand.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1072,
+          "matrix_rank": 79327,
+          "max_separator_abs_basis_index": 85,
+          "max_separator_abs_value": "335061.70448372233983379453039717406521129323440810435952153",
+          "multiplier_degree": 6,
+          "passing_candidate_count": 262,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 63,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true,
+      "status": {
+        "createTime": "2026-08-11T09:14:08.321685Z",
+        "endTime": "2026-08-11T10:19:13.645723Z",
+        "name": "gtz-d6pre-s8-p32027-c6-a2qh7a",
+        "phase": "ENDED",
+        "project": "aida",
+        "state": "SUCCEEDED",
+        "terminationReason": "JobCompleted",
+        "uiLink": "https://mlcore.t-tech.team/projects/aida/jobs/gtz-d6pre-s8-p32027-c6-a2qh7a"
+      }
+    },
+    "gtz-d6pre-s8-p32029-c6-k3udi2": {
+      "artifacts_downloaded": true,
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32029_support6_allcand.json"
+      ],
+      "last_artifact_download": {
+        "finished_at": "2026-08-11T10:14:32+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_get": {
+        "finished_at": "2026-08-11T18:22:31+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_logs": {
+        "finished_at": "2026-08-11T18:22:31+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "log_signal": {
+        "candidate_count": 262,
+        "first_passing_abs_value": "188852.07081844152620787148704367810573826514792584276095813",
+        "first_passing_basis_index": 0,
+        "generator_rank": 79071,
+        "kernel_dimension": 1072,
+        "matrix": "655873 x 80399",
+        "matrix_rank": 79327,
+        "passing_candidate_count": 262,
+        "separator_rank_defect": 63,
+        "wrote": "out/local_separator_s8_79656_omit_active0_D6_S6_32029_support6_allcand.json"
+      },
+      "separator_jsons": [
+        {
+          "candidate_count": 262,
+          "characteristic": 32029,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32029_support6_allcand.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1072,
+          "matrix_rank": 79327,
+          "max_separator_abs_basis_index": 75,
+          "max_separator_abs_value": "327895.13343823753544397828221745281897762478536019086817632",
+          "multiplier_degree": 6,
+          "passing_candidate_count": 262,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 63,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true,
+      "status": {
+        "createTime": "2026-08-11T09:18:38.348075Z",
+        "endTime": "2026-08-11T10:11:04.755051Z",
+        "name": "gtz-d6pre-s8-p32029-c6-k3udi2",
+        "phase": "ENDED",
+        "project": "aida",
+        "state": "SUCCEEDED",
+        "terminationReason": "JobCompleted",
+        "uiLink": "https://mlcore.t-tech.team/projects/aida/jobs/gtz-d6pre-s8-p32029-c6-k3udi2"
+      }
+    },
+    "gtz-d6pre-s8-p32051-c6-x5vd68": {
+      "artifacts_downloaded": true,
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32051_support6_allcand.json"
+      ],
+      "last_artifact_download": {
+        "finished_at": "2026-08-11T10:40:59+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_get": {
+        "finished_at": "2026-08-11T18:22:33+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_logs": {
+        "finished_at": "2026-08-11T18:22:34+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "log_signal": {
+        "candidate_count": 262,
+        "first_passing_abs_value": "20508.055810314228226846119051718306407830128797971879571119",
+        "first_passing_basis_index": 0,
+        "generator_rank": 79071,
+        "kernel_dimension": 1072,
+        "matrix": "655873 x 80399",
+        "matrix_rank": 79327,
+        "passing_candidate_count": 262,
+        "separator_rank_defect": 63,
+        "wrote": "out/local_separator_s8_79656_omit_active0_D6_S6_32051_support6_allcand.json"
+      },
+      "separator_jsons": [
+        {
+          "candidate_count": 262,
+          "characteristic": 32051,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32051_support6_allcand.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1072,
+          "matrix_rank": 79327,
+          "max_separator_abs_basis_index": 835,
+          "max_separator_abs_value": "420251.52224231559135110700452412759039667548732066145357773",
+          "multiplier_degree": 6,
+          "passing_candidate_count": 262,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 63,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true,
+      "status": {
+        "createTime": "2026-08-11T09:18:47.298202Z",
+        "endTime": "2026-08-11T10:37:09.540208Z",
+        "name": "gtz-d6pre-s8-p32051-c6-x5vd68",
+        "phase": "ENDED",
+        "project": "aida",
+        "state": "SUCCEEDED",
+        "terminationReason": "JobCompleted",
+        "uiLink": "https://mlcore.t-tech.team/projects/aida/jobs/gtz-d6pre-s8-p32051-c6-x5vd68"
+      }
+    },
+    "gtz-d6pre-s8-p32057-c6-a0s5mb": {
+      "artifacts_downloaded": true,
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32057_support6_allcand.json"
+      ],
+      "last_artifact_download": {
+        "finished_at": "2026-08-11T10:19:54+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_get": {
+        "finished_at": "2026-08-11T18:22:36+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "last_logs": {
+        "finished_at": "2026-08-11T18:22:36+00:00",
+        "returncode": 0,
+        "timed_out": false
+      },
+      "log_signal": {
+        "candidate_count": 262,
+        "first_passing_abs_value": "68335.294231274194922874734657430401897019597962642627411005",
+        "first_passing_basis_index": 0,
+        "generator_rank": 79071,
+        "kernel_dimension": 1072,
+        "matrix": "655873 x 80399",
+        "matrix_rank": 79327,
+        "passing_candidate_count": 262,
+        "separator_rank_defect": 63,
+        "wrote": "out/local_separator_s8_79656_omit_active0_D6_S6_32057_support6_allcand.json"
+      },
+      "separator_jsons": [
+        {
+          "candidate_count": 262,
+          "characteristic": 32057,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32057_support6_allcand.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1072,
+          "matrix_rank": 79327,
+          "max_separator_abs_basis_index": 346,
+          "max_separator_abs_value": "344355.64788303101827919285902621653761932073275332404968368",
+          "multiplier_degree": 6,
+          "passing_candidate_count": 262,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 63,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true,
+      "status": {
+        "createTime": "2026-08-11T09:18:57.925337Z",
+        "endTime": "2026-08-11T10:16:26.757948Z",
+        "name": "gtz-d6pre-s8-p32057-c6-a0s5mb",
+        "phase": "ENDED",
+        "project": "aida",
+        "state": "SUCCEEDED",
+        "terminationReason": "JobCompleted",
+        "uiLink": "https://mlcore.t-tech.team/projects/aida/jobs/gtz-d6pre-s8-p32057-c6-a0s5mb"
+      }
+    }
+  },
+  "jobs_watched": [
+    "gtz-d6pre-s8-p32009-c6-xjcprh",
+    "gtz-d6pre-s8-p32027-c6-a2qh7a",
+    "gtz-d6pre-s8-p32029-c6-k3udi2",
+    "gtz-d6pre-s8-p32051-c6-x5vd68",
+    "gtz-d6pre-s8-p32057-c6-a0s5mb"
+  ],
+  "max_hours": 9.0,
+  "poll_count": 107,
+  "project": "aida",
+  "stop_reason": "deadline_reached",
+  "stopped_at": "2026-08-11T18:22:36+00:00",
+  "updated_at": "2026-08-11T18:22:23+00:00",
+  "watch_started_at": "2026-08-11T09:13:33+00:00"
+}

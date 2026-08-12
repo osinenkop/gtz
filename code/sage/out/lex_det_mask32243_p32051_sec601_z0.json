@@ -1,0 +1,202 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    2,
+    3
+   ],
+   [
+    0,
+    2,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    0,
+    3,
+    5
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    4
+   ],
+   [
+    1,
+    3,
+    5
+   ]
+  ],
+  "active_size": 12,
+  "row_pairs": [],
+  "n_equalities": 13,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 32243,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 300,
+ "characteristic": 32051,
+ "linear_sections": 1,
+ "linear_section_mode": "zero-sum-z",
+ "linear_section_seed": 601,
+ "linear_forms": [
+  "(-5)*z0 + (17)*z1 + (-15)*z2 + (-11)*z3 + (12)*z4 + (7)*z5 + (14)*z6 + (-17)*z7 + (-2)*z8"
+ ],
+ "method": "slimgb",
+ "script": "code/sage/out/lex_det_mask32243_p32051_sec601_z0.sing",
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "lex_last_variable": "z0",
+ "lex_variable_order": [
+  "z1",
+  "z2",
+  "z3",
+  "z4",
+  "z5",
+  "z6",
+  "z7",
+  "z8",
+  "u0",
+  "z0"
+ ],
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 16.97026616591029,
+  "stdout": "method\nslimgb\nnvars\n10\nneqs\n13\nlinear_sections\n1\nmax_degree\n7\ncharacteristic\n32051\n//used time: 15.39 sec\ngb_basis_size\n25\ngb_dimension\n0\ngb_vdim\n16\ngb_degree\n// dimension (affine) = 0\n// degree (affine)  = 16\nlex_variable_order\nz1,z2,z3,z4,z5,z6,z7,z8,u0,z0\nlex_basis_size\n10\nlex_vdim\n16\nlex_first_poly\nz0\nlex_last_poly\nz1\nlex_basis_path\ncode/sage/out/lex_det_mask32243_p32051_sec601_z0_lex_basis.txt\ntimer\n15\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "method": "slimgb",
+   "nvars": 10,
+   "neqs": 13,
+   "linear_sections": 1,
+   "max_degree": 7,
+   "characteristic": 32051,
+   "gb_basis_size": 25,
+   "gb_dimension": 0,
+   "gb_vdim": 16,
+   "gb_degree": "// dimension (affine) = 0",
+   "gb_degree_value": 16,
+   "lex_variable_order": "z1,z2,z3,z4,z5,z6,z7,z8,u0,z0",
+   "lex_basis_size": 10,
+   "lex_vdim": 16,
+   "lex_first_poly": "z0",
+   "lex_last_poly": "z1",
+   "lex_basis_path": "code/sage/out/lex_det_mask32243_p32051_sec601_z0_lex_basis.txt",
+   "timer": 15
+  }
+ },
+ "lex_basis": {
+  "exists": true,
+  "path": "code/sage/out/lex_det_mask32243_p32051_sec601_z0_lex_basis.txt",
+  "polynomial_count": 10,
+  "univariate_polynomials": [
+   {
+    "index": 1,
+    "variable": "z0",
+    "polynomial": "z0"
+   },
+   {
+    "index": 2,
+    "variable": "u0",
+    "polynomial": "u0+14245"
+   },
+   {
+    "index": 3,
+    "variable": "z8",
+    "polynomial": "z8^16-4422*z8^14-11731*z8^12+4280*z8^10-6416*z8^8-6433*z8^6+10922*z8^4+12860*z8^2+2647"
+   },
+   {
+    "index": 10,
+    "variable": "z1",
+    "polynomial": "z1"
+   }
+  ]
+ }
+}

@@ -1,0 +1,409 @@
+[
+ {
+  "label": "P(S(e,e,e),e,e,e) w=['1', '1', '1', '5/9', '5/9', '5/9']",
+  "leverages": [
+   "13/18",
+   "13/18",
+   "13/18",
+   "5/18",
+   "5/18",
+   "5/18"
+  ],
+  "core": true,
+  "n_active": 10,
+  "n_singular": 10,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   10,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 1,
+  "strict_multipliers": true,
+  "multipliers": [
+   "3/10",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90"
+  ],
+  "ok": true,
+  "why": "SHARP: rank(L)=9 and all multipliers strictly positive => kappa>0",
+  "graph": "P(S(e,e,e),e,e,e)",
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "5/9",
+   "5/9",
+   "5/9"
+  ]
+ },
+ {
+  "label": "P(S(e,e),S(e,e),e,e) w=['1', '1', '1', '1', '5/8', '5/8']",
+  "leverages": [
+   "11/18",
+   "11/18",
+   "11/18",
+   "11/18",
+   "5/18",
+   "5/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "strict_multipliers": true,
+  "multipliers": [
+   "3/20",
+   "3/20",
+   "3/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "3/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "1/20"
+  ],
+  "ok": true,
+  "why": "SHARP: rank(L)=9 and all multipliers strictly positive => kappa>0",
+  "graph": "P(S(e,e),S(e,e),e,e)",
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "5/8",
+   "5/8"
+  ]
+ },
+ {
+  "label": "P(S(P(S(e,e),e,e),e),e) w=['1', '1', '5/8', '5/8', '1', '1']",
+  "leverages": [
+   "11/18",
+   "11/18",
+   "5/18",
+   "5/18",
+   "11/18",
+   "11/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "kkt_note": "dim_kkt>1 and no strictly-positive witness found among tried combinations; inconclusive, not negative",
+  "strict_multipliers": false,
+  "ok": false,
+  "why": "KKT multipliers not all strictly positive -> sharpness NOT certified",
+  "graph": "P(S(P(S(e,e),e,e),e),e)",
+  "edges": [
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "5/8",
+   "5/8",
+   "1",
+   "1"
+  ]
+ },
+ {
+  "label": "P(S(P(e,e,e),e),S(e,e)) w=['1', '1', '1', '9/5', '9/5', '9/5']",
+  "leverages": [
+   "5/18",
+   "5/18",
+   "5/18",
+   "13/18",
+   "13/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 10,
+  "n_singular": 10,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   10,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 1,
+  "strict_multipliers": true,
+  "multipliers": [
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "3/10"
+  ],
+  "ok": true,
+  "why": "SHARP: rank(L)=9 and all multipliers strictly positive => kappa>0",
+  "graph": "P(S(P(e,e,e),e),S(e,e))",
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "9/5",
+   "9/5",
+   "9/5"
+  ]
+ },
+ {
+  "label": "P(S(P(e,e),P(e,e)),S(e,e)) w=['1', '1', '1', '1', '8/5', '8/5']",
+  "leverages": [
+   "7/18",
+   "7/18",
+   "7/18",
+   "7/18",
+   "13/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "kkt_note": "dim_kkt>1 and no strictly-positive witness found among tried combinations; inconclusive, not negative",
+  "strict_multipliers": false,
+  "ok": false,
+  "why": "KKT multipliers not all strictly positive -> sharpness NOT certified",
+  "graph": "P(S(P(e,e),P(e,e)),S(e,e))",
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "8/5",
+   "8/5"
+  ]
+ },
+ {
+  "label": "P(S(P(e,e),e),S(P(e,e),e)) w=['1', '1', '8/5', '1', '1', '8/5']",
+  "leverages": [
+   "7/18",
+   "7/18",
+   "13/18",
+   "7/18",
+   "7/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "kkt_note": "dim_kkt>1 and no strictly-positive witness found among tried combinations; inconclusive, not negative",
+  "strict_multipliers": false,
+  "ok": false,
+  "why": "KKT multipliers not all strictly positive -> sharpness NOT certified",
+  "graph": "P(S(P(e,e),e),S(P(e,e),e))",
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "weights": [
+   "1",
+   "1",
+   "8/5",
+   "1",
+   "1",
+   "8/5"
+  ]
+ }
+]

@@ -1,0 +1,48 @@
+{
+ "mode": "det_saturated",
+ "variables": [
+  "z0",
+  "z1",
+  "z2",
+  "z3",
+  "z4",
+  "z5",
+  "z6",
+  "z7",
+  "z8"
+ ],
+ "n_variables": 9,
+ "active_indices": [
+  3,
+  10
+ ],
+ "active_triples": [
+  [
+   0,
+   1,
+   5
+  ],
+  [
+   1,
+   2,
+   3
+  ]
+ ],
+ "active_size": 2,
+ "row_pairs": [],
+ "n_equalities": 2,
+ "equality_degrees": [
+  6,
+  6
+ ],
+ "max_equality_degree": 6,
+ "n_nonzero_constraints": 0,
+ "nonzero_degrees": [],
+ "metadata": {
+  "chart": "Y=[I;Z]",
+  "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+  "mask": 1032,
+  "saturated_by": "d^2, where d=det(Y^T Y)"
+ },
+ "dimension": 7
+}

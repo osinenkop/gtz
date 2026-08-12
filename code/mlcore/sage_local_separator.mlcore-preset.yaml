@@ -1,0 +1,92 @@
+job:
+  generate_name: gtz-sage-local-sep
+  flavor: 20cpu-320ram
+  preemption: forbidden
+  time_limit: 12h
+  image: sagemath/sagemath:latest
+  work_dir: /work/gtz/sage
+  input:
+    - type: files
+      src: code/sage
+      dst: /work/gtz/sage
+      mask: "*.py"
+    - type: files
+      src: code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json
+      dst: /work/gtz/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json
+    - type: files
+      src: code/sage/out/refine_overtie_s8_79656_t10_11_15_p1400.json
+      dst: /work/gtz/sage/out/refine_overtie_s8_79656_t10_11_15_p1400.json
+    - type: files
+      src: code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json
+      dst: /work/gtz/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json
+    - type: files
+      src: code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json
+      dst: /work/gtz/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json
+    - type: files
+      src: code/sage/out/local_separator_s7_78612_omit_active1_D6_S6_32003.json
+      dst: /work/gtz/sage/out/local_separator_s7_78612_omit_active1_D6_S6_32003.json
+    - type: files
+      src: code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32003.json
+      dst: /work/gtz/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32003.json
+  output:
+    - type: files
+      name: GTZ_OUT
+      src: /work/gtz/sage/out
+  entrypoint: /bin/bash
+  args:
+    - -lc
+    - |
+      set -euo pipefail
+      sage --version
+      support_args=()
+      support_tag=""
+      if [[ -n "${SUPPORT_FROM:-}" ]]; then
+        support_args+=(--support-from "${SUPPORT_FROM}")
+        support_args+=(--support-candidate-index "${SUPPORT_CANDIDATE_INDEX:-0}")
+        support_tag="_support${SUPPORT_CANDIDATE_INDEX:-0}"
+        if [[ -n "${KNOWN_GENERATOR_RANK:-}" ]]; then
+          support_args+=(--known-generator-rank "${KNOWN_GENERATOR_RANK}")
+        fi
+      fi
+      rank_args=()
+      out_tag="${CHARACTERISTIC:-0}"
+      out_suffix="${OUTPUT_SUFFIX:-}"
+      if [[ "${RANK_ONLY:-0}" == "1" ]]; then
+        rank_args+=(--rank-only)
+        out_tag="${out_tag}_rankonly"
+      fi
+
+      case "${GTZ_CASE:-s7}" in
+        s7)
+          sage -python probe_local_separator_membership.py \
+            --input out/refine_overtie_s7_78612_t2_7_10_19_p1400.json \
+            --rows 0,2,3,4,5,6,7,8,9,10 \
+            --target-row 1 \
+            --degree "${DEGREE:-5}" \
+            --separator-degree "${SEPARATOR_DEGREE:-4}" \
+            --characteristic "${CHARACTERISTIC:-0}" \
+            --term-limit "${TERM_LIMIT:-1200}" \
+            --candidate-limit "${CANDIDATE_LIMIT:-10}" \
+            "${support_args[@]}" \
+            "${rank_args[@]}" \
+            --out "out/local_separator_s7_78612_omit_active1_D${DEGREE:-5}_S${SEPARATOR_DEGREE:-4}_${out_tag}${support_tag}${out_suffix}.json"
+          ;;
+        s8)
+          sage -python probe_local_separator_membership.py \
+            --input out/refine_overtie_s8_79656_t10_11_15_p1400.json \
+            --rows 1,2,3,4,5,6,7,8,9,10 \
+            --target-row 0 \
+            --degree "${DEGREE:-5}" \
+            --separator-degree "${SEPARATOR_DEGREE:-4}" \
+            --characteristic "${CHARACTERISTIC:-0}" \
+            --term-limit "${TERM_LIMIT:-1200}" \
+            --candidate-limit "${CANDIDATE_LIMIT:-10}" \
+            "${support_args[@]}" \
+            "${rank_args[@]}" \
+            --out "out/local_separator_s8_79656_omit_active0_D${DEGREE:-5}_S${SEPARATOR_DEGREE:-4}_${out_tag}${support_tag}${out_suffix}.json"
+          ;;
+        *)
+          echo "unknown GTZ_CASE=${GTZ_CASE:-}" >&2
+          exit 2
+          ;;
+      esac

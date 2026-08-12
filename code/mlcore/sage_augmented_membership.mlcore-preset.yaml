@@ -1,0 +1,69 @@
+job:
+  generate_name: gtz-sage-aug-member
+  flavor: 20cpu-320ram
+  preemption: forbidden
+  time_limit: 12h
+  image: sagemath/sagemath:latest
+  work_dir: /work/gtz/sage
+  input:
+    - type: files
+      src: code/sage
+      dst: /work/gtz/sage
+      mask: "*.py"
+    - type: files
+      src: code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json
+      dst: /work/gtz/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json
+    - type: files
+      src: code/sage/out/refine_overtie_s8_79656_t10_11_15_p1400.json
+      dst: /work/gtz/sage/out/refine_overtie_s8_79656_t10_11_15_p1400.json
+    - type: files
+      src: code/sage/out/reconstruct_s7_78612_D5_S5_p32003_32009_32027_p1400.json
+      dst: /work/gtz/sage/out/reconstruct_s7_78612_D5_S5_p32003_32009_32027_p1400.json
+    - type: files
+      src: code/sage/out/reconstruct_s8_79656_D5_S5_p32003_32009_32027_p1400.json
+      dst: /work/gtz/sage/out/reconstruct_s8_79656_D5_S5_p32003_32009_32027_p1400.json
+  output:
+    - type: files
+      name: GTZ_OUT
+      src: /work/gtz/sage/out
+  entrypoint: /bin/bash
+  args:
+    - -lc
+    - |
+      set -euo pipefail
+      sage --version
+      TARGET_POWER="${TARGET_POWER:-1}"
+      if [ "${TARGET_POWER}" = "1" ]; then
+        TARGET_SUFFIX=""
+      else
+        TARGET_SUFFIX="_pow${TARGET_POWER}"
+      fi
+
+      case "${GTZ_CASE:-s7}" in
+        s7)
+          sage -python probe_bounded_ideal_membership.py \
+            --input out/refine_overtie_s7_78612_t2_7_10_19_p1400.json \
+            --rows 0,2,3,4,5,6,7,8,9,10 \
+            --target-row 1 \
+            --target-power "${TARGET_POWER}" \
+            --degree "${DEGREE:-4}" \
+            --characteristic "${CHARACTERISTIC:-32003}" \
+            --extra-generator-summary out/reconstruct_s7_78612_D5_S5_p32003_32009_32027_p1400.json \
+            --out "out/aug_membership_s7_D5S5_extra_all${TARGET_SUFFIX}_deg${DEGREE:-4}_p${CHARACTERISTIC:-32003}.json"
+          ;;
+        s8)
+          sage -python probe_bounded_ideal_membership.py \
+            --input out/refine_overtie_s8_79656_t10_11_15_p1400.json \
+            --rows 1,2,3,4,5,6,7,8,9,10 \
+            --target-row 0 \
+            --target-power "${TARGET_POWER}" \
+            --degree "${DEGREE:-4}" \
+            --characteristic "${CHARACTERISTIC:-32003}" \
+            --extra-generator-summary out/reconstruct_s8_79656_D5_S5_p32003_32009_32027_p1400.json \
+            --out "out/aug_membership_s8_D5S5_extra_all${TARGET_SUFFIX}_deg${DEGREE:-4}_p${CHARACTERISTIC:-32003}.json"
+          ;;
+        *)
+          echo "unknown GTZ_CASE=${GTZ_CASE:-}" >&2
+          exit 2
+          ;;
+      esac

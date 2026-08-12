@@ -1,0 +1,199 @@
+{
+ "input": "code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json",
+ "active": [
+  0,
+  1,
+  5,
+  8,
+  15,
+  16,
+  17
+ ],
+ "ties": [
+  2,
+  7,
+  10,
+  19
+ ],
+ "selected_rows": [
+  0,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "selected_labels": [
+  "active:0:012",
+  "active:5:024",
+  "active:8:035",
+  "active:15:145",
+  "active:16:234",
+  "active:17:235",
+  "tie:2:014",
+  "tie:7:034",
+  "tie:10:123",
+  "tie:19:345"
+ ],
+ "target_row": 1,
+ "target_label": "active:1:013",
+ "extra_generator_summary": "code/sage/out/reconstruct_s7_78612_D5_S5_p32003_32009_32027_p1400.json",
+ "extra_generator_count": 55,
+ "extra_generator_labels": [
+  "separator_basis:0",
+  "separator_basis:1",
+  "separator_basis:2",
+  "separator_basis:3",
+  "separator_basis:4",
+  "separator_basis:5",
+  "separator_basis:6",
+  "separator_basis:7",
+  "separator_basis:8",
+  "separator_basis:9",
+  "separator_basis:10",
+  "separator_basis:11",
+  "separator_basis:12",
+  "separator_basis:13",
+  "separator_basis:14",
+  "separator_basis:15",
+  "separator_basis:16",
+  "separator_basis:17",
+  "separator_basis:18",
+  "separator_basis:19",
+  "separator_basis:20",
+  "separator_basis:21",
+  "separator_basis:22",
+  "separator_basis:23",
+  "separator_basis:24",
+  "separator_basis:25",
+  "separator_basis:26",
+  "separator_basis:27",
+  "separator_basis:28",
+  "separator_basis:29",
+  "separator_basis:30",
+  "separator_basis:31",
+  "separator_basis:32",
+  "separator_basis:33",
+  "separator_basis:34",
+  "separator_basis:35",
+  "separator_basis:36",
+  "separator_basis:37",
+  "separator_basis:38",
+  "separator_basis:39",
+  "separator_basis:40",
+  "separator_basis:41",
+  "separator_basis:42",
+  "separator_basis:43",
+  "separator_basis:44",
+  "separator_basis:45",
+  "separator_basis:46",
+  "separator_basis:47",
+  "separator_basis:48",
+  "separator_basis:49",
+  "separator_basis:50",
+  "separator_basis:51",
+  "separator_basis:52",
+  "separator_basis:53",
+  "separator_basis:54"
+ ],
+ "precision_bits": 500,
+ "residuals": {
+  "selected_inf": "8.79821672687886148430970065245521897539347989284830079201360805873011988439119491818134883711108385737980043975754054540731541787207633783283718336890e-149",
+  "extra_inf": "7.94283454509897217333514642235540601945244712548804932612339616413135822896427319002482881128083959346787539700333521460382641891229113832131134609692e-150",
+  "augmented_inf": "8.79821672687886148430970065245521897539347989284830079201360805873011988439119491818134883711108385737980043975754054540731541787207633783283718336890e-149",
+  "target": "1.95515927263974699651326681165671532786521775396628906489191290194002664097582109292918863046912974608440009772389789897940342619379474174063048519309e-149",
+  "target_abs": "1.95515927263974699651326681165671532786521775396628906489191290194002664097582109292918863046912974608440009772389789897940342619379474174063048519309e-149"
+ },
+ "jacobian": {
+  "variable_count": 10,
+  "selected_shape": [
+   10,
+   10
+  ],
+  "extra_shape": [
+   55,
+   10
+  ],
+  "augmented_shape": [
+   65,
+   10
+  ],
+  "selected_singular_values": [
+   518.2829279111261,
+   387.8480268870237,
+   284.4900687526987,
+   204.31347421815272,
+   172.2738195531807,
+   121.6486595627816,
+   100.28675833093413,
+   83.43600424846629,
+   54.49606844650984,
+   42.211313572702394
+  ],
+  "extra_singular_values": [
+   46.46808799790539,
+   20.328062203078982,
+   13.474137605329496,
+   6.387149680257202,
+   1.722996262256129,
+   3.836575218933044e-15,
+   2.1564005746349877e-15,
+   1.749415095296498e-15,
+   1.0954008734085903e-15,
+   4.0776101038237316e-150
+  ],
+  "augmented_singular_values": [
+   518.7287763585813,
+   387.9976733961205,
+   287.3826615053884,
+   204.80188891270484,
+   173.04467289195813,
+   121.85296436744233,
+   100.38720030523618,
+   83.50906586517473,
+   54.580717286756986,
+   42.304071998030096
+  ],
+  "target_adjoined_singular_values": [
+   519.061793065504,
+   394.8795301520825,
+   292.27218237495447,
+   251.99690528722252,
+   189.2123384739412,
+   141.28703597654575,
+   121.78911806510047,
+   93.124071346559,
+   75.17444891923792,
+   42.32372412682628
+  ],
+  "rank_thresholds": [
+   1e-08,
+   1e-10,
+   1e-12
+  ],
+  "selected_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  },
+  "extra_ranks": {
+   "1e-08": 5,
+   "1e-10": 5,
+   "1e-12": 5
+  },
+  "augmented_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  },
+  "target_adjoined_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  }
+ }
+}

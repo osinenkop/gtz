@@ -1,0 +1,49 @@
+{
+ "label": "seventh extremal (leverages 5/14, 9/14; out of TTSP family)",
+ "symmetric": true,
+ "idempotent": true,
+ "trace3": true,
+ "leverages": [
+  "5/14",
+  "5/14",
+  "9/14",
+  "5/14",
+  "9/14",
+  "9/14"
+ ],
+ "core": true,
+ "n_active": 13,
+ "n_singular": 7,
+ "n_below": 0,
+ "F_is_1_6": true,
+ "eigs_inside": [],
+ "tangent_valid": true,
+ "L_shape": [
+  13,
+  9
+ ],
+ "rank_L": 9,
+ "dim_kkt": 4,
+ "positive_multiplier": false,
+ "numeric_lp_value": -0.0,
+ "numeric_cone_trivial": true,
+ "L_rationalized": true,
+ "column_factors": [
+  "1",
+  "sqrt(5)",
+  "sqrt(10)",
+  "sqrt(5)",
+  "1",
+  "sqrt(2)",
+  "sqrt(2)",
+  "sqrt(10)",
+  "sqrt(5)"
+ ],
+ "exact_lp_status": "optimal",
+ "exact_lp_value": "0",
+ "rank_L_rationalized": 9,
+ "cone_trivial_exact": true,
+ "ok": true,
+ "verdict": "SHARP",
+ "why": "rank(L)=9 and EXACT rational LP max over {Lz<=0,|z|<=1} is 0 => critical cone {0} => kappa>0"
+}

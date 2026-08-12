@@ -1,0 +1,26 @@
+{
+ "precision_bits": 160,
+ "threshold": "1/6",
+ "known_smoke": null,
+ "random_smoke": null,
+ "chart_bnb": {
+  "charts": 20,
+  "max_boxes": 10000,
+  "min_radius": 0.125,
+  "priority": "center-high",
+  "domain_filter": false,
+  "bound_mode": "hybrid",
+  "processed": 10000,
+  "certified": 4738,
+  "split": 5262,
+  "unresolved": 0,
+  "inverse_failures": 167,
+  "domain_outside": 0,
+  "domain_unknown": 0,
+  "best_lower": 0.25000070610260267,
+  "best_center_F": 1.0,
+  "smallest_unresolved_radius": null,
+  "unresolved_examples": [],
+  "queue_remaining": 544
+ }
+}

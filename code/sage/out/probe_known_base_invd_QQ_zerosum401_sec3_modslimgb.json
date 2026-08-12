@@ -1,0 +1,143 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   10,
+   11,
+   12
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    1,
+    5
+   ],
+   [
+    0,
+    2,
+    3
+   ],
+   [
+    0,
+    2,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    2,
+    5
+   ]
+  ],
+  "active_size": 10,
+  "row_pairs": [],
+  "n_equalities": 11,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 7295,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 300,
+ "characteristic": 0,
+ "linear_sections": 3,
+ "linear_section_mode": "zero-sum-z",
+ "linear_section_seed": 401,
+ "linear_forms": [
+  "(14)*z0 + (-11)*z1 + (10)*z2 + (8)*z4 + (13)*z5 + (3)*z6 + (-6)*z7 + (-31)*z8",
+  "(2)*z0 + (11)*z1 + (-6)*z2 + (-10)*z3 + (-13)*z4 + (-1)*z5 + (-11)*z6 + (16)*z7 + (12)*z8",
+  "(-17)*z0 + (14)*z1 + (-13)*z2 + (2)*z3 + (-17)*z4 + (-11)*z5 + (-7)*z6 + (1)*z7 + (48)*z8"
+ ],
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "modslimgb": {
+   "script": "code/sage/out/probe_known_base_invd_QQ_zerosum401_sec3_modslimgb_modslimgb.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 62.09168958594091,
+   "stdout": "method\nmodslimgb\nnvars\n10\nneqs\n11\nlinear_sections\n3\nmax_degree\n7\ncharacteristic\n0\n//used time: 41.15 sec\n//used time: 41.16 sec\n//used time: 41.24 sec\n//used time: 41.24 sec\n//used time: 41.40 sec\n//used time: 41.40 sec\n//used time: 41.28 sec\n//used time: 41.28 sec\n//used time: 42.69 sec\n//used time: 42.69 sec\n//used time: 42.75 sec\n//used time: 42.75 sec\n//used time: 42.59 sec\n//used time: 42.60 sec\n//used time: 43.09 sec\n//used time: 43.09 sec\n//used time: 44.00 sec\n//used time: 44.00 sec\n//used time: 43.45 sec\n//used time: 43.46 sec\n//used time: 44.13 sec\n//used time: 44.13 sec\n//used time: 44.58 sec\n//used time: 44.59 sec\n//used time: 45.71 sec\n//used time: 45.71 sec\n//used time: 45.94 sec\n//used time: 45.94 sec\n//used time: 46.99 sec\n//used time: 46.99 sec\n//used time: 46.98 sec\n//used time: 46.99 sec\n//used time: 48.00 sec\n//used time: 48.00 sec\n//used time: 47.76 sec\n//used time: 47.76 sec\n//used time: 48.84 sec\n//used time: 48.84 sec\n//used time: 842.64 sec\n//used time: 11.53 sec\nbasis_size\n32\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 18\ntimer\n854\n",
+   "stderr": "",
+   "parsed": {
+    "method": "modslimgb",
+    "nvars": 10,
+    "neqs": 11,
+    "linear_sections": 3,
+    "max_degree": 7,
+    "characteristic": 0,
+    "basis_size": 32,
+    "dimension": 0,
+    "degree": "// dimension (affine) = 0",
+    "degree_value": 18,
+    "timer": 854
+   }
+  }
+ }
+}

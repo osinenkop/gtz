@@ -1,0 +1,561 @@
+{
+ "sizes": [
+  8
+ ],
+ "starts": 30,
+ "seed": 20260804,
+ "classification": {
+  "psd": 0,
+  "inactive": 22,
+  "both": 0,
+  "neither": 0,
+  "off": 10
+ },
+ "rows": [
+  {
+   "size": 8,
+   "canon": 2028,
+   "on_locus": 0,
+   "best_eq_residual": 0.01956834515475972
+  },
+  {
+   "size": 8,
+   "canon": 4041,
+   "on_locus": 0,
+   "best_eq_residual": 0.0010283214357860939
+  },
+  {
+   "size": 8,
+   "canon": 4042,
+   "on_locus": 0,
+   "best_eq_residual": 0.00010398307931457398
+  },
+  {
+   "size": 8,
+   "canon": 8067,
+   "on_locus": 0,
+   "best_eq_residual": 0.001814297085642184
+  },
+  {
+   "size": 8,
+   "canon": 8082,
+   "on_locus": 0,
+   "best_eq_residual": 0.0017211978933608266
+  },
+  {
+   "size": 8,
+   "canon": 8084,
+   "on_locus": 0,
+   "best_eq_residual": 0.001658108800377232
+  },
+  {
+   "size": 8,
+   "canon": 12120,
+   "on_locus": 0,
+   "best_eq_residual": 0.001814297085642182
+  },
+  {
+   "size": 8,
+   "canon": 13107,
+   "on_locus": 20,
+   "best_eq_residual": 1.0014835710813626e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0001997452362336256,
+   "inactive_excess": 0.05191882907163481,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    9,
+    14,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 38445437942686.57,
+   "F": 0.21858549573830147
+  },
+  {
+   "size": 8,
+   "canon": 13110,
+   "on_locus": 16,
+   "best_eq_residual": 1.232595164407831e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.00010695144958293312,
+   "inactive_excess": 0.06564380000142367,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    9,
+    12,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 4694262474684.5,
+   "F": 0.23231046666809033
+  },
+  {
+   "size": 8,
+   "canon": 13169,
+   "on_locus": 9,
+   "best_eq_residual": 5.3926038442842604e-33,
+   "kind": "inactive",
+   "worst_active_minor": 0.003434188684681617,
+   "inactive_excess": 0.06318191509807625,
+   "actual_active": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    12,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 122964919568.31357,
+   "F": 0.2298485817647429
+  },
+  {
+   "size": 8,
+   "canon": 13170,
+   "on_locus": 22,
+   "best_eq_residual": 1.1555579666323415e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.003718067283991748,
+   "inactive_excess": 0.09031289070818058,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8,
+    12,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 56743818072894.086,
+   "F": 0.25697955737484723
+  },
+  {
+   "size": 8,
+   "canon": 14115,
+   "on_locus": 17,
+   "best_eq_residual": 3.0814879110195774e-33,
+   "kind": "inactive",
+   "worst_active_minor": 0.0015897793973234395,
+   "inactive_excess": 0.1229901076751296,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    14,
+    16,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 33230093077609.2,
+   "F": 0.28965677434179626
+  },
+  {
+   "size": 8,
+   "canon": 14117,
+   "on_locus": 14,
+   "best_eq_residual": 1.232595164407831e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0010567642350631432,
+   "inactive_excess": 0.046588642214290266,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    12,
+    16,
+    17
+   ],
+   "actual_size": 8,
+   "gap_ratio": 137526478109239.6,
+   "F": 0.21325530888095692
+  },
+  {
+   "size": 8,
+   "canon": 14129,
+   "on_locus": 17,
+   "best_eq_residual": 1.3096323621833204e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0033851469738923824,
+   "inactive_excess": 0.09489978036164529,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    14,
+    15,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 21592350994973.5,
+   "F": 0.26156644702831194
+  },
+  {
+   "size": 8,
+   "canon": 14132,
+   "on_locus": 20,
+   "best_eq_residual": 1.0785207688568521e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0008000689136346426,
+   "inactive_excess": 0.07259232800025411,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    15,
+    16,
+    18
+   ],
+   "actual_size": 8,
+   "gap_ratio": 31436487238515.055,
+   "F": 0.23925899466692077
+  },
+  {
+   "size": 8,
+   "canon": 14177,
+   "on_locus": 12,
+   "best_eq_residual": 8.474091755303838e-33,
+   "kind": "inactive",
+   "worst_active_minor": 3.181819965718645e-05,
+   "inactive_excess": 0.07371970802224645,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    11,
+    15,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 173933707699068.16,
+   "F": 0.2403863746889131
+  },
+  {
+   "size": 8,
+   "canon": 14178,
+   "on_locus": 17,
+   "best_eq_residual": 8.474091755303838e-33,
+   "kind": "inactive",
+   "worst_active_minor": 8.083571476502247e-05,
+   "inactive_excess": 0.07998915862698402,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    12,
+    16,
+    18,
+    19
+   ],
+   "actual_size": 9,
+   "gap_ratio": 90529796835394.0,
+   "F": 0.24665582529365068
+  },
+  {
+   "size": 8,
+   "canon": 14180,
+   "on_locus": 9,
+   "best_eq_residual": 1.3866695599588098e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.00010102049127123205,
+   "inactive_excess": 0.09850635652404863,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    14,
+    18,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 210738602993099.25,
+   "F": 0.2651730231907153
+  },
+  {
+   "size": 8,
+   "canon": 14184,
+   "on_locus": 0,
+   "best_eq_residual": 0.0001134193084983628
+  },
+  {
+   "size": 8,
+   "canon": 77640,
+   "on_locus": 0,
+   "best_eq_residual": 0.0032708057247620233
+  },
+  {
+   "size": 8,
+   "canon": 78599,
+   "on_locus": 22,
+   "best_eq_residual": 6.162975822039155e-33,
+   "kind": "inactive",
+   "worst_active_minor": 0.0012001721617376294,
+   "inactive_excess": 0.08021193115057049,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    12,
+    14,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 237149261751499.75,
+   "F": 0.24687859781723714
+  },
+  {
+   "size": 8,
+   "canon": 78603,
+   "on_locus": 9,
+   "best_eq_residual": 1.3096323621833204e-32,
+   "kind": "inactive",
+   "worst_active_minor": 1.968049724115097e-05,
+   "inactive_excess": 0.059027620635165645,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    11,
+    14,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 1268948978939.6,
+   "F": 0.2256942873018323
+  },
+  {
+   "size": 8,
+   "canon": 78613,
+   "on_locus": 16,
+   "best_eq_residual": 7.703719777548943e-33,
+   "kind": "inactive",
+   "worst_active_minor": 1.6050738171508272e-06,
+   "inactive_excess": 0.054470657464538025,
+   "actual_active": [
+    0,
+    1,
+    5,
+    8,
+    9,
+    12,
+    13,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 26272544788.25,
+   "F": 0.22113732413120468
+  },
+  {
+   "size": 8,
+   "canon": 78614,
+   "on_locus": 16,
+   "best_eq_residual": 1.4637067577342992e-32,
+   "kind": "inactive",
+   "worst_active_minor": 9.60950689514957e-05,
+   "inactive_excess": 0.07652057011880009,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    12,
+    15,
+    16
+   ],
+   "actual_size": 8,
+   "gap_ratio": 14559131986637.143,
+   "F": 0.24318723678546675
+  },
+  {
+   "size": 8,
+   "canon": 78617,
+   "on_locus": 16,
+   "best_eq_residual": 7.703719777548943e-33,
+   "kind": "inactive",
+   "worst_active_minor": 0.00020188570830520177,
+   "inactive_excess": 0.058125428523869455,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    12,
+    16,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 611760073427.8,
+   "F": 0.2247920951905361
+  },
+  {
+   "size": 8,
+   "canon": 78620,
+   "on_locus": 18,
+   "best_eq_residual": 5.3926038442842604e-33,
+   "kind": "inactive",
+   "worst_active_minor": 0.00014994279168097075,
+   "inactive_excess": 0.07434488741269096,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    12,
+    16,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 6383908878.086922,
+   "F": 0.24101155407935762
+  },
+  {
+   "size": 8,
+   "canon": 78648,
+   "on_locus": 13,
+   "best_eq_residual": 1.4637067577342992e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0004902290256777304,
+   "inactive_excess": 0.07578863943653613,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    15,
+    16,
+    17
+   ],
+   "actual_size": 8,
+   "gap_ratio": 13996869066838.834,
+   "F": 0.2424553061032028
+  },
+  {
+   "size": 8,
+   "canon": 78665,
+   "on_locus": 0,
+   "best_eq_residual": 0.0016354028623810153
+  },
+  {
+   "size": 8,
+   "canon": 78729,
+   "on_locus": 11,
+   "best_eq_residual": 1.1555579666323415e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.018873330986630778,
+   "inactive_excess": 0.06476457153818635,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    15,
+    16,
+    17
+   ],
+   "actual_size": 8,
+   "gap_ratio": 28953481001745.8,
+   "F": 0.231431238204853
+  },
+  {
+   "size": 8,
+   "canon": 78740,
+   "on_locus": 6,
+   "best_eq_residual": 1.1555579666323415e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.000136742455158798,
+   "inactive_excess": 0.05743884391675674,
+   "actual_active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    11,
+    12,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 919152163666.0,
+   "F": 0.2241055105834234
+  },
+  {
+   "size": 8,
+   "canon": 79656,
+   "on_locus": 12,
+   "best_eq_residual": 1.617781153285278e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.006055441659983598,
+   "inactive_excess": 0.055392517057566454,
+   "actual_active": [
+    0,
+    1,
+    2,
+    6,
+    14,
+    16,
+    18,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 13280702040564.6,
+   "F": 0.2220591837242331
+  },
+  {
+   "size": 8,
+   "canon": 88770,
+   "on_locus": 23,
+   "best_eq_residual": 1.3096323621833204e-32,
+   "kind": "inactive",
+   "worst_active_minor": 0.0005348902234824621,
+   "inactive_excess": 0.058144312804056936,
+   "actual_active": [
+    0,
+    1,
+    5,
+    8,
+    12,
+    15,
+    16,
+    19
+   ],
+   "actual_size": 8,
+   "gap_ratio": 184549730709983.3,
+   "F": 0.2248109794707236
+  }
+ ]
+}

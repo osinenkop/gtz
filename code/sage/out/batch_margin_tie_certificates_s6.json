@@ -1,0 +1,667 @@
+{
+ "inputs_glob": "verify/out/v30_margin_*.json",
+ "sizes": [
+  6
+ ],
+ "canons": [],
+ "results": [
+  {
+   "size": 6,
+   "canon": 78593,
+   "file": "verify/out/v30_margin_6_78593.json",
+   "active": [
+    0,
+    1,
+    9,
+    15,
+    16,
+    17
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    5,
+    7,
+    12,
+    14,
+    18
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 4,
+   "subsets": [
+    {
+     "ties": [
+      5,
+      7,
+      12,
+      14
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ],
+      [
+       1,
+       3,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      18
+     ],
+     "nonstrict_outside_triples": [
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s6_78593_t5_7_12_14_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s6_78593_t5_7_12_14.json",
+     "refine_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE ROOT REFINEMENT\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 12, 14]\nsteps:  30\nresidual_inf: 2.08916494223805400529081601734318071806295999983041650099751387737452217652389546151982009788832235633382014061883322269005864325882464296339202666377e7\nq:      3.03995464721740082936207727471\nmargin: 0.339992441202900119723295802032\ncond(J) float: 5.783e+17\nno low-height q algdep candidate accepted\nwrote code/sage/out/refine_tie_s6_78593_t5_7_12_14_p500.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_6_78593.json",
+       "--size",
+       "6",
+       "--canon",
+       "78593",
+       "--tie-indices",
+       "5,7,12,14",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s6_78593_t5_7_12_14_p500.json"
+      ]
+     },
+     "certify_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE KRAWCZYK CERTIFICATE\ninput:  code/sage/out/refine_tie_s6_78593_t5_7_12_14_p500.json\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 12, 14]\nnonstrict outside: [18]\nCERTIFIED: no\nattempts: 11\nwrote code/sage/out/krawczyk_tie_s6_78593_t5_7_12_14.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s6_78593_t5_7_12_14_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s6_78593_t5_7_12_14.json",
+       "--nonstrict-outside-indices",
+       "18"
+      ]
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      5,
+      7,
+      12,
+      18
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      14
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       3,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s6_78593_t5_7_12_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s6_78593_t5_7_12_18.json",
+     "refine_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE ROOT REFINEMENT\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 12, 18]\nsteps:  30\nresidual_inf: 2.06095858928528065559329116391943445464130106315515778666606446777065787742813483315278058737316110323755981045046575289420947868586230253884191349239e-22\nq:      1.18069583676657940962684278929\nmargin: 0.0301159727944298842572390384476\ncond(J) float: 1.768e+14\nno low-height q algdep candidate accepted\nwrote code/sage/out/refine_tie_s6_78593_t5_7_12_18_p500.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_6_78593.json",
+       "--size",
+       "6",
+       "--canon",
+       "78593",
+       "--tie-indices",
+       "5,7,12,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s6_78593_t5_7_12_18_p500.json"
+      ]
+     },
+     "certify_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE KRAWCZYK CERTIFICATE\ninput:  code/sage/out/refine_tie_s6_78593_t5_7_12_18_p500.json\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 12, 18]\nnonstrict outside: [14]\nCERTIFIED: no\nattempts: 11\nwrote code/sage/out/krawczyk_tie_s6_78593_t5_7_12_18.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s6_78593_t5_7_12_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s6_78593_t5_7_12_18.json",
+       "--nonstrict-outside-indices",
+       "14"
+      ]
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      5,
+      7,
+      14,
+      18
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      12
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       2,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s6_78593_t5_7_14_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s6_78593_t5_7_14_18.json",
+     "refine_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE ROOT REFINEMENT\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 14, 18]\nsteps:  30\nresidual_inf: 2.06095858932082413379941891999462937906045001726838382886645928171255168117209607073409735150942423450524866200187311626895197196658696532536439349701e-22\nq:      1.18069583676657940962684278929\nmargin: 0.0301159727944298842572390384476\ncond(J) float: 1.929e+14\nno low-height q algdep candidate accepted\nwrote code/sage/out/refine_tie_s6_78593_t5_7_14_18_p500.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_6_78593.json",
+       "--size",
+       "6",
+       "--canon",
+       "78593",
+       "--tie-indices",
+       "5,7,14,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s6_78593_t5_7_14_18_p500.json"
+      ]
+     },
+     "certify_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE KRAWCZYK CERTIFICATE\ninput:  code/sage/out/refine_tie_s6_78593_t5_7_14_18_p500.json\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 7, 14, 18]\nnonstrict outside: [12]\nCERTIFIED: no\nattempts: 11\nwrote code/sage/out/krawczyk_tie_s6_78593_t5_7_14_18.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s6_78593_t5_7_14_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s6_78593_t5_7_14_18.json",
+       "--nonstrict-outside-indices",
+       "12"
+      ]
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      5,
+      12,
+      14,
+      18
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ],
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      7
+     ],
+     "nonstrict_outside_triples": [
+      [
+       0,
+       3,
+       4
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s6_78593_t5_12_14_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s6_78593_t5_12_14_18.json",
+     "refine_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE ROOT REFINEMENT\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 12, 14, 18]\nsteps:  30\nresidual_inf: 2.06095858900227258725330853160559462168410754452577814977075372909393657246023880318163674664212044274727041119314713217418446511753366788525159165656e-22\nq:      1.18069583676657940962684278929\nmargin: 0.0301159727944298842572390384476\ncond(J) float: 1.762e+14\nno low-height q algdep candidate accepted\nwrote code/sage/out/refine_tie_s6_78593_t5_12_14_18_p500.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_6_78593.json",
+       "--size",
+       "6",
+       "--canon",
+       "78593",
+       "--tie-indices",
+       "5,12,14,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s6_78593_t5_12_14_18_p500.json"
+      ]
+     },
+     "certify_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE KRAWCZYK CERTIFICATE\ninput:  code/sage/out/refine_tie_s6_78593_t5_12_14_18_p500.json\nactive: [0, 1, 9, 15, 16, 17]\nties:   [5, 12, 14, 18]\nnonstrict outside: [7]\nCERTIFIED: no\nattempts: 11\nwrote code/sage/out/krawczyk_tie_s6_78593_t5_12_14_18.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s6_78593_t5_12_14_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s6_78593_t5_12_14_18.json",
+       "--nonstrict-outside-indices",
+       "7"
+      ]
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      7,
+      12,
+      14,
+      18
+     ],
+     "tie_triples": [
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ],
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      5
+     ],
+     "nonstrict_outside_triples": [
+      [
+       0,
+       2,
+       4
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s6_78593_t7_12_14_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s6_78593_t7_12_14_18.json",
+     "refine_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE ROOT REFINEMENT\nactive: [0, 1, 9, 15, 16, 17]\nties:   [7, 12, 14, 18]\nsteps:  30\nresidual_inf: 2.06095858896668740791006669697215716237059270725292941392368956959320271272875625988403184622276522386103456930356579305498160073577237142374958162681e-22\nq:      1.18069583676657940962684278929\nmargin: 0.0301159727944298842572390384476\ncond(J) float: 1.938e+14\nno low-height q algdep candidate accepted\nwrote code/sage/out/refine_tie_s6_78593_t7_12_14_18_p500.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_6_78593.json",
+       "--size",
+       "6",
+       "--canon",
+       "78593",
+       "--tie-indices",
+       "7,12,14,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s6_78593_t7_12_14_18_p500.json"
+      ]
+     },
+     "certify_result": {
+      "returncode": 0,
+      "stdout": "==============================================================================\nMARGIN TIE KRAWCZYK CERTIFICATE\ninput:  code/sage/out/refine_tie_s6_78593_t7_12_14_18_p500.json\nactive: [0, 1, 9, 15, 16, 17]\nties:   [7, 12, 14, 18]\nnonstrict outside: [5]\nCERTIFIED: no\nattempts: 11\nwrote code/sage/out/krawczyk_tie_s6_78593_t7_12_14_18.json\n==============================================================================\n",
+      "stderr": "",
+      "timeout": false,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s6_78593_t7_12_14_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s6_78593_t7_12_14_18.json",
+       "--nonstrict-outside-indices",
+       "5"
+      ]
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    }
+   ],
+   "any_certified": false
+  }
+ ]
+}

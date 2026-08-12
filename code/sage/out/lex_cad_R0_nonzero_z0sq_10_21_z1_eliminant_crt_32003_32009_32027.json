@@ -1,0 +1,78 @@
+{
+ "variable": "z1",
+ "input_count": 3,
+ "primes": [
+  32003,
+  32009,
+  32027
+ ],
+ "modulus": 32807947232729,
+ "degree": 8,
+ "integer_coefficients_low_to_high": [
+  -94035341024,
+  0,
+  9582061474471,
+  0,
+  -7679327923698,
+  0,
+  5133216233691,
+  0,
+  1
+ ],
+ "integer_lift_polynomial": "z1^8 + 5133216233691*z1^6 - 7679327923698*z1^4 + 9582061474471*z1^2 - 94035341024",
+ "integer_lift_factorization": [
+  {
+   "factor": "z1^8 + 5133216233691*z1^6 - 7679327923698*z1^4 + 9582061474471*z1^2 - 94035341024",
+   "degree": 8,
+   "multiplicity": 1
+  }
+ ],
+ "rational_reconstruction_success": true,
+ "rational_reconstruction_failed_exponents": [],
+ "rational_coefficients_low_to_high": [
+  "-1711250/1361367",
+  "0",
+  "1749875/453789",
+  "0",
+  "-5200/2401",
+  "0",
+  "-190/147",
+  "0",
+  "1"
+ ],
+ "rational_lift_polynomial": "z1^8 - 190/147*z1^6 - 5200/2401*z1^4 + 1749875/453789*z1^2 - 1711250/1361367",
+ "rational_lift_factorization": [
+  {
+   "factor": "z1^2 - 10/21",
+   "degree": 2,
+   "multiplicity": 1
+  },
+  {
+   "factor": "z1^2 + 5/3",
+   "degree": 2,
+   "multiplicity": 1
+  },
+  {
+   "factor": "z1^4 - 365/147*z1^2 + 34225/21609",
+   "degree": 4,
+   "multiplicity": 1
+  }
+ ],
+ "inputs": [
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32003_z0sq_10_21_z1.json",
+   "prime": 32003,
+   "polynomial": "z1^8-219*z1^6+9808*z1^4+8418*z1^2+1963"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32009_z0sq_10_21_z1.json",
+   "prime": 32009,
+   "polynomial": "z1^8-5445*z1^6-16000*z1^4+13428*z1^2-5022"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32027_z0sq_10_21_z1.json",
+   "prime": 32027,
+   "polynomial": "z1^8-2180*z1^6-1176*z1^4+1957*z1^2-1595"
+  }
+ ]
+}

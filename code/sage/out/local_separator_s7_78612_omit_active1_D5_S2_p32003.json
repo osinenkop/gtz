@@ -1,0 +1,59 @@
+{
+ "input": "code/sage/out/refine_overtie_s7_78612_t2_7_10_19_p1400.json",
+ "active": [
+  0,
+  1,
+  5,
+  8,
+  15,
+  16,
+  17
+ ],
+ "ties": [
+  2,
+  7,
+  10,
+  19
+ ],
+ "selected_rows": [
+  0,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "selected_labels": [
+  "active:0:012",
+  "active:5:024",
+  "active:8:035",
+  "active:15:145",
+  "active:16:234",
+  "active:17:235",
+  "tie:2:014",
+  "tie:7:034",
+  "tie:10:123",
+  "tie:19:345"
+ ],
+ "target_row": 1,
+ "target_label": "active:1:013",
+ "target_power": 1,
+ "multiplier_degree": 5,
+ "separator_degree": 2,
+ "characteristic": 32003,
+ "generator_count": 10,
+ "multiplier_monomial_count": 3003,
+ "separator_monomial_count": 66,
+ "unknown_count": 30096,
+ "monomial_equation_count": 306649,
+ "matrix_rank": 29986,
+ "kernel_dimension": 110,
+ "candidate_count": 0,
+ "passing_candidate_count": 0,
+ "passing_candidates": [],
+ "all_candidate_prefix": []
+}

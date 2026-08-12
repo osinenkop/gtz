@@ -1,0 +1,224 @@
+{
+ "input": "code/sage/out/refine_overtie_s8_79656_t10_11_15_p1400.json",
+ "active": [
+  0,
+  1,
+  2,
+  6,
+  14,
+  16,
+  18,
+  19
+ ],
+ "ties": [
+  10,
+  11,
+  15
+ ],
+ "selected_rows": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "selected_labels": [
+  "active:1:013",
+  "active:2:014",
+  "active:6:025",
+  "active:14:135",
+  "active:16:234",
+  "active:18:245",
+  "active:19:345",
+  "tie:10:123",
+  "tie:11:124",
+  "tie:15:145"
+ ],
+ "target_row": 0,
+ "target_label": "active:0:012",
+ "extra_generator_summary": "code/sage/out/reconstruct_s8_79656_D5_S5_p32003_32009_32027_p1400.json",
+ "extra_generator_count": 66,
+ "extra_generator_labels": [
+  "separator_basis:0",
+  "separator_basis:1",
+  "separator_basis:2",
+  "separator_basis:3",
+  "separator_basis:4",
+  "separator_basis:5",
+  "separator_basis:6",
+  "separator_basis:7",
+  "separator_basis:8",
+  "separator_basis:9",
+  "separator_basis:10",
+  "separator_basis:11",
+  "separator_basis:12",
+  "separator_basis:13",
+  "separator_basis:14",
+  "separator_basis:15",
+  "separator_basis:16",
+  "separator_basis:17",
+  "separator_basis:18",
+  "separator_basis:19",
+  "separator_basis:20",
+  "separator_basis:21",
+  "separator_basis:22",
+  "separator_basis:23",
+  "separator_basis:24",
+  "separator_basis:25",
+  "separator_basis:26",
+  "separator_basis:27",
+  "separator_basis:28",
+  "separator_basis:29",
+  "separator_basis:30",
+  "separator_basis:31",
+  "separator_basis:32",
+  "separator_basis:33",
+  "separator_basis:34",
+  "separator_basis:35",
+  "separator_basis:36",
+  "separator_basis:37",
+  "separator_basis:38",
+  "separator_basis:39",
+  "separator_basis:40",
+  "separator_basis:41",
+  "separator_basis:42",
+  "separator_basis:43",
+  "separator_basis:44",
+  "separator_basis:45",
+  "separator_basis:46",
+  "separator_basis:47",
+  "separator_basis:48",
+  "separator_basis:49",
+  "separator_basis:50",
+  "separator_basis:51",
+  "separator_basis:52",
+  "separator_basis:53",
+  "separator_basis:54",
+  "separator_basis:55",
+  "separator_basis:56",
+  "separator_basis:57",
+  "separator_basis:58",
+  "separator_basis:59",
+  "separator_basis:60",
+  "separator_basis:61",
+  "separator_basis:62",
+  "separator_basis:63",
+  "separator_basis:64",
+  "separator_basis:65"
+ ],
+ "precision_bits": 500,
+ "residuals": {
+  "selected_inf": "1.17309556358384819790796008699402919671913065237977343893514774116401598458549265575751317828147784765064005863433873938764205571627684504437829111585e-148",
+  "extra_inf": "1.77186309082977071559014804806389826587785358953194946505829606738314914338433786546707719636264883238898758856228247095008435498812648470244637720624e-149",
+  "augmented_inf": "1.17309556358384819790796008699402919671913065237977343893514774116401598458549265575751317828147784765064005863433873938764205571627684504437829111585e-148",
+  "target": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "target_abs": "0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "jacobian": {
+  "variable_count": 10,
+  "selected_shape": [
+   10,
+   10
+  ],
+  "extra_shape": [
+   66,
+   10
+  ],
+  "augmented_shape": [
+   76,
+   10
+  ],
+  "selected_singular_values": [
+   531.8344808405758,
+   429.88882070490826,
+   293.8074776651107,
+   244.51259122264233,
+   179.20882165399817,
+   151.60778114232693,
+   93.52740606316839,
+   65.05677500336256,
+   12.857232590325973,
+   9.777200129810943
+  ],
+  "extra_singular_values": [
+   166.09511725043183,
+   32.92729234550067,
+   13.824513484712094,
+   11.76527528668106,
+   5.5970184242734655,
+   0.37508634247402817,
+   1.1363238219956271e-14,
+   3.3562652938767584e-15,
+   2.0296660361628343e-15,
+   1.0008772608246579e-149
+  ],
+  "augmented_singular_values": [
+   533.0113544407817,
+   453.2497118288674,
+   302.4461146774935,
+   246.03158909069518,
+   180.35469320901967,
+   151.82185707938459,
+   97.39003565613095,
+   65.31054000436156,
+   13.057925239048975,
+   9.780123392570331
+  ],
+  "target_adjoined_singular_values": [
+   533.0121759176033,
+   453.2529464414372,
+   302.47241543414657,
+   246.48482307841698,
+   180.85085361633224,
+   152.08398327717555,
+   105.67616075360488,
+   74.76659608331627,
+   63.770782745185564,
+   9.788354576459996
+  ],
+  "rank_thresholds": [
+   1e-08,
+   1e-10,
+   1e-12
+  ],
+  "selected_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  },
+  "extra_ranks": {
+   "1e-08": 6,
+   "1e-10": 6,
+   "1e-12": 6
+  },
+  "augmented_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  },
+  "target_adjoined_ranks": {
+   "1e-08": 10,
+   "1e-10": 10,
+   "1e-12": 10
+  }
+ },
+ "singular": {
+  "script": "code/sage/out/local_component_s8_augD5S5_slimgb_p32003.sing",
+  "timed_out": true,
+  "exit_code": null,
+  "elapsed_seconds": 180.09472854598425,
+  "stdout": "method\nslimgb\nselected_generators\n10\nextra_generators\n66\ncharacteristic\n32003\n",
+  "stderr": "",
+  "parsed": {
+   "method": "slimgb",
+   "selected_generators": 10,
+   "extra_generators": 66,
+   "characteristic": 32003
+  }
+ }
+}

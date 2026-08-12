@@ -1,0 +1,22 @@
+job:
+  generate_name: gtz63-kkt
+  flavor: 20cpu-320ram
+  time_limit: 4h
+  image: docker-proxy.artifactory.tcsbank.ru/python:3.12-slim
+  work_dir: /work
+  input:
+    - type: files
+      src: ./
+      dst: /work
+      mask: "*.py"
+  output:
+    - type: files
+      name: v18_out
+      src: /work/verify/out
+  entrypoint: /bin/sh
+  args:
+    - -c
+    - |
+      pip install -q numpy scipy && \
+      mkdir -p verify/out verify/data && \
+      python -u /work/v18_kkt_screen.py --mode counterexample --size-min 10 --size-max 13 --starts 4 --max-nfev 3500 --jobs 19

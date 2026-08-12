@@ -1,0 +1,368 @@
+{
+ "inputs": [
+  "verify/out/v18_kkt_equality_1_4.json",
+  "verify/out/v18_kkt_equality_5_6.json",
+  "verify/out/v18_kkt_equality_7_8.json",
+  "verify/out/v18_kkt_equality_9_9.json",
+  "verify/out/v18_kkt_equality_10_13.json",
+  "verify/out/v18_kkt_equality_14_20.json"
+ ],
+ "loss_tol": 1e-05,
+ "level_tol": 1e-06,
+ "active_tol": 1e-07,
+ "n_records": 2135,
+ "n_hits": 3,
+ "distinct_actual_active_orbits": 2,
+ "n_new_active_orbits": 0,
+ "n_nonsharp_candidates": 0,
+ "n_actual_active_le_9": 0,
+ "hits": [
+  {
+   "source": "verify/out/v18_kkt_equality_7_8.json",
+   "selected_active_size": 8,
+   "selected_canonical_mask": 13619,
+   "selected_inside_actual": true,
+   "loss": 7.090060703163206e-13,
+   "t": 0.16666666666666657,
+   "F_record": 0.16666666666667418,
+   "F": 0.16666666666667418,
+   "actual_active_size": 12,
+   "actual_active": [
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "actual_active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "actual_canonical_mask": 32243,
+   "rank_L": 9,
+   "singular_values": [
+    0.8240220541217392,
+    0.7856742013183863,
+    0.7453559924999292,
+    0.5787945638190398,
+    0.5787945638190382,
+    0.5270462766947324,
+    0.5270462766947265,
+    0.3577147129438374,
+    0.3577147129438368
+   ],
+   "gap_min": 0.3333333333333095,
+   "positive_multiplier": {
+    "success": true,
+    "margin": 0.04999999999999769,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "residual": 4.2136643911652054e-16
+   },
+   "sharp_numeric": true,
+   "known_orbit_labels": [
+    "P(S(e,e),S(e,e),e,e)",
+    "P(S(P(S(e,e),e,e),e),e)"
+   ],
+   "new_active_orbit": false,
+   "nonsharp_candidate": false
+  },
+  {
+   "source": "verify/out/v18_kkt_equality_10_13.json",
+   "selected_active_size": 12,
+   "selected_canonical_mask": 15869,
+   "selected_inside_actual": true,
+   "loss": 1.6216368120624314e-14,
+   "t": 0.16666666666666666,
+   "F_record": 0.16666666666666682,
+   "F": 0.16666666666666682,
+   "actual_active_size": 13,
+   "actual_active": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "actual_active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "actual_canonical_mask": 32253,
+   "rank_L": 9,
+   "singular_values": [
+    0.8917668653405877,
+    0.8234626283005063,
+    0.6435846357954426,
+    0.6422408652070862,
+    0.6198053664591612,
+    0.6198053664591611,
+    0.44194173824159255,
+    0.4168140303703248,
+    0.416814030370324
+   ],
+   "gap_min": 0.19047619047619008,
+   "positive_multiplier": {
+    "success": true,
+    "margin": 0.022222222222222403,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "residual": 2.7965882751818856e-15
+   },
+   "sharp_numeric": true,
+   "known_orbit_labels": [
+    "OUT-OF-FAMILY (5/14,9/14)"
+   ],
+   "new_active_orbit": false,
+   "nonsharp_candidate": false
+  },
+  {
+   "source": "verify/out/v18_kkt_equality_10_13.json",
+   "selected_active_size": 10,
+   "selected_canonical_mask": 15827,
+   "selected_inside_actual": true,
+   "loss": 1.1141175996070844e-08,
+   "t": 0.1666666666678002,
+   "F_record": 0.16666666667633578,
+   "F": 0.16666666667633578,
+   "actual_active_size": 12,
+   "actual_active": [
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "actual_active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "actual_canonical_mask": 32243,
+   "rank_L": 9,
+   "singular_values": [
+    0.8240220541175044,
+    0.7856742013196255,
+    0.7453559924966737,
+    0.5787945638180453,
+    0.5787945638180324,
+    0.5270462766924481,
+    0.5270462766924081,
+    0.3577147129467123,
+    0.35771471294671214
+   ],
+   "gap_min": 0.3333333333178601,
+   "positive_multiplier": {
+    "success": true,
+    "margin": 0.05000000000177749,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "residual": 8.50792035014256e-17
+   },
+   "sharp_numeric": true,
+   "known_orbit_labels": [
+    "P(S(e,e),S(e,e),e,e)",
+    "P(S(P(S(e,e),e,e),e),e)"
+   ],
+   "new_active_orbit": false,
+   "nonsharp_candidate": false
+  }
+ ]
+}

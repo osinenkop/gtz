@@ -1,0 +1,105 @@
+{
+ "variable": "z0",
+ "input_count": 6,
+ "primes": [
+  32003,
+  32009,
+  32027,
+  32029,
+  32051,
+  32057
+ ],
+ "modulus": 1079659719059444163926544887,
+ "degree": 10,
+ "integer_coefficients_low_to_high": [
+  108601811603576545736308884,
+  0,
+  42969869999423949511885290,
+  0,
+  -311595730099978545916282403,
+  0,
+  -296299783451132570077547321,
+  0,
+  -12241039898633153786015250,
+  0,
+  1
+ ],
+ "integer_lift_polynomial": "z0^10 - 12241039898633153786015250*z0^8 - 296299783451132570077547321*z0^6 - 311595730099978545916282403*z0^4 + 42969869999423949511885290*z0^2 + 108601811603576545736308884",
+ "integer_lift_factorization": [
+  {
+   "factor": "z0^10 - 12241039898633153786015250*z0^8 - 296299783451132570077547321*z0^6 - 311595730099978545916282403*z0^4 + 42969869999423949511885290*z0^2 + 108601811603576545736308884",
+   "degree": 10,
+   "multiplicity": 1
+  }
+ ],
+ "rational_reconstruction_success": true,
+ "rational_reconstruction_failed_exponents": [],
+ "rational_coefficients_low_to_high": [
+  "8556250/12252303",
+  "0",
+  "-13883125/4084101",
+  "0",
+  "2295875/453789",
+  "0",
+  "-93850/64827",
+  "0",
+  "-815/441",
+  "0",
+  "1"
+ ],
+ "rational_lift_polynomial": "z0^10 - 815/441*z0^8 - 93850/64827*z0^6 + 2295875/453789*z0^4 - 13883125/4084101*z0^2 + 8556250/12252303",
+ "rational_lift_factorization": [
+  {
+   "factor": "z0^2 - 5/9",
+   "degree": 2,
+   "multiplicity": 1
+  },
+  {
+   "factor": "z0^2 - 10/21",
+   "degree": 2,
+   "multiplicity": 1
+  },
+  {
+   "factor": "z0^2 + 5/3",
+   "degree": 2,
+   "multiplicity": 1
+  },
+  {
+   "factor": "z0^4 - 365/147*z0^2 + 34225/21609",
+   "degree": 4,
+   "multiplicity": 1
+  }
+ ],
+ "inputs": [
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32003_z0.json",
+   "prime": 32003,
+   "polynomial": "z0^10+14004*z0^8-738*z0^6+6525*z0^4+7954*z0^2+13133"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32009_z0.json",
+   "prime": 32009,
+   "polynomial": "z0^10-1889*z0^8-12975*z0^6-2579*z0^4-12482*z0^2+2790"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32027_z0.json",
+   "prime": 32027,
+   "polynomial": "z0^10+1378*z0^8-7082*z0^6+13286*z0^4+11552*z0^2-6231"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32029_z0.json",
+   "prime": 32029,
+   "polynomial": "z0^10-12276*z0^8-1913*z0^6-585*z0^4-14086*z0^2+1287"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32051_z0.json",
+   "prime": 32051,
+   "polynomial": "z0^10+1161*z0^8+7607*z0^6-11547*z0^4-12163*z0^2+13015"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32057_z0.json",
+   "prime": 32057,
+   "polynomial": "z0^10-8216*z0^8-15733*z0^6+627*z0^4+3863*z0^2-3678"
+  }
+ ]
+}

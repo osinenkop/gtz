@@ -1,0 +1,298 @@
+{
+ "precision_bits": 160,
+ "threshold": "1/6",
+ "known_smoke": null,
+ "random_smoke": null,
+ "chart_bnb": {
+  "charts": 1,
+  "max_boxes": 200,
+  "min_radius": 0.125,
+  "priority": "center-high",
+  "domain_filter": false,
+  "bound_mode": "hybrid",
+  "projector_mode": "affine",
+  "processed": 200,
+  "certified": 0,
+  "split": 134,
+  "unresolved": 66,
+  "inverse_failures": 200,
+  "domain_outside": 0,
+  "domain_unknown": 0,
+  "best_lower": null,
+  "best_center_F": 1.0,
+  "smallest_unresolved_radius": 0.06810779599282303,
+  "unresolved_examples": [
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9761832771252473,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.034208009315331827017 +/- 8.78e-23]",
+     "max_remainder_entry_radius_upper": "[0.017608017146024232009 +/- 2.65e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.976026867042102,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.035622965623521131715 +/- 1.09e-23]",
+     "max_remainder_entry_radius_upper": "[0.018445079642053377518 +/- 2.50e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.975643898051279,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.034653717647517471403 +/- 3.87e-22]",
+     "max_remainder_entry_radius_upper": "[0.017614181730083636359 +/- 4.08e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9756121710185269,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.034685872039432162207 +/- 3.25e-22]",
+     "max_remainder_entry_radius_upper": "[0.017701655220667319752 +/- 2.68e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9755740952618068,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.035435560916501647115 +/- 3.47e-22]",
+     "max_remainder_entry_radius_upper": "[0.018152570273691948474 +/- 2.22e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9756350850863527,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.036386245275890761469 +/- 3.21e-22]",
+     "max_remainder_entry_radius_upper": "[0.018566561718705640389 +/- 2.75e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.975504697007928,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.035903463479406896308 +/- 1.41e-22]",
+     "max_remainder_entry_radius_upper": "[0.018437240337993572896 +/- 3.57e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9756053559507365,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.035495366230824740147 +/- 1.09e-22]",
+     "max_remainder_entry_radius_upper": "[0.018082140043706827428 +/- 3.73e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.975643898051279,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.034753806655731195980 +/- 4.87e-22]",
+     "max_remainder_entry_radius_upper": "[0.017990648633163485461 +/- 1.28e-22]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   },
+   {
+    "pivot": [
+     0,
+     1,
+     2
+    ],
+    "depth": 54,
+    "max_radius": 0.06810779599282303,
+    "center_F": 0.9756022181823066,
+    "domain": {
+     "status": "unchecked",
+     "det_gram": null
+    },
+    "inverse_ok": false,
+    "inverse_meta": {
+     "method": "chart_affine_taylor",
+     "center_method": {
+      "method": "arb_direct"
+     },
+     "max_derivative_variation_abs_upper": "[0.035793587840390908876 +/- 4.77e-22]",
+     "max_remainder_entry_radius_upper": "[0.018306151160270013853 +/- 6.22e-23]"
+    },
+    "error": "UnboundLocalError(\"cannot access local variable 'pcenter' where it is not associated with a value\")",
+    "F_lower_json": null,
+    "certifies_GTZ": false,
+    "argmax_lower_triple": null
+   }
+  ],
+  "queue_remaining": 69
+ }
+}

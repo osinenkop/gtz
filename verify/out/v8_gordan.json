@@ -1,0 +1,54 @@
+[
+ {
+  "name": "P(S(e,e,e),e,e,e)  [control, v7 says SHARP]",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "5/9",
+   "5/9",
+   "5/9"
+  ],
+  "m": 10,
+  "verdict": "SKIPPED (irrational L)"
+ },
+ {
+  "name": "P(S(P(S(e,e),e,e),e),e)",
+  "weights": [
+   "1",
+   "1",
+   "5/8",
+   "5/8",
+   "1",
+   "1"
+  ],
+  "m": 12,
+  "verdict": "SKIPPED (irrational L)"
+ },
+ {
+  "name": "P(S(P(e,e),P(e,e)),S(e,e))",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "8/5",
+   "8/5"
+  ],
+  "m": 12,
+  "verdict": "SKIPPED (irrational L)"
+ },
+ {
+  "name": "P(S(P(e,e),e),S(P(e,e),e))",
+  "weights": [
+   "1",
+   "1",
+   "8/5",
+   "1",
+   "1",
+   "8/5"
+  ],
+  "m": 12,
+  "verdict": "SKIPPED (irrational L)"
+ }
+]

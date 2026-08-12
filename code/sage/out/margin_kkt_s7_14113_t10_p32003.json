@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "mode": "margin_kkt_det_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "q",
+   "u0",
+   "a0",
+   "a1",
+   "a2",
+   "a3",
+   "a4",
+   "a5",
+   "a6",
+   "b0"
+  ],
+  "n_variables": 19,
+  "active_indices": [
+   0,
+   1,
+   2,
+   6,
+   14,
+   16,
+   18
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    5
+   ],
+   [
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    4,
+    5
+   ]
+  ],
+  "active_size": 7,
+  "row_pairs": [],
+  "n_equalities": 19,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   9,
+   7,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "max_equality_degree": 9,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "determinant-gradient KKT system for minimising outside tied q subject to active and tie determinant equations",
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "tie_indices": [
+    10
+   ],
+   "tie_triples": [
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   "q_meaning": "q = 6 * tied outside eigenvalue; margin = (q-1)/6",
+   "alpha_variables": [
+    "a0",
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "a5",
+    "a6"
+   ],
+   "beta_variables": [
+    "b0"
+   ],
+   "ring_order": "degrevlex",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 240,
+ "characteristic": 32003,
+ "linear_sections": 0,
+ "linear_section_mode": "random",
+ "linear_section_seed": 1,
+ "linear_forms": [],
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "slimgb": {
+   "script": "code/sage/out/margin_kkt_s7_14113_t10_p32003_slimgb.sing",
+   "timed_out": true,
+   "exit_code": null,
+   "elapsed_seconds": 240.3920876190532,
+   "stdout": "method\nslimgb\nnvars\n19\nneqs\n19\nlinear_sections\n0\nmax_degree\n9\ncharacteristic\n32003\n",
+   "stderr": "",
+   "parsed": {
+    "method": "slimgb",
+    "nvars": 19,
+    "neqs": 19,
+    "linear_sections": 0,
+    "max_degree": 9,
+    "characteristic": 32003
+   }
+  }
+ }
+}

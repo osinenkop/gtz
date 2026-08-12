@@ -1,0 +1,178 @@
+{
+ "summary": {
+  "mode": "margin_tie_det_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "q",
+   "u0"
+  ],
+  "n_variables": 11,
+  "active_indices": [
+   0,
+   1,
+   2,
+   6,
+   14,
+   16,
+   18
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    5
+   ],
+   [
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    4,
+    5
+   ]
+  ],
+  "active_size": 7,
+  "row_pairs": [],
+  "n_equalities": 11,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   9,
+   9,
+   9,
+   7
+  ],
+  "max_equality_degree": 9,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active det(6P-I)=0 plus outside tie det(6P-qI)=0, with d inverted",
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "tie_indices": [
+    10,
+    11,
+    12
+   ],
+   "tie_triples": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ]
+   ],
+   "q_meaning": "q = 6 * tied outside eigenvalue; margin = (q-1)/6",
+   "ring_order": "degrevlex",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 180,
+ "characteristic": 32003,
+ "linear_sections": 2,
+ "linear_section_mode": "random",
+ "linear_section_seed": 502,
+ "linear_forms": [
+  "(16565)*z0 + (11911)*z1 + (5521)*z2 + (20651)*z3 + (11530)*z4 + (23927)*z5 + (26450)*z6 + (24074)*z7 + (22865)*z8 + (31698)*q + (5562)*u0 + (31421)",
+  "(29045)*z0 + (13984)*z1 + (28220)*z2 + (23280)*z3 + (1342)*z4 + (28146)*z5 + (21120)*z6 + (27591)*z7 + (12420)*z8 + (16588)*q + (2547)*u0 + (8095)"
+ ],
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "slimgb": {
+   "script": "code/sage/out/margin_tie_sat_s7_14113_t10_11_12_p32003_sec2_s502_slimgb.sing",
+   "timed_out": true,
+   "exit_code": null,
+   "elapsed_seconds": 180.17074235295877,
+   "stdout": "method\nslimgb\nnvars\n11\nneqs\n11\nlinear_sections\n2\nmax_degree\n9\ncharacteristic\n32003\n",
+   "stderr": "",
+   "parsed": {
+    "method": "slimgb",
+    "nvars": 11,
+    "neqs": 11,
+    "linear_sections": 2,
+    "max_degree": 9,
+    "characteristic": 32003
+   }
+  }
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   11,
+   12,
+   13,
+   14
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    1,
+    5
+   ],
+   [
+    0,
+    2,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    0,
+    3,
+    5
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    4
+   ],
+   [
+    1,
+    3,
+    5
+   ]
+  ],
+  "active_size": 12,
+  "row_pairs": [],
+  "n_equalities": 13,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 31215,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "characteristic": 0,
+ "timeout_seconds": 900,
+ "method": "modslimgb",
+ "script": "code/sage/out/gb_det_mask31215_QQmod.sing",
+ "basis_path": "code/sage/out/gb_det_mask31215_QQmod_basis.txt",
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 22.87609398411587,
+  "stdout": "method\nmodslimgb\nnvars\n10\nneqs\n13\ncharacteristic\n0\n//used time: 10.95 sec\n//used time: 10.96 sec\n//used time: 10.91 sec\n//used time: 10.92 sec\n//used time: 11.36 sec\n//used time: 11.37 sec\n//used time: 12.09 sec\n//used time: 12.10 sec\n//used time: 12.61 sec\n//used time: 12.62 sec\n//used time: 13.04 sec\n//used time: 13.04 sec\n//used time: 13.09 sec\n//used time: 13.10 sec\n//used time: 13.26 sec\n//used time: 13.27 sec\n//used time: 13.62 sec\n//used time: 13.63 sec\n//used time: 14.09 sec\n//used time: 14.10 sec\n//used time: 14.64 sec\n//used time: 14.65 sec\n//used time: 14.66 sec\n//used time: 14.66 sec\n//used time: 15.40 sec\n//used time: 15.40 sec\n//used time: 15.65 sec\n//used time: 15.66 sec\n//used time: 15.80 sec\n//used time: 15.80 sec\n//used time: 15.84 sec\n//used time: 15.85 sec\n//used time: 16.30 sec\n//used time: 16.30 sec\n//used time: 16.40 sec\n//used time: 16.41 sec\n//used time: 16.44 sec\n//used time: 16.44 sec\n//used time: 266.30 sec\n//used time: 6.07 sec\nbasis_size\n232\ndimension\n1\nvdim\n-1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 16\nbasis_path\ncode/sage/out/gb_det_mask31215_QQmod_basis.txt\ntimer\n273\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "method": "modslimgb",
+   "nvars": 10,
+   "neqs": 13,
+   "characteristic": 0,
+   "basis_size": 232,
+   "dimension": 1,
+   "vdim": -1,
+   "degree": "// dimension (proj.)  = 0",
+   "degree_value": 16,
+   "basis_path": "code/sage/out/gb_det_mask31215_QQmod_basis.txt",
+   "timer": 273
+  }
+ }
+}

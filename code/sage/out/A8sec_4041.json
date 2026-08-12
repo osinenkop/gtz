@@ -1,0 +1,128 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   9,
+   16,
+   17
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    1,
+    5
+   ],
+   [
+    0,
+    2,
+    3
+   ],
+   [
+    0,
+    4,
+    5
+   ],
+   [
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    3,
+    5
+   ]
+  ],
+  "active_size": 8,
+  "row_pairs": [],
+  "n_equalities": 9,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 197151,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 600,
+ "characteristic": 32003,
+ "linear_sections": 2,
+ "linear_section_mode": "zero-sum-z",
+ "linear_section_seed": 401,
+ "linear_forms": [
+  "(14)*z0 + (-11)*z1 + (10)*z2 + (8)*z4 + (13)*z5 + (3)*z6 + (-6)*z7 + (-31)*z8",
+  "(2)*z0 + (11)*z1 + (-6)*z2 + (-10)*z3 + (-13)*z4 + (-1)*z5 + (-11)*z6 + (16)*z7 + (12)*z8"
+ ],
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "slimgb": {
+   "script": "code/sage/out/A8sec_4041_slimgb.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 130.05209009721875,
+   "stdout": "method\nslimgb\nnvars\n10\nneqs\n9\nlinear_sections\n2\nmax_degree\n7\ncharacteristic\n32003\n//used time: 130.02 sec\nbasis_size\n404\ndimension\n0\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 384\ntimer\n130\n",
+   "stderr": "",
+   "parsed": {
+    "method": "slimgb",
+    "nvars": 10,
+    "neqs": 9,
+    "linear_sections": 2,
+    "max_degree": 7,
+    "characteristic": 32003,
+    "basis_size": 404,
+    "dimension": 0,
+    "degree": "// dimension (affine) = 0",
+    "degree_value": 384,
+    "timer": 130
+   }
+  }
+ }
+}

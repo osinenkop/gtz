@@ -1,0 +1,1187 @@
+\pdfoutput=1
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\St}{\operatorname{St}}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\smin}{\sigma_{\min}}
+\newcommand{\lmin}{\lambda_{\min}}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cA}{\mathcal A}
+
+\title{Sharp Extremals and Active-Set Evidence for the Goreinov--Tyrtyshnikov--Zamarashkin Hypothesis in the First Open Case}
+\author{Pavel Osinenko}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study the first open case $(n,k)=(6,3)$ of the
+Goreinov--Tyrtyshnikov--Zamarashkin row-selection hypothesis.  In projector
+coordinates the problem asks whether every rank-three orthogonal projector
+$P\in\R^{6\times6}$ has a $3\times3$ principal submatrix with least eigenvalue
+at least $1/6$.  We do not prove the hypothesis.  Instead we give a
+computer-assisted exact analysis of the known equality configurations.  First,
+the bound is tight: there are explicit projectors with
+\[
+  \max_{|T|=3}\lambda_{\min}(P_{TT})=\frac16.
+\]
+Second, six weighted series--parallel graphic-matroid extremals and one further
+out-of-family extremal are sharp nonsmooth local minima of the max-eigenvalue
+functional on $\Gr(3,6)$.  The sharpness certificates are exact rational or
+number-field computations after positive diagonal changes of coordinates.
+They imply that all seven configurations are isolated points of the equality
+set.  We also record a symmetry-reduced active-set census and numerical KKT
+screens over the active-set orbits; no sub-threshold critical point was found.
+Finally, for one ten-active equality stratum we give a Groebner/CAD cascade
+which eliminates its positive-dimensional residual determinant branches and
+classifies the remaining finite residue in the chart.  We also include exact
+finite-branch computations for the two size-twelve equality strata and a
+zero-dimensional chart computation for the thirteen-active out-of-family
+stratum.
+As background, we include a self-contained Perron-free proof of the weighted
+Frobenius inequality behind the known $k=2$ case.
+The remaining global problem is isolated precisely as the exclusion of critical
+points with value below $1/6$.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+
+Let
+\[
+  \St(n,k)=\{A\in\R^{n\times k}: A^TA=I_k\}.
+\]
+The Goreinov--Tyrtyshnikov--Zamarashkin hypothesis predicts that for every
+$A\in\St(n,k)$ one can choose $k$ rows forming a $k\times k$ submatrix $A_I$ with
+\[
+  \smin(A_I)\ge \frac1{\sqrt n}.
+\]
+The cases $k=1$ and $k=2$ are known, and by duality the case $k=n-2$ follows from
+the case $2$.  Thus $(n,k)=(6,3)$ is the first self-dual open case.
+
+For $A\in\St(6,3)$ set
+\[
+  P=AA^T,\qquad F(P)=\max_{|T|=3}\lambda_{\min}(P_{TT}).
+\]
+The right action $A\mapsto AQ$, $Q\in O(3)$, does not change $P$, so the natural
+domain is the Grassmannian
+\[
+  \Gr(3,6)=\{P=P^T=P^2,\ \tr P=3\}.
+\]
+The case $(6,3)$ is the assertion
+\begin{equation}\label{eq:gtz63}
+  F(P)\ge \frac16\qquad\text{for all }P\in\Gr(3,6).
+\end{equation}
+
+This paper is deliberately a partial-result paper.  It does not prove
+\eqref{eq:gtz63}.  Its purpose is to record exact local information at the
+boundary of the conjectured inequality and to make the remaining global problem
+as concrete as possible.
+
+\subsection*{Main contributions}
+
+\begin{enumerate}[leftmargin=*]
+\item We give a self-contained Perron-free proof of a weighted Frobenius
+inequality for $k=2$, implying the usual good-pair step in the core case.
+\item We rederive the tight equality projectors in the weighted graphic-matroid
+family and verify exactly that $F=1/6$ there.
+\item We give exact sharpness certificates at all six projectors in this
+series--parallel census.  In particular the equality projectors are not flat:
+$F$ grows linearly in every nonzero Grassmann tangent direction.
+\item We record a seventh equality projector, with leverage pattern
+$(5/14)^{\times3},(9/14)^{\times3}$, outside the weighted series--parallel census,
+and certify its sharpness exactly.
+\item We prove the general implication ``sharp equality point implies isolated''
+for the equality set
+\[
+  \cE=\{P\in\Gr(3,6):F(P)=1/6\}.
+\]
+Thus the seven certified projectors are isolated equality points.
+\item We enumerate active-set orbits under row relabelling and run numerical KKT
+screens over these orbits.  These screens found no sub-threshold critical point.
+\item For the hardest observed size-six low-active survivor, we identify a
+four-parameter structured ansatz.  Modular lex computations and CRT
+reconstruction reduce the relevant branch to a degree-eleven candidate
+eliminant in the margin parameter; numerical classification of its real roots
+finds no point satisfying both active and inactive inequalities.
+\item For the active set of the base extremal $P(S(e,e,e),e,e,e)$, we record an
+exact CAD-style cascade: component relations plus active positive
+semidefiniteness reduce the positive-dimensional determinant locus to a finite
+infeasible endpoint, while the remaining finite open residue is exactly the
+known 32-point sign family in the chart.
+\item For the thirteen-active out-of-family active set, the determinant chart
+ideal is already zero-dimensional of degree $32$, and its lex basis gives
+exactly the corresponding 32-point sign family.
+\item For the two remaining size-twelve active-set orbits in the known equality
+census, the exact determinant ideals have only the two possible real branch
+values $u=\pm1/9$ for the inverse Gram determinant.  Since $u=1/d(Z)>0$ on the
+real chart, the positive branch is forced; on that branch both ideals are
+zero-dimensional of degree $32$ and give exactly their known sign families.
+\end{enumerate}
+
+\subsection*{Status conventions}
+
+Statements called \emph{proved} below are either conventional arguments or exact
+finite computations with rational/algebraic arithmetic, implemented in the
+accompanying scripts listed in Section~\ref{sec:repro}.  Floating-point searches
+are labelled numerical evidence and are not used as proofs.
+
+\section{Projector formulation and elementary reductions}
+
+For $P=AA^T$ write $\ell_i=P_{ii}$ and $c_{ij}=P_{ij}$.  If $T\subset[6]$ has
+cardinality $3$, then
+\[
+  P_{TT}=A_TA_T^T,
+\]
+so $\lambda_{\min}(P_{TT})=\smin(A_T)^2$.  Hence the original row-selection
+bound is exactly \eqref{eq:gtz63}.
+
+\begin{lemma}[Case-A reduction]\label{lem:caseA}
+Let $1\le k<n$, and let $A\in\St(n,k)$.  If some row has leverage
+$\ell_i\le 1/n$, then the validity of $\mathrm{GTZ}(n-1,k)$ implies the desired
+GTZ conclusion for this particular matrix $A$.
+\end{lemma}
+
+\begin{proof}
+Rotate columns so that row $i$ is $(b,0,\ldots,0)$ with $b^2=\ell_i$.  Delete
+that row and multiply the first column by $(1-\ell_i)^{-1/2}$.  The resulting
+matrix $\widetilde B$ lies in $\St(n-1,k)$.  If $J$ is a $k$-row subset of
+$\widetilde B$ and $\varphi(J)$ is the corresponding subset of the original
+matrix, then
+\[
+  A_{\varphi(J)}=\widetilde B_J
+  \diag\bigl(\sqrt{1-\ell_i},1,\ldots,1\bigr)Q^T
+\]
+for an orthogonal $Q$.  Therefore
+\[
+  \smin(A_{\varphi(J)})
+  \ge \sqrt{1-\ell_i}\,\smin(\widetilde B_J).
+\]
+If $\smin(\widetilde B_J)\ge1/\sqrt{n-1}$, then
+\[
+  \smin(A_{\varphi(J)})
+  \ge \sqrt{1-\frac1n}\,\frac1{\sqrt{n-1}}
+  =\frac1{\sqrt n}.
+\]
+\end{proof}
+
+\begin{remark}
+Lemma~\ref{lem:caseA} does not imply that proving $(6,3)$ proves all $(n,3)$.
+It only removes rows of leverage at most $1/n$.  To prove all $(n,3)$ by
+induction, one must still prove the core case, where every leverage is $>1/n$,
+at every intermediate size.
+\end{remark}
+
+\section{A Perron-free Frobenius proof for the case \texorpdfstring{\(k=2\)}{k=2}}
+
+The case \(k=2\) is known by the theorem of Sengupta--Pautov.  We record here
+an independent proof of the weighted pair inequality that gives the good-pair
+step in the core case.  The proof is included because it is short, uses only
+Frobenius identities and one Rayleigh bound, and clarifies which part of the
+\(k=2\) argument does not presently extend to triples.
+
+Let \(A=[a\ b]\in\St(n,2)\), and write the \(i\)-th row as
+\[
+  r_i=(a_i,b_i),\qquad
+  \ell_i=\|r_i\|^2,\qquad
+  c_{ij}=\langle r_i,r_j\rangle,\qquad
+  p_{ij}=a_ib_j-b_ia_j.
+\]
+Thus \(\sum_i\ell_i=2\), \(\sum_{i<j}p_{ij}^2=1\), and
+\[
+  \ell_i\ell_j=c_{ij}^2+p_{ij}^2.
+\]
+Define the pair bracket
+\[
+  b_{ij}
+  =p_{ij}^2-\frac{\ell_i+\ell_j}{n}+\frac1{n^2}
+  =\left(\ell_i-\frac1n\right)\left(\ell_j-\frac1n\right)-c_{ij}^2.
+\]
+Equivalently, \(b_{ij}\) is the characteristic polynomial of the pair block
+\(P_{\{i,j\}\{i,j\}}\) evaluated at \(1/n\).
+
+\begin{theorem}[Weighted Frobenius inequality]\label{thm:k2-frobenius}
+For every \(A\in\St(n,2)\),
+\[
+  \sum_{i<j}p_{ij}^2 b_{ij}\ge0.
+\]
+\end{theorem}
+
+\begin{proof}
+Set \(z_i=a_i+\mathrm i b_i\) and \(\zeta_i=z_i^2\).  Since the two columns of
+\(A\) are orthonormal,
+\[
+  \sum_i\zeta_i=0,\qquad \sum_i|\zeta_i|=2.
+\]
+Let \(w_i=(\operatorname{Re}\zeta_i,\operatorname{Im}\zeta_i)\), let \(W\) be
+the \(n\times2\) matrix with rows \(w_i\), and put
+\[
+  K=WW^T,\qquad L=\ell\ell^T,\qquad Q=\sum_i\ell_i^2.
+\]
+Then \(K\mathbf 1=0\), and
+\[
+  K_{ij}=c_{ij}^2-p_{ij}^2,\qquad
+  L_{ij}=c_{ij}^2+p_{ij}^2.
+\]
+Hence \(p_{ij}^2=\frac12(L-K)_{ij}\) off the diagonal, and the diagonal entries
+of \(L-K\) vanish.  Therefore
+\[
+  \sum_{i<j}p_{ij}^4=\frac18\|L-K\|_F^2.
+\]
+Using \(\sum_{j\ne i}p_{ij}^2=\ell_i\), one also has
+\[
+  \sum_{i<j}p_{ij}^2 b_{ij}
+  =\sum_{i<j}p_{ij}^4-\frac Qn+\frac1{n^2}
+  =\frac18\|L-K\|_F^2-\frac Qn+\frac1{n^2}.
+\]
+
+It remains to show \(\|L-K\|_F^2\ge 8Q/n-8/n^2\).  Let
+\(\mu_1\ge\mu_2\ge0\) be the two eigenvalues of \(W^TW\).  Then
+\(\mu_1+\mu_2=Q\) and
+\[
+  \|K\|_F^2=\mu_1^2+\mu_2^2,\qquad
+  \langle L,K\rangle=\ell^TK\ell.
+\]
+With \(v=\ell-\frac2n\mathbf1\), the identity \(K\mathbf1=0\) gives
+\(\ell^TK\ell=v^TKv\), while \(\|v\|^2=Q-4/n\).  The Rayleigh bound for the
+positive semidefinite matrix \(K\) gives
+\[
+  v^TKv\le\mu_1\|v\|^2=\mu_1\left(Q-\frac4n\right).
+\]
+Consequently
+\[
+\begin{aligned}
+  \|L-K\|_F^2-\frac{8Q}{n}+\frac8{n^2}
+  &=
+  Q^2-2\ell^TK\ell+\mu_1^2+\mu_2^2-\frac{8Q}{n}+\frac8{n^2}  \\
+  &\ge
+  Q^2-2\mu_1\left(Q-\frac4n\right)+\mu_1^2+\mu_2^2
+  -\frac{8Q}{n}+\frac8{n^2}  \\
+  &=2\left(\mu_2-\frac2n\right)^2\ge0,
+\end{aligned}
+\]
+where the last equality uses \(\mu_1=Q-\mu_2\).  This proves the claim.
+\end{proof}
+
+\begin{corollary}[Good pair in the core case]\label{cor:k2-good-pair}
+For every \(A\in\St(n,2)\) there is a nonsingular pair \(i<j\) with
+\[
+  b_{ij}\ge0.
+\]
+If in addition \(A\) is in the core region \(\ell_i>1/n\) for all \(i\), then
+this pair satisfies
+\[
+  \lambda_{\min}\bigl(P_{\{i,j\}\{i,j\}}\bigr)\ge\frac1n.
+\]
+\end{corollary}
+
+\begin{proof}
+The weights \(p_{ij}^2\) are nonnegative and sum to \(1\).  If every nonsingular
+pair had \(b_{ij}<0\), then the weighted sum in
+Theorem~\ref{thm:k2-frobenius} would be negative, a contradiction.
+
+For the final assertion, let \(\lambda_1\le\lambda_2\) be the two eigenvalues
+of \(P_{\{i,j\}\{i,j\}}\).  Since \(b_{ij}\) is its characteristic polynomial at
+\(1/n\), the inequality \(b_{ij}\ge0\) says that \(1/n\) is not strictly between
+\(\lambda_1\) and \(\lambda_2\).  In the core region
+\(\lambda_1+\lambda_2=\ell_i+\ell_j>2/n\).  Therefore \(1/n\) cannot lie above
+both eigenvalues, and hence \(\lambda_1\ge1/n\).
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:k2-frobenius} is a pair theorem.  It proves the key core-case
+step for \(k=2\), and the usual Case-A induction supplies the boundary rows.
+It does not by itself produce a good triple when \(k=3\).  In fact, the natural
+volume-weighted analogues of this averaged inequality fail in higher rank, so
+the \((6,3)\) problem requires the separate active-set and semialgebraic
+analysis developed below.
+\end{remark}
+
+\section{The nonsmooth active-set problem}
+
+The functional
+\[
+  F(P)=\max_{|T|=3}g_T(P),\qquad g_T(P)=\lambda_{\min}(P_{TT}),
+\]
+is a maximum of twenty eigenvalue functions.  At a point where all active least
+eigenvalues are simple, $g_T$ is differentiable for active $T$ and
+\[
+  dg_T(P)[\dot P]=v_T^T\dot P_{TT}v_T,
+\]
+where $v_T$ is a unit least-eigenvector of $P_{TT}$.
+
+\begin{definition}
+The active set at $P$ is
+\[
+  \cA(P)=\{T: g_T(P)=F(P)\}.
+\]
+If the active least eigenvalues are simple, we call $P$ Clarke-stationary for
+$F$ if
+\[
+  0\in\conv\{dg_T(P):T\in\cA(P)\}
+\]
+after restriction to the tangent space $T_P\Gr(3,6)$.
+\end{definition}
+
+\begin{proposition}[KKT reduction]\label{prop:kkt}
+The inequality \eqref{eq:gtz63} holds if and only if no Clarke-stationary point
+of $F$ on $\Gr(3,6)$ has value below $1/6$.
+\end{proposition}
+
+\begin{proof}
+If a sub-threshold point exists, $F$ attains a sub-threshold global minimum on
+the compact manifold $\Gr(3,6)$, and such a minimizer is Clarke-stationary.  The
+converse is immediate.
+\end{proof}
+
+Thus the whole remaining global problem can be phrased as:
+\[
+  \text{exclude all critical points of }F\text{ with }F<1/6.
+\]
+
+\section{The weighted graphic-matroid equality projectors}
+
+We recall the construction used for the six series--parallel equality
+projectors.  Let $G$ be a connected graph with six edges, choose a reduced
+incidence matrix $B_{\rm red}$, and let $W=\diag(w_1,\ldots,w_6)$ with
+$w_i>0$.  Define
+\[
+  \widetilde M=W^{1/2}B_{\rm red}^T,\qquad
+  P=\widetilde M(\widetilde M^T\widetilde M)^{-1}\widetilde M^T.
+\]
+Then $P$ is a rank-three orthogonal projector when $G$ has four vertices.  The
+leverage of an edge is
+\[
+  \ell_e=w_e R_{\rm eff}(e),
+\]
+where $R_{\rm eff}(e)$ is the effective resistance between the endpoints of the
+edge in the weighted network.
+
+The exact census in the accompanying script enumerates the two-terminal
+series--parallel trees on six edges and solves for weights with $F=1/6$.
+It finds the following six configurations.
+
+\begin{center}
+\begin{tabular}{p{0.38\linewidth}p{0.22\linewidth}p{0.18\linewidth}p{0.08\linewidth}}
+\hline
+Graph expression & weights & leverages & $|\cA|$\\
+\hline
+$P(S(e,e,e),e,e,e)$
+& $1,1,1,\frac59,\frac59,\frac59$
+& $(\frac{13}{18})^3,(\frac5{18})^3$ & 10\\
+$P(S(e,e),S(e,e),e,e)$
+& $1,1,1,1,\frac58,\frac58$
+& $(\frac{11}{18})^4,(\frac5{18})^2$ & 12\\
+$P(S(P(e,e,e),e),S(e,e))$
+& $1,1,1,\frac95,\frac95,\frac95$
+& $(\frac5{18})^3,(\frac{13}{18})^3$ & 10\\
+$P(S(P(S(e,e),e,e),e),e)$
+& $1,1,\frac58,\frac58,1,1$
+& $(\frac{11}{18})^4,(\frac5{18})^2$ & 12\\
+$P(S(P(e,e),P(e,e)),S(e,e))$
+& $1,1,1,1,\frac85,\frac85$
+& $(\frac7{18})^4,(\frac{13}{18})^2$ & 12\\
+$P(S(P(e,e),e),S(P(e,e),e))$
+& $1,1,\frac85,1,1,\frac85$
+& $(\frac7{18})^4,(\frac{13}{18})^2$ & 12\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{proposition}\label{prop:six-tight}
+For each of the six projectors above, $P^2=P$, $\tr P=3$, and
+\[
+  F(P)=\frac16.
+\]
+Moreover every active $3\times3$ block has simple least eigenvalue.
+\end{proposition}
+
+\begin{proof}
+The statements are finite exact checks.  The projector identities are rational.
+For each triple $T$, the characteristic polynomial of $P_{TT}$ is computed
+exactly; the active triples have least eigenvalue $1/6$, while the inactive
+triples in this census are singular with least eigenvalue $0$.  Simplicity is
+checked by verifying that the second eigenvalue of each active block is strictly
+larger than $1/6$.
+\end{proof}
+
+\section{Sharpness certificates}
+
+Let $P_0\in\cE$, where
+\[
+  \cE=\{P\in\Gr(3,6):F(P)=1/6\}.
+\]
+Assume that the active least eigenvalues at $P_0$ are simple.  Choose a basis
+$B_1,\ldots,B_9$ of $T_{P_0}\Gr(3,6)$.  For each active triple $T$, let $v_T$ be
+a least-eigenvector of $(P_0)_{TT}$ and set
+\[
+  L_{Tj}=v_T^T(B_j)_{TT}v_T.
+\]
+Then for tangent coordinates $z\in\R^9$,
+\[
+  F'(P_0;z)=\max_{T\in\cA(P_0)} (Lz)_T.
+\]
+
+\begin{definition}
+We call $P_0$ \emph{sharp} if
+\[
+  \kappa(P_0)=\min_{\|z\|=1}\max_{T\in\cA(P_0)}(Lz)_T>0.
+\]
+\end{definition}
+
+\begin{lemma}[Sharpness criterion]\label{lem:sharp-criterion}
+Suppose $\rank L=9$ and there is a vector $\lambda$ with all entries strictly
+positive such that
+\[
+  L^T\lambda=0.
+\]
+Then $P_0$ is sharp.
+\end{lemma}
+
+\begin{proof}
+If $\max_T(Lz)_T\le0$, then
+\[
+  0=\lambda^TLz=\sum_T\lambda_T(Lz)_T.
+\]
+This is a sum of nonpositive terms with strictly positive coefficients, hence
+every $(Lz)_T=0$.  Since $\rank L=9$, this forces $z=0$.  Thus
+$\max_T(Lz)_T>0$ for all $z\ne0$, and compactness of the unit sphere gives a
+positive minimum.
+\end{proof}
+
+For some of the projectors the positive multiplier is not the most convenient
+certificate.  The following equivalent rational LP certificate was used as the
+load-bearing test.  Maximize
+\[
+  \sum_T(-Lz)_T
+\]
+over the rational polytope
+\[
+  Lz\le0,\qquad \|z\|_\infty\le1.
+\]
+The feasible point $z=0$ has objective $0$, and all summands are nonnegative on
+the feasible set.  If the exact optimum is $0$ and $\rank L=9$, then every
+feasible $z$ satisfies $Lz=0$, hence $z=0$.  Since $Lz\le0$ is a cone, this proves
+that the critical cone is trivial and $\kappa(P_0)>0$.
+
+\begin{theorem}[Sharpness of the six graphic-matroid extremals]\label{thm:six-sharp}
+All six projectors in Proposition~\ref{prop:six-tight} are sharp points of
+$F$ on $\Gr(3,6)$.
+\end{theorem}
+
+\begin{proof}
+The proof is by exact rational computation.  A direct orthonormal tangent basis
+contains square roots.  These are eliminated as follows.  Put
+\[
+  \widetilde B=B_{\rm red}^T,\qquad G=\widetilde B^TW\widetilde B,\qquad
+  S=\widetilde B\,G^{-1}\widetilde B^TW.
+\]
+Then $S$ is a rational idempotent and
+\[
+  P=W^{1/2}SW^{-1/2}.
+\]
+Because $W^{1/2}$ is diagonal, this similarity restricts to every principal
+block, so $P_{TT}$ and $S_{TT}$ have the same spectrum.  The active
+eigenvectors, tangent functionals, and the LP certificate can therefore be
+written over $\mathbb Q$ after positive row scalings of $L$.  For all six cases
+the exact computation gives $\rank L=9$ and exact LP optimum $0$.
+\end{proof}
+
+\section{A seventh extremal outside the graphic census}
+
+Numerical descent from random starts repeatedly finds an equality point whose
+sorted leverage pattern is
+\[
+  \left(\frac5{14},\frac5{14},\frac5{14},
+        \frac9{14},\frac9{14},\frac9{14}\right).
+\]
+This pattern is absent from the six graphic-matroid projectors above.  The
+projector was reconstructed exactly over $\mathbb Q(\sqrt2,\sqrt5)$.  Its
+off-diagonal entries have magnitudes among
+\[
+  \frac5{14},\qquad
+  \frac{\sqrt5}{21},\qquad
+  \frac{5\sqrt5}{42},\qquad
+  \frac{5\sqrt2}{42},\qquad
+  \frac{\sqrt{10}}{14}.
+\]
+
+\begin{theorem}[The out-of-family extremal]\label{thm:seventh}
+There is an exact projector $P\in\Gr(3,6)$ with leverage pattern
+$(5/14)^{\times3},(9/14)^{\times3}$ such that
+\[
+  F(P)=\frac16.
+\]
+It has thirteen active triples and seven singular triples.  Every active least
+eigenvalue is simple, and $P$ is a sharp point of $F$ on $\Gr(3,6)$.
+\end{theorem}
+
+\begin{proof}
+The entries are reconstructed from the numerical projector by PSLQ and then
+checked exactly in $\mathbb Q(\sqrt2,\sqrt5)$.  The projector identities
+$P^T=P$, $P^2=P$, $\tr P=3$, the leverage pattern, and the active/singular
+triple counts are exact finite checks.  The sharpness certificate uses the same
+critical-cone LP as Theorem~\ref{thm:six-sharp}.  In this case an additional
+positive column scaling of the tangent basis rationalizes $L$; positive diagonal
+coordinate changes preserve both $\rank L$ and the property
+\[
+  \{z:Lz\le0\}=\{0\}.
+\]
+The resulting rational matrix has rank $9$ and exact LP optimum $0$.
+\end{proof}
+
+\begin{remark}
+An exhaustive search over the two-terminal series--parallel trees with the
+weight parametrization used for the six graphic projectors does not produce the
+leverage pattern $(5/14)^{\times3},(9/14)^{\times3}$.  Thus the seventh point is
+not merely a relabelling of the displayed graphic census.
+\end{remark}
+
+\section{Isolation and conditional finiteness}
+
+\begin{lemma}[Sharp points are isolated]\label{lem:sharp-isolated}
+Let $P_0\in\cE$ be sharp and assume the active least eigenvalues at $P_0$ are
+simple.  Then there is a neighborhood $U$ of $P_0$ in $\Gr(3,6)$ such that
+\[
+  U\cap\cE=\{P_0\}.
+\]
+\end{lemma}
+
+\begin{proof}
+Near $P_0$, inactive triples remain below $1/6$ by continuity.  Since the active
+least eigenvalues are simple, the active functions $g_T$ are analytic.  Hence,
+for $P=P_0+r\dot P$ in a local chart and $\|\dot P\|=1$,
+\[
+  F(P)=\frac16+rF'(P_0;\dot P)+O(r^2)
+\]
+uniformly in $\dot P$.  Sharpness gives $F'(P_0;\dot P)\ge\kappa>0$ on the unit
+sphere, so $F(P)>1/6$ for sufficiently small $r>0$.
+\end{proof}
+
+\begin{corollary}
+The seven projectors in Theorems~\ref{thm:six-sharp} and~\ref{thm:seventh} are
+isolated points of $\cE$.
+\end{corollary}
+
+\begin{theorem}[Conditional finiteness]\label{thm:conditional-finite}
+If every point of $\cE$ is sharp, then $\cE$ is finite.
+\end{theorem}
+
+\begin{proof}
+The set $\cE=F^{-1}(1/6)$ is closed in the compact manifold $\Gr(3,6)$, hence
+compact.  If every point is sharp, Lemma~\ref{lem:sharp-isolated} makes $\cE$ a
+compact discrete space.  A compact discrete space is finite.
+\end{proof}
+
+\begin{remark}
+The hypothesis of Theorem~\ref{thm:conditional-finite} is not proved.  It is a
+global statement over $\cE$, and sampling cannot discharge it.  The theorem is
+nevertheless useful because it identifies a concrete local certificate whose
+failure would point to a positive-dimensional equality family.
+\end{remark}
+
+\section{Active-set orbit census and numerical KKT screens}
+
+The twenty triples of $[6]$ are acted on by the row-permutation group $S_6$.
+Burnside's lemma gives the following numbers of active-subset orbits by
+cardinality:
+{\scriptsize
+\[
+\begin{array}{c|rrrrrrrrrrrrrrrrrrrrr}
+|\cA|&0&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20\\
+\hline
+\#&1&1&3&7&21&43&94&161&249&312&352&312&249&161&94&43&21&7&3&1&1.
+\end{array}
+\]
+}
+Thus there are $2136$ active-set orbits total, $579$ nonempty orbits with
+$|\cA|\le8$, and $1556$ orbits with $|\cA|\ge9$.  The seven certified equality
+projectors occupy four distinct active-set orbits.
+
+For a selected active set $\cA_0$, the numerical screen minimizes residuals for
+the following conditions:
+\[
+  g_T(P)=t\quad(T\in\cA_0),\qquad
+  g_T(P)\le t\quad(T\notin\cA_0),
+\]
+together with the stationarity condition
+\[
+  0=\Pi_{T_P\Gr(3,6)}\left(\sum_{T\in\cA_0}\alpha_T\,dg_T(P)\right),
+  \qquad \alpha_T\ge0,\quad \sum_T\alpha_T=1.
+\]
+For counterexample searches the level condition is $t<1/6$; for equality
+searches it is $t=1/6$.  This is a heuristic least-squares screen, not a proof.
+
+\subsection*{Observed numerical results}
+
+\begin{center}
+\footnotesize
+\begin{tabular}{llrrp{2.5in}}
+\hline
+mode & active sizes & orbit reps & candidates & note\\
+\hline
+counterexample & $1,\ldots,4$ & 32 & 0 & no tripwire\\
+equality & $1,\ldots,4$ & 32 & 0 & no low-active point\\
+counterexample & $5,6$ & 137 & 0 & no tripwire\\
+equality & $5,6$ & 137 & 0 & no low-active point\\
+counterexample & $7,8$ & 410 & 0 & no tripwire\\
+equality & $7,8$ & 410 & 1 & selected subset of known 12-active point\\
+counterexample & $9$ & 312 & 0 & one near-threshold non-candidate\\
+equality & $9$ & 312 & 0 & no equality stratum\\
+counterexample & $10,\ldots,13$ & 1074 & 0 & MLCore run\\
+equality & $10,\ldots,13$ & 1074 & 2 & selected subsets of known 12- and 13-active points\\
+counterexample & $14,\ldots,20$ & 170 & 0 & no tripwire\\
+equality & $14,\ldots,20$ & 170 & 0 & no equality stratum\\
+\hline
+\end{tabular}
+\end{center}
+
+The equality hit with selected $|\cA_0|=8$ had residual about $7.1\cdot10^{-13}$,
+but its actual active set had size $12$ and matched a known TTSP active-set
+orbit.  Thus it is not an eight-active equality stratum.
+
+The two equality hits from selected sizes $10,\ldots,13$ were likewise
+selected-subset hits.  Reconstructing the projectors from the numerical
+parameters and recomputing the actual active sets gave one known TTSP
+12-active orbit and the out-of-family 13-active orbit.  In both cases the
+actual active-gradient matrix has rank $9$ and a strictly positive numerical
+multiplier, so neither is a non-sharp candidate.
+
+The best size-nine counterexample near-miss polished to
+\[
+  F=0.16666994562575838>1/6
+\]
+with actual top active size one.  The best MLCore record for selected
+$|\cA_0|=12$ had
+\[
+  F=0.166677230>1/6
+\]
+and again actual top active size one.  No numerical run found a point with
+$F<1/6-10^{-6}$.
+
+Across all equality-mode screens, the actual-active-set classifier found three
+low-residual equality hits, all in known sharp active-set orbits; it found no new
+actual active-set orbit, no actual active size at most $9$, and no numerical
+non-sharp signature.
+
+\begin{remark}
+These screens are useful mainly as triage.  They also expose a bookkeeping
+hazard: a selected subset of a larger actual active set may satisfy equality and
+stationarity to high precision.  Any exact active-set proof must therefore track
+the actual active set, not only the selected equations.
+\end{remark}
+
+\section{A semialgebraic finiteness target}
+
+The conditional finiteness theorem reduces finiteness of $\cE$ to excluding
+non-sharp equality points.  In the simple-active case this obstruction has a
+small polynomial representation.  Work in the Grassmann chart
+\[
+  Y=\begin{pmatrix}I_3\\ Z\end{pmatrix},\qquad
+  P(Z)=Y(Y^TY)^{-1}Y^T=\frac{N(Z)}{d(Z)},\qquad d=\det(Y^TY)>0.
+\]
+For a triple $T$, put
+\[
+  M_T(Z)=6N(Z)_{TT}-d(Z)I_3.
+\]
+Then $\lambda_{\min}(P(Z)_{TT})=1/6$ with simple least eigenvalue is encoded by
+\[
+  M_T(Z)\succeq0,\qquad \det M_T(Z)=0,\qquad \rank M_T(Z)=2.
+\]
+The raw determinant has the universal factor $d^2$; since this chart has
+$d>0$, the active determinant equation may equivalently be written as the
+saturated degree-six equation
+\[
+  \frac{\det M_T(Z)}{d(Z)^2}=0.
+\]
+In purely algebraic computations this open chart condition should be retained,
+for instance by adjoining an inverse variable $u$ and the equation
+$u\,d(Z)-1=0$.
+On a cofactor patch, a nonzero kernel vector $w_T(Z)$ is obtained as the cross
+product of two rows of $M_T$.  If $h\in\R^9$ is a nonzero tangent witness for
+non-sharpness, then after clearing the positive denominator $d^2$ one obtains the
+polynomial inequalities
+\[
+  w_T^T\left[
+  \sum_j h_j\bigl(d\,\partial_jN-N\,\partial_jd\bigr)_{TT}
+  \right]w_T\le0,\qquad T\in\cA,
+\]
+with the normalization $\sum_jh_j^2=1$.
+
+Thus the simple-active non-sharp obstruction lives in only 18 variables: nine
+chart variables and nine tangent variables.  The active-set size changes the
+number of equations and inequalities, but not the ambient dimension.  A degree
+audit gives $\deg d=6$, entries of $N$ of degree at most $6$, raw active
+determinant degree at most $18$ but saturated active determinant degree $6$,
+cofactor-patch norm degree at most $24$, and cleared directional inequalities
+of degree at most $35$.
+
+There is also a useful count.  At a simple-active equality point, sharpness means
+that the active gradients positively span the 9-dimensional tangent space.  This
+requires at least ten active gradients.  Hence a simple-active equality point
+with $|\cA|\le9$ would automatically be non-sharp.  The equality screens found no
+such point, and all observed equality points have $|\cA|\in\{10,12,13\}$.
+
+The nonsimple case, where an active least eigenvalue has multiplicity greater
+than one, must be split off separately: one active triple then contributes a
+set-valued subgradient rather than one row of the active-gradient matrix.
+
+\section{A CAD cascade for the base active set}\label{sec:cad-cascade}
+
+The semialgebraic target becomes more concrete on the active set of the base
+graphic extremal $P(S(e,e,e),e,e,e)$.  We use zero-based row labels and write
+\[
+  \cA_0=\{012,013,014,015,023,024,025,123,124,125\},
+\]
+where, for instance, $013$ denotes the triple $\{0,1,3\}$.  Let
+$I_0\subset\mathbb Q[z_0,\ldots,z_8,u]$ be generated by the ten saturated active
+determinants
+\[
+  \frac{\det(6N(Z)_{TT}-d(Z)I_3)}{d(Z)^2},\qquad T\in\cA_0,
+\]
+together with the chart equation $u\,d(Z)-1=0$.  For an active triple $T$ and
+two local row indices $E\subset\{0,1,2\}$, let $\Delta_{T,E}$ denote the
+corresponding principal $2\times2$ minor of $6N(Z)_{TT}-d(Z)I_3$.
+
+The following three polynomial relations were found and then checked by
+open-locus Groebner computations:
+\begin{align*}
+  R_0&=\Delta_{013,\{0,2\}}+46656z_0^2,\\
+  R_1&=\Delta_{013,\{1,2\}}+46656z_1^2,\\
+  R_2&=\Delta_{014,\{0,2\}}+46656z_7^2.
+\end{align*}
+On a real point satisfying active positive semidefiniteness, each displayed
+minor is nonnegative.  Therefore $R_i=0$ forces the corresponding square
+coordinate to vanish.
+
+\begin{proposition}[Computed cascade on the base stratum]\label{prop:cad-cascade}
+Over $\mathbb Q$ in the full-rank chart $d>0$, the following statements hold.
+\begin{enumerate}[leftmargin=*]
+\item The determinant ideal $I_0$ has dimension $3$.  The open locus
+$I_0+\langle aR_0-1\rangle$ is zero-dimensional of degree $608$.  Hence $R_0$
+vanishes on every positive-dimensional irreducible component of $V(I_0)$.
+\item Put $I_1=I_0+\langle R_0,z_0\rangle$.  Then
+$\dim I_1=2$ and the top degree is $16$.  Moreover
+$I_1+\langle aR_1-1\rangle$ is empty, so $R_1$ holds on this whole branch.
+\item Put $I_2=I_1+\langle R_1,z_1\rangle$.  Then
+$\dim I_2=1$ and the top degree is $24$.  The normal form of $R_2$ modulo
+$I_2$ is zero, so $R_2\in I_2$.
+\item Put $I_3=I_2+\langle R_2,z_7\rangle$.  Then $I_3$ is zero-dimensional of
+degree $56$, and a lexicographic basis is
+\[
+\begin{gathered}
+z_2^2-5,\quad 216u-1,\quad z_8^2,\quad z_7,\quad z_6^2-5,\quad z_5^2,\\
+z_4^2-5,\quad z_3z_5z_8,\quad z_3^2,\quad z_1,\quad z_0.
+\end{gathered}
+\]
+Its real radical is therefore
+\[
+z_0=z_1=z_3=z_5=z_7=z_8=0,\qquad
+z_2^2=z_4^2=z_6^2=5,\qquad u=1/216.
+\]
+The resulting eight real sign choices all fail the GTZ semialgebraic
+conditions: an active block has $\lambda_{\min}-1/6=-1/6$, and an inactive block
+has least eigenvalue $2/3$ above the threshold.
+\item The finite open residue from the first step is also accounted for.  Let
+$J_0=I_0+\langle aR_0-1\rangle$.  The computed $z_0$ eliminant of $J_0$ is
+\[
+\begin{split}
+&z_0^{10}-\frac{815}{441}z_0^8-\frac{93850}{64827}z_0^6
+  +\frac{2295875}{453789}z_0^4\\
+&\hspace{25mm}
+  -\frac{13883125}{4084101}z_0^2+\frac{8556250}{12252303}\\
+&=(z_0^2-\tfrac59)(z_0^2-\tfrac{10}{21})(z_0^2+\tfrac53)
+  \left(z_0^4-\frac{365}{147}z_0^2+\frac{34225}{21609}\right).
+\end{split}
+\]
+The last two factors have no real zeros.  On the factor $z_0^2=5/9$, an exact
+lex basis reduces to
+\[
+\begin{gathered}
+9z_1^2-5,\quad 25980a-1,\quad 6u-1,\quad
+9z_8^2-5,\quad 9z_7^2-5,\quad 9z_6^2-5,\quad 9z_5^2-5,\\
+5z_4-9z_5z_7z_8,\quad
+5z_3-9z_5z_6z_8,\quad
+5z_2-9z_7z_8z_1,\quad
+5z_0-9z_6z_7z_1 .
+\end{gathered}
+\]
+This gives $32$ real sign choices; direct substitution shows that all have the
+same active set $\cA_0$ and satisfy the sharp equalities and inequalities.
+On the factor $z_0^2=10/21$, the $z_1$ eliminant factors as
+\[
+(z_1^2-\tfrac{10}{21})(z_1^2+\tfrac53)
+\left(z_1^4-\frac{365}{147}z_1^2+\frac{34225}{21609}\right).
+\]
+The only real subfactor is $z_1^2=10/21$, and adjoining it gives a lex basis
+whose first polynomial is $3z_2^2+5$.  Hence this branch has no real points.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The algebraic dimension and degree statements are Groebner-basis computations
+using Singular over $\mathbb Q$ with its modular backend.  The open-locus tests
+adjoin a fresh inverse variable $a$ and the equation $aR_i-1=0$; if this ideal
+has smaller dimension, or is empty, then $R_i$ cannot be nonzero on the
+corresponding component.  The positive-semidefinite forcing step is elementary:
+on the active semialgebraic locus the minors $\Delta_{T,E}$ are nonnegative, and
+so are the displayed squares.  The forced finite lex basis gives the eight real
+points explicitly, and direct exact substitution checks the active and inactive
+eigenvalue inequalities.  The open-residue eliminant and the displayed
+real-factor refinements were computed by exact characteristic-zero Groebner
+computations; a separate six-prime CRT reconstruction gives the same $z_0$
+eliminant.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:cad-cascade} is not yet a proof of the full
+$(6,3)$ case.  It accounts for the positive-dimensional residual determinant
+branches and the finite $R_0\ne0$ residue attached to the base active set in the
+standard chart.  The size-twelve and thirteen-active chart computations below
+propagate the same finiteness program to the other known equality active-set
+orbits in this standard chart.  Other active-set orbits and chart patches remain.
+\end{remark}
+
+\section{A finite chart for the thirteen-active point}\label{sec:seventh-chart}
+
+The out-of-family extremal of Theorem~\ref{thm:seventh} gives another exact
+chart computation.  Let
+\[
+  \cA_7=\{012,014,015,023,024,025,034,035,123,124,125,134,135\}.
+\]
+Let $I_7$ be the saturated determinant ideal for these active triples, again in
+the standard chart $Y=[I;Z]$ with $u\,d(Z)-1=0$.
+
+\begin{proposition}[Computed finite chart for the seventh point]
+The ideal $I_7$ is zero-dimensional of degree $32$ over $\mathbb Q$.  A
+lexicographic basis is
+\[
+\begin{gathered}
+8z_0^2-5,\quad 63u-8,\quad 8z_8^2-5,\quad
+64z_7^2-45,\quad 64z_6^2-45,\quad 8z_5^2-5,\\
+5z_4-8z_5z_7z_8,\quad
+5z_3-8z_5z_6z_8,\quad z_2,\quad
+45z_1-64z_6z_7z_0 .
+\end{gathered}
+\]
+Consequently the real chart points form a $32$-point sign family.  Direct
+substitution shows that all $32$ points satisfy the GTZ inequalities with
+$F=1/6$, and their actual active set is exactly $\cA_7$.
+\end{proposition}
+
+\begin{proof}
+The displayed lex basis is the output of an exact Singular computation over
+$\mathbb Q$ using the modular backend.  It leaves five independent signs, hence
+$32$ real points.  The active and inactive inequalities are then checked by
+substituting the displayed formulas into the $3\times3$ principal blocks.
+\end{proof}
+
+\section{Finite real branches for the two size-twelve charts}
+\label{sec:size-twelve-charts}
+
+Two known equality active-set orbits have twelve active triples in the standard
+chart:
+\[
+\begin{aligned}
+  \cA_{12a}
+    &=\{012,013,023,024,025,034,035,123,124,125,134,135\},\\
+  \cA_{12b}
+    &=\{012,013,014,015,024,025,034,035,124,125,134,135\}.
+\end{aligned}
+\]
+Let $I_{12a}$ and $I_{12b}$ be the corresponding saturated determinant ideals
+with $u\,d(Z)-1=0$.
+
+\begin{proposition}[Computed finite real branches for the size-twelve strata]
+For each of $I_{12a}$ and $I_{12b}$, an exact Groebner basis contains
+\[
+  729u^3+81u^2-9u-1=729\left(u-\frac19\right)\left(u+\frac19\right)^2 .
+\]
+Since $d(Z)=\det(Y^TY)>0$ on the real full-rank chart and $u=1/d(Z)$, every
+real chart point lies on the branch $u=1/9$.  On this branch both ideals are
+zero-dimensional of degree $32$ over $\mathbb Q$.
+
+For $\cA_{12a}$, a lexicographic basis of the real branch is
+\[
+\begin{gathered}
+z_0^2-1,\quad 9u-1,\quad z_8,\quad 8z_7^2-5,\quad 8z_6^2-5,\quad z_5,\quad
+8z_4^2-5,\\
+5z_3-8z_4z_6z_7,\quad z_2^2-1,\quad 5z_1-8z_6z_7z_0 .
+\end{gathered}
+\]
+For $\cA_{12b}$, a lexicographic basis of the real branch is
+\[
+\begin{gathered}
+z_2^2-1,\quad 9u-1,\quad z_8^2-1,\quad 8z_7^2-5,\quad 8z_6^2-5,\quad
+z_5^2-1,\\
+z_4-z_5z_7z_8,\quad z_3-z_5z_6z_8,\quad z_1,\quad z_0 .
+\end{gathered}
+\]
+Thus each real branch consists of a $32$-point sign family.  Direct substitution
+checks that every point in each family satisfies the GTZ inequalities with
+$F=1/6$, and that the actual active set is exactly the selected twelve-triple
+set.
+\end{proposition}
+
+\begin{proof}
+The branch polynomial in $u$ is read from exact characteristic-zero Groebner
+bases.  The displayed lex bases are exact computations after adding $9u-1$.
+The sign counts and active/inactive inequalities are verified by substituting
+the resulting formulas into the projector $P(Z)=Y(Y^TY)^{-1}Y^T$.
+\end{proof}
+
+\section{A structured low-active branch}
+\label{sec:structured-low-active}
+
+The active-set census also leaves low-active determinant strata that are much
+harder than the known equality strata.  The most persistent size-six survivor in
+our searches has
+\[
+  \cA_6=\{012,013,045,145,234,235\}.
+\]
+A refined over-tied numerical root has five outside triples tied at a common
+level:
+\[
+  \{024,034,125,135,245\}.
+\]
+In the standard chart the root has the pattern
+\[
+Z=
+\begin{pmatrix}
+-a&a&-b\\
+c&d&-a\\
+-d&-c&-a
+\end{pmatrix}.
+\]
+Substituting this ansatz into the six active determinant equations and five
+outside-tie determinant equations gives a zero-dimensional system of degree
+\(280\), both over \(\mathbb F_{32003}\) and over \(\mathbb Q\).  The exact
+\(\mathbb Q\) grevlex basis contains the simple tail relations
+\[
+  a^2((c+d)^2-5)=0,\qquad
+  ((c+d)^2-5)((c-d)^2-5)=0.
+\]
+The numerically relevant branch has \(a\ne0\), hence \((c+d)^2=5\).
+
+On this branch, modular lex computations over six primes have stable quotient
+degree \(184\) and a degree-\(22\) eliminant in the tie parameter \(q\), where
+the tied outside triples have least eigenvalue \(q/6\).  The visible factor
+\[
+  (q-3)(q-5)^2(q^2-3q+6)^2(q^2-9q+24)^2
+\]
+removes nuisance branches.  The six-prime CRT reconstruction of the residual
+factor is
+\[
+\begin{split}
+&q^{11}-\frac{575}{16}q^{10}+\frac{562849}{1024}q^9
+-\frac{4768527}{1024}q^8+\frac{97733649}{4096}q^7\\
+&\quad-\frac{311529979}{4096}q^6+\frac{154321449}{1024}q^5
+-\frac{374696325}{2048}q^4+\frac{543960225}{4096}q^3\\
+&\quad-\frac{225237375}{4096}q^2+\frac{24046875}{2048}q
+-\frac{253125}{256},
+\end{split}
+\]
+which factors over \(\mathbb Q\) as a cubic times an octic:
+\[
+\begin{split}
+&\left(q^3-9q^2+\frac{81}{4}q-\frac{45}{4}\right)\\
+&\quad\cdot
+\left(q^8-\frac{431}{16}q^7+\frac{293857}{1024}q^6
+-\frac{776859}{512}q^5+\frac{2094513}{512}q^4
+-\frac{1353145}{256}q^3\right.\\
+&\hspace{27mm}\left.
++\frac{3301125}{1024}q^2-\frac{453375}{512}q
++\frac{5625}{64}\right).
+\end{split}
+\]
+The refined numerical root corresponds to the real octic root
+\[
+  q=1.180695836766\ldots,
+\]
+so the tied inactive triples sit above the threshold by
+\[
+  \frac{q-1}{6}=0.030115972794\ldots.
+\]
+
+A deterministic numerical classifier using these lifted \(q\)-values found
+\(40\) real ansatz roots in two independent runs.  Twenty pass active positive
+semidefiniteness, but none pass the inactive inequalities.  The active-PSD roots
+occur only at \(q=1.180695836766\ldots\) and \(q=5\), and both cases have
+positive inactive overshoot.  The smaller real \(q\)-values fail active
+positive semidefiniteness.
+
+\begin{remark}
+This subsection is evidence, not a proof.  The remaining exact step is to
+certify the reconstructed \(q\)-factor by a characteristic-zero normal-form or
+membership computation, then isolate the real roots and prove the indicated sign
+conditions with rational interval arithmetic.
+\end{remark}
+
+\section{What remains}
+
+Proposition~\ref{prop:kkt} isolates the remaining difficulty: prove that no
+Clarke-stationary point of $F$ has value below $1/6$.  The exact local analysis
+above, including the CAD cascade in Proposition~\ref{prop:cad-cascade} and the
+finite branch computations in Sections~\ref{sec:seventh-chart}
+and~\ref{sec:size-twelve-charts}, and the structured low-active evidence in
+Section~\ref{sec:structured-low-active}, does not solve that global problem.
+
+The most realistic continuation is a semialgebraic exclusion of the non-sharp
+obstruction just described.  For each active-set stratum, modulo row-permutation
+symmetry and cofactor-patch choices, one can ask an exact real-algebraic solver
+to certify that the equality, positivity, and tangent-witness conditions have no
+solution outside the known sharp active-set orbits.  Inactive constraints may be
+relaxed for an infeasibility proof: if the relaxed obstruction is empty, then the
+true obstruction is empty.
+
+A second, more direct but currently less effective, continuation is certified
+global optimization over $\Gr(3,6)$:
+\begin{enumerate}[leftmargin=*]
+\item Use the exact sharpness certificates to remove explicit neighborhoods of
+the seven known equality points.  A second-order eigenvalue bound gives a radius
+of the form
+\[
+  F(P_0+r\dot P)\ge \frac16+\kappa r-\frac{r^2}{\operatorname{gap}_{\min}},
+\]
+where $\operatorname{gap}_{\min}$ is the smallest active spectral gap.
+\item Cover the remaining compact set by interval boxes in a Grassmann chart or
+by several charts, using interval bounds for the twenty $3\times3$ least
+eigenvalues.
+\item Branch on active triples near nonsmooth regions.  The blocks are only
+$3\times3$, so interval characteristic-polynomial or Rayleigh quotient bounds
+are feasible.
+\end{enumerate}
+This route is computational rather than elegant, but it is honest: it targets the
+global $\forall$ statement directly and does not rely on extrapolating from
+sampled extremals.
+
+A relaxed bound $F(P)\ge 1/6-\varepsilon$ is also a useful intermediate target,
+but only as part of a gap-closing strategy.  By itself it would not imply the
+sharp hypothesis.  What it can do is separate the problem into a certified
+compact region with a margin gap and a small near-threshold region that must be
+handled by the exact equality and KKT machinery above.
+
+\section{Reproducibility}\label{sec:repro}
+
+The accompanying repository contains the following verification scripts in
+\texttt{verify/}.
+\begin{center}
+\small
+\begin{tabular}{@{}ll@{}}
+\texttt{v4\_nesterenko.py} & exact tightness of a graphic extremal\\
+\texttt{v6\_sharpness.py} & exact sharpness certificate for the base extremal\\
+\texttt{v9\_rational\_certificate.py} & six graphic-matroid sharpness certificates\\
+\texttt{v11\_seventh\_exact.py} & exact reconstruction and sharpness of the seventh point\\
+\texttt{v13\_radius.py} & computed local radii at the seven points\\
+\texttt{v16\_jacobian.py} & independent Jacobian-rank isolation check\\
+\texttt{v17\_active\_orbits.py} & active-set orbit counts\\
+\texttt{v18\_kkt\_screen.py} & numerical active-set KKT screens\\
+\texttt{v20\_finiteness\_probe.py} & actual-active-set classifier for equality hits\\
+\texttt{v21\_semialgebraic\_route.py} & semialgebraic obstruction sizing
+\end{tabular}
+\end{center}
+The CAD cascade in Section~\ref{sec:cad-cascade} is supported by the following
+Sage/Singular helpers in \texttt{code/sage/}.
+\begin{center}
+\small
+\begin{tabular}{@{}ll@{}}
+\texttt{probe\_cad\_obstruction\_strata.py} & forced-coordinate dimension drops\\
+\texttt{lexify\_determinant\_slice.py} & exact slices and lex bases\\
+\texttt{classify\_lex\_slice\_roots.py} & real-root and inequality classifier\\
+\texttt{screen\_lex\_slice\_minors.py} & minor-relation discovery on slices\\
+\texttt{probe\_cad\_relation\_open\_locus.py} & component-relation checks\\
+\texttt{probe\_cad\_relation\_normal\_forms.py} & ideal-membership checks\\
+\texttt{reconstruct\_univariate\_crt.py} & modular eliminant reconstruction\\
+\texttt{dump\_determinant\_gb.py} & exact determinant Groebner bases\\
+\texttt{dump\_facstd\_components.py} & modular component diagnostics\\
+\texttt{probe\_s6\_ansatz.py} & structured size-six ansatz probes\\
+\texttt{classify\_s6\_ansatz\_numeric.py} & numerical classification of ansatz roots
+\end{tabular}
+\end{center}
+The principal output artifacts are:
+\begin{quote}
+\small\raggedright
+\path{code/sage/out/cad_open_R0_on_I_QQ.json}\\
+\path{code/sage/out/cad_open_R1_on_z0_QQ.json}\\
+\path{code/sage/out/cad_open_R2_on_z0z1_QQ.json}\\
+\path{code/sage/out/cad_obstruction_known_base_invd_QQ_z0z1z7_relz1_relz7.json}\\
+\path{code/sage/out/lex_cad_R0_nonzero_QQmod_z0.json}\\
+\path{code/sage/out/lex_cad_R0_nonzero_z0_eliminant_crt_6primes.json}\\
+\path{code/sage/out/lex_cad_R0_nonzero_QQmod_z0sq_5_9_z1.json}\\
+\path{code/sage/out/lex_cad_R0_nonzero_QQmod_z0sq_10_21_z1.json}\\
+\path{code/sage/out/lex_cad_R0_nonzero_QQmod_z0z1sq_10_21_z2.json}\\
+\path{code/sage/out/lex_det_mask32253_QQmod_z0.json}\\
+\path{code/sage/out/gb_det_mask32243_QQ.json}\\
+\path{code/sage/out/gb_det_mask31215_QQmod.json}\\
+\path{code/sage/out/lex_det_mask32243_QQmod_u_pos_z0.json}\\
+\path{code/sage/out/lex_det_mask31215_QQmod_u_pos_z2.json}\\
+\path{code/sage/out/s6_ansatz_cplusd_q_residual_crt_6primes.json}\\
+\path{code/sage/out/classify_s6_ansatz_cplusd_numeric_s800.json}
+\end{quote}
+The exact claims in this paper are reproducible by running
+\[
+\begin{split}
+&\texttt{python verify/v4\_nesterenko.py},\\
+&\texttt{python verify/v9\_rational\_certificate.py},\\
+&\texttt{python verify/v11\_seventh\_exact.py},\\
+&\texttt{python verify/v17\_active\_orbits.py}.
+\end{split}
+\]
+The numerical KKT sweep over active sizes $10,\ldots,13$ was run on MLCore.
+\begin{center}
+\small
+\begin{tabular}{@{}lll@{}}
+job & project & region\\
+\texttt{gtz63-kkt-x79fea} & \texttt{test-paos} & \texttt{ix-m5-sm12}
+\end{tabular}
+\end{center}
+
+\begin{thebibliography}{9}
+
+\bibitem{GTZ}
+S.~A. Goreinov, E.~E. Tyrtyshnikov, and N.~L. Zamarashkin.
+\newblock A theory of pseudoskeleton approximations.
+\newblock \emph{Linear Algebra and its Applications}, 261:1--21, 1997.
+
+\bibitem{GTZ2}
+S.~A. Goreinov, E.~E. Tyrtyshnikov, and N.~L. Zamarashkin.
+\newblock Pseudo-skeleton approximations by matrices of maximal volume.
+\newblock \emph{Mathematical Notes}, 62:515--519, 1997.
+
+\bibitem{SenguptaPautov}
+R.~Sengupta and M.~Pautov.
+\newblock Submatrices with the best-bounded inverses: revisiting the hypothesis.
+\newblock arXiv:2604.05944, 2026.
+
+\bibitem{HornJohnson}
+R.~A. Horn and C.~R. Johnson.
+\newblock \emph{Matrix Analysis}.
+\newblock Cambridge University Press, second edition, 2013.
+
+\end{thebibliography}
+
+\end{document}

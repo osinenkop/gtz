@@ -1,0 +1,224 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted_extra_equalities",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   11,
+   12,
+   13,
+   14
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    1,
+    5
+   ],
+   [
+    0,
+    2,
+    4
+   ],
+   [
+    0,
+    2,
+    5
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    0,
+    3,
+    5
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    1,
+    3,
+    4
+   ],
+   [
+    1,
+    3,
+    5
+   ]
+  ],
+  "active_size": 12,
+  "row_pairs": [],
+  "n_equalities": 14,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   7,
+   2
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 31215,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true,
+   "extra_equalities": [
+    "9*u0-1"
+   ]
+  }
+ },
+ "timeout_seconds": 600,
+ "characteristic": 0,
+ "linear_sections": 0,
+ "linear_section_mode": "random",
+ "linear_section_seed": 1,
+ "linear_forms": [],
+ "method": "modslimgb",
+ "script": "code/sage/out/lex_det_mask31215_QQmod_u_pos_z2.sing",
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "lex_last_variable": "z2",
+ "lex_variable_order": [
+  "z0",
+  "z1",
+  "z3",
+  "z4",
+  "z5",
+  "z6",
+  "z7",
+  "z8",
+  "u0",
+  "z2"
+ ],
+ "run": {
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 6.295987801160663,
+  "stdout": "method\nmodslimgb\nnvars\n10\nneqs\n14\nlinear_sections\n0\nmax_degree\n7\ncharacteristic\n0\n//used time: 2.30 sec\n//used time: 2.30 sec\n//used time: 2.78 sec\n//used time: 2.78 sec\n//used time: 2.82 sec\n//used time: 2.83 sec\n//used time: 3.08 sec\n//used time: 3.08 sec\n//used time: 3.23 sec\n//used time: 3.23 sec\n//used time: 3.24 sec\n//used time: 3.24 sec\n//used time: 3.25 sec\n//used time: 3.25 sec\n//used time: 3.46 sec\n//used time: 3.46 sec\n//used time: 3.49 sec\n//used time: 3.49 sec\n//used time: 3.53 sec\n//used time: 3.53 sec\n//used time: 3.65 sec\n//used time: 3.65 sec\n//used time: 3.96 sec\n//used time: 3.96 sec\n//used time: 4.13 sec\n//used time: 4.13 sec\n//used time: 4.21 sec\n//used time: 4.22 sec\n//used time: 4.23 sec\n//used time: 4.23 sec\n//used time: 4.32 sec\n//used time: 4.32 sec\n//used time: 4.37 sec\n//used time: 4.37 sec\n//used time: 4.38 sec\n//used time: 4.38 sec\n//used time: 4.49 sec\n//used time: 4.50 sec\n//used time: 68.98 sec\n//used time: 1.71 sec\ngb_basis_size\n18\ngb_dimension\n0\ngb_vdim\n32\ngb_degree\n// dimension (affine) = 0\n// degree (affine)  = 32\nlex_variable_order\nz0,z1,z3,z4,z5,z6,z7,z8,u0,z2\nlex_basis_size\n10\nlex_vdim\n32\nlex_first_poly\nz2^2-1\nlex_last_poly\nz0\nlex_basis_path\ncode/sage/out/lex_det_mask31215_QQmod_u_pos_z2_lex_basis.txt\ntimer\n71\n",
+  "stderr": "",
+  "had_error": false,
+  "parsed": {
+   "method": "modslimgb",
+   "nvars": 10,
+   "neqs": 14,
+   "linear_sections": 0,
+   "max_degree": 7,
+   "characteristic": 0,
+   "gb_basis_size": 18,
+   "gb_dimension": 0,
+   "gb_vdim": 32,
+   "gb_degree": "// dimension (affine) = 0",
+   "gb_degree_value": 32,
+   "lex_variable_order": "z0,z1,z3,z4,z5,z6,z7,z8,u0,z2",
+   "lex_basis_size": 10,
+   "lex_vdim": 32,
+   "lex_first_poly": "z2^2-1",
+   "lex_last_poly": "z0",
+   "lex_basis_path": "code/sage/out/lex_det_mask31215_QQmod_u_pos_z2_lex_basis.txt",
+   "timer": 71
+  }
+ },
+ "lex_basis": {
+  "exists": true,
+  "path": "code/sage/out/lex_det_mask31215_QQmod_u_pos_z2_lex_basis.txt",
+  "polynomial_count": 10,
+  "univariate_polynomials": [
+   {
+    "index": 1,
+    "variable": "z2",
+    "polynomial": "z2^2-1"
+   },
+   {
+    "index": 2,
+    "variable": "u0",
+    "polynomial": "9*u0-1"
+   },
+   {
+    "index": 3,
+    "variable": "z8",
+    "polynomial": "z8^2-1"
+   },
+   {
+    "index": 4,
+    "variable": "z7",
+    "polynomial": "8*z7^2-5"
+   },
+   {
+    "index": 5,
+    "variable": "z6",
+    "polynomial": "8*z6^2-5"
+   },
+   {
+    "index": 6,
+    "variable": "z5",
+    "polynomial": "z5^2-1"
+   },
+   {
+    "index": 9,
+    "variable": "z1",
+    "polynomial": "z1"
+   },
+   {
+    "index": 10,
+    "variable": "z0",
+    "polynomial": "z0"
+   }
+  ]
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "model": "simple-active cofactor-patch nonsharp obstruction",
+ "degree_audit": {
+  "triple_index": 0,
+  "triple": [
+   0,
+   1,
+   2
+  ],
+  "row_pair": [
+   0,
+   1
+  ],
+  "degree_d": 6,
+  "degree_N_entry_max": 6,
+  "structural_degree_upper_bounds": {
+   "active_det_raw": 18,
+   "active_det_saturated": 6,
+   "psd_2x2_minor": 12,
+   "cofactor_patch_norm": 24,
+   "cleared_directional_ineq": 35
+  },
+  "exact_expansion": false
+ },
+ "system_sizes": [
+  {
+   "active_size": 8,
+   "variables": {
+    "chart_z": 9,
+    "tangent_h": 9,
+    "total": 18
+   },
+   "equalities": {
+    "active_det_M_T_saturated": 8,
+    "tangent_normalization_sum_h2_eq_1": 1,
+    "total": 9
+   },
+   "inequalities": {
+    "chart_denominator_d_gt_0": 1,
+    "cofactor_patch_norm_gt_0": 8,
+    "active_psd_1x1_2x2_minors_ge_0": 48,
+    "nonsharp_directional_derivatives_le_0": 8,
+    "inactive_F_le_1_6_disjunctive": "relaxed away",
+    "total_without_inactive_disjunctions": 65
+   },
+   "cofactor_patch_branches_per_active_set": 6561,
+   "note": "Simple-active branch. Multiple least-eigenvalue active blocks need a separate SDP/subgradient formulation."
+  },
+  {
+   "active_size": 9,
+   "variables": {
+    "chart_z": 9,
+    "tangent_h": 9,
+    "total": 18
+   },
+   "equalities": {
+    "active_det_M_T_saturated": 9,
+    "tangent_normalization_sum_h2_eq_1": 1,
+    "total": 10
+   },
+   "inequalities": {
+    "chart_denominator_d_gt_0": 1,
+    "cofactor_patch_norm_gt_0": 9,
+    "active_psd_1x1_2x2_minors_ge_0": 54,
+    "nonsharp_directional_derivatives_le_0": 9,
+    "inactive_F_le_1_6_disjunctive": "relaxed away",
+    "total_without_inactive_disjunctions": 73
+   },
+   "cofactor_patch_branches_per_active_set": 19683,
+   "note": "Simple-active branch. Multiple least-eigenvalue active blocks need a separate SDP/subgradient formulation."
+  },
+  {
+   "active_size": 10,
+   "variables": {
+    "chart_z": 9,
+    "tangent_h": 9,
+    "total": 18
+   },
+   "equalities": {
+    "active_det_M_T_saturated": 10,
+    "tangent_normalization_sum_h2_eq_1": 1,
+    "total": 11
+   },
+   "inequalities": {
+    "chart_denominator_d_gt_0": 1,
+    "cofactor_patch_norm_gt_0": 10,
+    "active_psd_1x1_2x2_minors_ge_0": 60,
+    "nonsharp_directional_derivatives_le_0": 10,
+    "inactive_F_le_1_6_disjunctive": "relaxed away",
+    "total_without_inactive_disjunctions": 81
+   },
+   "cofactor_patch_branches_per_active_set": 59049,
+   "note": "Simple-active branch. Multiple least-eigenvalue active blocks need a separate SDP/subgradient formulation."
+  },
+  {
+   "active_size": 12,
+   "variables": {
+    "chart_z": 9,
+    "tangent_h": 9,
+    "total": 18
+   },
+   "equalities": {
+    "active_det_M_T_saturated": 12,
+    "tangent_normalization_sum_h2_eq_1": 1,
+    "total": 13
+   },
+   "inequalities": {
+    "chart_denominator_d_gt_0": 1,
+    "cofactor_patch_norm_gt_0": 12,
+    "active_psd_1x1_2x2_minors_ge_0": 72,
+    "nonsharp_directional_derivatives_le_0": 12,
+    "inactive_F_le_1_6_disjunctive": "relaxed away",
+    "total_without_inactive_disjunctions": 97
+   },
+   "cofactor_patch_branches_per_active_set": 531441,
+   "note": "Simple-active branch. Multiple least-eigenvalue active blocks need a separate SDP/subgradient formulation."
+  },
+  {
+   "active_size": 13,
+   "variables": {
+    "chart_z": 9,
+    "tangent_h": 9,
+    "total": 18
+   },
+   "equalities": {
+    "active_det_M_T_saturated": 13,
+    "tangent_normalization_sum_h2_eq_1": 1,
+    "total": 14
+   },
+   "inequalities": {
+    "chart_denominator_d_gt_0": 1,
+    "cofactor_patch_norm_gt_0": 13,
+    "active_psd_1x1_2x2_minors_ge_0": 78,
+    "nonsharp_directional_derivatives_le_0": 13,
+    "inactive_F_le_1_6_disjunctive": "relaxed away",
+    "total_without_inactive_disjunctions": 105
+   },
+   "cofactor_patch_branches_per_active_set": 1594323,
+   "note": "Simple-active branch. Multiple least-eigenvalue active blocks need a separate SDP/subgradient formulation."
+  }
+ ],
+ "active_orbit_work_table": [
+  {
+   "active_size": 1,
+   "active_set_orbits": 1,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 3
+  },
+  {
+   "active_size": 2,
+   "active_set_orbits": 3,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 9
+  },
+  {
+   "active_size": 3,
+   "active_set_orbits": 7,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 27
+  },
+  {
+   "active_size": 4,
+   "active_set_orbits": 21,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 81
+  },
+  {
+   "active_size": 5,
+   "active_set_orbits": 43,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 243
+  },
+  {
+   "active_size": 6,
+   "active_set_orbits": 94,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 729
+  },
+  {
+   "active_size": 7,
+   "active_set_orbits": 161,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 2187
+  },
+  {
+   "active_size": 8,
+   "active_set_orbits": 249,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 6561
+  },
+  {
+   "active_size": 9,
+   "active_set_orbits": 312,
+   "simple_sharp_possible": false,
+   "simple_nonsharp_automatic": true,
+   "cofactor_patch_branches_per_orbit": 19683
+  },
+  {
+   "active_size": 10,
+   "active_set_orbits": 352,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 59049
+  },
+  {
+   "active_size": 11,
+   "active_set_orbits": 312,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 177147
+  },
+  {
+   "active_size": 12,
+   "active_set_orbits": 249,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 531441
+  },
+  {
+   "active_size": 13,
+   "active_set_orbits": 161,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 1594323
+  },
+  {
+   "active_size": 14,
+   "active_set_orbits": 94,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 4782969
+  },
+  {
+   "active_size": 15,
+   "active_set_orbits": 43,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 14348907
+  },
+  {
+   "active_size": 16,
+   "active_set_orbits": 21,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 43046721
+  },
+  {
+   "active_size": 17,
+   "active_set_orbits": 7,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 129140163
+  },
+  {
+   "active_size": 18,
+   "active_set_orbits": 3,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 387420489
+  },
+  {
+   "active_size": 19,
+   "active_set_orbits": 1,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 1162261467
+  },
+  {
+   "active_size": 20,
+   "active_set_orbits": 1,
+   "simple_sharp_possible": true,
+   "simple_nonsharp_automatic": false,
+   "cofactor_patch_branches_per_orbit": 3486784401
+  }
+ ],
+ "proof_target": "Show no real solution of the equality + PSD + nonsharp witness system outside the known sharp active-set orbits, with a separate case split for multiple least-eigenvalue active blocks."
+}

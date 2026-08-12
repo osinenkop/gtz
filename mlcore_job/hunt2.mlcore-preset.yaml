@@ -1,0 +1,17 @@
+job:
+  generate_name: gtz63-hunt-preempt
+  flavor: 20cpu-320ram
+  preemption: allowed
+  time_limit: 20h
+  image: docker-proxy.artifactory.tcsbank.ru/python:3.12-slim
+  work_dir: /work
+  input:
+    - type: files
+      src: ./
+      dst: /work
+      mask: "*.py"
+  entrypoint: /bin/sh
+  args:
+    - -c
+    - |
+      pip install -q numpy scipy sympy && mkdir -p verify/out verify/data && GTZ_CPUS=19 python -u /work/v12_hunt.py 12000

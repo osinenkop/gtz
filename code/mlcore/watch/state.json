@@ -1,0 +1,299 @@
+{
+  "created_at": "2026-08-09T20:22:54+00:00",
+  "interval_seconds": 600,
+  "jobs": {
+    "gtz-sage-local-sep-0l3ssu": {
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32009_rankonly.json"
+      ],
+      "last_get": {
+        "finished_at": "2026-08-09T20:40:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:42:55+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {},
+      "separator_jsons": [
+        {
+          "candidate_count": 12,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+          "generator_rank": 29920,
+          "kernel_dimension": 115,
+          "matrix_rank": 30916,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 12,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 5,
+          "target_label": "active:1:013"
+        },
+        {
+          "candidate_count": 21,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+          "generator_rank": 29865,
+          "kernel_dimension": 171,
+          "matrix_rank": 30860,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 21,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 6,
+          "target_label": "active:0:012"
+        },
+        {
+          "candidate_count": 0,
+          "characteristic": 32009,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32009_rankonly.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1408,
+          "matrix_rank": 86680,
+          "multiplier_degree": 6,
+          "passing_candidate_count": 0,
+          "rank_only": true,
+          "separator_degree": 6,
+          "separator_rank_defect": 399,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true
+    },
+    "gtz-sage-local-sep-6nm5vj": {
+      "last_get": {
+        "finished_at": "2026-08-09T20:36:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:38:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {}
+    },
+    "gtz-sage-local-sep-b321g6": {
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32003.json"
+      ],
+      "last_get": {
+        "finished_at": "2026-08-09T20:28:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:30:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {},
+      "separator_jsons": [
+        {
+          "candidate_count": 12,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+          "generator_rank": 29920,
+          "kernel_dimension": 115,
+          "matrix_rank": 30916,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 12,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 5,
+          "target_label": "active:1:013"
+        },
+        {
+          "candidate_count": 21,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+          "generator_rank": 29865,
+          "kernel_dimension": 171,
+          "matrix_rank": 30860,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 21,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 6,
+          "target_label": "active:0:012"
+        },
+        {
+          "candidate_count": 1408,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32003.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1408,
+          "matrix_rank": 86680,
+          "multiplier_degree": 6,
+          "passing_candidate_count": 1408,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 399,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true
+    },
+    "gtz-sage-local-sep-lpvaxl": {
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32027_rankonly.json"
+      ],
+      "last_get": {
+        "finished_at": "2026-08-09T20:44:55+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:46:55+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {},
+      "separator_jsons": [
+        {
+          "candidate_count": 12,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+          "generator_rank": 29920,
+          "kernel_dimension": 115,
+          "matrix_rank": 30916,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 12,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 5,
+          "target_label": "active:1:013"
+        },
+        {
+          "candidate_count": 21,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+          "generator_rank": 29865,
+          "kernel_dimension": 171,
+          "matrix_rank": 30860,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 21,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 6,
+          "target_label": "active:0:012"
+        },
+        {
+          "candidate_count": 0,
+          "characteristic": 32027,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D6_S6_32027_rankonly.json",
+          "generator_rank": 79071,
+          "kernel_dimension": 1408,
+          "matrix_rank": 86680,
+          "multiplier_degree": 6,
+          "passing_candidate_count": 0,
+          "rank_only": true,
+          "separator_degree": 6,
+          "separator_rank_defect": 399,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true
+    },
+    "gtz-sage-local-sep-o9fr7w": {
+      "extracted_files": [
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D6_S6_32003.json",
+        "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json"
+      ],
+      "last_get": {
+        "finished_at": "2026-08-09T20:24:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:26:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {},
+      "separator_jsons": [
+        {
+          "candidate_count": 12,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+          "generator_rank": 29920,
+          "kernel_dimension": 115,
+          "matrix_rank": 30916,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 12,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 5,
+          "target_label": "active:1:013"
+        },
+        {
+          "candidate_count": 834,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s7_78612_omit_active1_D6_S6_32003.json",
+          "generator_rank": 79399,
+          "kernel_dimension": 1015,
+          "matrix_rank": 87073,
+          "multiplier_degree": 6,
+          "passing_candidate_count": 832,
+          "rank_only": false,
+          "separator_degree": 6,
+          "separator_rank_defect": 334,
+          "target_label": "active:1:013"
+        },
+        {
+          "candidate_count": 21,
+          "characteristic": 32003,
+          "file": "/home/p.osinenko/Documents/gtz/code/sage/out/local_separator_s8_79656_omit_active0_D5_S4_p32003.json",
+          "generator_rank": 29865,
+          "kernel_dimension": 171,
+          "matrix_rank": 30860,
+          "multiplier_degree": 5,
+          "passing_candidate_count": 21,
+          "rank_only": false,
+          "separator_degree": 4,
+          "separator_rank_defect": 6,
+          "target_label": "active:0:012"
+        }
+      ],
+      "separator_jsons_extracted": true
+    },
+    "gtz-sage-local-sep-uskwjl": {
+      "last_get": {
+        "finished_at": "2026-08-09T20:32:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "last_logs": {
+        "finished_at": "2026-08-09T20:34:54+00:00",
+        "returncode": null,
+        "timed_out": true
+      },
+      "log_signal": {}
+    }
+  },
+  "jobs_watched": [
+    "gtz-sage-local-sep-o9fr7w",
+    "gtz-sage-local-sep-b321g6",
+    "gtz-sage-local-sep-uskwjl",
+    "gtz-sage-local-sep-6nm5vj",
+    "gtz-sage-local-sep-0l3ssu",
+    "gtz-sage-local-sep-lpvaxl"
+  ],
+  "max_hours": 0.0,
+  "poll_count": 1,
+  "project": "aida",
+  "stop_reason": "breakthrough",
+  "stopped_at": "2026-08-09T20:46:55+00:00",
+  "updated_at": "2026-08-09T20:22:54+00:00",
+  "watch_started_at": "2026-08-09T20:22:54+00:00"
+}

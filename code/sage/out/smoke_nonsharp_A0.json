@@ -1,0 +1,61 @@
+{
+ "mode": "nonsharp_factored",
+ "variables": [
+  "z0",
+  "z1",
+  "z2",
+  "z3",
+  "z4",
+  "z5",
+  "z6",
+  "z7",
+  "z8",
+  "h0",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "h7",
+  "h8",
+  "s0",
+  "u0"
+ ],
+ "n_variables": 20,
+ "active_indices": [
+  0
+ ],
+ "active_triples": [
+  [
+   0,
+   1,
+   2
+  ]
+ ],
+ "active_size": 1,
+ "row_pairs": [
+  [
+   0,
+   1
+  ]
+ ],
+ "n_equalities": 4,
+ "equality_degrees": [
+  2,
+  6,
+  35,
+  25
+ ],
+ "max_equality_degree": 35,
+ "n_nonzero_constraints": 0,
+ "nonzero_degrees": [],
+ "metadata": {
+  "chart": "Y=[I;Z]",
+  "description": "factored simple-active cofactor-patch nonsharp witness system",
+  "mask": 1,
+  "patch_inverses": true,
+  "ring_order": "degrevlex",
+  "note": "directional inequalities are intentionally not expanded by Sage"
+ }
+}

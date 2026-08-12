@@ -1,0 +1,56 @@
+{
+ "variable": "z2",
+ "input_count": 3,
+ "primes": [
+  32003,
+  32009,
+  32027
+ ],
+ "modulus": 32807947232729,
+ "degree": 2,
+ "integer_coefficients_low_to_high": [
+  -10935982410908,
+  0,
+  1
+ ],
+ "integer_lift_polynomial": "z2^2 - 10935982410908",
+ "integer_lift_factorization": [
+  {
+   "factor": "z2^2 - 10935982410908",
+   "degree": 2,
+   "multiplicity": 1
+  }
+ ],
+ "rational_reconstruction_success": true,
+ "rational_reconstruction_failed_exponents": [],
+ "rational_coefficients_low_to_high": [
+  "5/3",
+  "0",
+  "1"
+ ],
+ "rational_lift_polynomial": "z2^2 + 5/3",
+ "rational_lift_factorization": [
+  {
+   "factor": "z2^2 + 5/3",
+   "degree": 2,
+   "multiplicity": 1
+  }
+ ],
+ "inputs": [
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32003_z0z1sq_10_21_z2.json",
+   "prime": 32003,
+   "polynomial": "z2^2-10666"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32009_z0z1sq_10_21_z2.json",
+   "prime": 32009,
+   "polynomial": "z2^2-10668"
+  },
+  {
+   "path": "code/sage/out/lex_cad_R0_nonzero_p32027_z0z1sq_10_21_z2.json",
+   "prime": 32027,
+   "polynomial": "z2^2-10674"
+  }
+ ]
+}

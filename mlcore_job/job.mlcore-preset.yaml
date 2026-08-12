@@ -1,0 +1,16 @@
+job:
+  generate_name: gtz63-extremals
+  flavor: 16cpu-128ram
+  time_limit: 3h
+  image: docker-proxy.artifactory.tcsbank.ru/python:3.12-slim
+  work_dir: /work
+  input:
+    - type: files
+      src: ./
+      dst: /work
+      mask: "*.py"
+  entrypoint: /bin/sh
+  args:
+    - -c
+    - |
+      pip install -q sympy && python -u /work/v7_all_extremals.py

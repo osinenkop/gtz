@@ -1,0 +1,274 @@
+[
+ {
+  "label": "P(S(e,e,e),e,e,e)",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "5/9",
+   "5/9",
+   "5/9"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "13/18",
+   "13/18",
+   "13/18",
+   "5/18",
+   "5/18",
+   "5/18"
+  ],
+  "core": true,
+  "n_active": 10,
+  "n_singular": 10,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   10,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 1,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": true,
+  "multipliers": [
+   "3/10",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90",
+   "7/90"
+  ],
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0; independently confirmed by a strictly positive KKT multiplier"
+ },
+ {
+  "label": "P(S(e,e),S(e,e),e,e)",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "5/8",
+   "5/8"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "11/18",
+   "11/18",
+   "11/18",
+   "11/18",
+   "5/18",
+   "5/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": true,
+  "multipliers": [
+   "3/20",
+   "3/20",
+   "3/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "3/20",
+   "1/20",
+   "1/20",
+   "1/20",
+   "1/20"
+  ],
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0; independently confirmed by a strictly positive KKT multiplier"
+ },
+ {
+  "label": "P(S(P(e,e,e),e),S(e,e))",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "9/5",
+   "9/5",
+   "9/5"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "5/18",
+   "5/18",
+   "5/18",
+   "13/18",
+   "13/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 10,
+  "n_singular": 10,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   10,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 1,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": false,
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0 (route B found no explicit multiplier; route A is self-sufficient)"
+ },
+ {
+  "label": "P(S(P(S(e,e),e,e),e),e)",
+  "weights": [
+   "1",
+   "1",
+   "5/8",
+   "5/8",
+   "1",
+   "1"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "11/18",
+   "11/18",
+   "5/18",
+   "5/18",
+   "11/18",
+   "11/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": false,
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0 (route B found no explicit multiplier; route A is self-sufficient)"
+ },
+ {
+  "label": "P(S(P(e,e),P(e,e)),S(e,e))",
+  "weights": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "8/5",
+   "8/5"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "7/18",
+   "7/18",
+   "7/18",
+   "7/18",
+   "13/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": false,
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0 (route B found no explicit multiplier; route A is self-sufficient)"
+ },
+ {
+  "label": "P(S(P(e,e),e),S(P(e,e),e))",
+  "weights": [
+   "1",
+   "1",
+   "8/5",
+   "1",
+   "1",
+   "8/5"
+  ],
+  "symmetric_P": true,
+  "leverages": [
+   "7/18",
+   "7/18",
+   "13/18",
+   "7/18",
+   "7/18",
+   "13/18"
+  ],
+  "core": true,
+  "n_active": 12,
+  "n_singular": 8,
+  "n_below": 0,
+  "F_is_1_6": true,
+  "simple_lmin": true,
+  "tangent_valid": true,
+  "L_rational": true,
+  "L_shape": [
+   12,
+   9
+  ],
+  "rank_L": 9,
+  "dim_kkt": 3,
+  "lp_status": "optimal",
+  "lp_value": "0",
+  "cone_trivial": true,
+  "positive_multiplier": false,
+  "ok": true,
+  "verdict": "SHARP",
+  "why": "rank(L)=9 and exact LP max over {Lz<=0,|z|<=1} is 0 => critical cone N={0} => kappa>0 (route B found no explicit multiplier; route A is self-sufficient)"
+ }
+]

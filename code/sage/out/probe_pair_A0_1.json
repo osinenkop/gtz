@@ -1,0 +1,114 @@
+{
+ "summary": {
+  "mode": "det_saturated",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8"
+  ],
+  "n_variables": 9,
+  "active_indices": [
+   0,
+   1
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ]
+  ],
+  "active_size": 2,
+  "row_pairs": [],
+  "n_equalities": 2,
+  "equality_degrees": [
+   6,
+   6
+  ],
+  "max_equality_degree": 6,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 3,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)"
+  }
+ },
+ "timeout_seconds": 60,
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "std": {
+   "script": "code/sage/out/probe_pair_A0_1_std.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 0.02669726312160492,
+   "stdout": "method\nstd\nnvars\n9\nneqs\n2\nmax_degree\n6\nbasis_size\n2\ndimension\n7\ndegree\n// dimension (proj.)  = 6\n// degree (proj.)   = 24\ntimer\n0\n",
+   "stderr": "",
+   "parsed": {
+    "method": "std",
+    "nvars": 9,
+    "neqs": 2,
+    "max_degree": 6,
+    "basis_size": 2,
+    "dimension": 7,
+    "degree": "// dimension (proj.)  = 6",
+    "timer": 0
+   }
+  },
+  "slimgb": {
+   "script": "code/sage/out/probe_pair_A0_1_slimgb.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 0.01303216302767396,
+   "stdout": "method\nslimgb\nnvars\n9\nneqs\n2\nmax_degree\n6\nbasis_size\n2\ndimension\n7\ndegree\n// dimension (proj.)  = 6\n// degree (proj.)   = 24\ntimer\n0\n",
+   "stderr": "",
+   "parsed": {
+    "method": "slimgb",
+    "nvars": 9,
+    "neqs": 2,
+    "max_degree": 6,
+    "basis_size": 2,
+    "dimension": 7,
+    "degree": "// dimension (proj.)  = 6",
+    "timer": 0
+   }
+  },
+  "facstd": {
+   "script": "code/sage/out/probe_pair_A0_1_facstd.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 0.010283868992701173,
+   "stdout": "method\nfacstd\nnvars\n9\nneqs\n2\nmax_degree\n6\nfacstd_components\n1\ncomponent\n1\nbasis_size\n2\ndimension\n7\ndegree\n// dimension (proj.)  = 6\n// degree (proj.)   = 24\ntimer\n0\n",
+   "stderr": "",
+   "parsed": {
+    "method": "facstd",
+    "nvars": 9,
+    "neqs": 2,
+    "max_degree": 6,
+    "facstd_components": 1,
+    "timer": 0,
+    "components": [
+     {
+      "component": 1,
+      "basis_size": 2,
+      "dimension": 7,
+      "degree": "// dimension (proj.)  = 6"
+     }
+    ]
+   }
+  }
+ }
+}

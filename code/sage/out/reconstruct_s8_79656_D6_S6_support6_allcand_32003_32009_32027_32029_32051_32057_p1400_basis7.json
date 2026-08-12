@@ -1,0 +1,670 @@
+{
+ "source_summary": "code/sage/out/reconstruct_s8_79656_D6_S6_support6_allcand_32003_32009_32027_32029_32051_32057_p1400.json",
+ "basis_index": 7,
+ "terms": [
+  {
+   "coefficient": "1",
+   "monomial": "z6^2*z8^2"
+  },
+  {
+   "coefficient": "-1",
+   "monomial": "z4^2*z6^4"
+  },
+  {
+   "coefficient": "24400/3901",
+   "monomial": "z4^4*z6^2"
+  },
+  {
+   "coefficient": "-18539/3901",
+   "monomial": "z3*z5*z6*z8"
+  },
+  {
+   "coefficient": "-82865/3901",
+   "monomial": "z3*z4*z6*z7"
+  },
+  {
+   "coefficient": "2",
+   "monomial": "z3*z4*z6^3*z7"
+  },
+  {
+   "coefficient": "-68320/3901",
+   "monomial": "z3*z4*z5^2*z6*z7"
+  },
+  {
+   "coefficient": "68320/3901",
+   "monomial": "z3*z4^2*z5*z6*z8"
+  },
+  {
+   "coefficient": "-48800/3901",
+   "monomial": "z3*z4^3*z6*z7"
+  },
+  {
+   "coefficient": "-1",
+   "monomial": "z3^2*z6^2*z7^2"
+  },
+  {
+   "coefficient": "-2738915/202852",
+   "monomial": "z3^2*z5^2*z6^2"
+  },
+  {
+   "coefficient": "68320/3901",
+   "monomial": "z3^2*z4*z5*z7*z8"
+  },
+  {
+   "coefficient": "-2563681/50713",
+   "monomial": "z3^2*z4^2"
+  },
+  {
+   "coefficient": "-68320/3901",
+   "monomial": "z3^2*z4^2*z8^2"
+  },
+  {
+   "coefficient": "24400/3901",
+   "monomial": "z3^2*z4^2*z7^2"
+  },
+  {
+   "coefficient": "1530967/202852",
+   "monomial": "z3^2*z4^2*z6^2"
+  },
+  {
+   "coefficient": "2738915/101426",
+   "monomial": "z3^3*z5*z6*z8"
+  },
+  {
+   "coefficient": "-1530967/101426",
+   "monomial": "z3^3*z4*z6*z7"
+  },
+  {
+   "coefficient": "-2779130/50713",
+   "monomial": "z3^4"
+  },
+  {
+   "coefficient": "-2738915/202852",
+   "monomial": "z3^4*z8^2"
+  },
+  {
+   "coefficient": "1530967/202852",
+   "monomial": "z3^4*z7^2"
+  },
+  {
+   "coefficient": "3188/3901",
+   "monomial": "z2^2*z6^2*z7^2"
+  },
+  {
+   "coefficient": "3188/3901",
+   "monomial": "z2^2*z6^4"
+  },
+  {
+   "coefficient": "1397167/202852",
+   "monomial": "z2^2*z5^2*z6^2"
+  },
+  {
+   "coefficient": "3050/3901",
+   "monomial": "z2^2*z4*z5*z7*z8"
+  },
+  {
+   "coefficient": "-37629041/1267825",
+   "monomial": "z2^2*z4^2"
+  },
+  {
+   "coefficient": "-1525/3901",
+   "monomial": "z2^2*z4^2*z8^2"
+  },
+  {
+   "coefficient": "-25010/3901",
+   "monomial": "z2^2*z4^2*z7^2"
+  },
+  {
+   "coefficient": "79992469/5071300",
+   "monomial": "z2^2*z4^2*z6^2"
+  },
+  {
+   "coefficient": "53375/3901",
+   "monomial": "z2^2*z4^2*z5^2"
+  },
+  {
+   "coefficient": "22570/3901",
+   "monomial": "z2^2*z4^4"
+  },
+  {
+   "coefficient": "-762767/101426",
+   "monomial": "z2^2*z3*z5*z6*z8"
+  },
+  {
+   "coefficient": "118498681/2535650",
+   "monomial": "z2^2*z3*z4*z6*z7"
+  },
+  {
+   "coefficient": "10355353/202852",
+   "monomial": "z2^2*z3^2"
+  },
+  {
+   "coefficient": "762767/202852",
+   "monomial": "z2^2*z3^2*z8^2"
+  },
+  {
+   "coefficient": "-12909187/390100",
+   "monomial": "z2^2*z3^2*z7^2"
+  },
+  {
+   "coefficient": "-74136/50713",
+   "monomial": "z2^2*z3^2*z6^2"
+  },
+  {
+   "coefficient": "51240/3901",
+   "monomial": "z2^2*z3^2*z5^2"
+  },
+  {
+   "coefficient": "-3460454/50713",
+   "monomial": "z2^2*z3^2*z4^2"
+  },
+  {
+   "coefficient": "-3375670/50713",
+   "monomial": "z2^2*z3^4"
+  },
+  {
+   "coefficient": "91449723/5071300",
+   "monomial": "z2^4"
+  },
+  {
+   "coefficient": "1100903/253565",
+   "monomial": "z2^4*z7^2"
+  },
+  {
+   "coefficient": "-6297136/253565",
+   "monomial": "z2^4*z6^2"
+  },
+  {
+   "coefficient": "-555823/50713",
+   "monomial": "z2^4*z4^2"
+  },
+  {
+   "coefficient": "-6497536/1267825",
+   "monomial": "z2^4*z3^2"
+  },
+  {
+   "coefficient": "-36641/3901",
+   "monomial": "z1*z2*z7*z8"
+  },
+  {
+   "coefficient": "-6376/3901",
+   "monomial": "z1*z2*z6^2*z7*z8"
+  },
+  {
+   "coefficient": "-3050/3901",
+   "monomial": "z1*z2*z5^2*z7*z8"
+  },
+  {
+   "coefficient": "20485/3901",
+   "monomial": "z1*z2*z4*z5"
+  },
+  {
+   "coefficient": "146605/3901",
+   "monomial": "z1*z2*z4*z5*z6^2"
+  },
+  {
+   "coefficient": "-106750/3901",
+   "monomial": "z1*z2*z4*z5^3"
+  },
+  {
+   "coefficient": "50020/3901",
+   "monomial": "z1*z2*z4^2*z7*z8"
+  },
+  {
+   "coefficient": "-45140/3901",
+   "monomial": "z1*z2*z4^3*z5"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z1*z2*z3*z5*z6*z7"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z1*z2*z3*z4*z6*z8"
+  },
+  {
+   "coefficient": "2928823/50713",
+   "monomial": "z1*z2*z3^2*z7*z8"
+  },
+  {
+   "coefficient": "6591020/50713",
+   "monomial": "z1*z2*z3^2*z4*z5"
+  },
+  {
+   "coefficient": "-2201806/253565",
+   "monomial": "z1*z2^3*z7*z8"
+  },
+  {
+   "coefficient": "1111646/50713",
+   "monomial": "z1*z2^3*z4*z5"
+  },
+  {
+   "coefficient": "3188/3901",
+   "monomial": "z1^2*z6^2*z8^2"
+  },
+  {
+   "coefficient": "-2852/3901",
+   "monomial": "z1^2*z6^4"
+  },
+  {
+   "coefficient": "1525/3901",
+   "monomial": "z1^2*z5^2*z8^2"
+  },
+  {
+   "coefficient": "-2414705/202852",
+   "monomial": "z1^2*z5^2*z6^2"
+  },
+  {
+   "coefficient": "53375/3901",
+   "monomial": "z1^2*z5^4"
+  },
+  {
+   "coefficient": "-7547089/253565",
+   "monomial": "z1^2*z4^2"
+  },
+  {
+   "coefficient": "-25010/3901",
+   "monomial": "z1^2*z4^2*z8^2"
+  },
+  {
+   "coefficient": "-36435439/1014260",
+   "monomial": "z1^2*z4^2*z6^2"
+  },
+  {
+   "coefficient": "22570/3901",
+   "monomial": "z1^2*z4^2*z5^2"
+  },
+  {
+   "coefficient": "5025391/101426",
+   "monomial": "z1^2*z3*z5*z6*z8"
+  },
+  {
+   "coefficient": "23239919/507130",
+   "monomial": "z1^2*z3*z4*z6*z7"
+  },
+  {
+   "coefficient": "-151115/2444",
+   "monomial": "z1^2*z3^2"
+  },
+  {
+   "coefficient": "-6998221/202852",
+   "monomial": "z1^2*z3^2*z8^2"
+  },
+  {
+   "coefficient": "-23239919/1014260",
+   "monomial": "z1^2*z3^2*z7^2"
+  },
+  {
+   "coefficient": "-3564233/50713",
+   "monomial": "z1^2*z3^2*z6^2"
+  },
+  {
+   "coefficient": "-5833110/50713",
+   "monomial": "z1^2*z3^2*z5^2"
+  },
+  {
+   "coefficient": "11113455/50713",
+   "monomial": "z1^2*z3^4"
+  },
+  {
+   "coefficient": "8000097/253565",
+   "monomial": "z1^2*z2^2"
+  },
+  {
+   "coefficient": "1100903/253565",
+   "monomial": "z1^2*z2^2*z8^2"
+  },
+  {
+   "coefficient": "-477933/50713",
+   "monomial": "z1^2*z2^2*z7^2"
+  },
+  {
+   "coefficient": "3020969/253565",
+   "monomial": "z1^2*z2^2*z6^2"
+  },
+  {
+   "coefficient": "-555823/50713",
+   "monomial": "z1^2*z2^2*z5^2"
+  },
+  {
+   "coefficient": "-2413665/50713",
+   "monomial": "z1^2*z2^2*z4^2"
+  },
+  {
+   "coefficient": "-7306268/253565",
+   "monomial": "z1^2*z2^2*z3^2"
+  },
+  {
+   "coefficient": "955866/50713",
+   "monomial": "z1^3*z2*z7*z8"
+  },
+  {
+   "coefficient": "4827330/50713",
+   "monomial": "z1^3*z2*z4*z5"
+  },
+  {
+   "coefficient": "-7833171/202852",
+   "monomial": "z1^4"
+  },
+  {
+   "coefficient": "-477933/50713",
+   "monomial": "z1^4*z8^2"
+  },
+  {
+   "coefficient": "-2552440/50713",
+   "monomial": "z1^4*z6^2"
+  },
+  {
+   "coefficient": "-2413665/50713",
+   "monomial": "z1^4*z5^2"
+  },
+  {
+   "coefficient": "8657289/50713",
+   "monomial": "z1^4*z3^2"
+  },
+  {
+   "coefficient": "29000/3901",
+   "monomial": "z0*z2*z6*z8"
+  },
+  {
+   "coefficient": "-6376/3901",
+   "monomial": "z0*z2*z6^3*z8"
+  },
+  {
+   "coefficient": "-24400/3901",
+   "monomial": "z0*z2*z5^2*z6*z8"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z0*z2*z4*z5*z6*z7"
+  },
+  {
+   "coefficient": "-153144/3901",
+   "monomial": "z0*z2*z4^2*z6*z8"
+  },
+  {
+   "coefficient": "36784/19505",
+   "monomial": "z0*z2*z3*z5"
+  },
+  {
+   "coefficient": "149416/3901",
+   "monomial": "z0*z2*z3*z5*z7^2"
+  },
+  {
+   "coefficient": "-2811/3901",
+   "monomial": "z0*z2*z3*z5*z6^2"
+  },
+  {
+   "coefficient": "-102480/3901",
+   "monomial": "z0*z2*z3*z5^3"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z0*z2*z3*z4*z7*z8"
+  },
+  {
+   "coefficient": "25376/3901",
+   "monomial": "z0*z2*z3*z4^2*z5"
+  },
+  {
+   "coefficient": "184815/50713",
+   "monomial": "z0*z2*z3^2*z6*z8"
+  },
+  {
+   "coefficient": "6751340/50713",
+   "monomial": "z0*z2*z3^3*z5"
+  },
+  {
+   "coefficient": "12594272/253565",
+   "monomial": "z0*z2^3*z6*z8"
+  },
+  {
+   "coefficient": "12995072/1267825",
+   "monomial": "z0*z2^3*z3*z5"
+  },
+  {
+   "coefficient": "29000/3901",
+   "monomial": "z0*z1*z6*z7"
+  },
+  {
+   "coefficient": "5704/3901",
+   "monomial": "z0*z1*z6^3*z7"
+  },
+  {
+   "coefficient": "51816/3901",
+   "monomial": "z0*z1*z5^2*z6*z7"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z0*z1*z4*z5*z6*z8"
+  },
+  {
+   "coefficient": "101504/3901",
+   "monomial": "z0*z1*z4^2*z6*z7"
+  },
+  {
+   "coefficient": "-149416/3901",
+   "monomial": "z0*z1*z3*z5*z7*z8"
+  },
+  {
+   "coefficient": "-187304/3901",
+   "monomial": "z0*z1*z3*z4"
+  },
+  {
+   "coefficient": "149416/3901",
+   "monomial": "z0*z1*z3*z4*z8^2"
+  },
+  {
+   "coefficient": "-17825/3901",
+   "monomial": "z0*z1*z3*z4*z6^2"
+  },
+  {
+   "coefficient": "390400/3901",
+   "monomial": "z0*z1*z3*z4*z5^2"
+  },
+  {
+   "coefficient": "88677/611",
+   "monomial": "z0*z1*z3^2*z6*z7"
+  },
+  {
+   "coefficient": "-22226910/50713",
+   "monomial": "z0*z1*z3^3*z4"
+  },
+  {
+   "coefficient": "-1117803/253565",
+   "monomial": "z0*z1*z2^2*z6*z7"
+  },
+  {
+   "coefficient": "-11464807/253565",
+   "monomial": "z0*z1*z2^2*z3*z4"
+  },
+  {
+   "coefficient": "-984827/50713",
+   "monomial": "z0*z1^2*z2*z6*z8"
+  },
+  {
+   "coefficient": "26077343/253565",
+   "monomial": "z0*z1^2*z2*z3*z5"
+  },
+  {
+   "coefficient": "5104880/50713",
+   "monomial": "z0*z1^3*z6*z7"
+  },
+  {
+   "coefficient": "-17314578/50713",
+   "monomial": "z0*z1^3*z3*z4"
+  },
+  {
+   "coefficient": "3188/3901",
+   "monomial": "z0^2*z6^2*z8^2"
+  },
+  {
+   "coefficient": "-2852/3901",
+   "monomial": "z0^2*z6^2*z7^2"
+  },
+  {
+   "coefficient": "12200/3901",
+   "monomial": "z0^2*z5^2*z8^2"
+  },
+  {
+   "coefficient": "300150/50713",
+   "monomial": "z0^2*z5^2*z6^2"
+  },
+  {
+   "coefficient": "51240/3901",
+   "monomial": "z0^2*z5^4"
+  },
+  {
+   "coefficient": "97600/3901",
+   "monomial": "z0^2*z4*z5*z7*z8"
+  },
+  {
+   "coefficient": "8586796/253565",
+   "monomial": "z0^2*z4^2"
+  },
+  {
+   "coefficient": "102480/3901",
+   "monomial": "z0^2*z4^2*z8^2"
+  },
+  {
+   "coefficient": "-50752/3901",
+   "monomial": "z0^2*z4^2*z7^2"
+  },
+  {
+   "coefficient": "-585606/50713",
+   "monomial": "z0^2*z4^2*z6^2"
+  },
+  {
+   "coefficient": "-207888/3901",
+   "monomial": "z0^2*z4^2*z5^2"
+  },
+  {
+   "coefficient": "-563757/50713",
+   "monomial": "z0^2*z3*z5*z6*z8"
+  },
+  {
+   "coefficient": "1402937/50713",
+   "monomial": "z0^2*z3*z4*z6*z7"
+  },
+  {
+   "coefficient": "-2064980/50713",
+   "monomial": "z0^2*z3^2"
+  },
+  {
+   "coefficient": "189471/50713",
+   "monomial": "z0^2*z3^2*z8^2"
+  },
+  {
+   "coefficient": "-4381564/50713",
+   "monomial": "z0^2*z3^2*z7^2"
+  },
+  {
+   "coefficient": "-3375670/50713",
+   "monomial": "z0^2*z3^2*z5^2"
+  },
+  {
+   "coefficient": "11113455/50713",
+   "monomial": "z0^2*z3^2*z4^2"
+  },
+  {
+   "coefficient": "-31546316/1267825",
+   "monomial": "z0^2*z2^2"
+  },
+  {
+   "coefficient": "-6297136/253565",
+   "monomial": "z0^2*z2^2*z8^2"
+  },
+  {
+   "coefficient": "190126/50713",
+   "monomial": "z0^2*z2^2*z7^2"
+  },
+  {
+   "coefficient": "2524096/253565",
+   "monomial": "z0^2*z2^2*z6^2"
+  },
+  {
+   "coefficient": "-6497536/1267825",
+   "monomial": "z0^2*z2^2*z5^2"
+  },
+  {
+   "coefficient": "10031877/253565",
+   "monomial": "z0^2*z2^2*z4^2"
+  },
+  {
+   "coefficient": "774600/50713",
+   "monomial": "z0^2*z2^2*z3^2"
+  },
+  {
+   "coefficient": "-783457/253565",
+   "monomial": "z0^2*z1*z2*z7*z8"
+  },
+  {
+   "coefficient": "-8598947/253565",
+   "monomial": "z0^2*z1*z2*z4*z5"
+  },
+  {
+   "coefficient": "-8418459/253565",
+   "monomial": "z0^2*z1^2"
+  },
+  {
+   "coefficient": "2853796/253565",
+   "monomial": "z0^2*z1^2*z8^2"
+  },
+  {
+   "coefficient": "-2552440/50713",
+   "monomial": "z0^2*z1^2*z7^2"
+  },
+  {
+   "coefficient": "682784/50713",
+   "monomial": "z0^2*z1^2*z6^2"
+  },
+  {
+   "coefficient": "-672246/19505",
+   "monomial": "z0^2*z1^2*z5^2"
+  },
+  {
+   "coefficient": "8657289/50713",
+   "monomial": "z0^2*z1^2*z4^2"
+  },
+  {
+   "coefficient": "-1925596/50713",
+   "monomial": "z0^2*z1^2*z3^2"
+  },
+  {
+   "coefficient": "-5048192/253565",
+   "monomial": "z0^3*z2*z6*z8"
+  },
+  {
+   "coefficient": "-1549200/50713",
+   "monomial": "z0^3*z2*z3*z5"
+  },
+  {
+   "coefficient": "-1365568/50713",
+   "monomial": "z0^3*z1*z6*z7"
+  },
+  {
+   "coefficient": "3851192/50713",
+   "monomial": "z0^3*z1*z3*z4"
+  },
+  {
+   "coefficient": "2524096/253565",
+   "monomial": "z0^4"
+  },
+  {
+   "coefficient": "2524096/253565",
+   "monomial": "z0^4*z8^2"
+  },
+  {
+   "coefficient": "682784/50713",
+   "monomial": "z0^4*z7^2"
+  },
+  {
+   "coefficient": "774600/50713",
+   "monomial": "z0^4*z5^2"
+  },
+  {
+   "coefficient": "-1925596/50713",
+   "monomial": "z0^4*z4^2"
+  }
+ ]
+}

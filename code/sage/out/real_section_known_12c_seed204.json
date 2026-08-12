@@ -1,0 +1,5261 @@
+{
+ "known_label": "P(S(P(S(e,e),e,e),e),e)",
+ "active_indices": [
+  2,
+  3,
+  5,
+  6,
+  7,
+  8,
+  9,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "active_triples": [
+  [
+   0,
+   1,
+   4
+  ],
+  [
+   0,
+   1,
+   5
+  ],
+  [
+   0,
+   2,
+   4
+  ],
+  [
+   0,
+   2,
+   5
+  ],
+  [
+   0,
+   3,
+   4
+  ],
+  [
+   0,
+   3,
+   5
+  ],
+  [
+   0,
+   4,
+   5
+  ],
+  [
+   1,
+   2,
+   4
+  ],
+  [
+   1,
+   2,
+   5
+  ],
+  [
+   1,
+   3,
+   4
+  ],
+  [
+   1,
+   3,
+   5
+  ],
+  [
+   1,
+   4,
+   5
+  ]
+ ],
+ "z0": [
+  -0.9999999999999988,
+  -0.9999999999999996,
+  0.9999999999999993,
+  -9.190648864599381e-17,
+  -0.7905694150420948,
+  0.7905694150420947,
+  -5.133777441094333e-18,
+  -0.7905694150420949,
+  0.7905694150420947
+ ],
+ "chart_rows": [
+  0,
+  4,
+  5
+ ],
+ "chart_complement": [
+  1,
+  2,
+  3
+ ],
+ "sections": 3,
+ "section_seed": 204,
+ "section_matrix": [
+  [
+   0.26730324181966836,
+   0.0473400842057134,
+   0.6384661594110442,
+   0.31170806634707315,
+   0.01618658696409026,
+   -0.23865367553929237,
+   -0.2338224505942183,
+   0.09458947206426523,
+   -0.5483331550507681
+  ],
+  [
+   0.038348180537906645,
+   -0.4482897643989842,
+   -0.2968718202978591,
+   -0.13828419321196658,
+   0.37823599654917855,
+   0.15617351670850435,
+   0.5944826480309866,
+   0.31804738067183924,
+   -0.26133104835913173
+  ],
+  [
+   0.09312045275578297,
+   -0.2323710882185172,
+   0.7053694517819682,
+   -0.2780357819832972,
+   0.15556539142067097,
+   -0.32945792740290475,
+   0.10055050436214312,
+   0.4005357377241188,
+   0.243310297789207
+  ]
+ ],
+ "section_rhs": [
+  -0.3859210491064694,
+  -0.5205249069542428,
+  0.33687786172149303
+ ],
+ "starts": 500,
+ "accepted_roots": 1,
+ "passes_equality_inequalities": 1,
+ "attempt_summary": {
+  "accepted_attempts": 261,
+  "duplicate_attempts": 260,
+  "best_residual_max": 2.4380787976227037e-17
+ },
+ "roots": [
+  {
+   "z": [
+    -0.9999999999999988,
+    -0.9999999999999996,
+    0.9999999999999993,
+    -9.190648864599381e-17,
+    -0.7905694150420948,
+    0.7905694150420947,
+    -5.133777441094333e-18,
+    -0.7905694150420949,
+    0.7905694150420947
+   ],
+   "section_residual_max": 0.0,
+   "det_residual_max": 7.195889974422335e-17,
+   "F_minus_1_6": 8.326672684688674e-17,
+   "active_min_lambda_minus_1_6": -2.7755575615628914e-16,
+   "inactive_max_lambda_minus_1_6": -0.16666666666666638,
+   "passes_active_psd": true,
+   "passes_inactive": true,
+   "passes_equality_inequalities": true,
+   "actual_active": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "actual_active_triples": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     1,
+     5
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "actual_active_size": 12,
+   "selected_equals_actual": true,
+   "gap_min": 0.33333333333333304,
+   "rank_L": 9,
+   "positive_multiplier": {
+    "success": true,
+    "margin": 0.049999999999999815,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "residual": 1.0175894416030218e-16
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "start": 0,
+   "success": true,
+   "cost": 5.8970046325313715e-33,
+   "residual_norm": 1.0860022681865238e-16,
+   "residual_max": 7.195889974422335e-17,
+   "accepted": true,
+   "duplicate": false,
+   "nfev": 1
+  },
+  {
+   "start": 1,
+   "success": true,
+   "cost": 3.913120074512448e-29,
+   "residual_norm": 8.84660395237907e-15,
+   "residual_max": 5.417411088318293e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 2,
+   "success": true,
+   "cost": 4.114286997321509e-31,
+   "residual_norm": 9.071148766635358e-16,
+   "residual_max": 5.551115123125783e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 3,
+   "success": true,
+   "cost": 3.3859975135092004e-32,
+   "residual_norm": 2.6023057135967714e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 4,
+   "success": true,
+   "cost": 0.0013431185741587144,
+   "residual_norm": 0.05182892192895226,
+   "residual_max": 0.03037661449730795,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 51
+  },
+  {
+   "start": 5,
+   "success": true,
+   "cost": 0.000972177664177591,
+   "residual_norm": 0.04409484469136026,
+   "residual_max": 0.034150793912005456,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 24
+  },
+  {
+   "start": 6,
+   "success": true,
+   "cost": 0.0012819827476501042,
+   "residual_norm": 0.050635614890116705,
+   "residual_max": 0.038860167196258046,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 442
+  },
+  {
+   "start": 7,
+   "success": true,
+   "cost": 2.0258650027726327e-30,
+   "residual_norm": 2.012890957191985e-15,
+   "residual_max": 1.2644206669342063e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 8,
+   "success": true,
+   "cost": 8.444186138968293e-25,
+   "residual_norm": 1.2995527029688556e-12,
+   "residual_max": 7.253365692135312e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 9,
+   "success": true,
+   "cost": 6.445557827082391e-33,
+   "residual_norm": 1.135390490279216e-16,
+   "residual_max": 6.167905692361987e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 10,
+   "success": true,
+   "cost": 0.0015931234724792297,
+   "residual_norm": 0.05644685062037084,
+   "residual_max": 0.030403924481336685,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 36
+  },
+  {
+   "start": 11,
+   "success": true,
+   "cost": 0.0010729679618554718,
+   "residual_norm": 0.04632424768640008,
+   "residual_max": 0.025874579377488535,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 47
+  },
+  {
+   "start": 12,
+   "success": true,
+   "cost": 0.0012958326373871108,
+   "residual_norm": 0.05090840082711518,
+   "residual_max": 0.03925584602547115,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 124
+  },
+  {
+   "start": 13,
+   "success": true,
+   "cost": 2.677460595729522e-28,
+   "residual_norm": 2.314070265022012e-14,
+   "residual_max": 1.366624435361111e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 14,
+   "success": true,
+   "cost": 1.3750518961310425e-32,
+   "residual_norm": 1.6583436894269188e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 15,
+   "success": true,
+   "cost": 2.269842184595386e-31,
+   "residual_norm": 6.737717988451855e-16,
+   "residual_max": 4.440892098500626e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 16,
+   "success": true,
+   "cost": 0.0013431185741584147,
+   "residual_norm": 0.05182892192894648,
+   "residual_max": 0.030376628861051278,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 45
+  },
+  {
+   "start": 17,
+   "success": true,
+   "cost": 0.0012190875094177187,
+   "residual_norm": 0.049377879853588665,
+   "residual_max": 0.027930825437603623,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 88
+  },
+  {
+   "start": 18,
+   "success": true,
+   "cost": 0.0016512998920456066,
+   "residual_norm": 0.05746825022646168,
+   "residual_max": 0.03493021311822317,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 99
+  },
+  {
+   "start": 19,
+   "success": true,
+   "cost": 6.356615961300925e-28,
+   "residual_norm": 3.565561936441695e-14,
+   "residual_max": 2.866020178384573e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 20,
+   "success": true,
+   "cost": 4.549051812401083e-33,
+   "residual_norm": 9.538397991697644e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 21,
+   "success": true,
+   "cost": 9.438773948984232e-33,
+   "residual_norm": 1.3739558907755541e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 22,
+   "success": true,
+   "cost": 0.0012217939246578925,
+   "residual_norm": 0.04943265974349129,
+   "residual_max": 0.023337524018487744,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 23,
+   "success": true,
+   "cost": 0.0012820050603900071,
+   "residual_norm": 0.05063605554128416,
+   "residual_max": 0.03884787245290049,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 382
+  },
+  {
+   "start": 24,
+   "success": true,
+   "cost": 0.0012804384842737223,
+   "residual_norm": 0.050605108127020584,
+   "residual_max": 0.03889751207668762,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 138
+  },
+  {
+   "start": 25,
+   "success": true,
+   "cost": 1.0253990307253783e-28,
+   "residual_norm": 1.4320607743565762e-14,
+   "residual_max": 9.04202156744875e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 26,
+   "success": true,
+   "cost": 1.4833920602008503e-32,
+   "residual_norm": 1.7224355199547241e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 27,
+   "success": true,
+   "cost": 1.585553529267318e-32,
+   "residual_norm": 1.7807602473479229e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 28,
+   "success": true,
+   "cost": 0.0011832412638046214,
+   "residual_norm": 0.048646505810892963,
+   "residual_max": 0.029841739050787085,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 30
+  },
+  {
+   "start": 29,
+   "success": true,
+   "cost": 0.0012274161942847411,
+   "residual_norm": 0.04954626513239401,
+   "residual_max": 0.027028439203876216,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 61
+  },
+  {
+   "start": 30,
+   "success": true,
+   "cost": 0.001086664156260779,
+   "residual_norm": 0.04661896944937284,
+   "residual_max": 0.027908540607408702,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 31,
+   "success": true,
+   "cost": 6.328608439135672e-32,
+   "residual_norm": 3.55769825565229e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 32,
+   "success": true,
+   "cost": 3.787992458862877e-33,
+   "residual_norm": 8.704013394822962e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 33,
+   "success": true,
+   "cost": 3.2024030898960284e-31,
+   "residual_norm": 8.003003298632368e-16,
+   "residual_max": 4.242257107863485e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 34,
+   "success": true,
+   "cost": 0.0013431185741587628,
+   "residual_norm": 0.0518289219289532,
+   "residual_max": 0.030376622897910825,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 35,
+   "success": true,
+   "cost": 0.001393333904991247,
+   "residual_norm": 0.05278889854867682,
+   "residual_max": 0.04267547292742966,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 86
+  },
+  {
+   "start": 36,
+   "success": true,
+   "cost": 0.001280446006639656,
+   "residual_norm": 0.050605256775154414,
+   "residual_max": 0.038900796155724046,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 142
+  },
+  {
+   "start": 37,
+   "success": true,
+   "cost": 1.1747466793568928e-28,
+   "residual_norm": 1.532805714601099e-14,
+   "residual_max": 1.1647061915744037e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 38,
+   "success": true,
+   "cost": 3.2565124087090895e-32,
+   "residual_norm": 2.552062855303172e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 39,
+   "success": true,
+   "cost": 1.778360460263643e-24,
+   "residual_norm": 1.8859270719005245e-12,
+   "residual_max": 1.3189757927919761e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 40,
+   "success": true,
+   "cost": 0.0010999260094089098,
+   "residual_norm": 0.04690258008700395,
+   "residual_max": 0.032497495168469205,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 45
+  },
+  {
+   "start": 41,
+   "success": true,
+   "cost": 0.00107284599429683,
+   "residual_norm": 0.04632161470192571,
+   "residual_max": 0.020740688374765573,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 42
+  },
+  {
+   "start": 42,
+   "success": true,
+   "cost": 0.0013140301019953842,
+   "residual_norm": 0.051264609663887704,
+   "residual_max": 0.03444580844312438,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 31
+  },
+  {
+   "start": 43,
+   "success": true,
+   "cost": 1.994885911055499e-29,
+   "residual_norm": 6.3164640599872e-15,
+   "residual_max": 4.5745300551685936e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 44,
+   "success": true,
+   "cost": 2.8505724772244702e-31,
+   "residual_norm": 7.550592661804065e-16,
+   "residual_max": 4.440892098500626e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 45,
+   "success": true,
+   "cost": 2.7304214196757e-27,
+   "residual_norm": 7.389751578606279e-14,
+   "residual_max": 4.3344164864182086e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 46,
+   "success": true,
+   "cost": 0.0012386638960798066,
+   "residual_norm": 0.049772761548457535,
+   "residual_max": 0.02801210517336321,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 93
+  },
+  {
+   "start": 47,
+   "success": true,
+   "cost": 0.0013431185741587784,
+   "residual_norm": 0.0518289219289535,
+   "residual_max": 0.03037662810384364,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 42
+  },
+  {
+   "start": 48,
+   "success": true,
+   "cost": 0.0013909043889936553,
+   "residual_norm": 0.052742855231654936,
+   "residual_max": 0.04279242043534779,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 56
+  },
+  {
+   "start": 49,
+   "success": true,
+   "cost": 3.837641294864061e-31,
+   "residual_norm": 8.760869014959715e-16,
+   "residual_max": 6.661338147750939e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 50,
+   "success": true,
+   "cost": 1.6941380671640884e-32,
+   "residual_norm": 1.8407270667668733e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 51,
+   "success": true,
+   "cost": 1.0261356064634817e-32,
+   "residual_norm": 1.4325750287251845e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 52,
+   "success": true,
+   "cost": 0.0016512998920468103,
+   "residual_norm": 0.05746825022648263,
+   "residual_max": 0.034930221654469705,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 106
+  },
+  {
+   "start": 53,
+   "success": true,
+   "cost": 0.0016610234504406813,
+   "residual_norm": 0.057637200668330196,
+   "residual_max": 0.025806254254277627,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 34
+  },
+  {
+   "start": 54,
+   "success": true,
+   "cost": 0.0012818476220301637,
+   "residual_norm": 0.05063294623128628,
+   "residual_max": 0.03885748930324681,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 416
+  },
+  {
+   "start": 55,
+   "success": true,
+   "cost": 4.6658942042398005e-30,
+   "residual_norm": 3.05479760515809e-15,
+   "residual_max": 1.7912626114900898e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 56,
+   "success": true,
+   "cost": 2.0567954310747827e-32,
+   "residual_norm": 2.0281989207544623e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 57,
+   "success": true,
+   "cost": 1.6832006872329994e-32,
+   "residual_norm": 1.8347755651485004e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 58,
+   "success": true,
+   "cost": 0.0013431185741590605,
+   "residual_norm": 0.05182892192895894,
+   "residual_max": 0.03037662782786456,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 47
+  },
+  {
+   "start": 59,
+   "success": true,
+   "cost": 0.0017267953175245754,
+   "residual_norm": 0.05876725818897076,
+   "residual_max": 0.025921361953935646,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 51
+  },
+  {
+   "start": 60,
+   "success": true,
+   "cost": 0.0012860003711879376,
+   "residual_norm": 0.050714896651534995,
+   "residual_max": 0.03860450795221298,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 102
+  },
+  {
+   "start": 61,
+   "success": true,
+   "cost": 3.404332155229428e-32,
+   "residual_norm": 2.609341738917855e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 62,
+   "success": true,
+   "cost": 1.0750632094402317e-32,
+   "residual_norm": 1.4663309377082868e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 63,
+   "success": true,
+   "cost": 1.4295802830338573e-32,
+   "residual_norm": 1.6909052504702073e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 64,
+   "success": true,
+   "cost": 0.0013431185741590564,
+   "residual_norm": 0.05182892192895886,
+   "residual_max": 0.030376626873867926,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 47
+  },
+  {
+   "start": 65,
+   "success": true,
+   "cost": 0.0023823256279103073,
+   "residual_norm": 0.0690264533046615,
+   "residual_max": 0.037750716013856565,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 58
+  },
+  {
+   "start": 66,
+   "success": true,
+   "cost": 0.0012838231033231104,
+   "residual_norm": 0.05067194693956628,
+   "residual_max": 0.038733926307004944,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 73
+  },
+  {
+   "start": 67,
+   "success": true,
+   "cost": 6.671394908565292e-31,
+   "residual_norm": 1.1551099435608104e-15,
+   "residual_max": 7.216449660063518e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 68,
+   "success": true,
+   "cost": 2.256045961123734e-32,
+   "residual_norm": 2.1241685249168598e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 69,
+   "success": true,
+   "cost": 3.251043581504838e-25,
+   "residual_norm": 8.063552047956084e-13,
+   "residual_max": 4.998614166357921e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 70,
+   "success": true,
+   "cost": 0.0011832412638043506,
+   "residual_norm": 0.0486465058108874,
+   "residual_max": 0.029841741553891833,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 68
+  },
+  {
+   "start": 71,
+   "success": true,
+   "cost": 0.0014183318376517174,
+   "residual_norm": 0.05326033867056644,
+   "residual_max": 0.02572073063727195,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 72,
+   "success": true,
+   "cost": 0.0013932250554663226,
+   "residual_norm": 0.05278683653083072,
+   "residual_max": 0.04288282163917724,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 130
+  },
+  {
+   "start": 73,
+   "success": true,
+   "cost": 4.226984280679085e-31,
+   "residual_norm": 9.194546514841376e-16,
+   "residual_max": 7.771561172376096e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 74,
+   "success": true,
+   "cost": 1.7163760854176952e-32,
+   "residual_norm": 1.8527687850445318e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 75,
+   "success": true,
+   "cost": 1.9367904871856753e-24,
+   "residual_norm": 1.968141502629156e-12,
+   "residual_max": 1.4818663271611678e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 76,
+   "success": true,
+   "cost": 0.0011832412638046732,
+   "residual_norm": 0.048646505810894025,
+   "residual_max": 0.02984174180695596,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 32
+  },
+  {
+   "start": 77,
+   "success": true,
+   "cost": 0.0010127805868362998,
+   "residual_norm": 0.04500623483110534,
+   "residual_max": 0.028712094745322554,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 19
+  },
+  {
+   "start": 78,
+   "success": true,
+   "cost": 0.0013946165409782357,
+   "residual_norm": 0.052813190416376776,
+   "residual_max": 0.04284070447592351,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 67
+  },
+  {
+   "start": 79,
+   "success": true,
+   "cost": 1.9487958217470465e-29,
+   "residual_norm": 6.243069472218047e-15,
+   "residual_max": 3.744889033148802e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 80,
+   "success": true,
+   "cost": 4.674283553772292e-25,
+   "residual_norm": 9.66879884346788e-13,
+   "residual_max": 6.045460186677132e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 81,
+   "success": true,
+   "cost": 1.612948459612192e-27,
+   "residual_norm": 5.679697984245627e-14,
+   "residual_max": 2.9933106091338475e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 82,
+   "success": true,
+   "cost": 0.0010999260093766227,
+   "residual_norm": 0.046902580086315565,
+   "residual_max": 0.03249731584230217,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 35
+  },
+  {
+   "start": 83,
+   "success": true,
+   "cost": 0.0014693135476445366,
+   "residual_norm": 0.05420910528028546,
+   "residual_max": 0.028824855275393805,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 25
+  },
+  {
+   "start": 84,
+   "success": true,
+   "cost": 0.0018316335420062928,
+   "residual_norm": 0.060524929442442026,
+   "residual_max": 0.026332238764457023,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 61
+  },
+  {
+   "start": 85,
+   "success": true,
+   "cost": 5.674139004690373e-32,
+   "residual_norm": 3.3687205300203736e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 86,
+   "success": true,
+   "cost": 8.625867715941768e-33,
+   "residual_norm": 1.3134586187574977e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 87,
+   "success": true,
+   "cost": 4.366972491133677e-26,
+   "residual_norm": 2.955324852239996e-13,
+   "residual_max": 2.4043524373122533e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 88,
+   "success": true,
+   "cost": 0.0010866641562607216,
+   "residual_norm": 0.046618969449371606,
+   "residual_max": 0.027908536706942697,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 24
+  },
+  {
+   "start": 89,
+   "success": true,
+   "cost": 0.0017267953175237284,
+   "residual_norm": 0.058767258188956346,
+   "residual_max": 0.02592135725007196,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 48
+  },
+  {
+   "start": 90,
+   "success": true,
+   "cost": 0.0012855715301211207,
+   "residual_norm": 0.05070644002730069,
+   "residual_max": 0.03854694758015535,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 152
+  },
+  {
+   "start": 91,
+   "success": true,
+   "cost": 1.1700387670543901e-32,
+   "residual_norm": 1.5297311966841692e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 92,
+   "success": true,
+   "cost": 2.7590099301340288e-24,
+   "residual_norm": 2.3490465853763006e-12,
+   "residual_max": 1.4274349967864158e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 93,
+   "success": true,
+   "cost": 9.127921524745372e-31,
+   "residual_norm": 1.3511418522675828e-15,
+   "residual_max": 8.881784197001252e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 94,
+   "success": true,
+   "cost": 0.0013431185741589432,
+   "residual_norm": 0.051828921928956675,
+   "residual_max": 0.030376633007782494,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 95,
+   "success": true,
+   "cost": 0.0020595025172604423,
+   "residual_norm": 0.06417947518109575,
+   "residual_max": 0.04326650031113061,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 96,
+   "success": true,
+   "cost": 0.001280419662484813,
+   "residual_norm": 0.05060473619108814,
+   "residual_max": 0.03890072763185876,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 147
+  },
+  {
+   "start": 97,
+   "success": true,
+   "cost": 1.6607626159786248e-29,
+   "residual_norm": 5.763267503731932e-15,
+   "residual_max": 3.577385301570012e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 98,
+   "success": true,
+   "cost": 1.011521391141307e-31,
+   "residual_norm": 4.497824787919838e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 99,
+   "success": true,
+   "cost": 3.9214941831429554e-24,
+   "residual_norm": 2.8005335859949817e-12,
+   "residual_max": 2.3001251109259203e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 100,
+   "success": true,
+   "cost": 0.002164432296352088,
+   "residual_norm": 0.06579410758346203,
+   "residual_max": 0.03142178783803307,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 77
+  },
+  {
+   "start": 101,
+   "success": true,
+   "cost": 0.001679195856674924,
+   "residual_norm": 0.05795163253394893,
+   "residual_max": 0.03247469056688257,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 40
+  },
+  {
+   "start": 102,
+   "success": true,
+   "cost": 0.0009721776641776728,
+   "residual_norm": 0.044094844691362114,
+   "residual_max": 0.03415079322213914,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 18
+  },
+  {
+   "start": 103,
+   "success": true,
+   "cost": 5.369711960926079e-32,
+   "residual_norm": 3.277106028472707e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 104,
+   "success": true,
+   "cost": 1.0426176303874119e-32,
+   "residual_norm": 1.4440343696653566e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 105,
+   "success": true,
+   "cost": 1.856656855663594e-23,
+   "residual_norm": 6.093696506495206e-12,
+   "residual_max": 3.2353235316540525e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 106,
+   "success": true,
+   "cost": 0.001206258811731321,
+   "residual_norm": 0.04911738616276972,
+   "residual_max": 0.027696424743272937,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 21
+  },
+  {
+   "start": 107,
+   "success": true,
+   "cost": 0.001285858701593086,
+   "residual_norm": 0.05071210312327987,
+   "residual_max": 0.03852505040170104,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 113
+  },
+  {
+   "start": 108,
+   "success": true,
+   "cost": 0.001072845994296902,
+   "residual_norm": 0.04632161470192726,
+   "residual_max": 0.020740690468614858,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 109,
+   "success": true,
+   "cost": 1.2706118062455997e-32,
+   "residual_norm": 1.5941215802099913e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 110,
+   "success": true,
+   "cost": 1.8826856840618752e-32,
+   "residual_norm": 1.9404564844705356e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 111,
+   "success": true,
+   "cost": 2.1292785513219727e-26,
+   "residual_norm": 2.0636271714250968e-13,
+   "residual_max": 1.1378372524029102e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 112,
+   "success": true,
+   "cost": 0.00165129989204553,
+   "residual_norm": 0.05746825022646035,
+   "residual_max": 0.03493020676263122,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 98
+  },
+  {
+   "start": 113,
+   "success": true,
+   "cost": 0.001827330561860624,
+   "residual_norm": 0.060453793294724265,
+   "residual_max": 0.03388064392034448,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 114,
+   "success": true,
+   "cost": 0.000664003381991093,
+   "residual_norm": 0.03644182712189643,
+   "residual_max": 0.025015172999608277,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 60
+  },
+  {
+   "start": 115,
+   "success": true,
+   "cost": 1.1526233572983689e-29,
+   "residual_norm": 4.801298485406565e-15,
+   "residual_max": 3.07624296406544e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 116,
+   "success": true,
+   "cost": 9.840636800377367e-33,
+   "residual_norm": 1.402899625802029e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 117,
+   "success": true,
+   "cost": 7.691468062710681e-33,
+   "residual_norm": 1.2402796509425348e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 118,
+   "success": true,
+   "cost": 0.0016610234504406361,
+   "residual_norm": 0.05763720066832941,
+   "residual_max": 0.0258062429091482,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 119,
+   "success": true,
+   "cost": 0.0009721776641775965,
+   "residual_norm": 0.04409484469136038,
+   "residual_max": 0.03415079296741383,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 20
+  },
+  {
+   "start": 120,
+   "success": true,
+   "cost": 0.001293548796475857,
+   "residual_norm": 0.05086351927414887,
+   "residual_max": 0.0282808190469654,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 38
+  },
+  {
+   "start": 121,
+   "success": true,
+   "cost": 5.541348248528232e-32,
+   "residual_norm": 3.329068412793054e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 122,
+   "success": true,
+   "cost": 3.704971404675799e-33,
+   "residual_norm": 8.608102467647326e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 123,
+   "success": true,
+   "cost": 5.797822329282137e-27,
+   "residual_norm": 1.0768307507943983e-13,
+   "residual_max": 7.855855883504283e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 124,
+   "success": true,
+   "cost": 0.0006640033819907336,
+   "residual_norm": 0.036441827121886566,
+   "residual_max": 0.025015171078393936,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 125,
+   "success": true,
+   "cost": 0.0014680495025099867,
+   "residual_norm": 0.054185782314367055,
+   "residual_max": 0.02311841628467281,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 126,
+   "success": true,
+   "cost": 0.0016799220133231609,
+   "residual_norm": 0.057964161571149475,
+   "residual_max": 0.0326448371513299,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 57
+  },
+  {
+   "start": 127,
+   "success": true,
+   "cost": 3.11416597544292e-31,
+   "residual_norm": 7.891978174631403e-16,
+   "residual_max": 4.440892098500626e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 128,
+   "success": true,
+   "cost": 5.336043798440427e-28,
+   "residual_norm": 3.266816125355214e-14,
+   "residual_max": 1.7599090908875646e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 129,
+   "success": true,
+   "cost": 9.067259685020641e-33,
+   "residual_norm": 1.3466446959031651e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 130,
+   "success": true,
+   "cost": 0.0012062588117313006,
+   "residual_norm": 0.049117386162769304,
+   "residual_max": 0.027696427124124928,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 16
+  },
+  {
+   "start": 131,
+   "success": true,
+   "cost": 0.0012274161942843799,
+   "residual_norm": 0.04954626513238672,
+   "residual_max": 0.027028440422318768,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 54
+  },
+  {
+   "start": 132,
+   "success": true,
+   "cost": 0.001294623404110994,
+   "residual_norm": 0.05088464216462554,
+   "residual_max": 0.03929711301704261,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 60
+  },
+  {
+   "start": 133,
+   "success": true,
+   "cost": 1.2207458738202928e-30,
+   "residual_norm": 1.5625273590054626e-15,
+   "residual_max": 7.558044272630402e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 134,
+   "success": true,
+   "cost": 4.1859948642598036e-32,
+   "residual_norm": 2.893439083257086e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 135,
+   "success": true,
+   "cost": 2.088923984622355e-32,
+   "residual_norm": 2.0439784659444701e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 136,
+   "success": true,
+   "cost": 0.0012386638961003633,
+   "residual_norm": 0.049772761548870545,
+   "residual_max": 0.02801221314323837,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 77
+  },
+  {
+   "start": 137,
+   "success": true,
+   "cost": 0.0010127805868362751,
+   "residual_norm": 0.045006234831104795,
+   "residual_max": 0.02871209482592565,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 17
+  },
+  {
+   "start": 138,
+   "success": true,
+   "cost": 0.0015038105566963346,
+   "residual_norm": 0.05484178255119603,
+   "residual_max": 0.02492748101654799,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 31
+  },
+  {
+   "start": 139,
+   "success": true,
+   "cost": 1.0201521552167128e-27,
+   "residual_norm": 4.51697278100436e-14,
+   "residual_max": 3.4955320531096875e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 140,
+   "success": true,
+   "cost": 2.199137632291748e-25,
+   "residual_norm": 6.63194938504773e-13,
+   "residual_max": 4.304375785855313e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 141,
+   "success": true,
+   "cost": 1.0306829410543942e-32,
+   "residual_norm": 1.4357457581719642e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 142,
+   "success": true,
+   "cost": 0.0012274161942845822,
+   "residual_norm": 0.0495462651323908,
+   "residual_max": 0.027028440304429965,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 54
+  },
+  {
+   "start": 143,
+   "success": true,
+   "cost": 0.0009721776641777413,
+   "residual_norm": 0.04409484469136367,
+   "residual_max": 0.034150796740275144,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 25
+  },
+  {
+   "start": 144,
+   "success": true,
+   "cost": 0.0010831336076598257,
+   "residual_norm": 0.04654317581901402,
+   "residual_max": 0.022378012521750233,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 24
+  },
+  {
+   "start": 145,
+   "success": true,
+   "cost": 5.94961482028959e-29,
+   "residual_norm": 1.0908359015259435e-14,
+   "residual_max": 7.689700527702479e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 146,
+   "success": true,
+   "cost": 1.6849938627470635e-32,
+   "residual_norm": 1.835752631890835e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 147,
+   "success": true,
+   "cost": 1.4888607501663937e-32,
+   "residual_norm": 1.7256075742569014e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 148,
+   "success": true,
+   "cost": 0.0012328971925222546,
+   "residual_norm": 0.04965676575296169,
+   "residual_max": 0.027747344403548764,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 30
+  },
+  {
+   "start": 149,
+   "success": true,
+   "cost": 0.0006640033819907999,
+   "residual_norm": 0.036441827121888384,
+   "residual_max": 0.02501516564062206,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 48
+  },
+  {
+   "start": 150,
+   "success": true,
+   "cost": 0.0012861599858015357,
+   "residual_norm": 0.05071804384637751,
+   "residual_max": 0.03856011253368403,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 107
+  },
+  {
+   "start": 151,
+   "success": true,
+   "cost": 1.326436368438422e-29,
+   "residual_norm": 5.150604563424418e-15,
+   "residual_max": 2.833047562837736e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 152,
+   "success": true,
+   "cost": 2.3989914405008704e-33,
+   "residual_norm": 6.926747347061059e-17,
+   "residual_max": 4.368933198756406e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 153,
+   "success": true,
+   "cost": 2.5096834111094724e-25,
+   "residual_norm": 7.084748987945123e-13,
+   "residual_max": 5.778402447899405e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 154,
+   "success": true,
+   "cost": 0.0011832412638044436,
+   "residual_norm": 0.04864650581088931,
+   "residual_max": 0.029841730460888134,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 32
+  },
+  {
+   "start": 155,
+   "success": true,
+   "cost": 0.0018273305618595832,
+   "residual_norm": 0.06045379329470704,
+   "residual_max": 0.03388064801402748,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 29
+  },
+  {
+   "start": 156,
+   "success": true,
+   "cost": 0.0012808578294845482,
+   "residual_norm": 0.05061339406687815,
+   "residual_max": 0.03888687892430901,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 364
+  },
+  {
+   "start": 157,
+   "success": true,
+   "cost": 1.0167249024811047e-31,
+   "residual_norm": 4.509378898431811e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 158,
+   "success": true,
+   "cost": 9.804749843418097e-31,
+   "residual_norm": 1.4003392334301068e-15,
+   "residual_max": 6.661338147750939e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 159,
+   "success": true,
+   "cost": 3.5008234910405575e-32,
+   "residual_norm": 2.6460625431159245e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 160,
+   "success": true,
+   "cost": 0.0012386638960800033,
+   "residual_norm": 0.04977276154846149,
+   "residual_max": 0.02801209945547596,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 84
+  },
+  {
+   "start": 161,
+   "success": true,
+   "cost": 0.0012803463947726962,
+   "residual_norm": 0.050603288327394226,
+   "residual_max": 0.03891023120633192,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 488
+  },
+  {
+   "start": 162,
+   "success": true,
+   "cost": 0.0012831853905049154,
+   "residual_norm": 0.050659360250696325,
+   "residual_max": 0.038786172077641214,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 50
+  },
+  {
+   "start": 163,
+   "success": true,
+   "cost": 9.658794063859181e-27,
+   "residual_norm": 1.3898772653626061e-13,
+   "residual_max": 8.643314414762542e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 164,
+   "success": true,
+   "cost": 1.3523944795527825e-32,
+   "residual_norm": 1.644624260767658e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 165,
+   "success": true,
+   "cost": 1.409516131290938e-27,
+   "residual_norm": 5.309455963262033e-14,
+   "residual_max": 3.501571460766646e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 166,
+   "success": true,
+   "cost": 0.0012194051807244838,
+   "residual_norm": 0.049384312908543816,
+   "residual_max": 0.03680285276411029,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 47
+  },
+  {
+   "start": 167,
+   "success": true,
+   "cost": 0.001094385128452332,
+   "residual_norm": 0.04678429498137878,
+   "residual_max": 0.024443640373337475,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 168,
+   "success": true,
+   "cost": 0.0012811059801713497,
+   "residual_norm": 0.050618296695391675,
+   "residual_max": 0.03888197937095664,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 239
+  },
+  {
+   "start": 169,
+   "success": true,
+   "cost": 1.8100963078921734e-29,
+   "residual_norm": 6.016803649600298e-15,
+   "residual_max": 2.748527497853433e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 170,
+   "success": true,
+   "cost": 2.059268890485527e-32,
+   "residual_norm": 2.029418089248998e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 171,
+   "success": true,
+   "cost": 2.8078552718015953e-33,
+   "residual_norm": 7.493804470096074e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 172,
+   "success": true,
+   "cost": 0.0012114603450241973,
+   "residual_norm": 0.049223172287535415,
+   "residual_max": 0.026734468234700586,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 62
+  },
+  {
+   "start": 173,
+   "success": true,
+   "cost": 0.0010728459942977865,
+   "residual_norm": 0.04632161470194636,
+   "residual_max": 0.020740686628544076,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 40
+  },
+  {
+   "start": 174,
+   "success": true,
+   "cost": 0.0016791889550389649,
+   "residual_norm": 0.05795151344078884,
+   "residual_max": 0.032477030030714504,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 51
+  },
+  {
+   "start": 175,
+   "success": true,
+   "cost": 8.933648975414151e-29,
+   "residual_norm": 1.3366861243698276e-14,
+   "residual_max": 8.409746465934822e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 176,
+   "success": true,
+   "cost": 1.1200504661705483e-23,
+   "residual_norm": 4.732970454525463e-12,
+   "residual_max": 2.921439297067247e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 177,
+   "success": true,
+   "cost": 7.312852844599865e-24,
+   "residual_norm": 3.8243568987739276e-12,
+   "residual_max": 2.152168547816348e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 178,
+   "success": true,
+   "cost": 0.0012274161942843304,
+   "residual_norm": 0.04954626513238572,
+   "residual_max": 0.02702844089191847,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 57
+  },
+  {
+   "start": 179,
+   "success": true,
+   "cost": 0.0010831336076598422,
+   "residual_norm": 0.046543175819014376,
+   "residual_max": 0.02237801183266085,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 17
+  },
+  {
+   "start": 180,
+   "success": true,
+   "cost": 0.0012808684094997942,
+   "residual_norm": 0.050613603102324066,
+   "residual_max": 0.03888755175661334,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 352
+  },
+  {
+   "start": 181,
+   "success": true,
+   "cost": 1.7265121833842802e-30,
+   "residual_norm": 1.85823151592275e-15,
+   "residual_max": 9.971447535985217e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 182,
+   "success": true,
+   "cost": 5.200275037766588e-33,
+   "residual_norm": 1.0198308720338473e-16,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 183,
+   "success": true,
+   "cost": 2.959311128602121e-25,
+   "residual_norm": 7.693258254604639e-13,
+   "residual_max": 4.88261694451096e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 184,
+   "success": true,
+   "cost": 1.5301591461184192e-25,
+   "residual_norm": 5.532014363897511e-13,
+   "residual_max": 3.520434972346459e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 185,
+   "success": true,
+   "cost": 0.001283513899894376,
+   "residual_norm": 0.05066584450878868,
+   "residual_max": 0.038768835919805136,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 62
+  },
+  {
+   "start": 186,
+   "success": true,
+   "cost": 0.0012817329904762757,
+   "residual_norm": 0.05063068220903755,
+   "residual_max": 0.03884889192407775,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 447
+  },
+  {
+   "start": 187,
+   "success": true,
+   "cost": 4.8059077531477715e-28,
+   "residual_norm": 3.100292809767417e-14,
+   "residual_max": 2.275828702445786e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 188,
+   "success": true,
+   "cost": 1.4996098962037412e-32,
+   "residual_norm": 1.73182556639157e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 189,
+   "success": true,
+   "cost": 1.719496805234989e-32,
+   "residual_norm": 1.854452374818501e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 190,
+   "success": true,
+   "cost": 0.0010943851284525646,
+   "residual_norm": 0.046784294981383756,
+   "residual_max": 0.02444363720603994,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 34
+  },
+  {
+   "start": 191,
+   "success": true,
+   "cost": 0.0019472432209187568,
+   "residual_norm": 0.062405820576589756,
+   "residual_max": 0.04213868859819724,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 25
+  },
+  {
+   "start": 192,
+   "success": true,
+   "cost": 0.0012386638960863836,
+   "residual_norm": 0.04977276154858968,
+   "residual_max": 0.028012158188167807,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 93
+  },
+  {
+   "start": 193,
+   "success": true,
+   "cost": 5.3417445322524296e-30,
+   "residual_norm": 3.2685607022824068e-15,
+   "residual_max": 2.1048746952810504e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 194,
+   "success": true,
+   "cost": 1.7970194483153922e-32,
+   "residual_norm": 1.8957950566004715e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 195,
+   "success": true,
+   "cost": 2.2660784974252574e-32,
+   "residual_norm": 2.1288863273670848e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 196,
+   "success": true,
+   "cost": 0.0012386638960838264,
+   "residual_norm": 0.049772761548538304,
+   "residual_max": 0.028012141657060483,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 90
+  },
+  {
+   "start": 197,
+   "success": true,
+   "cost": 0.0011832412638046017,
+   "residual_norm": 0.048646505810892554,
+   "residual_max": 0.02984174346518112,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 37
+  },
+  {
+   "start": 198,
+   "success": true,
+   "cost": 0.0012819534309409168,
+   "residual_norm": 0.05063503591271397,
+   "residual_max": 0.03885506277556485,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 433
+  },
+  {
+   "start": 199,
+   "success": true,
+   "cost": 1.229869796860906e-28,
+   "residual_norm": 1.568355697449342e-14,
+   "residual_max": 1.1873218457796882e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 200,
+   "success": true,
+   "cost": 1.3707654471121555e-32,
+   "residual_norm": 1.6557568946630755e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 201,
+   "success": true,
+   "cost": 0.0011832412638048428,
+   "residual_norm": 0.048646505810897515,
+   "residual_max": 0.02984175056877412,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 27
+  },
+  {
+   "start": 202,
+   "success": true,
+   "cost": 0.0010943851284524932,
+   "residual_norm": 0.04678429498138223,
+   "residual_max": 0.024443647279949486,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 203,
+   "success": true,
+   "cost": 0.0015494428720481263,
+   "residual_norm": 0.05566763641557141,
+   "residual_max": 0.035059744235228577,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 36
+  },
+  {
+   "start": 204,
+   "success": true,
+   "cost": 0.0012810330530512485,
+   "residual_norm": 0.05061685594841403,
+   "residual_max": 0.038882797507229366,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 290
+  },
+  {
+   "start": 205,
+   "success": true,
+   "cost": 4.078183406266984e-31,
+   "residual_norm": 9.031260605548911e-16,
+   "residual_max": 4.996003610813204e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 206,
+   "success": true,
+   "cost": 1.087562600454474e-32,
+   "residual_norm": 1.474830566847917e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 207,
+   "success": true,
+   "cost": 2.736973652586358e-32,
+   "residual_norm": 2.3396468334286514e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 208,
+   "success": true,
+   "cost": 3.7842532916341213e-29,
+   "residual_norm": 8.699716422544038e-15,
+   "residual_max": 5.6616234334469475e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 8
+  },
+  {
+   "start": 209,
+   "success": true,
+   "cost": 0.0012930960801227358,
+   "residual_norm": 0.05085461788515839,
+   "residual_max": 0.038558756897706103,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 49
+  },
+  {
+   "start": 210,
+   "success": true,
+   "cost": 0.0011832412638045373,
+   "residual_norm": 0.048646505810891236,
+   "residual_max": 0.02984173468816845,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 37
+  },
+  {
+   "start": 211,
+   "success": true,
+   "cost": 3.792813888421859e-33,
+   "residual_norm": 8.709550951021365e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 212,
+   "success": true,
+   "cost": 1.2019229467749978e-32,
+   "residual_norm": 1.5504340984221148e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 213,
+   "success": true,
+   "cost": 5.027945220767132e-25,
+   "residual_norm": 1.0027906282736325e-12,
+   "residual_max": 4.942407080268031e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 214,
+   "success": true,
+   "cost": 0.0012328971925224751,
+   "residual_norm": 0.04965676575296613,
+   "residual_max": 0.027747345668787227,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 36
+  },
+  {
+   "start": 215,
+   "success": true,
+   "cost": 0.0012274161942843862,
+   "residual_norm": 0.049546265132386844,
+   "residual_max": 0.02702843999330065,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 60
+  },
+  {
+   "start": 216,
+   "success": true,
+   "cost": 0.0007014282106615763,
+   "residual_norm": 0.037454724953243916,
+   "residual_max": 0.022635478216831827,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 22
+  },
+  {
+   "start": 217,
+   "success": true,
+   "cost": 3.5055976639852466e-30,
+   "residual_norm": 2.647866183924424e-15,
+   "residual_max": 1.9223306074528428e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 218,
+   "success": true,
+   "cost": 8.610812306791452e-32,
+   "residual_norm": 4.1498945304167555e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 219,
+   "success": true,
+   "cost": 2.763922449316519e-27,
+   "residual_norm": 7.434947813288966e-14,
+   "residual_max": 3.9132790087665515e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 220,
+   "success": true,
+   "cost": 0.0010127805868362166,
+   "residual_norm": 0.04500623483110349,
+   "residual_max": 0.028712093997476762,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 28
+  },
+  {
+   "start": 221,
+   "success": true,
+   "cost": 0.000987524434221605,
+   "residual_norm": 0.04444152189611884,
+   "residual_max": 0.01723763927730146,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 222,
+   "success": true,
+   "cost": 0.0012805526439033823,
+   "residual_norm": 0.050607363968169346,
+   "residual_max": 0.03889541259367051,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 126
+  },
+  {
+   "start": 223,
+   "success": true,
+   "cost": 6.025559795849389e-31,
+   "residual_norm": 1.0977759148250056e-15,
+   "residual_max": 6.270704120567997e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 224,
+   "success": true,
+   "cost": 4.001192111142769e-33,
+   "residual_norm": 8.945604631485531e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 225,
+   "success": true,
+   "cost": 2.3272082800050797e-32,
+   "residual_norm": 2.1574096875675142e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 226,
+   "success": true,
+   "cost": 8.102382652748493e-32,
+   "residual_norm": 4.0255142908076957e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 12
+  },
+  {
+   "start": 227,
+   "success": true,
+   "cost": 0.0012328971925221828,
+   "residual_norm": 0.04965676575296025,
+   "residual_max": 0.02774734079215024,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 66
+  },
+  {
+   "start": 228,
+   "success": true,
+   "cost": 0.0016610234504406685,
+   "residual_norm": 0.057637200668329974,
+   "residual_max": 0.025806260214286735,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 229,
+   "success": true,
+   "cost": 7.521409142114631e-30,
+   "residual_norm": 3.8785072236917725e-15,
+   "residual_max": 2.816676932845302e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 230,
+   "success": true,
+   "cost": 1.0874668323330955e-32,
+   "residual_norm": 1.4747656304193527e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 231,
+   "success": true,
+   "cost": 2.859689345441237e-24,
+   "residual_norm": 2.3915222538965582e-12,
+   "residual_max": 1.61794446154513e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 232,
+   "success": true,
+   "cost": 2.1405430020447079e-32,
+   "residual_norm": 2.0690785398552215e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 233,
+   "success": true,
+   "cost": 0.0017501459836589506,
+   "residual_norm": 0.05916326535374718,
+   "residual_max": 0.02837920437565772,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 53
+  },
+  {
+   "start": 234,
+   "success": true,
+   "cost": 0.001099926009378047,
+   "residual_norm": 0.04690258008634593,
+   "residual_max": 0.03249729482519065,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 50
+  },
+  {
+   "start": 235,
+   "success": true,
+   "cost": 1.1800283728187426e-32,
+   "residual_norm": 1.5362476185945693e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 236,
+   "success": true,
+   "cost": 4.133522783562805e-25,
+   "residual_norm": 9.092329496408283e-13,
+   "residual_max": 5.871868976151245e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 237,
+   "success": true,
+   "cost": 8.026161135179205e-33,
+   "residual_norm": 1.2669775953172342e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 238,
+   "success": true,
+   "cost": 0.0012707972507354,
+   "residual_norm": 0.05041422915676486,
+   "residual_max": 0.028763612588579852,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 19
+  },
+  {
+   "start": 239,
+   "success": true,
+   "cost": 0.0009875244342215548,
+   "residual_norm": 0.044441521896117706,
+   "residual_max": 0.017237643411648094,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 240,
+   "success": true,
+   "cost": 0.0009875244342215598,
+   "residual_norm": 0.04444152189611782,
+   "residual_max": 0.017237647910552118,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 241,
+   "success": true,
+   "cost": 5.0369619906168585e-31,
+   "residual_norm": 1.0036893932504077e-15,
+   "residual_max": 5.294119052610755e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 242,
+   "success": true,
+   "cost": 1.2607906202809082e-32,
+   "residual_norm": 1.5879487524985862e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 243,
+   "success": true,
+   "cost": 0.0012328971925223986,
+   "residual_norm": 0.04965676575296459,
+   "residual_max": 0.02774734507305379,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 39
+  },
+  {
+   "start": 244,
+   "success": true,
+   "cost": 0.002120664880515189,
+   "residual_norm": 0.0651254924052815,
+   "residual_max": 0.0513351500620042,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 24
+  },
+  {
+   "start": 245,
+   "success": true,
+   "cost": 0.0009875244342215385,
+   "residual_norm": 0.04444152189611734,
+   "residual_max": 0.01723764494018339,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 246,
+   "success": true,
+   "cost": 0.00104308524707833,
+   "residual_norm": 0.04567461542428858,
+   "residual_max": 0.025248088443707725,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 67
+  },
+  {
+   "start": 247,
+   "success": true,
+   "cost": 3.419924776465356e-25,
+   "residual_norm": 8.270338295940929e-13,
+   "residual_max": 4.646116733735709e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 248,
+   "success": true,
+   "cost": 1.693444573871356e-33,
+   "residual_norm": 5.819698572729272e-17,
+   "residual_max": 2.4380787976227037e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 249,
+   "success": true,
+   "cost": 2.4229739311950733e-24,
+   "residual_norm": 2.2013513718600552e-12,
+   "residual_max": 1.224475767698811e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 250,
+   "success": true,
+   "cost": 0.0020595025172599484,
+   "residual_norm": 0.06417947518108805,
+   "residual_max": 0.04326649683311215,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 251,
+   "success": true,
+   "cost": 0.001280651360934156,
+   "residual_norm": 0.05060931457615596,
+   "residual_max": 0.03890730646318136,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 92
+  },
+  {
+   "start": 252,
+   "success": true,
+   "cost": 0.0017267953175232036,
+   "residual_norm": 0.058767258188947416,
+   "residual_max": 0.025921356566262408,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 68
+  },
+  {
+   "start": 253,
+   "success": true,
+   "cost": 1.7400157819473194e-26,
+   "residual_norm": 1.8654842706103525e-13,
+   "residual_max": 9.488294923424715e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 254,
+   "success": true,
+   "cost": 3.2077336057023174e-26,
+   "residual_norm": 2.5328772594432277e-13,
+   "residual_max": 1.3479975133421347e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 255,
+   "success": true,
+   "cost": 6.595167390126238e-25,
+   "residual_norm": 1.1484918275831341e-12,
+   "residual_max": 7.136575281367641e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 256,
+   "success": true,
+   "cost": 0.0015494428720489817,
+   "residual_norm": 0.05566763641558678,
+   "residual_max": 0.03505974728839435,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 257,
+   "success": true,
+   "cost": 0.0013600148204030353,
+   "residual_norm": 0.05215390340910324,
+   "residual_max": 0.03106880398822068,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 57
+  },
+  {
+   "start": 258,
+   "success": true,
+   "cost": 0.0014969929118631225,
+   "residual_norm": 0.054717326540377,
+   "residual_max": 0.02605432721328696,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 38
+  },
+  {
+   "start": 259,
+   "success": true,
+   "cost": 8.956479085030213e-32,
+   "residual_norm": 4.232370277995585e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 260,
+   "success": true,
+   "cost": 9.578463312234543e-33,
+   "residual_norm": 1.3840854967981236e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 261,
+   "success": true,
+   "cost": 1.8806189749790518e-30,
+   "residual_norm": 1.9393911286685065e-15,
+   "residual_max": 8.326672684688674e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 262,
+   "success": true,
+   "cost": 9.553860812087616e-33,
+   "residual_norm": 1.3823068264381549e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 263,
+   "success": true,
+   "cost": 0.001099926009375544,
+   "residual_norm": 0.04690258008629256,
+   "residual_max": 0.03249735402569994,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 52
+  },
+  {
+   "start": 264,
+   "success": true,
+   "cost": 0.0012214034096263218,
+   "residual_norm": 0.049424759172429396,
+   "residual_max": 0.027618027268561097,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 96
+  },
+  {
+   "start": 265,
+   "success": true,
+   "cost": 3.6142641331609416e-31,
+   "residual_norm": 8.502075197457314e-16,
+   "residual_max": 4.921474750363787e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 266,
+   "success": true,
+   "cost": 2.2254859671603267e-23,
+   "residual_norm": 6.671560487862381e-12,
+   "residual_max": 5.569598280628754e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 267,
+   "success": true,
+   "cost": 1.0582047177288174e-32,
+   "residual_norm": 1.4547884504138858e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 268,
+   "success": true,
+   "cost": 0.0012328971925221377,
+   "residual_norm": 0.04965676575295934,
+   "residual_max": 0.027747340486640855,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 48
+  },
+  {
+   "start": 269,
+   "success": true,
+   "cost": 0.0012868788372945878,
+   "residual_norm": 0.05073221535266497,
+   "residual_max": 0.03859388599929522,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 139
+  },
+  {
+   "start": 270,
+   "success": true,
+   "cost": 0.0012856260314890156,
+   "residual_norm": 0.050707514857050835,
+   "residual_max": 0.03856741587977665,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 93
+  },
+  {
+   "start": 271,
+   "success": true,
+   "cost": 2.4578010256876398e-30,
+   "residual_norm": 2.217115705455013e-15,
+   "residual_max": 1.072754670954011e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 272,
+   "success": true,
+   "cost": 2.02436158470355e-23,
+   "residual_norm": 6.362957778743388e-12,
+   "residual_max": 3.0590850985177493e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 273,
+   "success": true,
+   "cost": 3.579988095073753e-30,
+   "residual_norm": 2.675813182968405e-15,
+   "residual_max": 1.675614379758348e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 274,
+   "success": true,
+   "cost": 0.0011832412638047329,
+   "residual_norm": 0.04864650581089525,
+   "residual_max": 0.029841729923727075,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 27
+  },
+  {
+   "start": 275,
+   "success": true,
+   "cost": 0.0007014282106618801,
+   "residual_norm": 0.03745472495325203,
+   "residual_max": 0.02263546606209635,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 22
+  },
+  {
+   "start": 276,
+   "success": true,
+   "cost": 0.0009721776641776471,
+   "residual_norm": 0.04409484469136153,
+   "residual_max": 0.034150794467994766,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 29
+  },
+  {
+   "start": 277,
+   "success": true,
+   "cost": 3.9943601487603555e-29,
+   "residual_norm": 8.937964140407317e-15,
+   "residual_max": 3.608356620482183e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 278,
+   "success": true,
+   "cost": 1.0039140999549384e-32,
+   "residual_norm": 1.416978546030206e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 279,
+   "success": true,
+   "cost": 6.282339047402372e-26,
+   "residual_norm": 3.54466896829658e-13,
+   "residual_max": 1.8348491450546658e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 280,
+   "success": true,
+   "cost": 0.0011832412638044436,
+   "residual_norm": 0.04864650581088931,
+   "residual_max": 0.02984173147194781,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 28
+  },
+  {
+   "start": 281,
+   "success": true,
+   "cost": 0.0012845937473388157,
+   "residual_norm": 0.050687153152230116,
+   "residual_max": 0.04001779317201148,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 22
+  },
+  {
+   "start": 282,
+   "success": true,
+   "cost": 0.001280953372660745,
+   "residual_norm": 0.05061528173705536,
+   "residual_max": 0.03888304999902941,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 332
+  },
+  {
+   "start": 283,
+   "success": true,
+   "cost": 1.5703609988833464e-24,
+   "residual_norm": 1.7722082264132205e-12,
+   "residual_max": 1.1029527149632992e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 284,
+   "success": true,
+   "cost": 8.71588975003641e-33,
+   "residual_norm": 1.3202946451483025e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 285,
+   "success": true,
+   "cost": 4.7064087428709857e-33,
+   "residual_norm": 9.701967576601136e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 286,
+   "success": true,
+   "cost": 0.0012386638960899604,
+   "residual_norm": 0.04977276154866154,
+   "residual_max": 0.028012171410759956,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 89
+  },
+  {
+   "start": 287,
+   "success": true,
+   "cost": 0.0010728459942974087,
+   "residual_norm": 0.046321614701938206,
+   "residual_max": 0.020740692000770052,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 288,
+   "success": true,
+   "cost": 0.0006640033819910048,
+   "residual_norm": 0.036441827121894005,
+   "residual_max": 0.025015166198680074,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 45
+  },
+  {
+   "start": 289,
+   "success": true,
+   "cost": 9.599274715714522e-32,
+   "residual_norm": 4.3816149341799816e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 290,
+   "success": true,
+   "cost": 1.228876719419183e-32,
+   "residual_norm": 1.567722373010721e-16,
+   "residual_max": 8.223874256482642e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 291,
+   "success": true,
+   "cost": 6.912166533224601e-32,
+   "residual_norm": 3.7181088023952717e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 292,
+   "success": true,
+   "cost": 0.0011832412638044742,
+   "residual_norm": 0.04864650581088994,
+   "residual_max": 0.029841731167358384,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 31
+  },
+  {
+   "start": 293,
+   "success": true,
+   "cost": 0.0010943851284523807,
+   "residual_norm": 0.04678429498137982,
+   "residual_max": 0.02444364590102772,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 40
+  },
+  {
+   "start": 294,
+   "success": true,
+   "cost": 0.0017558258578254707,
+   "residual_norm": 0.059259190980395116,
+   "residual_max": 0.0316738023599638,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 38
+  },
+  {
+   "start": 295,
+   "success": true,
+   "cost": 6.090041439560687e-29,
+   "residual_norm": 1.1036341277398672e-14,
+   "residual_max": 6.424901762876369e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 296,
+   "success": true,
+   "cost": 1.7598349984289025e-32,
+   "residual_norm": 1.8760783557351236e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 297,
+   "success": true,
+   "cost": 3.5675837786875594e-32,
+   "residual_norm": 2.671173442024145e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 298,
+   "success": true,
+   "cost": 0.0010728459942968486,
+   "residual_norm": 0.04632161470192611,
+   "residual_max": 0.020740688247376435,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 299,
+   "success": true,
+   "cost": 0.0012274161942845525,
+   "residual_norm": 0.0495462651323902,
+   "residual_max": 0.02702844391287731,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 52
+  },
+  {
+   "start": 300,
+   "success": true,
+   "cost": 0.0012868155005210046,
+   "residual_norm": 0.0507309668845569,
+   "residual_max": 0.03856266432548774,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 122
+  },
+  {
+   "start": 301,
+   "success": true,
+   "cost": 4.8580217925865254e-27,
+   "residual_norm": 9.856999333049105e-14,
+   "residual_max": 6.989393631762416e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 302,
+   "success": true,
+   "cost": 8.19491116974401e-33,
+   "residual_norm": 1.280227414934082e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 303,
+   "success": true,
+   "cost": 1.5311803527681128e-32,
+   "residual_norm": 1.7499602011292215e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 304,
+   "success": true,
+   "cost": 1.6766818502813185e-32,
+   "residual_norm": 1.831219184194682e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 305,
+   "success": true,
+   "cost": 0.001284107934348892,
+   "residual_norm": 0.050677567707002116,
+   "residual_max": 0.038741844961935064,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 96
+  },
+  {
+   "start": 306,
+   "success": true,
+   "cost": 0.0012860182168519991,
+   "residual_norm": 0.05071524853240885,
+   "residual_max": 0.03856925033906866,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 109
+  },
+  {
+   "start": 307,
+   "success": true,
+   "cost": 1.1577698578422457e-27,
+   "residual_norm": 4.812005523359768e-14,
+   "residual_max": 3.468418967670333e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 308,
+   "success": true,
+   "cost": 6.293299756512126e-30,
+   "residual_norm": 3.5477597879541184e-15,
+   "residual_max": 2.426042905662373e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 309,
+   "success": true,
+   "cost": 2.6011975729164653e-32,
+   "residual_norm": 2.2808759602032134e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 310,
+   "success": true,
+   "cost": 0.0012114603451303836,
+   "residual_norm": 0.04922317228969266,
+   "residual_max": 0.026734381490280304,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 62
+  },
+  {
+   "start": 311,
+   "success": true,
+   "cost": 0.0010728459942968332,
+   "residual_norm": 0.04632161470192578,
+   "residual_max": 0.020740687642720766,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 312,
+   "success": true,
+   "cost": 0.0013945913851354593,
+   "residual_norm": 0.052812714096805505,
+   "residual_max": 0.04269407553076813,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 133
+  },
+  {
+   "start": 313,
+   "success": true,
+   "cost": 2.3844326392883186e-27,
+   "residual_norm": 6.90569712525581e-14,
+   "residual_max": 4.603442113099821e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 314,
+   "success": true,
+   "cost": 7.224169165624745e-32,
+   "residual_norm": 3.801096990508068e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 315,
+   "success": true,
+   "cost": 8.607407584959037e-33,
+   "residual_norm": 1.3120524063435146e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 316,
+   "success": true,
+   "cost": 6.529325212146396e-32,
+   "residual_norm": 3.613675473018128e-16,
+   "residual_max": 3.3306690738754696e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 317,
+   "success": true,
+   "cost": 0.000701428210661752,
+   "residual_norm": 0.03745472495324861,
+   "residual_max": 0.02263547022646733,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 20
+  },
+  {
+   "start": 318,
+   "success": true,
+   "cost": 0.0029533587580222536,
+   "residual_norm": 0.07685517234412077,
+   "residual_max": 0.044833541807617415,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 122
+  },
+  {
+   "start": 319,
+   "success": true,
+   "cost": 2.0655449677151334e-24,
+   "residual_norm": 2.03250828668182e-12,
+   "residual_max": 1.2467863609483995e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 320,
+   "success": true,
+   "cost": 8.669656863854271e-33,
+   "residual_norm": 1.3167882794021423e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 321,
+   "success": true,
+   "cost": 5.344581084937075e-32,
+   "residual_norm": 3.269428416386288e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 322,
+   "success": true,
+   "cost": 0.0012190583117972398,
+   "residual_norm": 0.049377288540324686,
+   "residual_max": 0.027911636440499432,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 137
+  },
+  {
+   "start": 323,
+   "success": true,
+   "cost": 0.001251364226886572,
+   "residual_norm": 0.050027277097331055,
+   "residual_max": 0.026841971576300954,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 3668
+  },
+  {
+   "start": 324,
+   "success": true,
+   "cost": 0.0016610234504406255,
+   "residual_norm": 0.057637200668329225,
+   "residual_max": 0.025806239819054683,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 82
+  },
+  {
+   "start": 325,
+   "success": true,
+   "cost": 4.787220525568344e-32,
+   "residual_norm": 3.094259370372285e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 326,
+   "success": true,
+   "cost": 3.092164405378637e-32,
+   "residual_norm": 2.486831078050392e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 327,
+   "success": true,
+   "cost": 2.1650596411172922e-32,
+   "residual_norm": 2.0808938661629487e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 328,
+   "success": true,
+   "cost": 0.0010943851284523638,
+   "residual_norm": 0.04678429498137946,
+   "residual_max": 0.02444364089318465,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 40
+  },
+  {
+   "start": 329,
+   "success": true,
+   "cost": 0.0011832412638043517,
+   "residual_norm": 0.04864650581088742,
+   "residual_max": 0.02984173271572202,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 330,
+   "success": true,
+   "cost": 0.0009875244342216418,
+   "residual_norm": 0.04444152189611966,
+   "residual_max": 0.017237637675834104,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 53
+  },
+  {
+   "start": 331,
+   "success": true,
+   "cost": 3.131937896891327e-32,
+   "residual_norm": 2.5027736201627693e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 332,
+   "success": true,
+   "cost": 3.2610333245078957e-32,
+   "residual_norm": 2.553833716007327e-16,
+   "residual_max": 1.760423083028313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 333,
+   "success": true,
+   "cost": 8.49594075684382e-30,
+   "residual_norm": 4.1221209969732376e-15,
+   "residual_max": 1.7578531223231993e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 334,
+   "success": true,
+   "cost": 0.0012707972507356709,
+   "residual_norm": 0.050414229156770234,
+   "residual_max": 0.028763609431265276,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 17
+  },
+  {
+   "start": 335,
+   "success": true,
+   "cost": 3.16781131421965e-32,
+   "residual_norm": 2.51706627414522e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 336,
+   "success": true,
+   "cost": 0.0012803903833282905,
+   "residual_norm": 0.05060415760247947,
+   "residual_max": 0.03890083910223981,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 106
+  },
+  {
+   "start": 337,
+   "success": true,
+   "cost": 8.269901165412868e-29,
+   "residual_norm": 1.286071628286144e-14,
+   "residual_max": 8.148060415681082e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 338,
+   "success": true,
+   "cost": 2.526462112403046e-32,
+   "residual_norm": 2.2478710427437983e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 339,
+   "success": true,
+   "cost": 2.0449631145611684e-32,
+   "residual_norm": 2.0223566028577495e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 340,
+   "success": true,
+   "cost": 0.0013431185741578098,
+   "residual_norm": 0.05182892192893481,
+   "residual_max": 0.03037662595477189,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 341,
+   "success": true,
+   "cost": 0.0010943851284523545,
+   "residual_norm": 0.04678429498137927,
+   "residual_max": 0.024443640993845585,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 45
+  },
+  {
+   "start": 342,
+   "success": true,
+   "cost": 0.001405306943494751,
+   "residual_norm": 0.053015223162686975,
+   "residual_max": 0.029852624909743445,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 51
+  },
+  {
+   "start": 343,
+   "success": true,
+   "cost": 2.570461619947724e-30,
+   "residual_norm": 2.267360412438977e-15,
+   "residual_max": 1.0808816002794357e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 344,
+   "success": true,
+   "cost": 1.2245275257690497e-32,
+   "residual_norm": 1.5649457024248795e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 345,
+   "success": true,
+   "cost": 5.102361059290401e-26,
+   "residual_norm": 3.1944830753317195e-13,
+   "residual_max": 1.7290695624283722e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 346,
+   "success": true,
+   "cost": 0.001183241263804484,
+   "residual_norm": 0.04864650581089014,
+   "residual_max": 0.02984173365795435,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 347,
+   "success": true,
+   "cost": 0.0012837407651969772,
+   "residual_norm": 0.050670321988260096,
+   "residual_max": 0.03872283208591063,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 58
+  },
+  {
+   "start": 348,
+   "success": true,
+   "cost": 0.0012804343444227345,
+   "residual_norm": 0.05060502631997605,
+   "residual_max": 0.038896920836539166,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 107
+  },
+  {
+   "start": 349,
+   "success": true,
+   "cost": 2.070726390386161e-31,
+   "residual_norm": 6.435412015382015e-16,
+   "residual_max": 5.551115123125783e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 350,
+   "success": true,
+   "cost": 2.2877914421857983e-32,
+   "residual_norm": 2.13906121566719e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 351,
+   "success": true,
+   "cost": 1.668147146335264e-23,
+   "residual_norm": 5.776066388703066e-12,
+   "residual_max": 2.7029435510662433e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 352,
+   "success": true,
+   "cost": 0.0017267953175254575,
+   "residual_norm": 0.05876725818898577,
+   "residual_max": 0.025921371455544052,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 61
+  },
+  {
+   "start": 353,
+   "success": true,
+   "cost": 0.0009721776641776061,
+   "residual_norm": 0.0440948446913606,
+   "residual_max": 0.03415079702948836,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 24
+  },
+  {
+   "start": 354,
+   "success": true,
+   "cost": 0.0012862095456919605,
+   "residual_norm": 0.050719021001828506,
+   "residual_max": 0.03856613949336989,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 126
+  },
+  {
+   "start": 355,
+   "success": true,
+   "cost": 1.9252291396938593e-29,
+   "residual_norm": 6.2052061040611045e-15,
+   "residual_max": 3.8755007433674514e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 356,
+   "success": true,
+   "cost": 9.934253674226014e-25,
+   "residual_norm": 1.409556928557766e-12,
+   "residual_max": 7.669071139531541e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 357,
+   "success": true,
+   "cost": 5.181756273507633e-26,
+   "residual_norm": 3.2192409892729785e-13,
+   "residual_max": 2.1765217042185804e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 358,
+   "success": true,
+   "cost": 0.0010999260093869396,
+   "residual_norm": 0.04690258008653553,
+   "residual_max": 0.03249744470001718,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 359,
+   "success": true,
+   "cost": 0.0014605759092890013,
+   "residual_norm": 0.05404768097317407,
+   "residual_max": 0.026668440436174147,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 360,
+   "success": true,
+   "cost": 0.0010999260093766286,
+   "residual_norm": 0.04690258008631569,
+   "residual_max": 0.03249729931048379,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 92
+  },
+  {
+   "start": 361,
+   "success": true,
+   "cost": 1.6414810719117726e-29,
+   "residual_norm": 5.729713905443748e-15,
+   "residual_max": 2.8989156754102082e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 362,
+   "success": true,
+   "cost": 1.7230393535038744e-24,
+   "residual_norm": 1.8563616853963962e-12,
+   "residual_max": 1.4008650206994147e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 363,
+   "success": true,
+   "cost": 1.9936181921068958e-32,
+   "residual_norm": 1.9968065465171611e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 364,
+   "success": true,
+   "cost": 0.0011832412638044596,
+   "residual_norm": 0.04864650581088964,
+   "residual_max": 0.029841746424790105,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 33
+  },
+  {
+   "start": 365,
+   "success": true,
+   "cost": 0.0024445006068221924,
+   "residual_norm": 0.06992139310428808,
+   "residual_max": 0.03379143220040644,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 18
+  },
+  {
+   "start": 366,
+   "success": true,
+   "cost": 0.0012819654111208246,
+   "residual_norm": 0.05063527251078688,
+   "residual_max": 0.03885576966031605,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 452
+  },
+  {
+   "start": 367,
+   "success": true,
+   "cost": 5.253216315733776e-31,
+   "residual_norm": 1.0250089088133602e-15,
+   "residual_max": 5.965166124850325e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 368,
+   "success": true,
+   "cost": 2.4063321990983854e-30,
+   "residual_norm": 2.1937785663545832e-15,
+   "residual_max": 1.061376969898409e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 369,
+   "success": true,
+   "cost": 4.8905791516826116e-23,
+   "residual_norm": 9.889973864154153e-12,
+   "residual_max": 5.357463443998908e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 370,
+   "success": true,
+   "cost": 0.0013431185741586262,
+   "residual_norm": 0.05182892192895056,
+   "residual_max": 0.03037662664998031,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 44
+  },
+  {
+   "start": 371,
+   "success": true,
+   "cost": 0.001827330561860945,
+   "residual_norm": 0.06045379329472957,
+   "residual_max": 0.03388064785503761,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 42
+  },
+  {
+   "start": 372,
+   "success": true,
+   "cost": 0.001206258811731286,
+   "residual_norm": 0.049117386162769,
+   "residual_max": 0.027696426631743067,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 23
+  },
+  {
+   "start": 373,
+   "success": true,
+   "cost": 2.5931048658164795e-28,
+   "residual_norm": 2.2773251264659068e-14,
+   "residual_max": 1.7671049808617617e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 374,
+   "success": true,
+   "cost": 2.8048499999264274e-23,
+   "residual_norm": 7.489793054452742e-12,
+   "residual_max": 6.027277442683197e-12,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 375,
+   "success": true,
+   "cost": 2.561742410015995e-28,
+   "residual_norm": 2.263511612524219e-14,
+   "residual_max": 1.1860440657500459e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 376,
+   "success": true,
+   "cost": 0.0017267953175237453,
+   "residual_norm": 0.05876725818895663,
+   "residual_max": 0.02592135195203813,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 57
+  },
+  {
+   "start": 377,
+   "success": true,
+   "cost": 0.001219051456298504,
+   "residual_norm": 0.049377149701020695,
+   "residual_max": 0.027902249444526402,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 69
+  },
+  {
+   "start": 378,
+   "success": true,
+   "cost": 0.0012544271939237297,
+   "residual_norm": 0.050088465616821,
+   "residual_max": 0.026432991729550225,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 34
+  },
+  {
+   "start": 379,
+   "success": true,
+   "cost": 4.441926106995453e-29,
+   "residual_norm": 9.425418937103489e-15,
+   "residual_max": 5.690475913652344e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 380,
+   "success": true,
+   "cost": 4.7809080870836476e-27,
+   "residual_norm": 9.778453954571395e-14,
+   "residual_max": 7.819876433634018e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 381,
+   "success": true,
+   "cost": 1.0741418540656011e-32,
+   "residual_norm": 1.46570246234739e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 382,
+   "success": true,
+   "cost": 0.0017267953175237642,
+   "residual_norm": 0.05876725818895696,
+   "residual_max": 0.025921354265501646,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 59
+  },
+  {
+   "start": 383,
+   "success": true,
+   "cost": 9.08320461490125e-30,
+   "residual_norm": 4.262207084340518e-15,
+   "residual_max": 2.2284040210272568e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 10
+  },
+  {
+   "start": 384,
+   "success": true,
+   "cost": 0.0012803272294803802,
+   "residual_norm": 0.05060290958987201,
+   "residual_max": 0.03891180658730989,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 825
+  },
+  {
+   "start": 385,
+   "success": true,
+   "cost": 5.135113483324251e-29,
+   "residual_norm": 1.0134212829148843e-14,
+   "residual_max": 4.9167922418733e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 386,
+   "success": true,
+   "cost": 2.794619456957454e-32,
+   "residual_norm": 2.364157125470917e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 387,
+   "success": true,
+   "cost": 1.938799198490935e-32,
+   "residual_norm": 1.969161851393092e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 388,
+   "success": true,
+   "cost": 0.0012230511249327694,
+   "residual_norm": 0.04945808578852945,
+   "residual_max": 0.027700304839514637,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 106
+  },
+  {
+   "start": 389,
+   "success": true,
+   "cost": 0.00101278058683618,
+   "residual_norm": 0.04500623483110268,
+   "residual_max": 0.028712092085661944,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 20
+  },
+  {
+   "start": 390,
+   "success": true,
+   "cost": 0.0010943851284524006,
+   "residual_norm": 0.04678429498138025,
+   "residual_max": 0.024443645599677696,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 66
+  },
+  {
+   "start": 391,
+   "success": true,
+   "cost": 1.8207105001347255e-32,
+   "residual_norm": 1.908250769754712e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 392,
+   "success": true,
+   "cost": 2.74220787577199e-32,
+   "residual_norm": 2.34188295000924e-16,
+   "residual_max": 1.130782710266367e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 393,
+   "success": true,
+   "cost": 1.1292217332535901e-32,
+   "residual_norm": 1.5028118533293449e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 394,
+   "success": true,
+   "cost": 0.00122741619428439,
+   "residual_norm": 0.04954626513238692,
+   "residual_max": 0.027028440676127512,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 58
+  },
+  {
+   "start": 395,
+   "success": true,
+   "cost": 0.0012217939206764148,
+   "residual_norm": 0.04943265966294783,
+   "residual_max": 0.02333833522184948,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 57
+  },
+  {
+   "start": 396,
+   "success": true,
+   "cost": 0.0012845937473385883,
+   "residual_norm": 0.05068715315222563,
+   "residual_max": 0.04001779310006322,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 26
+  },
+  {
+   "start": 397,
+   "success": true,
+   "cost": 1.0332963672256429e-29,
+   "residual_norm": 4.545979250339014e-15,
+   "residual_max": 2.9305707147423045e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 398,
+   "success": true,
+   "cost": 4.504516333611624e-32,
+   "residual_norm": 3.001505066999429e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 399,
+   "success": true,
+   "cost": 1.6525912142314128e-32,
+   "residual_norm": 1.8180160693632018e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 400,
+   "success": true,
+   "cost": 0.0012274161942846843,
+   "residual_norm": 0.04954626513239286,
+   "residual_max": 0.027028444040991965,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 48
+  },
+  {
+   "start": 401,
+   "success": true,
+   "cost": 0.0012274161942843202,
+   "residual_norm": 0.04954626513238551,
+   "residual_max": 0.027028441478747306,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 58
+  },
+  {
+   "start": 402,
+   "success": true,
+   "cost": 0.0010831336076599155,
+   "residual_norm": 0.04654317581901595,
+   "residual_max": 0.02237801257081583,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 19
+  },
+  {
+   "start": 403,
+   "success": true,
+   "cost": 1.0478227020871498e-28,
+   "residual_norm": 1.447634416617089e-14,
+   "residual_max": 7.317487164598072e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 404,
+   "success": true,
+   "cost": 4.021485045827713e-32,
+   "residual_norm": 2.8360130626736236e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 405,
+   "success": true,
+   "cost": 1.0065068818546807e-27,
+   "residual_norm": 4.486662193334106e-14,
+   "residual_max": 2.9835958806438895e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 406,
+   "success": true,
+   "cost": 0.0012274161942845672,
+   "residual_norm": 0.0495462651323905,
+   "residual_max": 0.027028440909705007,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 59
+  },
+  {
+   "start": 407,
+   "success": true,
+   "cost": 0.000972177664177631,
+   "residual_norm": 0.044094844691361164,
+   "residual_max": 0.03415079726295312,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 30
+  },
+  {
+   "start": 408,
+   "success": true,
+   "cost": 0.0012811151451281827,
+   "residual_norm": 0.05061847775522655,
+   "residual_max": 0.03888089682202763,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 271
+  },
+  {
+   "start": 409,
+   "success": true,
+   "cost": 1.4754433061265345e-32,
+   "residual_norm": 1.717814487147279e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 410,
+   "success": true,
+   "cost": 8.887585479920835e-32,
+   "residual_norm": 4.2160610716451523e-16,
+   "residual_max": 2.2615654205327383e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 411,
+   "success": true,
+   "cost": 5.003643270484951e-32,
+   "residual_norm": 3.1634295536600626e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 412,
+   "success": true,
+   "cost": 1.9582433634325875e-30,
+   "residual_norm": 1.9790115529893138e-15,
+   "residual_max": 9.992007221626409e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 17
+  },
+  {
+   "start": 413,
+   "success": true,
+   "cost": 0.0013431185741589603,
+   "residual_norm": 0.05182892192895701,
+   "residual_max": 0.03037662521375509,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 50
+  },
+  {
+   "start": 414,
+   "success": true,
+   "cost": 0.0010728459942968619,
+   "residual_norm": 0.046321614701926396,
+   "residual_max": 0.020740687207508452,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 48
+  },
+  {
+   "start": 415,
+   "success": true,
+   "cost": 8.598266370161107e-28,
+   "residual_norm": 4.146870234323979e-14,
+   "residual_max": 2.2194180649687786e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 416,
+   "success": true,
+   "cost": 3.518190544499976e-33,
+   "residual_norm": 8.388313947987374e-17,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 417,
+   "success": true,
+   "cost": 8.947644608759105e-26,
+   "residual_norm": 4.230282403991276e-13,
+   "residual_max": 2.503906925183624e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 418,
+   "success": true,
+   "cost": 0.0012834029495839717,
+   "residual_norm": 0.05066365461717052,
+   "residual_max": 0.038747462870475625,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 59
+  },
+  {
+   "start": 419,
+   "success": true,
+   "cost": 0.0010728459942976182,
+   "residual_norm": 0.04632161470194272,
+   "residual_max": 0.020740687038539336,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 420,
+   "success": true,
+   "cost": 0.0012217939202218782,
+   "residual_norm": 0.049432659653752764,
+   "residual_max": 0.023338677470103764,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 67
+  },
+  {
+   "start": 421,
+   "success": true,
+   "cost": 8.051658241674053e-30,
+   "residual_norm": 4.0128937792256736e-15,
+   "residual_max": 1.986221527130072e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 422,
+   "success": true,
+   "cost": 1.5273000926778265e-32,
+   "residual_norm": 1.7477414526627366e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 423,
+   "success": true,
+   "cost": 9.825842276799084e-33,
+   "residual_norm": 1.4018446616368794e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 424,
+   "success": true,
+   "cost": 0.0011832412638047424,
+   "residual_norm": 0.04864650581089545,
+   "residual_max": 0.029841729256763993,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 71
+  },
+  {
+   "start": 425,
+   "success": true,
+   "cost": 0.0017501459836612768,
+   "residual_norm": 0.0591632653537865,
+   "residual_max": 0.028379240102768828,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 61
+  },
+  {
+   "start": 426,
+   "success": true,
+   "cost": 0.000664003381990896,
+   "residual_norm": 0.03644182712189102,
+   "residual_max": 0.02501516685875021,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 47
+  },
+  {
+   "start": 427,
+   "success": true,
+   "cost": 2.8402480132702116e-32,
+   "residual_norm": 2.3833791193472394e-16,
+   "residual_max": 1.130782710266367e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 428,
+   "success": true,
+   "cost": 5.852938087301756e-32,
+   "residual_norm": 3.4213851251508523e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 429,
+   "success": true,
+   "cost": 3.74871463953829e-27,
+   "residual_norm": 8.658769704222754e-14,
+   "residual_max": 5.68680904835797e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 430,
+   "success": true,
+   "cost": 0.0010831336076598357,
+   "residual_norm": 0.04654317581901423,
+   "residual_max": 0.022378011928215924,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 16
+  },
+  {
+   "start": 431,
+   "success": true,
+   "cost": 0.0009875244342224128,
+   "residual_norm": 0.044441521896137016,
+   "residual_max": 0.01723763138852463,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 37
+  },
+  {
+   "start": 432,
+   "success": true,
+   "cost": 0.0012386638960811415,
+   "residual_norm": 0.049772761548484354,
+   "residual_max": 0.028012117351291423,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 92
+  },
+  {
+   "start": 433,
+   "success": true,
+   "cost": 3.719286592294832e-30,
+   "residual_norm": 2.7273747789018038e-15,
+   "residual_max": 1.7763568394002505e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 434,
+   "success": true,
+   "cost": 9.457911358726017e-30,
+   "residual_norm": 4.349232428538631e-15,
+   "residual_max": 2.672759133356841e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 435,
+   "success": true,
+   "cost": 1.7925914275943337e-30,
+   "residual_norm": 1.8934579095371167e-15,
+   "residual_max": 1.1359226316766671e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 436,
+   "success": true,
+   "cost": 0.0013431185741585316,
+   "residual_norm": 0.05182892192894874,
+   "residual_max": 0.03037663132833338,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 41
+  },
+  {
+   "start": 437,
+   "success": true,
+   "cost": 0.0007014282106616821,
+   "residual_norm": 0.03745472495324674,
+   "residual_max": 0.022635480942693437,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 22
+  },
+  {
+   "start": 438,
+   "success": true,
+   "cost": 2.9781940747988985e-27,
+   "residual_norm": 7.71776402178623e-14,
+   "residual_max": 3.851839423068751e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 8
+  },
+  {
+   "start": 439,
+   "success": true,
+   "cost": 1.1809008841399597e-28,
+   "residual_norm": 1.5368154633136405e-14,
+   "residual_max": 9.560253823161948e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 440,
+   "success": true,
+   "cost": 9.335245307426374e-33,
+   "residual_norm": 1.3664000371360047e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 441,
+   "success": true,
+   "cost": 6.306208605780417e-32,
+   "residual_norm": 3.5513965156767325e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 442,
+   "success": true,
+   "cost": 0.0011832412638044644,
+   "residual_norm": 0.04864650581088974,
+   "residual_max": 0.029841747174324335,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 29
+  },
+  {
+   "start": 443,
+   "success": true,
+   "cost": 0.001343118574159196,
+   "residual_norm": 0.051828921928961554,
+   "residual_max": 0.030376607910648914,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 49
+  },
+  {
+   "start": 444,
+   "success": true,
+   "cost": 0.001282226415001576,
+   "residual_norm": 0.05064042683472516,
+   "residual_max": 0.038846676327140145,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 380
+  },
+  {
+   "start": 445,
+   "success": true,
+   "cost": 4.127643347904631e-31,
+   "residual_norm": 9.085860826476083e-16,
+   "residual_max": 5.191320624404699e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 446,
+   "success": true,
+   "cost": 4.518409315909355e-32,
+   "residual_norm": 3.006130175461254e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 447,
+   "success": true,
+   "cost": 7.000243955654906e-28,
+   "residual_norm": 3.7417225860971855e-14,
+   "residual_max": 2.7002577129013545e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 448,
+   "success": true,
+   "cost": 0.0011832412638045024,
+   "residual_norm": 0.048646505810890514,
+   "residual_max": 0.02984172949643219,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 42
+  },
+  {
+   "start": 449,
+   "success": true,
+   "cost": 0.0009668607018060443,
+   "residual_norm": 0.04397409923593761,
+   "residual_max": 0.03279889119975651,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 21
+  },
+  {
+   "start": 450,
+   "success": true,
+   "cost": 0.0012820332199409337,
+   "residual_norm": 0.050636611654828044,
+   "residual_max": 0.038858876269595305,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 368
+  },
+  {
+   "start": 451,
+   "success": true,
+   "cost": 6.40432370660126e-31,
+   "residual_norm": 1.1317529506567464e-15,
+   "residual_max": 7.771561172376096e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 452,
+   "success": true,
+   "cost": 9.997680007691075e-32,
+   "residual_norm": 4.471617158856754e-16,
+   "residual_max": 3.5722453801596575e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 453,
+   "success": true,
+   "cost": 3.6390083371039945e-30,
+   "residual_norm": 2.697779952888669e-15,
+   "residual_max": 1.6578935823833669e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 454,
+   "success": true,
+   "cost": 0.0010943851284524293,
+   "residual_norm": 0.04678429498138086,
+   "residual_max": 0.024443640896246607,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 42
+  },
+  {
+   "start": 455,
+   "success": true,
+   "cost": 0.0009875244342218363,
+   "residual_norm": 0.04444152189612404,
+   "residual_max": 0.017237654366445646,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 456,
+   "success": true,
+   "cost": 0.0012819893864601116,
+   "residual_norm": 0.05063574599944414,
+   "residual_max": 0.03885395781291203,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 531
+  },
+  {
+   "start": 457,
+   "success": true,
+   "cost": 1.6773268068690267e-26,
+   "residual_norm": 1.8315713509820068e-13,
+   "residual_max": 1.3792465112408276e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 458,
+   "success": true,
+   "cost": 2.391188001133158e-26,
+   "residual_norm": 2.1868644224702903e-13,
+   "residual_max": 9.993522452869194e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 459,
+   "success": true,
+   "cost": 5.413579140043621e-29,
+   "residual_norm": 1.040536317486672e-14,
+   "residual_max": 5.459671120809553e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 460,
+   "success": true,
+   "cost": 0.0010943851284523768,
+   "residual_norm": 0.04678429498137974,
+   "residual_max": 0.024443641248418496,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 40
+  },
+  {
+   "start": 461,
+   "success": true,
+   "cost": 0.0011832412638045052,
+   "residual_norm": 0.048646505810890577,
+   "residual_max": 0.0298417419737989,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 35
+  },
+  {
+   "start": 462,
+   "success": true,
+   "cost": 0.0012822737161880863,
+   "residual_norm": 0.05064136088590208,
+   "residual_max": 0.038848194370480676,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 305
+  },
+  {
+   "start": 463,
+   "success": true,
+   "cost": 1.5843092371827155e-30,
+   "residual_norm": 1.7800613681458938e-15,
+   "residual_max": 8.809591388743211e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 464,
+   "success": true,
+   "cost": 7.533663512373466e-28,
+   "residual_norm": 3.8816654962460295e-14,
+   "residual_max": 2.4551453492071103e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 465,
+   "success": true,
+   "cost": 1.6399762410017164e-32,
+   "residual_norm": 1.8110639088677773e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 466,
+   "success": true,
+   "cost": 0.0012245828197781862,
+   "residual_norm": 0.04948904565210742,
+   "residual_max": 0.02777086874774474,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 163
+  },
+  {
+   "start": 467,
+   "success": true,
+   "cost": 0.0016610234504422059,
+   "residual_norm": 0.05763720066835665,
+   "residual_max": 0.02580626944399311,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 39
+  },
+  {
+   "start": 468,
+   "success": true,
+   "cost": 0.0012845937473384944,
+   "residual_norm": 0.050687153152223774,
+   "residual_max": 0.04001779458931397,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 25
+  },
+  {
+   "start": 469,
+   "success": true,
+   "cost": 4.952578387226983e-31,
+   "residual_norm": 9.952465410366401e-16,
+   "residual_max": 5.795261390115064e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 470,
+   "success": true,
+   "cost": 2.9226185047017087e-32,
+   "residual_norm": 2.4176924968662616e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 471,
+   "success": true,
+   "cost": 5.147974178067515e-27,
+   "residual_norm": 1.0146895267092801e-13,
+   "residual_max": 5.1666490016383615e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 472,
+   "success": true,
+   "cost": 0.0012328971925223387,
+   "residual_norm": 0.049656765752963385,
+   "residual_max": 0.027747343039552484,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 38
+  },
+  {
+   "start": 473,
+   "success": true,
+   "cost": 0.0010430852460382104,
+   "residual_norm": 0.0456746154015162,
+   "residual_max": 0.02524850843429417,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 50
+  },
+  {
+   "start": 474,
+   "success": true,
+   "cost": 0.0012808472552047348,
+   "residual_norm": 0.05061318514388785,
+   "residual_max": 0.038887906167148996,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 243
+  },
+  {
+   "start": 475,
+   "success": true,
+   "cost": 2.9530958837427875e-30,
+   "residual_norm": 2.4302657812440134e-15,
+   "residual_max": 1.1102230246251565e-15,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 476,
+   "success": true,
+   "cost": 5.893431490899282e-32,
+   "residual_norm": 3.433200108033111e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 477,
+   "success": true,
+   "cost": 1.1147937704157512e-32,
+   "residual_norm": 1.493180344376225e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 478,
+   "success": true,
+   "cost": 1.4836825101340114e-26,
+   "residual_norm": 1.7226041391648932e-13,
+   "residual_max": 1.1863203813449997e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 9
+  },
+  {
+   "start": 479,
+   "success": true,
+   "cost": 0.0017267953175237535,
+   "residual_norm": 0.05876725818895678,
+   "residual_max": 0.025921430588288205,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 54
+  },
+  {
+   "start": 480,
+   "success": true,
+   "cost": 0.0012544271939239687,
+   "residual_norm": 0.05008846561682577,
+   "residual_max": 0.026432936077666305,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 51
+  },
+  {
+   "start": 481,
+   "success": true,
+   "cost": 1.712671156974785e-26,
+   "residual_norm": 1.85076803353353e-13,
+   "residual_max": 1.4941751539752055e-13,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 482,
+   "success": true,
+   "cost": 1.1285315423098715e-32,
+   "residual_norm": 1.5023525167615432e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 483,
+   "success": true,
+   "cost": 1.646580939027736e-32,
+   "residual_norm": 1.814707105308036e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 484,
+   "success": true,
+   "cost": 0.0010999260094090937,
+   "residual_norm": 0.04690258008700787,
+   "residual_max": 0.03249746008310471,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 28
+  },
+  {
+   "start": 485,
+   "success": true,
+   "cost": 0.0007014282106616973,
+   "residual_norm": 0.03745472495324715,
+   "residual_max": 0.02263547908939254,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 20
+  },
+  {
+   "start": 486,
+   "success": true,
+   "cost": 0.0013954036034080303,
+   "residual_norm": 0.052828091076775247,
+   "residual_max": 0.04272089411488183,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 158
+  },
+  {
+   "start": 487,
+   "success": true,
+   "cost": 3.3451702424264533e-31,
+   "residual_norm": 8.179450155635711e-16,
+   "residual_max": 4.561680251642673e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 488,
+   "success": true,
+   "cost": 6.264457007208951e-33,
+   "residual_norm": 1.1193263158890665e-16,
+   "residual_max": 5.551115123125783e-17,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 489,
+   "success": true,
+   "cost": 9.737966769562899e-33,
+   "residual_norm": 1.3955620208047294e-16,
+   "residual_max": 1.1102230246251565e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 6
+  },
+  {
+   "start": 490,
+   "success": true,
+   "cost": 0.001227416194284207,
+   "residual_norm": 0.04954626513238323,
+   "residual_max": 0.02702844008363462,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 55
+  },
+  {
+   "start": 491,
+   "success": true,
+   "cost": 0.0012809922403711463,
+   "residual_norm": 0.050616049635884196,
+   "residual_max": 0.038886507237281896,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 278
+  },
+  {
+   "start": 492,
+   "success": true,
+   "cost": 0.0013935637569981302,
+   "residual_norm": 0.05279325254231132,
+   "residual_max": 0.042764577127961584,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 46
+  },
+  {
+   "start": 493,
+   "success": true,
+   "cost": 1.6356094263476006e-28,
+   "residual_norm": 1.8086511141442402e-14,
+   "residual_max": 1.3826388593711757e-14,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  },
+  {
+   "start": 494,
+   "success": true,
+   "cost": 3.919984046563849e-32,
+   "residual_norm": 2.799994302338435e-16,
+   "residual_max": 1.6653345369377348e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 5
+  },
+  {
+   "start": 495,
+   "success": true,
+   "cost": 2.9526038337398364e-32,
+   "residual_norm": 2.430063305241177e-16,
+   "residual_max": 2.220446049250313e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 7
+  },
+  {
+   "start": 496,
+   "success": true,
+   "cost": 0.0010999260094006326,
+   "residual_norm": 0.046902580086827475,
+   "residual_max": 0.03249746997324513,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 38
+  },
+  {
+   "start": 497,
+   "success": true,
+   "cost": 0.0014680495025102265,
+   "residual_norm": 0.05418578231437148,
+   "residual_max": 0.023118427190923867,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 43
+  },
+  {
+   "start": 498,
+   "success": true,
+   "cost": 0.0012804231768549748,
+   "residual_norm": 0.05060480563849593,
+   "residual_max": 0.03890059730166198,
+   "accepted": false,
+   "duplicate": false,
+   "nfev": 94
+  },
+  {
+   "start": 499,
+   "success": true,
+   "cost": 3.494689707983794e-31,
+   "residual_norm": 8.360250843107274e-16,
+   "residual_max": 7.771561172376096e-16,
+   "accepted": true,
+   "duplicate": true,
+   "nfev": 4
+  }
+ ]
+}

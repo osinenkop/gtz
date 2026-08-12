@@ -1,0 +1,101 @@
+{
+ "summary": {
+  "mode": "det_saturated_inverted",
+  "variables": [
+   "z0",
+   "z1",
+   "z2",
+   "z3",
+   "z4",
+   "z5",
+   "z6",
+   "z7",
+   "z8",
+   "u0"
+  ],
+  "n_variables": 10,
+  "active_indices": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "active_triples": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    1,
+    5
+   ]
+  ],
+  "active_size": 4,
+  "row_pairs": [],
+  "n_equalities": 5,
+  "equality_degrees": [
+   6,
+   6,
+   6,
+   6,
+   7
+  ],
+  "max_equality_degree": 7,
+  "n_nonzero_constraints": 0,
+  "nonzero_degrees": [],
+  "metadata": {
+   "chart": "Y=[I;Z]",
+   "description": "saturated active determinant equations det(6*N_TT-d*I)/d^2=0",
+   "mask": 15,
+   "ring_order": "degrevlex",
+   "saturated_by": "d^2, where d=det(Y^T Y)",
+   "invert_d": true
+  }
+ },
+ "timeout_seconds": 120,
+ "characteristic": 32003,
+ "linear_sections": 5,
+ "linear_section_seed": 11,
+ "linear_forms": [
+  "(14824)*z0 + (28369)*z1 + (18343)*z2 + (28078)*z3 + (30285)*z4 + (25599)*z5 + (15259)*z6 + (14806)*z7 + (16641)*z8 + (28019)*u0 + (19247)",
+  "(6223)*z0 + (6051)*z1 + (26343)*z2 + (16775)*z3 + (15590)*z4 + (20640)*z5 + (20119)*z6 + (25985)*z7 + (6101)*z8 + (3085)*u0 + (14633)",
+  "(9942)*z0 + (4647)*z1 + (2972)*z2 + (17652)*z3 + (26531)*z4 + (29176)*z5 + (22723)*z6 + (20790)*z7 + (1373)*z8 + (19512)*u0 + (12981)",
+  "(31614)*z0 + (14844)*z1 + (21428)*z2 + (24213)*z3 + (20171)*z4 + (21302)*z5 + (5161)*z6 + (20419)*z7 + (492)*z8 + (27254)*u0 + (17313)",
+  "(2070)*z0 + (1952)*z1 + (1169)*z2 + (6233)*z3 + (28822)*z4 + (7928)*z5 + (19649)*z6 + (986)*z7 + (25498)*z8 + (15203)*u0 + (10691)"
+ ],
+ "singular_bin": "/home/p.osinenko/miniforge3/envs/sage/bin/Singular",
+ "methods": {
+  "slimgb": {
+   "script": "code/sage/out/probe_prefix_A0_3_invd_p32003_sec5_slimgb.sing",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 3.353385220048949,
+   "stdout": "method\nslimgb\nnvars\n10\nneqs\n5\nlinear_sections\n5\nmax_degree\n7\ncharacteristic\n32003\n//used time: 3.33 sec\nbasis_size\n245\ndimension\n1\ndegree\n// dimension (proj.)  = 0\n// degree (proj.)   = 60\ntimer\n3\n",
+   "stderr": "",
+   "parsed": {
+    "method": "slimgb",
+    "nvars": 10,
+    "neqs": 5,
+    "linear_sections": 5,
+    "max_degree": 7,
+    "characteristic": 32003,
+    "basis_size": 245,
+    "dimension": 1,
+    "degree": "// dimension (proj.)  = 0",
+    "timer": 3
+   }
+  }
+ }
+}

@@ -1,0 +1,2632 @@
+{
+ "inputs_glob": "verify/out/v30_margin_*.json",
+ "sizes": [
+  7,
+  8
+ ],
+ "canons": [],
+ "results": [
+  {
+   "size": 7,
+   "canon": 13105,
+   "file": "verify/out/v30_margin_7_13105.json",
+   "active": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    15,
+    16
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "numerical_ties": [
+    9,
+    10,
+    18
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 3,
+   "subsets": [
+    {
+     "ties": [
+      9,
+      10,
+      18
+     ],
+     "tie_triples": [
+      [
+       0,
+       4,
+       5
+      ],
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s7_13105_t9_10_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_13105_t9_10_18.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_13105.json",
+       "--size",
+       "7",
+       "--canon",
+       "13105",
+       "--tie-indices",
+       "9,10,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_13105_t9_10_18_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_13105_t9_10_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_13105_t9_10_18.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0446469254312309311621320207074410641031028742464646476663349217524017091836406814081901046030296409596140002273438897662106942436129952784938307361299999999999999999999999999999999999999999999999999999999999999999999999999999",
+      "margin_upper": "0.0446469254312309311621320207077743974364362075797979809996682550857350425169740147415234379363629742929473335606772230995440275769463286118271640694633333333333333333333333333333333333333333333333333333333333333333333333333335",
+      "strict_outside_det_max_upper": "-2.46359379271923343556623551098437997682194973837654915764117762663964673749086636630501944298885090382695772170009015608718891626130220287001496095870438013256290329377819480173368854310121962948848153861149854745066118108689",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 7,
+   "canon": 14113,
+   "file": "verify/out/v30_margin_7_14113.json",
+   "active": [
+    0,
+    1,
+    2,
+    6,
+    14,
+    16,
+    18
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    10,
+    11,
+    12
+   ],
+   "numerical_tie_triples": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     2,
+     5
+    ]
+   ],
+   "needed_ties": 3,
+   "subsets": [
+    {
+     "ties": [
+      10,
+      11,
+      12
+     ],
+     "tie_triples": [
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       1,
+       2,
+       4
+      ],
+      [
+       1,
+       2,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s7_14113_t10_11_12_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_14113_t10_11_12.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_14113.json",
+       "--size",
+       "7",
+       "--canon",
+       "14113",
+       "--tie-indices",
+       "10,11,12",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_14113_t10_11_12_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_14113_t10_11_12_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_14113_t10_11_12.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0219593612977106471453390091110505087188015076055160265435577779400914366091610478916959456513150399847358283444311429019185578167402430376864993835016666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666",
+      "margin_upper": "0.0219593612977106471453390091113838420521348409388493598768911112734247699424943812250292789846483733180691616777644762352518911500735763710198327168350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+      "strict_outside_det_max_upper": "-16.5533842328508353077826504018972655663139133535330499719522083097792979326349373730299401870602667370592331776850221080961059705433760635831039734160198718766171057289925656848183889841627278287986956038252772440103452960792436375675649997",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 7,
+   "canon": 78595,
+   "file": "verify/out/v30_margin_7_78595.json",
+   "active": [
+    0,
+    1,
+    5,
+    8,
+    12,
+    15,
+    16
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "numerical_ties": [
+    4,
+    13,
+    19
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 3,
+   "subsets": [
+    {
+     "ties": [
+      4,
+      13,
+      19
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       3
+      ],
+      [
+       1,
+       3,
+       4
+      ],
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s7_78595_t4_13_19_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78595_t4_13_19.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78595.json",
+       "--size",
+       "7",
+       "--canon",
+       "78595",
+       "--tie-indices",
+       "4,13,19",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78595_t4_13_19_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78595_t4_13_19_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78595_t4_13_19.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0452136723386775667826187756638053675695658378109630062461224234953489103317986724737513196710278319796734403261270996667629877048319273401003454157216666666666666666666666666666666666666666666666666666666666666666666666666665",
+      "margin_upper": "0.0452136723386775667826187756641387009028991711442963395794557568286822436651320058070846530043611653130067736594604330000963210381652606734336787490550000000000000000000000000000000000000000000000000000000000000000000000000001",
+      "strict_outside_det_max_upper": "-5.73661472100153827028735745792949839322251842234669051318502829054498974521580484682928695908374391493559338368980865394519478749363135483460603204220897239164046270246035693039521181487394302358818246898189425165384784459282",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 7,
+   "canon": 78601,
+   "file": "verify/out/v30_margin_7_78601.json",
+   "active": [
+    0,
+    1,
+    2,
+    6,
+    12,
+    16,
+    19
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    4,
+    7,
+    14
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     3,
+     5
+    ]
+   ],
+   "needed_ties": 3,
+   "subsets": [
+    {
+     "ties": [
+      4,
+      7,
+      14
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       3
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       3,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s7_78601_t4_7_14_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78601_t4_7_14.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78601.json",
+       "--size",
+       "7",
+       "--canon",
+       "78601",
+       "--tie-indices",
+       "4,7,14",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78601_t4_7_14_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78601_t4_7_14_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78601_t4_7_14.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0515061731896345861435485317238027767829812689068718506893390740305559825993804111184567852676614954859064406100987866572132466761412851620739840669033333333333333333333333333333333333333333333333333333333333333333333333333332",
+      "margin_upper": "0.0515061731896345861435485317241361101163146022402051840226724073638893159327137444517901186009948288192397739434321199905465800094746184954073174002366666666666666666666666666666666666666666666666666666666666666666666666666668",
+      "strict_outside_det_max_upper": "-26.5608466988324357610260637398065975305157283652225494682651367454650179856337696865217998703021811600583727331771829623551847081490651931351971598606619128450160998028594325153228618399728367434700083376619826521600896870030",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 7,
+   "canon": 78612,
+   "file": "verify/out/v30_margin_7_78612.json",
+   "active": [
+    0,
+    1,
+    5,
+    8,
+    15,
+    16,
+    17
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    2,
+    7,
+    10,
+    19
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 3,
+   "subsets": [
+    {
+     "ties": [
+      2,
+      7,
+      10
+     ],
+     "tie_triples": [
+      [
+       0,
+       1,
+       4
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      19
+     ],
+     "nonstrict_outside_triples": [
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s7_78612_t2_7_10_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78612_t2_7_10.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78612.json",
+       "--size",
+       "7",
+       "--canon",
+       "78612",
+       "--tie-indices",
+       "2,7,10",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78612_t2_7_10_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78612_t2_7_10_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78612_t2_7_10.json",
+       "--nonstrict-outside-indices",
+       "19"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": "0.0426033908353660808829270034162042731941581254926778081296003839757115623390758397004102466725888543439779506472601947920353260264301502171198620640818696270136564743450645712878949559795218081157157106735599336104712933376874",
+      "margin_upper": "0.0426033908353660808829270034162042731941581254926778081298526575814582055902158634818088409691761183135202737530106980877806839461025192462480258792799501783051968333218083596655916917079283789395401529503104313760882444970995",
+      "strict_outside_det_max_upper": "-13.7682389051115446878777589337952012169758805192718789236541900114601013711605477117206983749250272064388230776894803695430020572005100759018387963144803670173778471426910039619429348830901629186432798892437121422045068840584",
+      "nonstrict_outside_det_max_upper": "1.53702776152916184683741160908340022123336113311026203539906577070365289519734198975698036110738796973257563036725492394690731120066868824306182956633715587116885372416120197882611983448359261471263393316358997068096225456893e-53",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": false,
+       "all_branch_checks": false
+      }
+     }
+    },
+    {
+     "ties": [
+      2,
+      7,
+      19
+     ],
+     "tie_triples": [
+      [
+       0,
+       1,
+       4
+      ],
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      10
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s7_78612_t2_7_19_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78612_t2_7_19.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78612.json",
+       "--size",
+       "7",
+       "--canon",
+       "78612",
+       "--tie-indices",
+       "2,7,19",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78612_t2_7_19_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78612_t2_7_19_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78612_t2_7_19.json",
+       "--nonstrict-outside-indices",
+       "10"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      2,
+      10,
+      19
+     ],
+     "tie_triples": [
+      [
+       0,
+       1,
+       4
+      ],
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      7
+     ],
+     "nonstrict_outside_triples": [
+      [
+       0,
+       3,
+       4
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s7_78612_t2_10_19_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78612_t2_10_19.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78612.json",
+       "--size",
+       "7",
+       "--canon",
+       "78612",
+       "--tie-indices",
+       "2,10,19",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78612_t2_10_19_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78612_t2_10_19_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78612_t2_10_19.json",
+       "--nonstrict-outside-indices",
+       "7"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      7,
+      10,
+      19
+     ],
+     "tie_triples": [
+      [
+       0,
+       3,
+       4
+      ],
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      2
+     ],
+     "nonstrict_outside_triples": [
+      [
+       0,
+       1,
+       4
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s7_78612_t7_10_19_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s7_78612_t7_10_19.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_7_78612.json",
+       "--size",
+       "7",
+       "--canon",
+       "78612",
+       "--tie-indices",
+       "7,10,19",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s7_78612_t7_10_19_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s7_78612_t7_10_19_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s7_78612_t7_10_19.json",
+       "--nonstrict-outside-indices",
+       "2"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": "0.0426033908353660808829270034162042731941581254926778081294479215209599528864900284787792041522523140769014014737268095869352014905696276848999417380962131011674895820863546838245817713340206017239442715346851706070865978767402",
+      "margin_upper": "0.0426033908353660808829270034162042731941581254926778081300051200362098150428016747034398834895126585805968229265440832928808084819630417784679462052656067041513637255805182471289048763534295853313115920891851943794729399580465",
+      "strict_outside_det_max_upper": "-13.7682389051115446878777589337952012169758805192718789214648601773040794631151677629615457764032273271203410859406351377459373852957256738320934961817047633693166464158802604623893080397350924033788024066999717937793446521195",
+      "nonstrict_outside_det_max_upper": "5.80517743628058409045235899198408756579705553183850276201382911944134352602126876771442539091429045738115621468049576277870642273087902956074171047056621230562311474724602547275897240020903209065025229702562613158763111066270e-54",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": false,
+       "all_branch_checks": false
+      }
+     }
+    }
+   ],
+   "any_certified": false
+  },
+  {
+   "size": 8,
+   "canon": 13107,
+   "file": "verify/out/v30_margin_8_13107.json",
+   "active": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    9,
+    14,
+    16
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "numerical_ties": [
+    11,
+    13
+   ],
+   "numerical_tie_triples": [
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     3,
+     4
+    ]
+   ],
+   "needed_ties": 2,
+   "subsets": [
+    {
+     "ties": [
+      11,
+      13
+     ],
+     "tie_triples": [
+      [
+       1,
+       2,
+       4
+      ],
+      [
+       1,
+       3,
+       4
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s8_13107_t11_13_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_13107_t11_13.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_13107.json",
+       "--size",
+       "8",
+       "--canon",
+       "13107",
+       "--tie-indices",
+       "11,13",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_13107_t11_13_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_13107_t11_13_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_13107_t11_13.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0982077501316674846107348995596394272091984163552427635087551859014039894099876251557670630545188213434078323270655797485889627566708680480012559747433333333333333333333333333333333333333333333333333333333333333333333333333333",
+      "margin_upper": "0.0982077501316674846107348995599727605425317496885760968420885192347373227433209584891003963878521546767411656603989130819222960900042013813345893080766666666666666666666666666666666666666666666666666666666666666666666666666668",
+      "strict_outside_det_max_upper": "-29.4647926422204397305872648345005102320024967129163369896174478162131310726777446348401431079845758990140901633462026317310396603088256175142434201389590375224615087859928714459789523495182670506183771573836201085208444101546",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 8,
+   "canon": 14117,
+   "file": "verify/out/v30_margin_8_14117.json",
+   "active": [
+    0,
+    1,
+    2,
+    4,
+    9,
+    12,
+    16,
+    17
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     3
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    5,
+    6
+   ],
+   "numerical_tie_triples": [
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ]
+   ],
+   "needed_ties": 2,
+   "subsets": [
+    {
+     "ties": [
+      5,
+      6
+     ],
+     "tie_triples": [
+      [
+       0,
+       2,
+       4
+      ],
+      [
+       0,
+       2,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [],
+     "nonstrict_outside_triples": [],
+     "refine_out": "code/sage/out/refine_tie_s8_14117_t5_6_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_14117_t5_6.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_14117.json",
+       "--size",
+       "8",
+       "--canon",
+       "14117",
+       "--tie-indices",
+       "5,6",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_14117_t5_6_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_14117_t5_6_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_14117_t5_6.json"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": true,
+      "certified": true,
+      "margin_lower": "0.0329381178422993768053283604784153245844625038036430702472069880365475274154895557541685988125318849949468775856956663016666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666",
+      "margin_upper": "0.0329381178422993768053283604787486579177958371369764035805403213698808607488228890875019321458652183282802109190289996350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+      "strict_outside_det_max_upper": "-17.2532918585867326034301912374237362926848920294158281731701905233531273134783584258912897093189277529714430910564341705012392159180538563944697976429895958025513362923026310252008920301635300470883332017530992",
+      "nonstrict_outside_det_max_upper": "None",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": true,
+       "all_branch_checks": true
+      }
+     }
+    }
+   ],
+   "any_certified": true
+  },
+  {
+   "size": 8,
+   "canon": 78613,
+   "file": "verify/out/v30_margin_8_78613.json",
+   "active": [
+    0,
+    1,
+    5,
+    8,
+    9,
+    12,
+    13,
+    16
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [
+     0,
+     4,
+     5
+    ],
+    [
+     1,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     4
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "numerical_ties": [
+    14,
+    15,
+    17,
+    18
+   ],
+   "numerical_tie_triples": [
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     1,
+     4,
+     5
+    ],
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     2,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 2,
+   "subsets": [
+    {
+     "ties": [
+      14,
+      15
+     ],
+     "tie_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      17,
+      18
+     ],
+     "nonstrict_outside_triples": [
+      [
+       2,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t14_15_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t14_15.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "14,15",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t14_15_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t14_15_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t14_15.json",
+       "--nonstrict-outside-indices",
+       "17,18"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      14,
+      17
+     ],
+     "tie_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      15,
+      18
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       4,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t14_17_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t14_17.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "14,17",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t14_17_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t14_17_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t14_17.json",
+       "--nonstrict-outside-indices",
+       "15,18"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      14,
+      18
+     ],
+     "tie_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      15,
+      17
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       4,
+       5
+      ],
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t14_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t14_18.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "14,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t14_18_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t14_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t14_18.json",
+       "--nonstrict-outside-indices",
+       "15,17"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      15,
+      17
+     ],
+     "tie_triples": [
+      [
+       1,
+       4,
+       5
+      ],
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      14,
+      18
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t15_17_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t15_17.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "15,17",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t15_17_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t15_17_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t15_17.json",
+       "--nonstrict-outside-indices",
+       "14,18"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      15,
+      18
+     ],
+     "tie_triples": [
+      [
+       1,
+       4,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      14,
+      17
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t15_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t15_18.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "15,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t15_18_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t15_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t15_18.json",
+       "--nonstrict-outside-indices",
+       "14,17"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      17,
+      18
+     ],
+     "tie_triples": [
+      [
+       2,
+       3,
+       5
+      ],
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      14,
+      15
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       3,
+       5
+      ],
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_78613_t17_18_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_78613_t17_18.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_78613.json",
+       "--size",
+       "8",
+       "--canon",
+       "78613",
+       "--tie-indices",
+       "17,18",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_78613_t17_18_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_78613_t17_18_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_78613_t17_18.json",
+       "--nonstrict-outside-indices",
+       "14,15"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    }
+   ],
+   "any_certified": false
+  },
+  {
+   "size": 8,
+   "canon": 79656,
+   "file": "verify/out/v30_margin_8_79656.json",
+   "active": [
+    0,
+    1,
+    2,
+    6,
+    14,
+    16,
+    18,
+    19
+   ],
+   "active_triples": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     4
+    ],
+    [
+     0,
+     2,
+     5
+    ],
+    [
+     1,
+     3,
+     5
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     2,
+     4,
+     5
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ],
+   "numerical_ties": [
+    10,
+    11,
+    15
+   ],
+   "numerical_tie_triples": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     4
+    ],
+    [
+     1,
+     4,
+     5
+    ]
+   ],
+   "needed_ties": 2,
+   "subsets": [
+    {
+     "ties": [
+      10,
+      11
+     ],
+     "tie_triples": [
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       1,
+       2,
+       4
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      15
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_79656_t10_11_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_79656_t10_11.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_79656.json",
+       "--size",
+       "8",
+       "--canon",
+       "79656",
+       "--tie-indices",
+       "10,11",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_79656_t10_11_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_79656_t10_11_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_79656_t10_11.json",
+       "--nonstrict-outside-indices",
+       "15"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": "0.0525669822295852260864855613025180447320274846705530165804396804359524878169788110933987569334884588915747366790192152539689059007842017949851258289462418614788681742877287312658657015831810986137745284612541016002165721909379",
+      "margin_upper": "0.0525669822295852260864855613025180447320274846705530165807602940283335844010479997633699772592586902546417121965897801109739623250575241058987522139288437614428883062950323924727019440696775345392071833287222341252630369421799",
+      "strict_outside_det_max_upper": "-2.81781683002802066979921509156470233006484351338079867158017002725050824526960854719242103914452883355817002979075148606208241590099370164131924935915071362075853443643291725019707547393940479472514256901711331717607669212310",
+      "nonstrict_outside_det_max_upper": "6.37221428715076733583604667301559888237191573248736973447480441355256322579279973804636799524812238354655527328421872520494648050630145395596860941353879060365004335488572716583396718275999671428769222416891299803139837297133e-54",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": false,
+       "all_branch_checks": false
+      }
+     }
+    },
+    {
+     "ties": [
+      10,
+      15
+     ],
+     "tie_triples": [
+      [
+       1,
+       2,
+       3
+      ],
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      11
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       2,
+       4
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_79656_t10_15_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_79656_t10_15.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_79656.json",
+       "--size",
+       "8",
+       "--canon",
+       "79656",
+       "--tie-indices",
+       "10,15",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_79656_t10_15_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_79656_t10_15_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_79656_t10_15.json",
+       "--nonstrict-outside-indices",
+       "11"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": false,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": null,
+      "margin_upper": null,
+      "strict_outside_det_max_upper": null,
+      "nonstrict_outside_det_max_upper": null,
+      "branch_checks": {
+       "chart_d_positive": null,
+       "q_gt_one": null,
+       "active_minors_positive": null,
+       "equation_tie_minors_positive": null,
+       "outside_shifted_dets_negative": null,
+       "nonstrict_outside_shifted_dets_nonpositive": null,
+       "all_branch_checks": null
+      }
+     }
+    },
+    {
+     "ties": [
+      11,
+      15
+     ],
+     "tie_triples": [
+      [
+       1,
+       2,
+       4
+      ],
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     "nonstrict_outside_indices": [
+      10
+     ],
+     "nonstrict_outside_triples": [
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     "refine_out": "code/sage/out/refine_tie_s8_79656_t11_15_p500.json",
+     "certify_out": "code/sage/out/krawczyk_tie_s8_79656_t11_15.json",
+     "refine_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/refine_margin_tie_root.py",
+       "--input",
+       "verify/out/v30_margin_8_79656.json",
+       "--size",
+       "8",
+       "--canon",
+       "79656",
+       "--tie-indices",
+       "11,15",
+       "--precision",
+       "500",
+       "--steps",
+       "30",
+       "--tol-exp",
+       "260",
+       "--algdep-degree",
+       "0",
+       "--algdep-height",
+       "1000000",
+       "--out",
+       "code/sage/out/refine_tie_s8_79656_t11_15_p500.json"
+      ],
+      "returncode": 0
+     },
+     "certify_result": {
+      "skipped_existing": true,
+      "cmd": [
+       "/home/p.osinenko/miniforge3/envs/sage/bin/python",
+       "/home/p.osinenko/Documents/gtz/code/sage/certify_margin_tie_krawczyk.py",
+       "--input",
+       "code/sage/out/refine_tie_s8_79656_t11_15_p500.json",
+       "--precision",
+       "750",
+       "--radius-exp-start",
+       "30",
+       "--radius-exp-stop",
+       "130",
+       "--radius-exp-step",
+       "10",
+       "--out",
+       "code/sage/out/krawczyk_tie_s8_79656_t11_15.json",
+       "--nonstrict-outside-indices",
+       "10"
+      ],
+      "returncode": 0
+     },
+     "status": {
+      "exists": true,
+      "krawczyk_certified": true,
+      "branch_certified": false,
+      "certified": false,
+      "margin_lower": "0.0525669822295852260864855613025180447320274846705530165803732658051101049160161070876497946082980230494692684268019575210579719130630822280177672326182679392626796320043344725777682851045437083043039273071825296018024511424643",
+      "margin_upper": "0.0525669822295852260864855613025180447320274846705530165808267086591759673020107037691189395844491260967471804488070378438848963127786436728661108102568176836590768485784266511607993605483149248486777844827938061236771579906534",
+      "strict_outside_det_max_upper": "-2.81781683002802066979921509156470233006484351338079866963460915785310621090052408317661918092561899608401689636916463295423687974331147211643479458628392628197083894526429084651216605418035842073476350860691420565145906683808",
+      "nonstrict_outside_det_max_upper": "4.53297143858192122264266114919250070064035298281861030537163585587844558334531526207542340512337671180902291350102055258810212407174967335243698330883895627875448236162913356127082397236908282094467755853826165364730527204113e-54",
+      "branch_checks": {
+       "chart_d_positive": true,
+       "q_gt_one": true,
+       "active_minors_positive": true,
+       "equation_tie_minors_positive": true,
+       "outside_shifted_dets_negative": true,
+       "nonstrict_outside_shifted_dets_nonpositive": false,
+       "all_branch_checks": false
+      }
+     }
+    }
+   ],
+   "any_certified": false
+  }
+ ]
+}

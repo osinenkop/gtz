@@ -1,0 +1,43 @@
+{
+ "source": [
+  "code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32003.json",
+  "code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32009_support_c4.json",
+  "code/sage/out/local_separator_s7_78612_omit_active1_D5_S4_p32027_support_c4.json"
+ ],
+ "description": "CRT/rational reconstruction of the size-7 candidate-4 support, normalized by z2^2 and multiplied by 115.",
+ "terms": [
+  {"coefficient": "-960", "monomial": "z0*z1*z3*z4"},
+  {"coefficient": "610", "monomial": "z0*z1*z6*z7"},
+  {"coefficient": "360", "monomial": "z0*z2*z3*z5"},
+  {"coefficient": "-212", "monomial": "z0*z2*z6*z8"},
+  {"coefficient": "-50", "monomial": "z0^2"},
+  {"coefficient": "480", "monomial": "z0^2*z4^2"},
+  {"coefficient": "-180", "monomial": "z0^2*z5^2"},
+  {"coefficient": "-305", "monomial": "z0^2*z7^2"},
+  {"coefficient": "106", "monomial": "z0^2*z8^2"},
+  {"coefficient": "360", "monomial": "z1*z2*z4*z5"},
+  {"coefficient": "610", "monomial": "z1*z2*z7*z8"},
+  {"coefficient": "-155", "monomial": "z1^2"},
+  {"coefficient": "480", "monomial": "z1^2*z3^2"},
+  {"coefficient": "-180", "monomial": "z1^2*z5^2"},
+  {"coefficient": "-305", "monomial": "z1^2*z6^2"},
+  {"coefficient": "-305", "monomial": "z1^2*z8^2"},
+  {"coefficient": "115", "monomial": "z2^2"},
+  {"coefficient": "-180", "monomial": "z2^2*z3^2"},
+  {"coefficient": "-180", "monomial": "z2^2*z4^2"},
+  {"coefficient": "106", "monomial": "z2^2*z6^2"},
+  {"coefficient": "-305", "monomial": "z2^2*z7^2"},
+  {"coefficient": "590", "monomial": "z3*z4*z6*z7"},
+  {"coefficient": "-790", "monomial": "z3*z5*z6*z8"},
+  {"coefficient": "-391", "monomial": "z3^2"},
+  {"coefficient": "-295", "monomial": "z3^2*z7^2"},
+  {"coefficient": "395", "monomial": "z3^2*z8^2"},
+  {"coefficient": "260", "monomial": "z4*z5*z7*z8"},
+  {"coefficient": "650", "monomial": "z4^2"},
+  {"coefficient": "-295", "monomial": "z4^2*z6^2"},
+  {"coefficient": "-130", "monomial": "z4^2*z8^2"},
+  {"coefficient": "-259", "monomial": "z5^2"},
+  {"coefficient": "395", "monomial": "z5^2*z6^2"},
+  {"coefficient": "-130", "monomial": "z5^2*z7^2"}
+ ]
+}

@@ -2012,6 +2012,23 @@ centered integer coefficients still tracking the modulus.  Thus the
 degree-`48` repeated-support polynomial is stable across three primes, but more
 prime data is needed before attempting a rational lift.
 
+The same compact pipeline was run at `p=32029`:
+
+```text
+code/sage/out/random_linear_forms_scipy_s8_79656_p32029_seed20260813_trial0_coeffs.json
+code/sage/out/random_linear_forms_scipy_s8_79656_p32029_seed20260813_trial0_factors.json
+code/sage/out/repeated_support_s8_79656_p32029_linform_seed20260813_trial0.json
+code/sage/out/repeated_support_s8_79656_linform_seed20260813_trial0_crt_32003_32009_32027_32029.json
+```
+
+The invariants remain unchanged: relation degree `2800`, squarefree degree
+`2704`, multiplicity excess `96`, repeated-support degree `48`.  The four-prime
+CRT modulus has decimal size about `10^18.022`; rational reconstruction still
+fails for `19` of `49` coefficients, and the centered integer lift remains near
+the modulus.  This suggests that the chosen random linear form is a high-height
+coordinate for the degree-`48` repeated support; adding primes is useful, but a
+lower-height linear form should also be tested.
+
 The first rectangular span test,
 
 ```text

@@ -12,6 +12,7 @@ from sage.all import GF, PolynomialRing
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
+    parser.add_argument("--row-index", type=int, default=0)
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
 
@@ -20,7 +21,18 @@ def main() -> int:
     variable = data.get("variable", "q")
     ring = PolynomialRing(GF(p), variable)
     q = ring.gen()
-    coeffs = data["coefficients_low_to_high"]
+    row = None
+    coeffs = data.get("coefficients_low_to_high")
+    if coeffs is None:
+        rows = data.get("rows") or []
+        if not rows:
+            raise SystemExit("input has neither coefficients_low_to_high nor rows")
+        if args.row_index < 0 or args.row_index >= len(rows):
+            raise SystemExit(f"row index {args.row_index} out of range for {len(rows)} rows")
+        row = rows[args.row_index]
+        coeffs = row.get("coefficients_low_to_high")
+        if coeffs is None:
+            raise SystemExit(f"row {args.row_index} does not contain coefficients_low_to_high")
     poly = sum(GF(p)(coeff) * q**i for i, coeff in enumerate(coeffs))
     factorization = poly.factor()
     factors = [
@@ -33,6 +45,8 @@ def main() -> int:
     ]
     payload = {
         "input": args.input,
+        "row_index": args.row_index if row is not None else None,
+        "expression": row.get("expression") if row is not None else data.get("variable", "q"),
         "characteristic": p,
         "variable": variable,
         "degree": int(poly.degree()),

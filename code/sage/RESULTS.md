@@ -1901,6 +1901,62 @@ only a `32`-dimensional part of the quotient.  This is a much sharper
 elimination coordinate than `q` and justifies a short random search for a true
 degree-`2832` primitive element.
 
+The first polynomial-power random search was too slow at the full quotient
+degree, so a CSR/Wiedemann backend was added:
+
+```text
+code/sage/screen_random_linear_forms_scipy.py
+```
+
+It caches the eight quotient multiplication actions over `F_32009` under
+`/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009_actions`.  The action matrices
+have about `4.1e5`--`5.4e5` nonzeros each, and a generic combined linear action
+has about `3.06e6` nonzeros.  On the cached action matrices, a 32-trial random
+screen gives:
+
+```text
+code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_32trials.json
+```
+
+| Relation degree | Count |
+| ---: | ---: |
+| `2800` | `31` |
+| `2796` | `1` |
+
+Every listed relation has exact residual zero.  No trial reached the full
+quotient degree `2832`, so the evidence now points away from a degree-`2832`
+primitive element for this nonradical quotient and toward a generic
+degree-`2800` radical/separable support plus extra multiplicity structure.
+
+For the first random form
+
+```text
+6*a+9*b+18*c+29*d+23*x+15*y+2*e+5*q
+```
+
+the stored degree-`2800` relation factors over `F_32009` as:
+
+```text
+code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_coeffs.json
+code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_factors.json
+```
+
+The factorization has `204` factors.  The squarefree degree is `2704`, while
+the degree with multiplicities is `2800`; the multiplicity excess is `96`.
+Relative to the quotient degree `2832`, the gaps are:
+
+| Quantity | Value |
+| --- | ---: |
+| quotient degree minus generic relation degree | `32` |
+| quotient degree minus squarefree degree | `128` |
+| relation degree minus squarefree degree | `96` |
+
+The repeated factors are concentrated in `16` linear factors and `16` quadratic
+factors, all with multiplicity `3`.  This is useful new structure: the
+finite-field Plucker ansatz quotient is not behaving as `2832` reduced points
+under generic linear projection, but the radical support appears much more
+compressed than the original quotient degree.
+
 The first rectangular span test,
 
 ```text
@@ -1914,10 +1970,10 @@ rank `680` through `j=12`, far below the full quotient degree `2832`.  Thus
 finite-algebra model of the full s8 Plucker quotient.
 
 This is not yet a proof of infeasibility for these Plucker loci.  It is a
-substantial compression: the next realistic step is to pursue a generic
-primitive-element/RUR direction for the s8 ansatz, while using the equivalent
-8-variable s7 ansatz only when a smaller variable set matters more than raw
-Groebner runtime.
+substantial compression: the next realistic step is to treat the degree-`2800`
+generic linear-form relation as a radical/RUR target for the s8 ansatz, and to
+separate or saturate the lower-dimensional multiplicity structure rather than
+continuing to hunt blindly for a degree-`2832` primitive element.
 
 ## Relaxed interval bound calibration
 

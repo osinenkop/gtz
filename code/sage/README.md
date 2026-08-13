@@ -420,6 +420,36 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   --out code/sage/out/random_linear_forms_s8_79656_p32009_seed20260813.json
 ```
 
+The faster CSR/Wiedemann version caches the quotient action matrices and then
+screens random forms by a modular black-box minimal-polynomial computation:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_random_linear_forms_scipy.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --trials 32 --seed 20260813 --max-degree 2832 --target-degree 2832 \
+  --cache-prefix /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009_actions \
+  --out code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_32trials.json
+```
+
+To store and factor one generic linear-form relation:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_random_linear_forms_scipy.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --trials 1 --seed 20260813 --max-degree 2832 --target-degree 2800 \
+  --cache-prefix /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009_actions \
+  --store-coefficients \
+  --out code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_coeffs.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/factor_q_relation.py \
+  --input code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_coeffs.json \
+  --row-index 0 \
+  --out code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_factors.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

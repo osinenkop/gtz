@@ -1844,11 +1844,68 @@ complete no-factor theorems, but they are strong negative evidence for the only
 two s8 degrees from the old numerical `algdep` output that passed the `p32051`
 factor-product pre-screen.
 
+The reduced s7 Plucker ansatz was then checked directly:
+
+```text
+code/sage/out/qrel_plucker_ansatz_s7_78612_p32003.json
+code/sage/out/qrel_plucker_ansatz_s7_78612_p32009.json
+```
+
+At both primes the ansatz basis has dimension `0`, quotient degree `4992`, and
+q-relation degree `510`.  The q-polynomial coefficients agree exactly with the
+corresponding full-locus artifacts
+`qrel_plucker_locus_s7_78612_p32003.json` and
+`qrel_plucker_locus_s7_78612_p32009.json`.  This validates the 8-variable
+ansatz as an equivalent representation of the s7 Plucker component for these
+modular checks, although basis construction was not faster in this test
+(`basis_size=3282`, about 25--31 minutes per prime).
+
+A different quotient-structure screen is in
+
+```text
+code/sage/out/linear_form_screen_s8_79656_p32009_deg900.json
+```
+
+It measures first power-relation degrees for coordinates and linear forms in
+the s8 ansatz quotient.  The simple coordinates have substantially larger
+minimal-polynomial degrees than `q`:
+
+| Expression | Relation degree |
+| --- | ---: |
+| `q` | `326` |
+| `e` | `632` |
+| `a` | `647` |
+| `b` | `671` |
+| `c,d` | `678` |
+| `x,y` | `682` |
+| `q+a`, `q+b` | `677` |
+| `q+c`, `q+d` | `686` |
+| `q+x`, `q+y` | `690` |
+| `q+e` | `656` |
+
+The random-looking linear form
+`q+a+2*b+3*c+5*d+7*x+11*y+13*e` has no relation through degree `900`.
+This is the first positive indication that a generic primitive element may be
+reachable even though the bare `q`-eliminant is too collapsed for direct
+component isolation.
+
+The first rectangular span test,
+
+```text
+code/sage/out/generator_span_s8_79656_p32009_q_a_325_20_partial.json
+```
+
+is negative for the simplest two-generator tower: the span of
+`q^i a^j`, `0 <= i <= 325`, plateaued at rank `680` by `j=6` and remained at
+rank `680` through `j=12`, far below the full quotient degree `2832`.  Thus
+`q` together with powers of the single coordinate `a` does not provide a small
+finite-algebra model of the full s8 Plucker quotient.
+
 This is not yet a proof of infeasibility for these Plucker loci.  It is a
-substantial compression: the next realistic step is to repeat the modular
-q-relation computation at additional primes, identify stable factors
-corresponding to the numerical roots, and then attempt rational reconstruction
-or direct modular sign/separation tests factor-by-factor.
+substantial compression: the next realistic step is to pursue a generic
+primitive-element/RUR direction for the s8 ansatz, while using the equivalent
+8-variable s7 ansatz only when a smaller variable set matters more than raw
+Groebner runtime.
 
 ## Relaxed interval bound calibration
 

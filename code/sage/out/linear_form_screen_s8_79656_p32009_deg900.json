@@ -1,0 +1,191 @@
+{
+ "basis_json": "/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json",
+ "characteristic": 32009,
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "quotient_degree": 2832,
+ "normal_basis_size": 2832,
+ "max_degree": 900,
+ "check_every": 100,
+ "rows": [
+  {
+   "expression": "q",
+   "relation_found": true,
+   "relation_degree": 326,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 327,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.504511639404631
+  },
+  {
+   "expression": "a",
+   "relation_found": true,
+   "relation_degree": 647,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 323,
+   "density": 0.4984567901234568,
+   "degree_log10_height_proxy": 4.502372488311689
+  },
+  {
+   "expression": "b",
+   "relation_found": true,
+   "relation_degree": 671,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 335,
+   "density": 0.49851190476190477,
+   "degree_log10_height_proxy": 4.504742636271688
+  },
+  {
+   "expression": "c",
+   "relation_found": true,
+   "relation_degree": 678,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 340,
+   "density": 0.5007363770250368,
+   "degree_log10_height_proxy": 4.504620359117789
+  },
+  {
+   "expression": "d",
+   "relation_found": true,
+   "relation_degree": 678,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 340,
+   "density": 0.5007363770250368,
+   "degree_log10_height_proxy": 4.504498047526627
+  },
+  {
+   "expression": "x",
+   "relation_found": true,
+   "relation_degree": 682,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 342,
+   "density": 0.5007320644216691,
+   "degree_log10_height_proxy": 4.504688295120228
+  },
+  {
+   "expression": "y",
+   "relation_found": true,
+   "relation_degree": 682,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 342,
+   "density": 0.5007320644216691,
+   "degree_log10_height_proxy": 4.503967632216219
+  },
+  {
+   "expression": "e",
+   "relation_found": true,
+   "relation_degree": 632,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 317,
+   "density": 0.5007898894154819,
+   "degree_log10_height_proxy": 4.500867417872138
+  },
+  {
+   "expression": "q+a",
+   "relation_found": true,
+   "relation_degree": 677,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 678,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.503981240704224
+  },
+  {
+   "expression": "q+b",
+   "relation_found": true,
+   "relation_degree": 677,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 678,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.505244969848502
+  },
+  {
+   "expression": "q+c",
+   "relation_found": true,
+   "relation_degree": 686,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 687,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.504443675760434
+  },
+  {
+   "expression": "q+d",
+   "relation_found": true,
+   "relation_degree": 686,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 687,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.504756220497207
+  },
+  {
+   "expression": "q+x",
+   "relation_found": true,
+   "relation_degree": 690,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 691,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.505190691519183
+  },
+  {
+   "expression": "q+y",
+   "relation_found": true,
+   "relation_degree": 690,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 691,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.503994848765824
+  },
+  {
+   "expression": "q+e",
+   "relation_found": true,
+   "relation_degree": 656,
+   "searched_degree": 900,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 657,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.504457269340162
+  },
+  {
+   "expression": "q+a+2*b+3*c+5*d+7*x+11*y+13*e",
+   "relation_found": false,
+   "relation_degree": null,
+   "searched_degree": 900
+  }
+ ]
+}

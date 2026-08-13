@@ -389,6 +389,27 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   code/sage/out/qrel_plucker_ansatz_s8_79656_p32027.json
 ```
 
+Screen other quotient coordinates and linear forms for short power relations:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_linear_form_relations.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --expression 'q,a,b,c,d,x,y,e,q+a,q+b,q+c,q+d,q+x,q+y,q+e' \
+  --max-degree 900 --check-every 100 \
+  --out code/sage/out/linear_form_screen_s8_79656_p32009_deg900.json
+```
+
+Measure whether a rectangular monomial family spans the finite quotient:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_generator_span.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --generators q,a --limits 325,20 --stop-at-full-rank \
+  --out code/sage/out/generator_span_s8_79656_p32009_q_a_325_20.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

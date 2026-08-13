@@ -1,0 +1,119 @@
+{
+ "basis_json": "/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json",
+ "characteristic": 32009,
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "quotient_degree": 2832,
+ "normal_basis_size": 2832,
+ "generators": [
+  "q",
+  "a"
+ ],
+ "limits": [
+  325,
+  20
+ ],
+ "partial": true,
+ "stopped_reason": "manual stop after rank plateaued at 680 through a^12",
+ "rows": [
+  {
+   "a_max_power": 0,
+   "q_max_power": 325,
+   "columns": 326,
+   "rank": 326,
+   "defect": 2506
+  },
+  {
+   "a_max_power": 1,
+   "q_max_power": 325,
+   "columns": 652,
+   "rank": 650,
+   "defect": 2182
+  },
+  {
+   "a_max_power": 2,
+   "q_max_power": 325,
+   "columns": 978,
+   "rank": 664,
+   "defect": 2168
+  },
+  {
+   "a_max_power": 3,
+   "q_max_power": 325,
+   "columns": 1304,
+   "rank": 676,
+   "defect": 2156
+  },
+  {
+   "a_max_power": 4,
+   "q_max_power": 325,
+   "columns": 1630,
+   "rank": 678,
+   "defect": 2154
+  },
+  {
+   "a_max_power": 5,
+   "q_max_power": 325,
+   "columns": 1956,
+   "rank": 679,
+   "defect": 2153
+  },
+  {
+   "a_max_power": 6,
+   "q_max_power": 325,
+   "columns": 2282,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 7,
+   "q_max_power": 325,
+   "columns": 2608,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 8,
+   "q_max_power": 325,
+   "columns": 2934,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 9,
+   "q_max_power": 325,
+   "columns": 3260,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 10,
+   "q_max_power": 325,
+   "columns": 3586,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 11,
+   "q_max_power": 325,
+   "columns": 3912,
+   "rank": 680,
+   "defect": 2152
+  },
+  {
+   "a_max_power": 12,
+   "q_max_power": 325,
+   "columns": 4238,
+   "rank": 680,
+   "defect": 2152
+  }
+ ]
+}

@@ -36,6 +36,12 @@ CASES = {
         basis_prefix="plucker_locus_s7_78612",
         qrel_prefix="qrel_plucker_locus_s7_78612",
     ),
+    "s7_78612_ansatz": CaseSpec(
+        name="s7_78612",
+        probe_script="probe_overtie_plucker_ansatz.py",
+        basis_prefix="plucker_ansatz_s7_78612",
+        qrel_prefix="qrel_plucker_ansatz_s7_78612",
+    ),
     "s8_79656": CaseSpec(
         name="s8_79656",
         probe_script="probe_overtie_plucker_ansatz.py",
@@ -178,7 +184,7 @@ def main() -> int:
                             args.python,
                             str(SAGE_DIR / spec.probe_script),
                             "--case",
-                            case_name,
+                            spec.name,
                             "--characteristic",
                             str(prime),
                             "--out",

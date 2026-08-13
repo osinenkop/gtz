@@ -1957,6 +1957,21 @@ finite-field Plucker ansatz quotient is not behaving as `2832` reduced points
 under generic linear projection, but the radical support appears much more
 compressed than the original quotient degree.
 
+The same screen was repeated at `p=32003`:
+
+```text
+code/sage/out/random_linear_forms_scipy_s8_79656_p32003_seed20260813_8trials.json
+code/sage/out/random_linear_forms_scipy_s8_79656_p32003_seed20260813_trial0_coeffs.json
+code/sage/out/random_linear_forms_scipy_s8_79656_p32003_seed20260813_trial0_factors.json
+```
+
+All eight random forms had exact relation degree `2800`.  The first-form
+factorization again has degree `2800`, squarefree degree `2704`, and
+multiplicity excess `96`; the quotient-minus-squarefree gap is again `128`.
+The factor degrees differ over `F_32003`, but the degree/multiplicity invariants
+match `F_32009`, making the degree-`2800` generic-projection behavior unlikely
+to be a one-prime artifact.
+
 The first rectangular span test,
 
 ```text

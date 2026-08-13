@@ -1,0 +1,202 @@
+{
+ "basis_json": "code/sage/out/plucker_ansatz_s8_79656_p32003.json",
+ "characteristic": 32003,
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "quotient_degree": 2832,
+ "normal_basis_size": 2832,
+ "max_degree": 2832,
+ "check_every": 800,
+ "seed": 20260813,
+ "trials_requested": 8,
+ "method": "scipy_csr_wiedemann",
+ "variable": "t",
+ "action_nnz": {
+  "a": 533840,
+  "b": 532656,
+  "c": 542533,
+  "d": 534949,
+  "x": 529188,
+  "y": 520448,
+  "e": 501784,
+  "q": 403366
+ },
+ "rows": [
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 0,
+   "expression": "6*a+9*b+18*c+29*d+23*x+15*y+2*e+5*q",
+   "coefficients": {
+    "a": 6,
+    "b": 9,
+    "c": 18,
+    "d": 29,
+    "x": 23,
+    "y": 15,
+    "e": 2,
+    "q": 5
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 1,
+   "expression": "25*a+19*b+14*c+23*d+21*x+29*y+29*e+26*q",
+   "coefficients": {
+    "a": 25,
+    "b": 19,
+    "c": 14,
+    "d": 23,
+    "x": 21,
+    "y": 29,
+    "e": 29,
+    "q": 26
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 2,
+   "expression": "8*a+10*b+29*c+20*d+25*x+26*y+12*e+15*q",
+   "coefficients": {
+    "a": 8,
+    "b": 10,
+    "c": 29,
+    "d": 20,
+    "x": 25,
+    "y": 26,
+    "e": 12,
+    "q": 15
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 3,
+   "expression": "21*a+9*b+4*c+17*d+8*x+11*y+2*e+13*q",
+   "coefficients": {
+    "a": 21,
+    "b": 9,
+    "c": 4,
+    "d": 17,
+    "x": 8,
+    "y": 11,
+    "e": 2,
+    "q": 13
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 4,
+   "expression": "2*a+6*b+9*c+15*d+22*x+21*y+9*e+16*q",
+   "coefficients": {
+    "a": 2,
+    "b": 6,
+    "c": 9,
+    "d": 15,
+    "x": 22,
+    "y": 21,
+    "e": 9,
+    "q": 16
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 5,
+   "expression": "22*a+11*b+19*c+20*d+19*x+9*y+6*e+20*q",
+   "coefficients": {
+    "a": 22,
+    "b": 11,
+    "c": 19,
+    "d": 20,
+    "x": 19,
+    "y": 9,
+    "e": 6,
+    "q": 20
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 6,
+   "expression": "5*a+14*b+29*c+d+15*x+3*y+3*e+3*q",
+   "coefficients": {
+    "a": 5,
+    "b": 14,
+    "c": 29,
+    "d": 1,
+    "x": 15,
+    "y": 3,
+    "e": 3,
+    "q": 3
+   }
+  },
+  {
+   "relation_found": true,
+   "relation_degree": 2800,
+   "scalar_relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "trial": 7,
+   "expression": "24*a+11*b+22*c+5*d+25*x+3*y+18*e+6*q",
+   "coefficients": {
+    "a": 24,
+    "b": 11,
+    "c": 22,
+    "d": 5,
+    "x": 25,
+    "y": 3,
+    "e": 18,
+    "q": 6
+   }
+  }
+ ]
+}

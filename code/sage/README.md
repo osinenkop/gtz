@@ -466,6 +466,30 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   code/sage/out/repeated_support_s8_79656_p32009_linform_seed20260813_trial0.json
 ```
 
+For explicit low-height linear-form banks, put the coefficient vectors in a
+JSON file and rank their repeated-support CRT behavior:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_random_linear_forms_scipy.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --max-degree 2832 --target-degree 2832 \
+  --cache-prefix /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009_actions \
+  --coefficients-json code/sage/linear_form_candidates_s8_79656_lowheight_v1.json \
+  --store-coefficients \
+  --out code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32009_coeffs.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/rank_repeated_support_candidates.py \
+  --labels-json code/sage/linear_form_candidates_s8_79656_lowheight_v1.json \
+  --out code/sage/out/repeated_support_lowheight_bank_v1_s8_79656_rank_32003_32009_32027_32029_32051.json \
+  code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32003_coeffs.json \
+  code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32009_coeffs.json \
+  code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32027_coeffs.json \
+  code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32029_coeffs.json \
+  code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32051_coeffs.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

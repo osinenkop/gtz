@@ -1,0 +1,22 @@
+{
+ "description": "Low-height linear-form candidates for the s8_79656 Plucker quotient. Variable order is a,b,c,d,x,y,e,q.",
+ "variable_order": ["a", "b", "c", "d", "x", "y", "e", "q"],
+ "candidates": [
+  {"label": "all_ones", "coefficients": [1, 1, 1, 1, 1, 1, 1, 1]},
+  {"label": "small_primes_q1", "coefficients": [1, 2, 3, 5, 7, 11, 13, 1]},
+  {"label": "mixed_a", "coefficients": [1, 1, 2, -1, 3, -2, 1, 2]},
+  {"label": "mixed_b", "coefficients": [1, -1, 2, 3, -1, 2, -3, 2]},
+  {"label": "mixed_c", "coefficients": [2, 1, -1, 3, 1, -2, 2, 1]},
+  {"label": "mixed_d", "coefficients": [3, -2, 1, 1, -1, 2, 1, 1]},
+  {"label": "mixed_e", "coefficients": [1, 3, -2, 2, 1, -1, 3, 2]},
+  {"label": "mixed_f", "coefficients": [2, -3, 1, 2, -2, 3, 1, 1]},
+  {"label": "mixed_g", "coefficients": [3, 1, 2, -1, 2, -3, 1, 2]},
+  {"label": "mixed_h", "coefficients": [1, 2, -3, 1, 3, 1, -2, 1]},
+  {"label": "mixed_i", "coefficients": [2, 3, 1, -2, 1, 2, -1, 2]},
+  {"label": "mixed_j", "coefficients": [3, 2, -1, 1, -3, 1, 2, 1]},
+  {"label": "mixed_k", "coefficients": [1, -2, 3, -1, 2, 3, 1, 2]},
+  {"label": "mixed_l", "coefficients": [2, 1, 3, -3, 1, -1, 2, 1]},
+  {"label": "height5_a", "coefficients": [1, 4, 2, -3, 5, -1, 3, 2]},
+  {"label": "height5_b", "coefficients": [4, 1, -2, 5, 2, -3, 1, 1]}
+ ]
+}

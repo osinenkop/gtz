@@ -2047,6 +2047,68 @@ generic linear-form relation as a radical/RUR target for the s8 ansatz, and to
 separate or saturate the lower-dimensional multiplicity structure rather than
 continuing to hunt blindly for a degree-`2832` primitive element.
 
+### Low-height repeated-support bank
+
+The CSR/Wiedemann screen was extended to accept explicit coefficient banks via
+`--coefficients-json`.  A first low-height bank of `16` linear forms was tested
+on the s8 ansatz quotient:
+
+```text
+code/sage/linear_form_candidates_s8_79656_lowheight_v1.json
+code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32003_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32009_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32027_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32029_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v1_s8_79656_p32051_coeffs.json
+```
+
+Across `p=32003,32009,32027,32029`, `12` of the `16` candidates have exact
+relation degree `2800`; the same `12` remain degree `2800` after adding
+`p=32051`.  The persistent excluded forms are the all-ones control, the
+structural degree-`2788` form
+`2*a-3*b+c+2*d-2*x+3*y+e+q`, and two forms that drop at `p=32029`.
+
+For every eligible candidate, the squarefree product of repeated factors again
+has degree `48`.  The ranking script
+
+```text
+code/sage/rank_repeated_support_candidates.py
+```
+
+factors the stored relations, extracts those degree-`48` repeated-support
+products, and ranks candidates by CRT rational-reconstruction success.  The
+five-prime ranking is stored in
+
+```text
+code/sage/out/repeated_support_lowheight_bank_v1_s8_79656_rank_32003_32009_32027_32029_32051.json
+```
+
+Top five-prime rows:
+
+| Trial | Linear form | Reconstructed coefficients | Integer max log10 |
+| ---: | --- | ---: | ---: |
+| `12` | `a-2*b+3*c-d+2*x+3*y+e+2*q` | `36/49` | `22.225` |
+| `8` | `3*a+b+2*c-d+2*x-3*y+e+2*q` | `35/49` | `22.201` |
+| `6` | `a+3*b-2*c+2*d+x-y+3*e+2*q` | `33/49` | `22.200` |
+| `10` | `2*a+3*b+c-2*d+x+2*y-e+2*q` | `33/49` | `22.218` |
+| `5` | `3*a-2*b+c+d-x+2*y+e+q` | `32/49` | `22.214` |
+
+The best materialized CRT summary is
+
+```text
+code/sage/out/repeated_support_lowheight_bank_v1_trial12_s8_79656_crt_32003_32009_32027_32029_32051.json
+```
+
+This improves the earlier random four-prime repeated support (`30/49`) and the
+small-prime low-height test (`31/49` over four primes), but it is not yet a
+usable rational lift: after five primes, `13` of the `49` coefficients still
+fail rational reconstruction and the centered integer lift remains near the
+full modulus.  The current interpretation is that low-height linear forms help,
+but the degree-`48` repeated support is still not exposing a genuinely small
+rational polynomial with this bank.  A next computational step would be either a
+larger/search-driven coefficient bank or extending the best candidates to more
+primes now that the action-cache pipeline is established.
+
 ## Relaxed interval bound calibration
 
 Lowering the target threshold did not close the interval branch-and-bound

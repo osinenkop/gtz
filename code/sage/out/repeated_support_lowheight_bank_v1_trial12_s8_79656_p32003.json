@@ -1,0 +1,162 @@
+{
+ "source": "code/sage/out/linear_form_lowheight_bank_v1_trial12_s8_79656_p32003_factors.json",
+ "characteristic": 32003,
+ "variable": "t",
+ "selection": {
+  "min_multiplicity": 2,
+  "with_multiplicity": false,
+  "selected_count": 16,
+  "selected": [
+   {
+    "index": 68,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 69,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 70,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 71,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 72,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 73,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 74,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 75,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 104,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 105,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 106,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 107,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 108,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 109,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 110,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 111,
+    "degree": 4,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   }
+  ]
+ },
+ "degree": 48,
+ "relation_degree": 48,
+ "coefficients_low_to_high": [
+  728,
+  20650,
+  13843,
+  6674,
+  6765,
+  28096,
+  26638,
+  10928,
+  4320,
+  15218,
+  19693,
+  827,
+  31227,
+  27781,
+  20204,
+  16897,
+  30496,
+  28431,
+  47,
+  6609,
+  28828,
+  2979,
+  30755,
+  6354,
+  22945,
+  20250,
+  10731,
+  7406,
+  30516,
+  2869,
+  14720,
+  31296,
+  29264,
+  8432,
+  1749,
+  31019,
+  17527,
+  25325,
+  6080,
+  15343,
+  19326,
+  289,
+  22443,
+  5244,
+  29893,
+  8069,
+  29440,
+  31627,
+  1
+ ],
+ "polynomial": "t^48 + 31627*t^47 + 29440*t^46 + 8069*t^45 + 29893*t^44 + 5244*t^43 + 22443*t^42 + 289*t^41 + 19326*t^40 + 15343*t^39 + 6080*t^38 + 25325*t^37 + 17527*t^36 + 31019*t^35 + 1749*t^34 + 8432*t^33 + 29264*t^32 + 31296*t^31 + 14720*t^30 + 2869*t^29 + 30516*t^28 + 7406*t^27 + 10731*t^26 + 20250*t^25 + 22945*t^24 + 6354*t^23 + 30755*t^22 + 2979*t^21 + 28828*t^20 + 6609*t^19 + 47*t^18 + 28431*t^17 + 30496*t^16 + 16897*t^15 + 20204*t^14 + 27781*t^13 + 31227*t^12 + 827*t^11 + 19693*t^10 + 15218*t^9 + 4320*t^8 + 10928*t^7 + 26638*t^6 + 28096*t^5 + 6765*t^4 + 6674*t^3 + 13843*t^2 + 20650*t + 728"
+}

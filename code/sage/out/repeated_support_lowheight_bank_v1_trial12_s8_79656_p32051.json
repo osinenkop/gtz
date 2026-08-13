@@ -1,0 +1,210 @@
+{
+ "source": "code/sage/out/linear_form_lowheight_bank_v1_trial12_s8_79656_p32051_factors.json",
+ "characteristic": 32051,
+ "variable": "t",
+ "selection": {
+  "min_multiplicity": 2,
+  "with_multiplicity": false,
+  "selected_count": 24,
+  "selected": [
+   {
+    "index": 56,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 57,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 58,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 59,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 60,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 61,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 62,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 63,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 64,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 65,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 66,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 67,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 68,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 69,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 70,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 71,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 72,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 73,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 74,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 75,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 76,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 77,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 78,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   },
+   {
+    "index": 79,
+    "degree": 2,
+    "multiplicity": 3,
+    "repeat_in_product": 1
+   }
+  ]
+ },
+ "degree": 48,
+ "relation_degree": 48,
+ "coefficients_low_to_high": [
+  19875,
+  7498,
+  556,
+  7930,
+  6926,
+  19735,
+  29319,
+  30394,
+  16235,
+  19972,
+  19024,
+  17209,
+  18047,
+  14069,
+  29533,
+  23074,
+  22817,
+  1718,
+  15365,
+  30981,
+  12265,
+  25250,
+  22783,
+  23953,
+  13885,
+  29130,
+  22028,
+  6630,
+  15874,
+  21542,
+  31588,
+  31093,
+  2984,
+  22258,
+  30191,
+  5740,
+  9067,
+  31447,
+  2324,
+  13509,
+  6087,
+  23067,
+  29723,
+  21143,
+  22926,
+  26220,
+  16562,
+  31675,
+  1
+ ],
+ "polynomial": "t^48 + 31675*t^47 + 16562*t^46 + 26220*t^45 + 22926*t^44 + 21143*t^43 + 29723*t^42 + 23067*t^41 + 6087*t^40 + 13509*t^39 + 2324*t^38 + 31447*t^37 + 9067*t^36 + 5740*t^35 + 30191*t^34 + 22258*t^33 + 2984*t^32 + 31093*t^31 + 31588*t^30 + 21542*t^29 + 15874*t^28 + 6630*t^27 + 22028*t^26 + 29130*t^25 + 13885*t^24 + 23953*t^23 + 22783*t^22 + 25250*t^21 + 12265*t^20 + 30981*t^19 + 15365*t^18 + 1718*t^17 + 22817*t^16 + 23074*t^15 + 29533*t^14 + 14069*t^13 + 18047*t^12 + 17209*t^11 + 19024*t^10 + 19972*t^9 + 16235*t^8 + 30394*t^7 + 29319*t^6 + 19735*t^5 + 6926*t^4 + 7930*t^3 + 556*t^2 + 7498*t + 19875"
+}

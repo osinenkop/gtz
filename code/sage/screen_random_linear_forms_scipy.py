@@ -258,6 +258,18 @@ def wiedemann_relation(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--basis-json", required=True)
+    parser.add_argument(
+        "--coefficients",
+        action="append",
+        default=[],
+        help="Explicit comma-separated coefficients in variable order; may be repeated.",
+    )
+    parser.add_argument(
+        "--coefficients-json",
+        action="append",
+        default=[],
+        help="JSON file containing candidates as lists or {'coefficients': [...]} records.",
+    )
     parser.add_argument("--trials", type=int, default=16)
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--coeff-min", type=int, default=1)
@@ -290,9 +302,38 @@ def main() -> int:
     print(f"action nnz: { {name: matrices[name].nnz for name in variable_names} }", flush=True)
 
     rng = random.Random(args.seed)
+    explicit_coeffs = []
+
+    def add_explicit_coeffs(coeffs: list[int]) -> None:
+        if len(coeffs) != len(variable_names):
+            raise SystemExit(
+                f"expected {len(variable_names)} coefficients for {variable_names}, got {len(coeffs)}"
+            )
+        explicit_coeffs.append(coeffs)
+
+    for item in args.coefficients:
+        coeffs = [int(part.strip()) for part in item.split(",") if part.strip()]
+        add_explicit_coeffs(coeffs)
+    for text in args.coefficients_json:
+        payload = json.loads(Path(text).read_text())
+        candidates = payload.get("candidates", payload) if isinstance(payload, dict) else payload
+        for index, candidate in enumerate(candidates):
+            if isinstance(candidate, dict):
+                coeffs = candidate.get("coefficients")
+                if coeffs is None:
+                    raise SystemExit(f"candidate {index} in {text} has no coefficients")
+            else:
+                coeffs = candidate
+            add_explicit_coeffs([int(coeff) for coeff in coeffs])
+
     rows = []
-    for trial in range(args.trials):
-        coeffs = [rng.randint(args.coeff_min, args.coeff_max) for _ in variable_names]
+    trial_inputs = list(explicit_coeffs)
+    if not trial_inputs:
+        trial_inputs = [
+            [rng.randint(args.coeff_min, args.coeff_max) for _ in variable_names]
+            for _ in range(args.trials)
+        ]
+    for trial, coeffs in enumerate(trial_inputs):
         expression = expression_from_coeffs(variable_names, coeffs)
         print("-" * 78)
         print(f"trial {trial}: {expression}", flush=True)
@@ -330,6 +371,7 @@ def main() -> int:
         "check_every": int(args.check_every),
         "seed": int(args.seed),
         "trials_requested": int(args.trials),
+        "explicit_coefficients": explicit_coeffs,
         "method": "scipy_csr_wiedemann",
         "variable": "t",
         "action_nnz": {name: int(matrices[name].nnz) for name in variable_names},

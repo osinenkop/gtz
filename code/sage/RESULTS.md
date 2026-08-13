@@ -1994,6 +1994,24 @@ before interpreting the lift.  This is now a small, concrete CRT target: a
 degree-`48` polynomial associated with the multiple support of the generic
 linear projection.
 
+A third-prime check at `p=32027` was then computed from a fresh raw ansatz basis
+in `/tmp`:
+
+```text
+code/sage/out/random_linear_forms_scipy_s8_79656_p32027_seed20260813_trial0_coeffs.json
+code/sage/out/random_linear_forms_scipy_s8_79656_p32027_seed20260813_trial0_factors.json
+code/sage/out/repeated_support_s8_79656_p32027_linform_seed20260813_trial0.json
+code/sage/out/repeated_support_s8_79656_linform_seed20260813_trial0_crt_32003_32009_32027.json
+```
+
+The same trial-0 linear form again has relation degree `2800`, squarefree
+degree `2704`, multiplicity excess `96`, and repeated-support degree `48`.
+The three-prime CRT modulus has decimal size about `10^13.516`; rational
+reconstruction succeeds for `33` of `49` coefficients and fails for `16`, with
+centered integer coefficients still tracking the modulus.  Thus the
+degree-`48` repeated-support polynomial is stable across three primes, but more
+prime data is needed before attempting a rational lift.
+
 The first rectangular span test,
 
 ```text

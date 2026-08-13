@@ -357,6 +357,25 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   code/sage/out/qrel_plucker_ansatz_s8_79656_p32029.json
 ```
 
+For a fixed-degree factor-product search, anchor the beam with a prime whose
+factorization has few products of that degree, then append more factor JSONs in
+the desired CRT order:
+
+```bash
+python3 code/sage/summarize_factor_product_counts.py \
+  --targets 57,64,55,50,59,44,52,51,61,48,43,47 \
+  --out code/sage/out/factor_product_counts_s8_79656_algdep_degrees_trial.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p*_factors.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/recover_q_factor_by_degree.py \
+  --degree 44 --beam 50 --max-candidates-per-prime 5000 \
+  --out code/sage/out/recover_s8_79656_qfactor_deg44_trial.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32051_factors.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32003_factors.json \
+  code/sage/out/qrel_plucker_ansatz_s8_79656_p32009_factors.json
+```
+
 Check numerical `algdep` q-candidates against exact modular q-eliminants:
 
 ```bash

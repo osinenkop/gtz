@@ -1776,6 +1776,74 @@ both hard roots, all gcd degrees were zero: for `s7_78612` over
 low-degree `algdep` relations do not define components of the exact Plucker
 q-eliminants.
 
+The additional-prime batch pushes this conclusion further.  For the reduced
+`s8_79656` ansatz, 37 primes through `32341` all reproduce quotient degree
+`2832`, q-relation degree `326`, and zero residual.  The CRT snapshot
+
+```text
+code/sage/out/qrel_plucker_s8_79656_crt_37primes_32003_32341.json
+```
+
+has modulus size `10^166.776`; full-polynomial rational reconstruction still
+fails on `108` of `327` coefficients, and the centered integer lift has maximum
+coefficient size `10^166.474`.  For the full `s7_78612` Plucker locus, the
+26-prime CRT snapshot
+
+```text
+code/sage/out/qrel_plucker_s7_78612_crt_26primes_32003_32341.json
+```
+
+has modulus size `10^117.197`; it keeps quotient degree `4992`, q-relation
+degree `510`, and still has `197` failed coefficient reconstructions.
+
+The top-twelve numerical `algdep` q-candidates were also rechecked against the
+same 37-prime s8 snapshot and the 26-prime s7 snapshot:
+
+```text
+code/sage/out/algdep_vs_qrel_s8_79656_q_best12_37primes.json
+code/sage/out/algdep_vs_qrel_s7_78612_q_best12_26primes.json
+```
+
+Every listed gcd degree is zero.  Thus the high-precision `algdep` polynomials
+remain numerical mirages, not exact factors of the Plucker q-eliminants.
+
+The new helper `summarize_factor_product_counts.py` gives a cheap
+factor-degree pre-screen for this narrower attack.  For the s8 top-twelve
+`algdep` degrees, the artifact
+
+```text
+code/sage/out/factor_product_counts_s8_79656_algdep_degrees_37primes.json
+```
+
+shows that `p32051` has zero factor-product subsets for ten of the twelve
+candidate degrees; only degree `43` (11 products) and degree `44` (1 product)
+survive at that anchor.  The corresponding s7 artifact
+
+```text
+code/sage/out/factor_product_counts_s7_78612_algdep_degrees_26primes.json
+```
+
+is fully capped at `20000` products for every tested degree and prime, so this
+simple beam strategy is not selective for the full s7 locus.
+
+The helper `recover_q_factor_by_degree.py` then tries the factor-level CRT:
+enumerate modular factor products of a fixed degree, keep a beam ordered by
+centered coefficient size, and look for a stable small integer lift.  Both
+surviving s8 anchored degrees are negative:
+
+```text
+code/sage/out/recover_s8_79656_qfactor_deg43_37primes_beam50.json
+code/sage/out/recover_s8_79656_qfactor_deg44_37primes_beam50.json
+```
+
+For degree `43`, the 37-prime best candidate has maximum coefficient size
+`10^166.390`; for degree `44`, the 37-prime best has size `10^166.406`.
+Both track the CRT modulus (`10^166.776`) rather than stabilizing.  These are
+capped beam screens (`max_candidates_per_prime=5000` at most primes), not
+complete no-factor theorems, but they are strong negative evidence for the only
+two s8 degrees from the old numerical `algdep` output that passed the `p32051`
+factor-product pre-screen.
+
 This is not yet a proof of infeasibility for these Plucker loci.  It is a
 substantial compression: the next realistic step is to repeat the modular
 q-relation computation at additional primes, identify stable factors

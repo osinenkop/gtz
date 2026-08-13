@@ -1,0 +1,1366 @@
+{
+ "description": "Primitive normalized low-height linear-form candidates. Variable order is a,b,c,d,x,y,e,q.",
+ "variable_order": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "seed": 20260814,
+ "height": 6,
+ "count": 96,
+ "include_json": [
+  "code/sage/linear_form_candidates_s8_79656_lowheight_v1.json"
+ ],
+ "allow_zero_coefficients": false,
+ "candidates": [
+  {
+   "label": "all_ones",
+   "coefficients": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "height": 1
+  },
+  {
+   "label": "small_primes_q1",
+   "coefficients": [
+    1,
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    1
+   ],
+   "height": 13
+  },
+  {
+   "label": "mixed_a",
+   "coefficients": [
+    1,
+    1,
+    2,
+    -1,
+    3,
+    -2,
+    1,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_b",
+   "coefficients": [
+    1,
+    -1,
+    2,
+    3,
+    -1,
+    2,
+    -3,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_c",
+   "coefficients": [
+    2,
+    1,
+    -1,
+    3,
+    1,
+    -2,
+    2,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_d",
+   "coefficients": [
+    3,
+    -2,
+    1,
+    1,
+    -1,
+    2,
+    1,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_e",
+   "coefficients": [
+    1,
+    3,
+    -2,
+    2,
+    1,
+    -1,
+    3,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_f",
+   "coefficients": [
+    2,
+    -3,
+    1,
+    2,
+    -2,
+    3,
+    1,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_g",
+   "coefficients": [
+    3,
+    1,
+    2,
+    -1,
+    2,
+    -3,
+    1,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_h",
+   "coefficients": [
+    1,
+    2,
+    -3,
+    1,
+    3,
+    1,
+    -2,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_i",
+   "coefficients": [
+    2,
+    3,
+    1,
+    -2,
+    1,
+    2,
+    -1,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_j",
+   "coefficients": [
+    3,
+    2,
+    -1,
+    1,
+    -3,
+    1,
+    2,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_k",
+   "coefficients": [
+    1,
+    -2,
+    3,
+    -1,
+    2,
+    3,
+    1,
+    2
+   ],
+   "height": 3
+  },
+  {
+   "label": "mixed_l",
+   "coefficients": [
+    2,
+    1,
+    3,
+    -3,
+    1,
+    -1,
+    2,
+    1
+   ],
+   "height": 3
+  },
+  {
+   "label": "height5_a",
+   "coefficients": [
+    1,
+    4,
+    2,
+    -3,
+    5,
+    -1,
+    3,
+    2
+   ],
+   "height": 5
+  },
+  {
+   "label": "height5_b",
+   "coefficients": [
+    4,
+    1,
+    -2,
+    5,
+    2,
+    -3,
+    1,
+    1
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0016",
+   "coefficients": [
+    5,
+    -1,
+    6,
+    3,
+    2,
+    5,
+    -6,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0017",
+   "coefficients": [
+    5,
+    2,
+    -5,
+    -5,
+    -4,
+    -2,
+    -6,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0018",
+   "coefficients": [
+    4,
+    -4,
+    6,
+    3,
+    4,
+    -4,
+    -5,
+    -4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0019",
+   "coefficients": [
+    5,
+    2,
+    -1,
+    -2,
+    3,
+    -4,
+    -5,
+    -1
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0020",
+   "coefficients": [
+    2,
+    1,
+    2,
+    6,
+    5,
+    -3,
+    -3,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0021",
+   "coefficients": [
+    3,
+    4,
+    -1,
+    1,
+    5,
+    -4,
+    5,
+    1
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0022",
+   "coefficients": [
+    3,
+    5,
+    -1,
+    3,
+    1,
+    3,
+    -6,
+    2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0023",
+   "coefficients": [
+    5,
+    3,
+    -2,
+    -6,
+    4,
+    -4,
+    4,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0024",
+   "coefficients": [
+    5,
+    -5,
+    3,
+    -4,
+    -6,
+    -2,
+    -5,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0025",
+   "coefficients": [
+    3,
+    1,
+    -4,
+    2,
+    4,
+    -2,
+    3,
+    -2
+   ],
+   "height": 4
+  },
+  {
+   "label": "rand_h6_s20260814_0026",
+   "coefficients": [
+    3,
+    -6,
+    3,
+    3,
+    1,
+    -6,
+    3,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0027",
+   "coefficients": [
+    2,
+    -3,
+    -6,
+    2,
+    5,
+    -3,
+    4,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0028",
+   "coefficients": [
+    6,
+    -3,
+    -6,
+    -6,
+    -6,
+    -3,
+    5,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0029",
+   "coefficients": [
+    4,
+    2,
+    3,
+    6,
+    3,
+    -4,
+    -6,
+    2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0030",
+   "coefficients": [
+    1,
+    -6,
+    -4,
+    3,
+    -4,
+    -3,
+    6,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0031",
+   "coefficients": [
+    2,
+    -4,
+    -4,
+    4,
+    4,
+    5,
+    1,
+    2
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0032",
+   "coefficients": [
+    1,
+    3,
+    5,
+    5,
+    2,
+    -5,
+    -4,
+    1
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0033",
+   "coefficients": [
+    1,
+    5,
+    -5,
+    -6,
+    1,
+    -5,
+    6,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0034",
+   "coefficients": [
+    5,
+    -4,
+    -1,
+    1,
+    4,
+    -1,
+    -4,
+    5
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0035",
+   "coefficients": [
+    1,
+    -3,
+    -1,
+    -2,
+    4,
+    -4,
+    1,
+    4
+   ],
+   "height": 4
+  },
+  {
+   "label": "rand_h6_s20260814_0036",
+   "coefficients": [
+    1,
+    5,
+    6,
+    -5,
+    -1,
+    -5,
+    -6,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0037",
+   "coefficients": [
+    4,
+    4,
+    -2,
+    3,
+    -6,
+    4,
+    6,
+    3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0038",
+   "coefficients": [
+    4,
+    3,
+    5,
+    -1,
+    1,
+    -2,
+    -3,
+    -5
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0039",
+   "coefficients": [
+    3,
+    -2,
+    1,
+    6,
+    2,
+    4,
+    1,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0040",
+   "coefficients": [
+    1,
+    -6,
+    1,
+    -3,
+    -2,
+    6,
+    -1,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0041",
+   "coefficients": [
+    5,
+    6,
+    -3,
+    -5,
+    1,
+    5,
+    1,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0042",
+   "coefficients": [
+    1,
+    -5,
+    -2,
+    -6,
+    -2,
+    2,
+    -6,
+    -4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0043",
+   "coefficients": [
+    1,
+    -6,
+    4,
+    1,
+    -2,
+    -4,
+    -5,
+    2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0044",
+   "coefficients": [
+    5,
+    -6,
+    4,
+    -5,
+    -5,
+    -6,
+    -4,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0045",
+   "coefficients": [
+    3,
+    -1,
+    3,
+    -2,
+    2,
+    6,
+    3,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0046",
+   "coefficients": [
+    6,
+    -4,
+    1,
+    -4,
+    4,
+    6,
+    1,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0047",
+   "coefficients": [
+    1,
+    -2,
+    1,
+    4,
+    -4,
+    -1,
+    4,
+    3
+   ],
+   "height": 4
+  },
+  {
+   "label": "rand_h6_s20260814_0048",
+   "coefficients": [
+    2,
+    3,
+    -5,
+    -2,
+    3,
+    6,
+    -2,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0049",
+   "coefficients": [
+    2,
+    -5,
+    -3,
+    6,
+    -1,
+    -6,
+    -5,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0050",
+   "coefficients": [
+    1,
+    2,
+    2,
+    -5,
+    3,
+    -6,
+    -4,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0051",
+   "coefficients": [
+    5,
+    -6,
+    -5,
+    2,
+    5,
+    -2,
+    4,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0052",
+   "coefficients": [
+    2,
+    4,
+    2,
+    4,
+    1,
+    6,
+    -3,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0053",
+   "coefficients": [
+    1,
+    -1,
+    3,
+    -5,
+    -2,
+    6,
+    6,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0054",
+   "coefficients": [
+    5,
+    -1,
+    -4,
+    -5,
+    -1,
+    1,
+    -6,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0055",
+   "coefficients": [
+    5,
+    4,
+    -5,
+    -5,
+    3,
+    -2,
+    -3,
+    3
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0056",
+   "coefficients": [
+    2,
+    -3,
+    -6,
+    2,
+    -1,
+    -6,
+    2,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0057",
+   "coefficients": [
+    1,
+    -3,
+    6,
+    1,
+    -4,
+    -4,
+    5,
+    2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0058",
+   "coefficients": [
+    4,
+    5,
+    5,
+    -2,
+    5,
+    -3,
+    -6,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0059",
+   "coefficients": [
+    2,
+    1,
+    -5,
+    -2,
+    5,
+    -6,
+    2,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0060",
+   "coefficients": [
+    5,
+    4,
+    -2,
+    4,
+    -3,
+    6,
+    -1,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0061",
+   "coefficients": [
+    1,
+    2,
+    6,
+    -4,
+    6,
+    5,
+    5,
+    3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0062",
+   "coefficients": [
+    3,
+    -6,
+    -6,
+    5,
+    5,
+    4,
+    -5,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0063",
+   "coefficients": [
+    6,
+    4,
+    -1,
+    6,
+    -5,
+    -6,
+    -6,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0064",
+   "coefficients": [
+    3,
+    -6,
+    -1,
+    2,
+    -6,
+    3,
+    -5,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0065",
+   "coefficients": [
+    4,
+    -6,
+    2,
+    5,
+    6,
+    1,
+    6,
+    3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0066",
+   "coefficients": [
+    5,
+    2,
+    6,
+    1,
+    4,
+    2,
+    4,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0067",
+   "coefficients": [
+    3,
+    3,
+    -1,
+    1,
+    -3,
+    -2,
+    2,
+    -2
+   ],
+   "height": 3
+  },
+  {
+   "label": "rand_h6_s20260814_0068",
+   "coefficients": [
+    1,
+    3,
+    -5,
+    3,
+    2,
+    -1,
+    6,
+    -4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0069",
+   "coefficients": [
+    3,
+    -6,
+    1,
+    -4,
+    -5,
+    -2,
+    -3,
+    1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0070",
+   "coefficients": [
+    2,
+    3,
+    3,
+    3,
+    4,
+    -4,
+    2,
+    -1
+   ],
+   "height": 4
+  },
+  {
+   "label": "rand_h6_s20260814_0071",
+   "coefficients": [
+    4,
+    6,
+    -3,
+    4,
+    3,
+    -5,
+    -5,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0072",
+   "coefficients": [
+    1,
+    -4,
+    -1,
+    1,
+    -5,
+    3,
+    -5,
+    -2
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0073",
+   "coefficients": [
+    3,
+    -2,
+    5,
+    3,
+    4,
+    4,
+    -3,
+    -3
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0074",
+   "coefficients": [
+    3,
+    1,
+    -4,
+    -1,
+    6,
+    -4,
+    6,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0075",
+   "coefficients": [
+    3,
+    -6,
+    5,
+    3,
+    1,
+    -6,
+    -2,
+    -5
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0076",
+   "coefficients": [
+    6,
+    -1,
+    2,
+    -3,
+    -6,
+    1,
+    -4,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0077",
+   "coefficients": [
+    3,
+    6,
+    4,
+    -5,
+    -3,
+    -2,
+    -1,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0078",
+   "coefficients": [
+    1,
+    -3,
+    -5,
+    1,
+    -2,
+    1,
+    2,
+    3
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0079",
+   "coefficients": [
+    6,
+    -6,
+    2,
+    3,
+    4,
+    -1,
+    6,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0080",
+   "coefficients": [
+    6,
+    2,
+    -3,
+    -2,
+    4,
+    -3,
+    5,
+    3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0081",
+   "coefficients": [
+    3,
+    -3,
+    1,
+    4,
+    -6,
+    -6,
+    3,
+    3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0082",
+   "coefficients": [
+    6,
+    -4,
+    -2,
+    1,
+    4,
+    6,
+    -2,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0083",
+   "coefficients": [
+    2,
+    -5,
+    1,
+    -3,
+    3,
+    2,
+    -5,
+    3
+   ],
+   "height": 5
+  },
+  {
+   "label": "rand_h6_s20260814_0084",
+   "coefficients": [
+    1,
+    -4,
+    6,
+    -2,
+    -1,
+    1,
+    -1,
+    5
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0085",
+   "coefficients": [
+    6,
+    6,
+    3,
+    6,
+    -2,
+    -1,
+    -3,
+    -1
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0086",
+   "coefficients": [
+    4,
+    -6,
+    -3,
+    -6,
+    1,
+    -2,
+    5,
+    -3
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0087",
+   "coefficients": [
+    6,
+    5,
+    -5,
+    -4,
+    -3,
+    1,
+    3,
+    6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0088",
+   "coefficients": [
+    5,
+    6,
+    -6,
+    6,
+    -6,
+    -3,
+    -2,
+    -6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0089",
+   "coefficients": [
+    5,
+    -2,
+    2,
+    1,
+    2,
+    6,
+    1,
+    4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0090",
+   "coefficients": [
+    5,
+    -6,
+    4,
+    5,
+    -6,
+    -6,
+    5,
+    -6
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0091",
+   "coefficients": [
+    3,
+    2,
+    1,
+    -6,
+    -6,
+    -5,
+    -2,
+    2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0092",
+   "coefficients": [
+    1,
+    -1,
+    -1,
+    1,
+    3,
+    6,
+    -2,
+    5
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0093",
+   "coefficients": [
+    5,
+    4,
+    -6,
+    -5,
+    -1,
+    3,
+    4,
+    -4
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0094",
+   "coefficients": [
+    3,
+    5,
+    3,
+    4,
+    -1,
+    2,
+    -6,
+    -2
+   ],
+   "height": 6
+  },
+  {
+   "label": "rand_h6_s20260814_0095",
+   "coefficients": [
+    2,
+    4,
+    2,
+    6,
+    2,
+    5,
+    -1,
+    -1
+   ],
+   "height": 6
+  }
+ ]
+}

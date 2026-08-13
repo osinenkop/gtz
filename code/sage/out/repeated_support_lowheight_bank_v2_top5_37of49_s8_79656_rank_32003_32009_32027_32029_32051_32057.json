@@ -1,0 +1,6885 @@
+{
+ "screen_jsons": [
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32003_coeffs.json",
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32009_coeffs.json",
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32027_coeffs.json",
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32029_coeffs.json",
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32051_coeffs.json",
+  "code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32057_coeffs.json"
+ ],
+ "primes": [
+  32003,
+  32009,
+  32027,
+  32029,
+  32051,
+  32057
+ ],
+ "target_degree": 2800,
+ "min_multiplicity": 2,
+ "variable": "t",
+ "ranked_trials": [
+  3,
+  0,
+  2,
+  4,
+  1
+ ],
+ "candidates": [
+  {
+   "trial": 0,
+   "label": "rand_h6_s20260814_0026",
+   "expression": "3*a-6*b+3*c+3*d+x-6*y+3*e+q",
+   "degrees": [
+    2800,
+    2800,
+    2800,
+    2800,
+    2800,
+    2800
+   ],
+   "eligible": true,
+   "products": [
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      2308,
+      31252,
+      16242,
+      13130,
+      6214,
+      12724,
+      7236,
+      7376,
+      27108,
+      17672,
+      13332,
+      28553,
+      13115,
+      8249,
+      29950,
+      21334,
+      23227,
+      9260,
+      12309,
+      25263,
+      21857,
+      27250,
+      31118,
+      24293,
+      4085,
+      29434,
+      15201,
+      17154,
+      2093,
+      25305,
+      16402,
+      14283,
+      21215,
+      15092,
+      31345,
+      4683,
+      19515,
+      28364,
+      4076,
+      14734,
+      3585,
+      25717,
+      12208,
+      16694,
+      15543,
+      15907,
+      6963,
+      31815,
+      1
+     ],
+     "selected_count": 16,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 68
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 44,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 74,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 184,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 202,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32003
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14553,
+      765,
+      17737,
+      8604,
+      4925,
+      25305,
+      4147,
+      6875,
+      28499,
+      26253,
+      22640,
+      25939,
+      24310,
+      16220,
+      24147,
+      28917,
+      9120,
+      2993,
+      9169,
+      30788,
+      4224,
+      11261,
+      21665,
+      11268,
+      12442,
+      31573,
+      18812,
+      19340,
+      24465,
+      30852,
+      13781,
+      25115,
+      25211,
+      20263,
+      21543,
+      14120,
+      19384,
+      7181,
+      19129,
+      7883,
+      14512,
+      10713,
+      5194,
+      2320,
+      21620,
+      75,
+      13363,
+      31821,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 52
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 36
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 14,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 32,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 40,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 140,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 260,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32009
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14783,
+      25773,
+      28352,
+      23782,
+      22905,
+      30119,
+      26247,
+      21153,
+      26017,
+      11995,
+      27486,
+      7503,
+      18105,
+      23280,
+      23229,
+      16279,
+      26851,
+      18115,
+      31074,
+      8625,
+      30839,
+      3190,
+      8411,
+      22419,
+      25527,
+      10317,
+      16980,
+      25535,
+      28155,
+      13679,
+      1566,
+      12374,
+      21317,
+      22825,
+      9747,
+      28980,
+      25250,
+      29286,
+      11829,
+      4772,
+      1133,
+      31489,
+      9832,
+      29558,
+      28029,
+      16597,
+      26172,
+      31839,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 26,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 34,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 48,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 60,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 62,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32027
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14705,
+      23150,
+      6072,
+      19398,
+      17980,
+      3096,
+      31318,
+      27295,
+      21558,
+      15607,
+      6665,
+      11677,
+      26114,
+      27323,
+      18988,
+      12297,
+      19490,
+      3064,
+      2377,
+      27764,
+      23045,
+      23968,
+      7942,
+      31133,
+      16430,
+      3444,
+      9502,
+      7813,
+      13867,
+      5817,
+      5322,
+      5621,
+      17250,
+      24850,
+      29889,
+      28701,
+      29102,
+      30556,
+      26716,
+      26921,
+      4550,
+      22046,
+      9012,
+      4881,
+      8013,
+      640,
+      13361,
+      31841,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 64
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 3,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 10,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 88,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 154,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 264,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32029
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      1675,
+      22043,
+      8280,
+      12982,
+      647,
+      9469,
+      5765,
+      23047,
+      14019,
+      6664,
+      923,
+      18659,
+      3919,
+      28372,
+      28912,
+      4637,
+      13202,
+      2934,
+      13143,
+      4002,
+      23928,
+      1197,
+      27853,
+      25402,
+      590,
+      20774,
+      21753,
+      10342,
+      1320,
+      18127,
+      6129,
+      22446,
+      3756,
+      26023,
+      3993,
+      17373,
+      12964,
+      16469,
+      6314,
+      28719,
+      25705,
+      2403,
+      30487,
+      10640,
+      12367,
+      17287,
+      19769,
+      31863,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 40
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 141,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 282,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32051
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      22801,
+      22812,
+      18443,
+      1188,
+      11484,
+      18110,
+      1363,
+      25907,
+      8715,
+      30248,
+      4442,
+      31976,
+      25923,
+      16221,
+      5134,
+      4242,
+      4145,
+      7334,
+      19798,
+      6440,
+      23690,
+      28693,
+      23361,
+      18730,
+      32013,
+      9587,
+      21378,
+      29834,
+      2543,
+      25357,
+      2908,
+      31230,
+      21337,
+      17843,
+      875,
+      27977,
+      15394,
+      22288,
+      11344,
+      29195,
+      3337,
+      10413,
+      22320,
+      8550,
+      24883,
+      1431,
+      26181,
+      31869,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 44
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 56,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 92,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 172,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32057
+    }
+   ],
+   "crt": {
+    "ok": true,
+    "degree": 48,
+    "integer_max_abs_coeff": 524076441037384252899036751,
+    "integer_max_log10_abs_coeff": 26.71939463717363,
+    "rational_reconstruction": {
+     "success_count": 32,
+     "failure_count": 17,
+     "failed_exponents": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      18,
+      21,
+      26,
+      27,
+      28,
+      29,
+      31,
+      37,
+      38,
+      41
+     ],
+     "max_abs_numerator": 21539066150855,
+     "max_abs_denominator": 23019627664760
+    }
+   }
+  },
+  {
+   "trial": 1,
+   "label": "rand_h6_s20260814_0093",
+   "expression": "5*a+4*b-6*c-5*d-x+3*y+4*e-4*q",
+   "degrees": [
+    2800,
+    2800,
+    2800,
+    2800,
+    2800,
+    2800
+   ],
+   "eligible": true,
+   "products": [
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14400,
+      12855,
+      16577,
+      16590,
+      9315,
+      24113,
+      10293,
+      9884,
+      26748,
+      7614,
+      21329,
+      4431,
+      17365,
+      19266,
+      24015,
+      14073,
+      3086,
+      16955,
+      16263,
+      10780,
+      23122,
+      2892,
+      9633,
+      12630,
+      17457,
+      4152,
+      8065,
+      26882,
+      1157,
+      9284,
+      1442,
+      27931,
+      8485,
+      11114,
+      13137,
+      291,
+      17051,
+      27738,
+      22356,
+      3020,
+      13739,
+      29221,
+      26222,
+      5642,
+      23607,
+      18855,
+      23683,
+      752,
+      1
+     ],
+     "selected_count": 16,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 68
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 44,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 74,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 184,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 202,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32003
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      22110,
+      8146,
+      17325,
+      7388,
+      16395,
+      11369,
+      20696,
+      2879,
+      19752,
+      4247,
+      18679,
+      9984,
+      29870,
+      24408,
+      28052,
+      16523,
+      18112,
+      13455,
+      27870,
+      14305,
+      13710,
+      5572,
+      16379,
+      4945,
+      5043,
+      20015,
+      6086,
+      29218,
+      28212,
+      18344,
+      20757,
+      11320,
+      11245,
+      5782,
+      31580,
+      12606,
+      11777,
+      31193,
+      24250,
+      7274,
+      13371,
+      8965,
+      14851,
+      22145,
+      22848,
+      26076,
+      30038,
+      752,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 52
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 36
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 14,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 32,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 40,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 140,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 260,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32009
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      27008,
+      9474,
+      18901,
+      18593,
+      25877,
+      22854,
+      18070,
+      11988,
+      27031,
+      31748,
+      20788,
+      31047,
+      25399,
+      18616,
+      21160,
+      21284,
+      27273,
+      2287,
+      12037,
+      16329,
+      6736,
+      13924,
+      11343,
+      17418,
+      13464,
+      31464,
+      4855,
+      6024,
+      6474,
+      1123,
+      7921,
+      31125,
+      25780,
+      19786,
+      7230,
+      14245,
+      860,
+      15777,
+      16669,
+      6787,
+      31937,
+      15554,
+      11603,
+      4623,
+      26414,
+      28566,
+      10685,
+      752,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 26,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 34,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 48,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 60,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 62,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32027
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14072,
+      26801,
+      8558,
+      12714,
+      7099,
+      15655,
+      10907,
+      8417,
+      28420,
+      7259,
+      24490,
+      29139,
+      29926,
+      11349,
+      4755,
+      12360,
+      8232,
+      9802,
+      20052,
+      27128,
+      24227,
+      18084,
+      2593,
+      26448,
+      19545,
+      26085,
+      15157,
+      31799,
+      8102,
+      13505,
+      27098,
+      5491,
+      29663,
+      3190,
+      14171,
+      8333,
+      9337,
+      1007,
+      19328,
+      17794,
+      28035,
+      26513,
+      3563,
+      12197,
+      186,
+      18169,
+      29886,
+      752,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 64
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 3,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 10,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 88,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 154,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 264,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32029
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      6638,
+      11111,
+      28107,
+      27265,
+      12358,
+      671,
+      29583,
+      30778,
+      6971,
+      7252,
+      17837,
+      4256,
+      14082,
+      4276,
+      13496,
+      29099,
+      11862,
+      12464,
+      20776,
+      6493,
+      9297,
+      25291,
+      26734,
+      16299,
+      31079,
+      27004,
+      26208,
+      15341,
+      27847,
+      22394,
+      27588,
+      31622,
+      24473,
+      24333,
+      428,
+      16714,
+      22470,
+      10126,
+      5451,
+      19771,
+      26545,
+      24374,
+      22562,
+      9289,
+      8055,
+      25543,
+      4078,
+      752,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 40
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 141,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 282,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32051
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      3070,
+      25902,
+      18542,
+      8332,
+      26636,
+      10726,
+      6637,
+      23941,
+      4026,
+      10351,
+      29313,
+      1996,
+      10720,
+      12676,
+      15817,
+      21654,
+      3265,
+      21115,
+      22039,
+      31068,
+      30407,
+      20621,
+      9473,
+      4307,
+      13331,
+      22253,
+      23463,
+      9255,
+      3680,
+      15711,
+      26024,
+      6193,
+      104,
+      631,
+      6463,
+      12921,
+      1374,
+      8201,
+      14969,
+      26884,
+      22194,
+      31917,
+      17126,
+      11128,
+      550,
+      755,
+      10439,
+      752,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 44
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 56,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 92,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 172,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32057
+    }
+   ],
+   "crt": {
+    "ok": true,
+    "degree": 48,
+    "integer_max_abs_coeff": 530563593888257183768998176,
+    "integer_max_log10_abs_coeff": 26.724737446332547,
+    "rational_reconstruction": {
+     "success_count": 28,
+     "failure_count": 21,
+     "failed_exponents": [
+      0,
+      2,
+      3,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      21,
+      22,
+      26,
+      29,
+      31,
+      32,
+      33,
+      36,
+      38,
+      40,
+      43
+     ],
+     "max_abs_numerator": 22667417632417,
+     "max_abs_denominator": 21565465427437
+    }
+   }
+  },
+  {
+   "trial": 2,
+   "label": "rand_h6_s20260814_0023",
+   "expression": "5*a+3*b-2*c-6*d+4*x-4*y+4*e+q",
+   "degrees": [
+    2800,
+    2800,
+    2800,
+    2800,
+    2800,
+    2800
+   ],
+   "eligible": true,
+   "products": [
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      27182,
+      31094,
+      26636,
+      9479,
+      31585,
+      2520,
+      27400,
+      19430,
+      30348,
+      22191,
+      27751,
+      13058,
+      13764,
+      449,
+      24541,
+      3285,
+      6074,
+      13505,
+      25209,
+      2862,
+      23606,
+      23924,
+      26925,
+      21462,
+      14006,
+      11366,
+      14726,
+      13672,
+      9065,
+      22054,
+      5966,
+      22742,
+      9894,
+      4638,
+      27337,
+      10415,
+      2844,
+      13847,
+      22803,
+      20828,
+      15960,
+      7090,
+      13133,
+      3333,
+      4796,
+      21636,
+      18461,
+      31815,
+      1
+     ],
+     "selected_count": 16,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 68
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 44,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 74,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 184,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 202,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32003
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      1519,
+      6096,
+      6917,
+      4920,
+      18076,
+      15078,
+      3517,
+      30612,
+      2879,
+      20982,
+      30045,
+      28965,
+      23008,
+      6803,
+      17768,
+      2858,
+      20576,
+      27391,
+      30330,
+      23603,
+      2682,
+      25628,
+      11360,
+      4750,
+      29044,
+      8985,
+      24463,
+      24284,
+      9782,
+      2396,
+      16036,
+      22689,
+      17789,
+      13047,
+      31816,
+      15559,
+      19872,
+      1972,
+      17119,
+      6219,
+      12663,
+      18539,
+      9660,
+      29846,
+      27602,
+      31368,
+      5658,
+      31821,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 52
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 36
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 14,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 32,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 40,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 140,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 260,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32009
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      23964,
+      23613,
+      8834,
+      15980,
+      16068,
+      10022,
+      4617,
+      23769,
+      31744,
+      16002,
+      2230,
+      7688,
+      8681,
+      21422,
+      10583,
+      19446,
+      2081,
+      12162,
+      10001,
+      3016,
+      11849,
+      17283,
+      15293,
+      9121,
+      2197,
+      21282,
+      29191,
+      10529,
+      19735,
+      22341,
+      24339,
+      2873,
+      9624,
+      30833,
+      10663,
+      24027,
+      5313,
+      9297,
+      16823,
+      24926,
+      29247,
+      7462,
+      22464,
+      30336,
+      27860,
+      2937,
+      12058,
+      31839,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 26,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 34,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 48,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 60,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 62,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32027
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      28383,
+      7002,
+      19743,
+      30732,
+      13198,
+      25244,
+      26755,
+      26458,
+      3515,
+      1362,
+      30376,
+      819,
+      4365,
+      12731,
+      7475,
+      20934,
+      20279,
+      872,
+      9257,
+      3930,
+      22863,
+      15402,
+      7863,
+      28074,
+      25630,
+      31525,
+      15030,
+      15633,
+      13447,
+      871,
+      10204,
+      26170,
+      31555,
+      19409,
+      22863,
+      28380,
+      21157,
+      10008,
+      12181,
+      19856,
+      20299,
+      1351,
+      27289,
+      28344,
+      22818,
+      31805,
+      5652,
+      31841,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 64
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 3,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 10,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 88,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 154,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 264,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32029
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      28612,
+      27840,
+      23782,
+      954,
+      2441,
+      30163,
+      16856,
+      711,
+      2453,
+      2060,
+      1781,
+      27021,
+      29702,
+      12974,
+      16294,
+      22716,
+      18449,
+      6864,
+      8342,
+      24608,
+      22013,
+      15338,
+      29268,
+      3714,
+      22729,
+      2292,
+      26459,
+      27181,
+      18821,
+      3342,
+      21727,
+      31436,
+      16254,
+      19388,
+      11755,
+      13350,
+      28074,
+      14987,
+      109,
+      4972,
+      4402,
+      19002,
+      21126,
+      16349,
+      15078,
+      9850,
+      24876,
+      31863,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 40
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 141,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 282,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32051
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      18551,
+      7404,
+      7465,
+      25515,
+      16366,
+      2408,
+      13373,
+      11148,
+      19540,
+      13141,
+      22134,
+      20146,
+      27770,
+      7496,
+      25033,
+      19245,
+      805,
+      31692,
+      10335,
+      11595,
+      6724,
+      30041,
+      18424,
+      8589,
+      20857,
+      1188,
+      27691,
+      13500,
+      16422,
+      31370,
+      11599,
+      31409,
+      18251,
+      21656,
+      27536,
+      11961,
+      25858,
+      9903,
+      13040,
+      19352,
+      25675,
+      21513,
+      25676,
+      17256,
+      31517,
+      19594,
+      12055,
+      31869,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 44
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 56,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 92,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 172,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32057
+    }
+   ],
+   "crt": {
+    "ok": true,
+    "degree": 48,
+    "integer_max_abs_coeff": 538439011483392732002078454,
+    "integer_max_log10_abs_coeff": 26.731136518263074,
+    "rational_reconstruction": {
+     "success_count": 32,
+     "failure_count": 17,
+     "failed_exponents": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      14,
+      16,
+      17,
+      21,
+      23,
+      24,
+      26,
+      28,
+      30,
+      32,
+      36,
+      39
+     ],
+     "max_abs_numerator": 22354872122150,
+     "max_abs_denominator": 22896243271125
+    }
+   }
+  },
+  {
+   "trial": 3,
+   "label": "rand_h6_s20260814_0072",
+   "expression": "a-4*b-c+d-5*x+3*y-5*e-2*q",
+   "degrees": [
+    2800,
+    2800,
+    2800,
+    2800,
+    2800,
+    2800
+   ],
+   "eligible": true,
+   "products": [
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      16765,
+      27089,
+      18314,
+      11152,
+      13316,
+      13465,
+      12146,
+      2126,
+      13779,
+      30668,
+      27217,
+      24656,
+      25849,
+      10910,
+      10193,
+      15786,
+      25038,
+      14812,
+      28910,
+      2027,
+      23321,
+      13106,
+      23089,
+      9704,
+      31486,
+      29998,
+      11002,
+      23353,
+      31913,
+      1781,
+      24299,
+      5055,
+      26651,
+      9550,
+      25009,
+      5162,
+      26161,
+      18078,
+      13486,
+      1658,
+      29449,
+      23565,
+      2025,
+      25879,
+      4754,
+      9756,
+      30260,
+      376,
+      1
+     ],
+     "selected_count": 16,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 68
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 44,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 74,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 184,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 202,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32003
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      365,
+      15118,
+      28218,
+      23042,
+      26026,
+      20446,
+      18943,
+      14373,
+      13529,
+      4831,
+      1683,
+      30617,
+      16413,
+      14293,
+      23841,
+      31567,
+      30200,
+      15660,
+      1080,
+      1762,
+      25405,
+      19769,
+      21700,
+      23448,
+      31952,
+      9310,
+      7669,
+      2385,
+      31396,
+      16994,
+      16771,
+      31320,
+      20857,
+      5246,
+      12550,
+      22065,
+      20773,
+      27413,
+      25281,
+      7787,
+      16766,
+      12645,
+      31712,
+      13970,
+      9138,
+      1835,
+      23851,
+      376,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 52
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 36
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 14,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 32,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 40,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 140,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 260,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32009
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      22491,
+      9147,
+      30839,
+      20728,
+      25064,
+      11572,
+      6658,
+      22549,
+      25296,
+      18317,
+      11875,
+      4090,
+      31087,
+      8280,
+      4577,
+      19371,
+      7948,
+      16937,
+      978,
+      13882,
+      30098,
+      11475,
+      157,
+      12752,
+      2712,
+      26076,
+      7378,
+      3072,
+      23742,
+      23500,
+      4560,
+      15264,
+      19696,
+      20409,
+      2773,
+      26177,
+      11567,
+      19191,
+      10820,
+      8565,
+      28866,
+      19081,
+      12772,
+      6760,
+      25156,
+      16490,
+      11015,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 26,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 34,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 48,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 60,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 62,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32027
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      14633,
+      31062,
+      4910,
+      19598,
+      31676,
+      18529,
+      14692,
+      30624,
+      23300,
+      24109,
+      17252,
+      12725,
+      3735,
+      22522,
+      18145,
+      20,
+      20233,
+      3207,
+      3234,
+      20711,
+      9735,
+      15110,
+      1546,
+      18077,
+      27236,
+      23466,
+      20432,
+      5156,
+      2081,
+      4637,
+      3689,
+      16074,
+      19717,
+      20413,
+      17487,
+      11139,
+      12395,
+      15039,
+      14507,
+      2529,
+      30962,
+      17539,
+      8291,
+      21293,
+      15576,
+      28796,
+      23823,
+      376,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 64
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 3,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 10,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 88,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 154,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 264,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32029
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      19972,
+      30168,
+      11181,
+      23730,
+      23892,
+      6345,
+      8178,
+      29622,
+      26280,
+      13610,
+      21326,
+      21152,
+      21873,
+      3600,
+      16750,
+      30551,
+      341,
+      11166,
+      434,
+      3892,
+      12739,
+      24769,
+      514,
+      21355,
+      22541,
+      17363,
+      334,
+      534,
+      14442,
+      22220,
+      18689,
+      19831,
+      34,
+      24985,
+      5461,
+      11407,
+      2132,
+      16162,
+      18567,
+      20128,
+      28551,
+      15473,
+      11374,
+      30812,
+      11757,
+      16833,
+      17382,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 40
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 141,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 282,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32051
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      5882,
+      7453,
+      26297,
+      3609,
+      30891,
+      9648,
+      10381,
+      19046,
+      12658,
+      19812,
+      30206,
+      28956,
+      24848,
+      13180,
+      11457,
+      2058,
+      29606,
+      25139,
+      2827,
+      5169,
+      23511,
+      26222,
+      18239,
+      26579,
+      17685,
+      30148,
+      11680,
+      18564,
+      23948,
+      28447,
+      10234,
+      5169,
+      31105,
+      20165,
+      14977,
+      25139,
+      19071,
+      6599,
+      8064,
+      11763,
+      16153,
+      25961,
+      31427,
+      19325,
+      22952,
+      8906,
+      10961,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 44
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 56,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 92,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 172,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32057
+    }
+   ],
+   "crt": {
+    "ok": true,
+    "degree": 48,
+    "integer_max_abs_coeff": 539551424306148647281743984,
+    "integer_max_log10_abs_coeff": 26.73203284332491,
+    "rational_reconstruction": {
+     "success_count": 34,
+     "failure_count": 15,
+     "failed_exponents": [
+      2,
+      6,
+      7,
+      18,
+      21,
+      22,
+      26,
+      28,
+      29,
+      30,
+      32,
+      34,
+      35,
+      36,
+      39
+     ],
+     "max_abs_numerator": 22372356391981,
+     "max_abs_denominator": 23109734186623
+    }
+   }
+  },
+  {
+   "trial": 4,
+   "label": "rand_h6_s20260814_0076",
+   "expression": "6*a-b+2*c-3*d-6*x+y-4*e-2*q",
+   "degrees": [
+    2800,
+    2800,
+    2800,
+    2800,
+    2800,
+    2800
+   ],
+   "eligible": true,
+   "products": [
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      29313,
+      29694,
+      26837,
+      9495,
+      10263,
+      392,
+      18858,
+      30704,
+      23141,
+      7580,
+      9,
+      29093,
+      5943,
+      12840,
+      11226,
+      20483,
+      17072,
+      30517,
+      4868,
+      18645,
+      15991,
+      404,
+      22662,
+      16348,
+      12005,
+      12848,
+      9682,
+      28557,
+      24075,
+      29752,
+      3008,
+      5981,
+      21649,
+      12621,
+      5978,
+      14834,
+      1687,
+      30340,
+      6814,
+      11624,
+      3897,
+      5855,
+      20018,
+      3770,
+      11328,
+      13814,
+      23757,
+      376,
+      1
+     ],
+     "selected_count": 16,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 68
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 4,
+       "multiplicity": 3,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 44,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 74,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 184,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 202,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32003
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      8597,
+      20555,
+      4939,
+      4618,
+      21274,
+      23186,
+      5197,
+      15944,
+      1352,
+      26380,
+      15475,
+      4619,
+      14018,
+      5872,
+      14593,
+      25451,
+      705,
+      25902,
+      15734,
+      31288,
+      21715,
+      7306,
+      25129,
+      16085,
+      19610,
+      13198,
+      25564,
+      318,
+      12139,
+      26252,
+      22987,
+      17573,
+      22002,
+      19007,
+      31447,
+      23053,
+      13983,
+      24673,
+      13354,
+      14226,
+      938,
+      12418,
+      500,
+      26862,
+      1390,
+      12302,
+      10945,
+      376,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 52
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 36
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 14,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 32,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 40,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 140,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 260,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32009
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      18024,
+      4271,
+      19151,
+      8594,
+      12279,
+      15229,
+      30437,
+      12103,
+      13334,
+      23050,
+      15494,
+      14917,
+      6696,
+      7151,
+      8506,
+      2432,
+      28325,
+      4121,
+      4007,
+      5955,
+      10667,
+      29517,
+      3042,
+      24503,
+      25171,
+      785,
+      22931,
+      8411,
+      21558,
+      23055,
+      15542,
+      20103,
+      27164,
+      17473,
+      27843,
+      15126,
+      10811,
+      26178,
+      7336,
+      3607,
+      13190,
+      25468,
+      22968,
+      30972,
+      15402,
+      7766,
+      17318,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 12,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 26,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 34,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 48,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 60,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 62,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32027
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      25324,
+      17034,
+      13082,
+      10209,
+      1663,
+      10209,
+      27299,
+      663,
+      21323,
+      5754,
+      25923,
+      17454,
+      13821,
+      22399,
+      17570,
+      15546,
+      30559,
+      3590,
+      25622,
+      24895,
+      7198,
+      20605,
+      14311,
+      1478,
+      32022,
+      30681,
+      29268,
+      14045,
+      31443,
+      9629,
+      4945,
+      25788,
+      22708,
+      195,
+      30405,
+      19510,
+      29414,
+      12938,
+      13686,
+      22007,
+      2344,
+      31761,
+      24686,
+      3324,
+      4887,
+      7262,
+      10909,
+      376,
+      1
+     ],
+     "selected_count": 32,
+     "selected": [
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 72
+      },
+      {
+       "degree": 1,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 64
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 16
+      },
+      {
+       "degree": 3,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 10,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 20,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 24,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 88,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 154,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 264,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32029
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      5061,
+      11190,
+      10145,
+      20529,
+      4755,
+      13853,
+      7951,
+      18482,
+      7032,
+      23181,
+      27676,
+      28427,
+      19819,
+      17334,
+      30503,
+      7164,
+      28893,
+      23698,
+      15431,
+      13318,
+      24257,
+      8418,
+      28127,
+      20893,
+      12806,
+      24062,
+      14811,
+      620,
+      23738,
+      2508,
+      12198,
+      8968,
+      22045,
+      7381,
+      16782,
+      8576,
+      30003,
+      9795,
+      21335,
+      3267,
+      24165,
+      1988,
+      27196,
+      2050,
+      8721,
+      1718,
+      30100,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 1,
+       "multiplicity": 1,
+       "count": 40
+      },
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 16
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 12
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 20
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 16,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 141,
+       "multiplicity": 1,
+       "count": 8
+      },
+      {
+       "degree": 282,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32051
+    },
+    {
+     "degree": 48,
+     "coefficients_low_to_high": [
+      31994,
+      26406,
+      10232,
+      684,
+      29311,
+      11251,
+      30780,
+      8158,
+      23177,
+      21824,
+      133,
+      19294,
+      15814,
+      1077,
+      24260,
+      30019,
+      26927,
+      28249,
+      7119,
+      723,
+      7988,
+      16846,
+      26674,
+      13119,
+      15192,
+      7756,
+      30006,
+      30547,
+      2341,
+      27814,
+      31584,
+      1419,
+      30339,
+      15684,
+      4363,
+      13355,
+      25214,
+      2955,
+      9799,
+      10177,
+      12608,
+      24396,
+      27648,
+      31703,
+      11979,
+      206,
+      17270,
+      376,
+      1
+     ],
+     "selected_count": 24,
+     "selected": [
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3
+      }
+     ],
+     "factor_profile": [
+      {
+       "degree": 2,
+       "multiplicity": 1,
+       "count": 44
+      },
+      {
+       "degree": 2,
+       "multiplicity": 3,
+       "count": 24
+      },
+      {
+       "degree": 4,
+       "multiplicity": 1,
+       "count": 32
+      },
+      {
+       "degree": 6,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 8,
+       "multiplicity": 1,
+       "count": 28
+      },
+      {
+       "degree": 56,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 92,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 172,
+       "multiplicity": 1,
+       "count": 4
+      },
+      {
+       "degree": 228,
+       "multiplicity": 1,
+       "count": 4
+      }
+     ],
+     "prime": 32057
+    }
+   ],
+   "crt": {
+    "ok": true,
+    "degree": 48,
+    "integer_max_abs_coeff": 532642831456946220017122788,
+    "integer_max_log10_abs_coeff": 26.726436086469207,
+    "rational_reconstruction": {
+     "success_count": 29,
+     "failure_count": 20,
+     "failed_exponents": [
+      2,
+      5,
+      7,
+      8,
+      10,
+      11,
+      13,
+      15,
+      18,
+      21,
+      22,
+      24,
+      28,
+      29,
+      32,
+      33,
+      37,
+      38,
+      41,
+      42
+     ],
+     "max_abs_numerator": 19157848701224,
+     "max_abs_denominator": 22813770514341
+    }
+   }
+  }
+ ]
+}

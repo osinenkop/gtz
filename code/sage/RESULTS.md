@@ -2109,6 +2109,66 @@ rational polynomial with this bank.  A next computational step would be either a
 larger/search-driven coefficient bank or extending the best candidates to more
 primes now that the action-cache pipeline is established.
 
+The next pass used a generated height-`6` bank of `96` primitive coefficient
+vectors, preserving the original `16` v1 candidates as a prefix:
+
+```text
+code/sage/generate_linear_form_bank.py
+code/sage/linear_form_candidates_s8_79656_lowheight_v2_96_h6.json
+code/sage/out/linear_form_lowheight_bank_v2_96_h6_s8_79656_p32003_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v2_96_h6_s8_79656_p32009_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v2_96_h6_s8_79656_p32027_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v2_96_h6_s8_79656_p32029_coeffs.json
+code/sage/out/linear_form_lowheight_bank_v2_96_h6_s8_79656_p32051_coeffs.json
+code/sage/out/repeated_support_lowheight_bank_v2_96_h6_s8_79656_rank_32003_32009_32027_32029_32051_parallel.json
+```
+
+There were `77` five-prime eligible rows out of `96`.  Trial `70`,
+`2*a+3*b+3*c+3*d+4*x-4*y+2*e-q`, is a repeatable structural exclusion with
+degree `2776` on all five primes.  The remaining exclusions are prime-specific
+degree drops or nonfinds.  For every eligible row, the repeated-support product
+again has degree `48`.
+
+Top five-prime v2 rows:
+
+| Trial | Linear form | Reconstructed coefficients | Integer max log10 |
+| ---: | --- | ---: | ---: |
+| `26` | `3*a-6*b+3*c+3*d+x-6*y+3*e+q` | `37/49` | `22.190` |
+| `93` | `5*a+4*b-6*c-5*d-x+3*y+4*e-4*q` | `37/49` | `22.204` |
+| `23` | `5*a+3*b-2*c-6*d+4*x-4*y+4*e+q` | `37/49` | `22.212` |
+| `72` | `a-4*b-c+d-5*x+3*y-5*e-2*q` | `37/49` | `22.212` |
+| `76` | `6*a-b+2*c-3*d-6*x+y-4*e-2*q` | `37/49` | `22.225` |
+
+This is a small improvement over the v1 best `36/49`, but not yet a stable
+rational lift.  To test whether the five-prime modulus was simply too small,
+the five best candidates were screened at a regenerated sixth prime, `p=32057`:
+
+```text
+/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32057.json
+/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32057_actions
+code/sage/linear_form_candidates_s8_79656_lowheight_v2_top5_37of49.json
+code/sage/out/linear_form_lowheight_bank_v2_top5_37of49_s8_79656_p32057_coeffs.json
+code/sage/out/repeated_support_lowheight_bank_v2_top5_37of49_s8_79656_rank_32003_32009_32027_32029_32051_32057.json
+```
+
+All five top candidates remain exact degree `2800` at `p=32057`, but the
+six-prime CRT reconstruction gets worse rather than better:
+
+| Source trial | Linear form | Five primes | Six primes |
+| ---: | --- | ---: | ---: |
+| `72` | `a-4*b-c+d-5*x+3*y-5*e-2*q` | `37/49` | `34/49` |
+| `26` | `3*a-6*b+3*c+3*d+x-6*y+3*e+q` | `37/49` | `32/49` |
+| `23` | `5*a+3*b-2*c-6*d+4*x-4*y+4*e+q` | `37/49` | `32/49` |
+| `76` | `6*a-b+2*c-3*d-6*x+y-4*e-2*q` | `37/49` | `29/49` |
+| `93` | `5*a+4*b-6*c-5*d-x+3*y+4*e-4*q` | `37/49` | `28/49` |
+
+Moreover, the failed exponent sets change substantially after adding `32057`.
+This makes the current height-`6` repeated-support lift look like a useful
+diagnostic but not a viable certificate path in its present form.  The practical
+next step is either to add a different structural filter before CRT ranking, or
+to move from one-variable repeated support to a multivariate/RUR reconstruction
+that uses more of the quotient action data.
+
 ## Relaxed interval bound calibration
 
 Lowering the target threshold did not close the interval branch-and-bound

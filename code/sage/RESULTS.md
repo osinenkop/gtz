@@ -1889,6 +1889,18 @@ This is the first positive indication that a generic primitive element may be
 reachable even though the bare `q`-eliminant is too collapsed for direct
 component isolation.
 
+Running the same linear form to the full quotient limit gives:
+
+```text
+code/sage/out/linear_form_screen_s8_79656_p32009_random_full.json
+```
+
+The exact relation degree is `2800`, with zero residual, compared with quotient
+degree `2832`.  Thus this linear form is not fully primitive, but it collapses
+only a `32`-dimensional part of the quotient.  This is a much sharper
+elimination coordinate than `q` and justifies a short random search for a true
+degree-`2832` primitive element.
+
 The first rectangular span test,
 
 ```text

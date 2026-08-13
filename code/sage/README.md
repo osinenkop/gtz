@@ -410,6 +410,16 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   --out code/sage/out/generator_span_s8_79656_p32009_q_a_325_20.json
 ```
 
+Search random linear forms for a full-degree primitive element:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/screen_random_linear_forms.py \
+  --basis-json /tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json \
+  --trials 4 --seed 20260813 --max-degree 2832 --target-degree 2832 \
+  --out code/sage/out/random_linear_forms_s8_79656_p32009_seed20260813.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

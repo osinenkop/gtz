@@ -1,0 +1,31 @@
+{
+ "basis_json": "/tmp/gtz_plucker/plucker_ansatz_s8_79656_p32009.json",
+ "characteristic": 32009,
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "quotient_degree": 2832,
+ "normal_basis_size": 2832,
+ "max_degree": 2832,
+ "check_every": 200,
+ "rows": [
+  {
+   "expression": "q+a+2*b+3*c+5*d+7*x+11*y+13*e",
+   "relation_found": true,
+   "relation_degree": 2800,
+   "searched_degree": 2832,
+   "residual_zero": true,
+   "residual_terms": 0,
+   "nonzero_terms": 2801,
+   "density": 1.0,
+   "degree_log10_height_proxy": 4.504892039388076
+  }
+ ]
+}

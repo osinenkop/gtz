@@ -1972,6 +1972,28 @@ The factor degrees differ over `F_32003`, but the degree/multiplicity invariants
 match `F_32009`, making the degree-`2800` generic-projection behavior unlikely
 to be a one-prime artifact.
 
+The repeated-support factor product was then extracted at both primes by taking
+the squarefree product of all factors with multiplicity at least `2`:
+
+```text
+code/sage/out/repeated_support_s8_79656_p32003_linform_seed20260813_trial0.json
+code/sage/out/repeated_support_s8_79656_p32009_linform_seed20260813_trial0.json
+```
+
+In both characteristics this product has degree `48`.  A two-prime CRT lift is
+stored in
+
+```text
+code/sage/out/repeated_support_s8_79656_linform_seed20260813_trial0_crt_32003_32009.json
+```
+
+The modulus has decimal size about `10^9.010`; rational reconstruction succeeds
+for `36` of the `49` coefficients and fails for `13`.  The centered integer
+lift has maximum coefficient size about `10^8.687`, so more primes are needed
+before interpreting the lift.  This is now a small, concrete CRT target: a
+degree-`48` polynomial associated with the multiple support of the generic
+linear projection.
+
 The first rectangular span test,
 
 ```text

@@ -450,6 +450,22 @@ DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
   --out code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_factors.json
 ```
 
+Extract the repeated-support factor product and CRT-lift it across primes:
+
+```bash
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/extract_factor_product.py \
+  --input code/sage/out/random_linear_forms_scipy_s8_79656_p32009_seed20260813_trial0_factors.json \
+  --min-multiplicity 2 \
+  --out code/sage/out/repeated_support_s8_79656_p32009_linform_seed20260813_trial0.json
+
+DOT_SAGE=/tmp/gtz_sage_cache ~/miniforge3/envs/sage/bin/python \
+  code/sage/summarize_univariate_coeff_crt.py --variable t \
+  --out code/sage/out/repeated_support_s8_79656_linform_seed20260813_trial0_crt_32003_32009.json \
+  code/sage/out/repeated_support_s8_79656_p32003_linform_seed20260813_trial0.json \
+  code/sage/out/repeated_support_s8_79656_p32009_linform_seed20260813_trial0.json
+```
+
 Exact Groebner/dimension probes should be run under an explicit timeout:
 
 ```bash

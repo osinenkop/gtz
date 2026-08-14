@@ -2169,6 +2169,78 @@ next step is either to add a different structural filter before CRT ranking, or
 to move from one-variable repeated support to a multivariate/RUR reconstruction
 that uses more of the quotient action data.
 
+### The `q=5` repeated fiber
+
+The multivariate/RUR follow-up found a stable structural component behind part
+of the repeated-support signal.  In the available `s8_79656` q-eliminant
+factorizations, the linear factor `q-5` occurs with multiplicity `3` at all `37`
+recorded primes from `32003` through `32341`.
+
+Direct component probes were run by adjoining `q-5` to the reduced Plucker
+ansatz quotient at six primes:
+
+```text
+code/sage/probe_linear_factor_component.py
+code/sage/out/component_q_factor6_qeq5_s8_79656_p32003.json
+code/sage/out/component_qeq5_s8_79656_p32009.json
+code/sage/out/component_qeq5_s8_79656_p32027.json
+code/sage/out/component_qeq5_s8_79656_p32029.json
+code/sage/out/component_qeq5_s8_79656_p32051.json
+code/sage/out/component_qeq5_s8_79656_p32057.json
+```
+
+Each prime gives the same finite-field structure: augmented Groebner basis size
+`29`, dimension `0`, quotient degree `64`, and coordinate eliminant degrees
+
+```text
+a,b,c,d: 6;  x,y: 8;  e: 4;  q: 1.
+```
+
+The six-prime CRT lift is stored in
+
+```text
+code/sage/out/component_qeq5_s8_79656_crt_32003_32009_32027_32029_32051_32057.json
+```
+
+All coordinate eliminants rationally reconstruct over `QQ`:
+
+| Coordinate | Rational eliminant |
+| --- | --- |
+| `a` | `u^6 + 1/4*u^2` |
+| `b` | `u^6 + 1/100*u^2` |
+| `c` | `u^6 - 17/2*u^4 + 285/16*u^2 - 25/16` |
+| `d` | `u^6 - 5/2*u^4 - 51/16*u^2 + 5/16` |
+| `e` | `u^4 + 4/5*u^2 - 1/5` |
+| `q` | `u - 5` |
+| `x` | `u^8 - 17/10*u^6 + 69/80*u^4 - 17/40*u^2 + 49/320` |
+| `y` | `u^8 - 17/10*u^6 + 249/400*u^4 - 17/1000*u^2 + 49/8000` |
+
+Thus the unstable degree-`48` one-variable support search exposed, at least in
+part, a concrete nonreduced q-fiber.  For source trial `26`, the eight repeated
+quadratic factors over `p=32003` all cut degree-`2` components inside this
+fiber:
+
+```text
+code/sage/out/linear_form_lowheight_bank_v2_trial26_s8_79656_p32003_factors.json
+code/sage/out/components_trial26_repeated_deg2_s8_79656_p32003.json
+```
+
+Every such component has `q=5`, `e^2 = 1/5`, `c^2 = 5`, and `d^2 = -1` over the
+appropriate finite-field extensions; the `a,x` and `b,y` eliminants split into
+sign/factor choices.  This is a substantially better target for exact
+decomposition than the full degree-`48` support product.
+
+An exact `QQ` Groebner probe with `q=5` imposed was started via
+
+```text
+code/sage/probe_plucker_q_value_component.py
+```
+
+but was stopped after it remained in the Groebner step for about fifteen
+minutes.  The present certificate status is therefore modular plus successful
+six-prime rational reconstruction of the coordinate eliminants; exact rational
+ideal verification is still pending.
+
 ## Relaxed interval bound calibration
 
 Lowering the target threshold did not close the interval branch-and-bound

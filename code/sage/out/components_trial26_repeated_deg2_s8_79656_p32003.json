@@ -1,0 +1,1016 @@
+{
+ "basis_json": "code/sage/out/plucker_ansatz_s8_79656_p32003.json",
+ "factor_json": "code/sage/out/linear_form_lowheight_bank_v2_trial26_s8_79656_p32003_factors.json",
+ "characteristic": 32003,
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "linear_form": "3*a-6*b+3*c+3*d+x-6*y+3*e+q",
+ "min_multiplicity": 2,
+ "degree_filter": 2,
+ "relation_expressions": [
+  "a",
+  "b",
+  "c",
+  "d",
+  "x",
+  "y",
+  "e",
+  "q"
+ ],
+ "selected_factor_indices": [
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75
+ ],
+ "components": [
+  {
+   "factor_index": 68,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 15035*t + 26496",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 69,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 15043*t + 13085",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 70,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 16940*t + 5541",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 71,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 16948*t + 18800",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 72,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 31991*t + 9709",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 73,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 31991*t + 28759",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 74,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 31995*t + 1596",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  },
+  {
+   "factor_index": 75,
+   "factor": {
+    "degree": 2,
+    "multiplicity": 3,
+    "polynomial": "t^2 + 31995*t + 24074",
+    "substituted_equation_total_degree": 2,
+    "substituted_equation_terms": 45
+   },
+   "augmented_basis_size": 8,
+   "dimension": 0,
+   "degree": 2,
+   "normal_basis_sample": [
+    "e",
+    "1"
+   ],
+   "relations": [
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      1,
+      1
+     ],
+     "polynomial": "u^2 + u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "a"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      28082,
+      1
+     ],
+     "polynomial": "u^2 + 28082*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "b"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      31998,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "c"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      1,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 1*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "d"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      16002,
+      32002,
+      1
+     ],
+     "polynomial": "u^2 + 32002*u + 16002*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "x"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      22402,
+      3921,
+      1
+     ],
+     "polynomial": "u^2 + 3921*u + 22402*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "y"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 2,
+     "coefficients_low_to_high": [
+      12801,
+      0,
+      1
+     ],
+     "polynomial": "u^2 + 12801*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "e"
+    },
+    {
+     "relation_found": true,
+     "relation_degree": 1,
+     "coefficients_low_to_high": [
+      31998,
+      1
+     ],
+     "polynomial": "u + 31998*1",
+     "residual_zero": true,
+     "residual_terms": 0,
+     "expression": "q"
+    }
+   ]
+  }
+ ]
+}

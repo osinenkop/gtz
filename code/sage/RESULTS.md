@@ -2482,11 +2482,12 @@ a^2 - a + w^2 + 2*x^2 + 2*y^2 = 0.
 
 The exact ansatz algebra is recorded in
 `verify/v39_relaxed_1over8_ansatz_exact.py`.  It verifies symbolically that
-adding the active determinant equations for triples `(0,1,3)` and `(0,1,4)` to
-the ansatz ideal gives a Groebner basis containing
+adding active determinant equations for triples `(0,1,3)` and `(0,1,4)`,
+including the condition that the `(0,1,4)` block has both `q` and `1-q` as
+eigenvalues, gives a Groebner basis containing the `q`-only factor
 
 ```text
-8*q^2 - 7*q + 1.
+(2*q - 1)*(8*q^2 - 7*q + 1).
 ```
 
 The lower root is exactly `q = (7 - sqrt(17))/16`, with slack
@@ -2501,6 +2502,38 @@ core + pair-straddling  ==>  F(P) >= (7 - sqrt(17))/16 > 1/8.
 Together with the deletion reduction, such a certificate would prove the relaxed
 `1/8` theorem.  This is still numerical evidence, not a proof, but it is a much
 smaller semialgebraic target than the original exact `1/6` hypothesis.
+
+The target was then parameterized in `verify/v40_relaxed_target_sweep.py`.  For
+a general target `t`, the reduced obstruction becomes
+
+```text
+1 - 5t <= ell_i <= 5t,
+lambda_max(P_{ij,ij}) >= 1 - 4t,
+lambda_min(P_{ij,ij}) <= 4t,
+lambda_min(P_TT) <= t and lambda_max(P_TT) >= 1 - t.
+```
+
+The SLSQP minimax sweep minimizes the remaining triple slack `s` inside the
+closed core/pair region.  Compact runs give:
+
+| Output | target `t` | best `s` | `t+s` | best source |
+| --- | ---: | ---: | ---: | --- |
+| `verify/out/v40_relaxed_target_sweep_near_1over8.json` | `1/8` | `0.054805898399` | `0.179805898399` | lower `sqrt(17)` boundary |
+| `verify/out/v40_relaxed_target_sweep_transition.json` | `0.127` | `0.045332084117` | `0.172332084117` | same lower-boundary family |
+| `verify/out/v40_relaxed_target_sweep_transition.json` | `0.1275` | `0.043010529782` | `0.170510529782` | same lower-boundary family |
+| `verify/out/v40_relaxed_target_sweep_transition.json` | `0.128` | `0.040706800675` | `0.168706800675` | same lower-boundary family |
+| `verify/out/v40_relaxed_target_sweep_transition.json` | `0.1284` | `0.038876359222` | `0.167276359222` | same lower-boundary family |
+| `verify/out/v40_relaxed_target_sweep_near_1over8.json` | `9/70` | `4/105` | `1/6` | known seventh-extremal boundary |
+| `verify/out/v40_relaxed_target_sweep_near_1over8.json` | `0.13` | `0.036666666667` | `1/6` | known seventh-extremal boundary |
+| `verify/out/v40_relaxed_target_sweep_smoke.json` | `1/7` | `1/42` | `1/6` | known seventh-extremal boundary |
+
+Thus the deletion-core strategy has some numerical headroom above `1/8`, but it
+meets the known sharp extremal at `t=9/70`: the lower leverage bound
+`1-5t` equals `5/14`, the small leverage of the seventh extremal.  Past that
+point, proving the reduced obstruction empty is essentially back to separating
+from the sharp equality set.  The best near-term target remains a rigorous
+`1/8` certificate; a slightly stronger rational target such as `0.128 = 16/125`
+is plausible only after the `1/8` certificate machinery is in place.
 
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,

@@ -16,9 +16,11 @@ After row permutation its projector has the five-variable form
     [ -z    y   -z   -x  3/8 3/8].
 
 This script verifies, over exact rationals, that ``P^2=P`` reduces to four
-quadratic equations and that adding two active determinant equations forces
-``8*q^2 - 7*q + 1 = 0`` in the ansatz ideal.  This does not prove the global
-relaxed theorem; it only certifies the algebra of the numerical boundary target.
+quadratic equations and that adding active determinant equations for a block
+with eigenvalues ``q`` and ``1-q`` forces
+``(2*q - 1)*(8*q^2 - 7*q + 1) = 0`` in the ansatz ideal.  This does not prove
+the global relaxed theorem; it only certifies the algebra of the numerical
+boundary target.
 """
 
 from __future__ import annotations
@@ -69,18 +71,19 @@ def main() -> int:
     active_equations = [
         det_eq(p, (0, 1, 3), q),
         det_eq(p, (0, 1, 4), q),
-        8 * q**2 - 7 * q + 1,
+        det_eq(p, (0, 1, 4), 1 - q),
     ]
     groebner = sp.groebner(idem + active_equations, a, x, y, z, w, q, order="grevlex")
     basis = [sp.factor(poly.as_expr()) for poly in groebner.polys]
 
-    q_poly = sp.factor(8 * q**2 - 7 * q + 1)
-    assert any(sp.factor(expr * 8) == q_poly for expr in basis) or q_poly in basis
+    q_poly = sp.factor((2 * q - 1) * (8 * q**2 - 7 * q + 1))
+    assert any(sp.factor(expr * 16) == q_poly for expr in basis) or q_poly in basis
     assert sp.factor(8 * det_eq(p, (0, 1, 3), q)).subs(q, sp.Rational(1, 8)) != 0
 
     q_low = (sp.Integer(7) - sp.sqrt(17)) / 16
     slack = sp.simplify(q_low - sp.Rational(1, 8))
     assert sp.simplify(8 * q_low**2 - 7 * q_low + 1) == 0
+    assert sp.simplify(q_poly.subs(q, q_low)) == 0
     assert slack == (sp.Integer(5) - sp.sqrt(17)) / 16
     assert q_low > sp.Rational(1, 8)
 
@@ -89,13 +92,9 @@ def main() -> int:
     print("idempotence equations:")
     for eq in idem:
         print(f"  {sp.factor(eq)} = 0")
-    print("\nGroebner basis contains:")
+    print("\nGroebner basis contains the q-only factor:")
     for expr in basis:
-        if expr in {
-            q_poly / 8,
-            (-8 * q + 64 * z**2 + 1) / 64,
-            -(184 * q - 512 * w**2 + 7) / 512,
-        } or sp.factor(expr * 8) == q_poly:
+        if sp.factor(expr * 16) == q_poly or expr == q_poly:
             print(f"  {expr}")
     print(f"\nq = (7 - sqrt(17))/16 = {sp.N(q_low, 18)}")
     print(f"q - 1/8 = (5 - sqrt(17))/16 = {sp.N(slack, 18)}")

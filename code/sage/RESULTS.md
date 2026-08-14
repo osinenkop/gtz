@@ -2266,6 +2266,22 @@ code/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ.json
 Hence the `q=5` fiber has no real points in the reduced Plucker ansatz.  It is
 a rigorously removable nuisance branch, not a source of real extremizers.
 
+The same exact fixed-fiber probe also eliminates the other stable rational
+linear q-factor.  Across all `37` available q-factorizations, the only rational
+linear q-values of height at most `30` are `q=1` and `q=5`; `q=1` occurs with
+multiplicity `1` at every prime.  The exact `QQ` run
+
+```text
+code/sage/out/plucker_qeq1_singular_s8_79656_QQ.json
+```
+
+has dimension `0`, degree `16`, and Groebner basis size `23`.  Its stored basis
+contains `y^2+1`, so the `q=1` fiber also has no real points in the reduced
+Plucker ansatz.  After these two checks, there are no remaining stable rational
+q-fibers in the recorded q-eliminant data; the next exact targets would have to
+come from non-rational algebraic q-factors or from a different structural
+coordinate.
+
 ## Relaxed interval bound calibration
 
 Lowering the target threshold did not close the interval branch-and-bound

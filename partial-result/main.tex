@@ -66,9 +66,9 @@ As background, we include a self-contained Perron-free proof of the weighted
 Frobenius inequality behind the known $k=2$ case.
 We also record the known volume-sampling relaxation
 \[
-  \max_{|I|=k}\sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k+1)},
+  \max_{|I|=k}\sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k)+1},
 \]
-which gives the concrete bound $F(P)\ge 1/12$ in the case $(6,3)$.
+which gives the concrete bound $F(P)\ge 1/10$ in the case $(6,3)$.
 The remaining global problem is isolated precisely as the exclusion of critical
 points with value below $1/6$.
 \end{abstract}
@@ -114,7 +114,7 @@ as concrete as possible.
 \item We give a self-contained Perron-free proof of a weighted Frobenius
 inequality for $k=2$, implying the usual good-pair step in the core case.
 \item We record a standard volume-sampling corollary which gives the relaxed
-bound $F(P)\ge 1/12$ for all $P\in\Gr(3,6)$.
+bound $F(P)\ge 1/10$ for all $P\in\Gr(3,6)$.
 \item We rederive the tight equality projectors in the weighted graphic-matroid
 family and verify exactly that $F=1/6$ there.
 \item We give exact sharpness certificates at all six projectors in this
@@ -172,14 +172,14 @@ bound is exactly \eqref{eq:gtz63}.
 Let $1\le k<n$ and $A\in\St(n,k)$.  Then there is a $k$-row set
 $I\subset[n]$ such that
 \[
-  \sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k+1)}.
+  \sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k)+1}.
 \]
 Equivalently, for $P=AA^T$,
 \[
-  \max_{|I|=k}\lambda_{\min}(P_{II})\ge \frac{1}{k(n-k+1)}.
+  \max_{|I|=k}\lambda_{\min}(P_{II})\ge \frac{1}{k(n-k)+1}.
 \]
 In particular, for $(n,k)=(6,3)$ one has the unconditional relaxed bound
-$F(P)\ge 1/12$.
+$F(P)\ge 1/10$.
 \end{proposition}
 
 \begin{proof}
@@ -196,12 +196,14 @@ traces, some sampled set $S$ satisfies
 \[
   \tr\bigl((X_SX_S^T)^{-1}\bigr)\le k(n-k+1).
 \]
-For this set,
+Let $0<\mu_1\le\cdots\le\mu_k\le1$ be the eigenvalues of $X_SX_S^T$.
+The upper bound $\mu_j\le1$ follows from $X_SX_S^T\preceq XX^T=I_k$.
+Therefore $\mu_j^{-1}\ge1$ for $j\ge2$, and
 \[
   \frac{1}{\sigma_{\min}(X_S)^2}
-  =\lambda_{\max}\bigl((X_SX_S^T)^{-1}\bigr)
-  \le \tr\bigl((X_SX_S^T)^{-1}\bigr)
-  \le k(n-k+1).
+  =\mu_1^{-1}
+  \le k(n-k+1)-(k-1)
+  =k(n-k)+1.
 \]
 Since $X_S=A_S^T$, the singular values are the same as those of $A_S$.
 \end{proof}

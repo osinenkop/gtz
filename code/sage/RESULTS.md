@@ -2351,17 +2351,19 @@ E[(A_I^T A_I)^(-1)] <= (n-k+1) I_k.
 ```
 
 Hence some sampled set satisfies
-`tr((A_I^T A_I)^(-1)) <= k(n-k+1)`, and therefore
+`tr((A_I^T A_I)^(-1)) <= k(n-k+1)`.  Since
+`A_I^T A_I <= I_k`, its nonzero eigenvalues are at most one, so the other
+`k-1` inverse eigenvalues contribute at least `k-1` to this trace.  Therefore
 
 ```text
-sigma_min(A_I)^2 >= 1/(k(n-k+1)).
+sigma_min(A_I)^2 >= 1/(k(n-k)+1).
 ```
 
-For `(n,k)=(6,3)` this is exactly `F(P) >= 1/12`.  This is not new to the
+For `(n,k)=(6,3)` this is exactly `F(P) >= 1/10`.  This is not new to the
 present project; it is a SOTA baseline consequence of volume sampling.  The
 computational relaxed-threshold experiments below should therefore be read as
 diagnostics for whether the interval machinery can approach the sharp `1/6`
-frontier, not as the natural proof of the `1/12` relaxation.
+frontier, not as the natural proof of the `1/10` relaxation.
 
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
@@ -2372,9 +2374,8 @@ and `min_radius=0.25`, the center-high runs gave:
 | `verify/out/v19_relaxed_010_cascade_2000.json` | `0.1` | `840` | `628` | `1160` | `340` | `167` |
 | `verify/out/v19_relaxed_0125_cascade_2000.json` | `0.125` | `836` | `700` | `1164` | `348` | `167` |
 
-A matched small calibration at the volume-sampling relaxation `1/12` was run
-against the same cascade/hybrid setup, all 20 charts, `max_boxes=500`,
-`min_radius=0.25`, and center-high priority:
+A matched small calibration was run against the same cascade/hybrid setup, all
+20 charts, `max_boxes=500`, `min_radius=0.25`, and center-high priority:
 
 | Output | Threshold | Certified | GTZ-certified | Split | Queue | Inverse failures |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -2382,8 +2383,9 @@ against the same cascade/hybrid setup, all 20 charts, `max_boxes=500`,
 | `verify/out/v19_relaxed_1over12_cascade_500.json` | `1/12` | `152` | `110` | `348` | `216` | `167` |
 | `verify/out/v19_relaxed_010_cascade_500.json` | `0.1` | `151` | `116` | `349` | `218` | `167` |
 
-At this granularity the `1/12` target is essentially no easier for the interval
-cover than the sharp target: the same inverse/enclosure failures dominate.
+At this granularity even the analytic `1/10` target is essentially no easier
+for the interval cover than the sharp target: the same inverse/enclosure
+failures dominate.
 
 Adding the determinant-domain filter did not help at this granularity:
 

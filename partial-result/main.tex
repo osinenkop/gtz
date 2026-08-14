@@ -64,6 +64,11 @@ stratum.  For the most persistent structured size-six low-active survivor, we
 also give an exact finite-branch exclusion of the full four-parameter ansatz.
 As background, we include a self-contained Perron-free proof of the weighted
 Frobenius inequality behind the known $k=2$ case.
+We also record the known volume-sampling relaxation
+\[
+  \max_{|I|=k}\sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k+1)},
+\]
+which gives the concrete bound $F(P)\ge 1/12$ in the case $(6,3)$.
 The remaining global problem is isolated precisely as the exclusion of critical
 points with value below $1/6$.
 \end{abstract}
@@ -108,6 +113,8 @@ as concrete as possible.
 \begin{enumerate}[leftmargin=*]
 \item We give a self-contained Perron-free proof of a weighted Frobenius
 inequality for $k=2$, implying the usual good-pair step in the core case.
+\item We record a standard volume-sampling corollary which gives the relaxed
+bound $F(P)\ge 1/12$ for all $P\in\Gr(3,6)$.
 \item We rederive the tight equality projectors in the weighted graphic-matroid
 family and verify exactly that $F=1/6$ there.
 \item We give exact sharpness certificates at all six projectors in this
@@ -160,6 +167,44 @@ cardinality $3$, then
 \]
 so $\lambda_{\min}(P_{TT})=\smin(A_T)^2$.  Hence the original row-selection
 bound is exactly \eqref{eq:gtz63}.
+
+\begin{proposition}[Volume-sampling relaxed bound]\label{prop:volume-relaxed}
+Let $1\le k<n$ and $A\in\St(n,k)$.  Then there is a $k$-row set
+$I\subset[n]$ such that
+\[
+  \sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k+1)}.
+\]
+Equivalently, for $P=AA^T$,
+\[
+  \max_{|I|=k}\lambda_{\min}(P_{II})\ge \frac{1}{k(n-k+1)}.
+\]
+In particular, for $(n,k)=(6,3)$ one has the unconditional relaxed bound
+$F(P)\ge 1/12$.
+\end{proposition}
+
+\begin{proof}
+Set $X=A^T\in\R^{k\times n}$, so $XX^T=I_k$.  Choose a size-$k$ column set
+$S$ by volume sampling, i.e. with probability proportional to
+$\det(X_SX_S^T)$.  The volume-sampling expectation formula of
+Derezi\'nski and Warmuth~\cite[Theorem 4]{DerezinskiWarmuth} gives
+\[
+  \mathbb E\bigl[(X_SX_S^T)^{-1}\bigr]\preceq (n-k+1)(XX^T)^{-1}
+  =(n-k+1)I_k,
+\]
+with equality when the volume-sampling distribution has full support.  Taking
+traces, some sampled set $S$ satisfies
+\[
+  \tr\bigl((X_SX_S^T)^{-1}\bigr)\le k(n-k+1).
+\]
+For this set,
+\[
+  \frac{1}{\sigma_{\min}(X_S)^2}
+  =\lambda_{\max}\bigl((X_SX_S^T)^{-1}\bigr)
+  \le \tr\bigl((X_SX_S^T)^{-1}\bigr)
+  \le k(n-k+1).
+\]
+Since $X_S=A_S^T$, the singular values are the same as those of $A_S$.
+\end{proof}
 
 \begin{lemma}[Case-A reduction]\label{lem:caseA}
 Let $1\le k<n$, and let $A\in\St(n,k)$.  If some row has leverage
@@ -1250,6 +1295,11 @@ S.~A. Goreinov, E.~E. Tyrtyshnikov, and N.~L. Zamarashkin.
 R.~Sengupta and M.~Pautov.
 \newblock Submatrices with the best-bounded inverses: revisiting the hypothesis.
 \newblock arXiv:2604.05944, 2026.
+
+\bibitem{DerezinskiWarmuth}
+M.~Derezi\'nski and M.~K. Warmuth.
+\newblock Unbiased estimates for linear regression via volume sampling.
+\newblock arXiv:1705.06908, 2018.
 
 \bibitem{HornJohnson}
 R.~A. Horn and C.~R. Johnson.

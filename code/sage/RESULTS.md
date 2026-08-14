@@ -2365,6 +2365,35 @@ computational relaxed-threshold experiments below should therefore be read as
 diagnostics for whether the interval machinery can approach the sharp `1/6`
 frontier, not as the natural proof of the `1/10` relaxation.
 
+There is now a stronger analytic relaxed result for the first open case:
+
+```text
+GTZ(6,3) relaxed with alpha = 3/2:
+    F(P) >= 1/9  for every rank-three projector P in R^6.
+```
+
+The proof is short.  If some leverage satisfies `ell_i <= 4/9`, delete that row
+and use the known exact `(5,3)` case, dual to `k=2`; scaling back gives
+`sigma_min^2 >= (1-ell_i)/5 >= 1/9`.  Otherwise all leverages are `>4/9`, so
+every triple has trace `>4/3`.  At `t=1/9`, a bad triple cannot have two
+eigenvalues at or below `t`, since `1+2t=11/9 < 4/3`.  Hence on this
+high-leverage core
+
+```text
+lambda_min(P_TT) <= t    iff    det(P_TT - t I) <= 0.
+```
+
+But
+
+```text
+sum_T det(P_TT - t I) = 1 - 12 t + 30 t^2 - 20 t^3,
+```
+
+using `sum e3=1`, `sum e2=12`, and `sum e1=30` over the twenty triples.  At
+`t=1/9` the right-hand side is `7/729 > 0`, so the determinants cannot all be
+nonpositive.  Therefore some triple has `lambda_min > 1/9` in the core case.
+The exact constant check is recorded in `verify/v35_relaxed_one_ninth.py`.
+
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
 and `min_radius=0.25`, the center-high runs gave:

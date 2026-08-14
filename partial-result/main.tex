@@ -69,6 +69,11 @@ We also record the known volume-sampling relaxation
   \max_{|I|=k}\sigma_{\min}(A_I)^2\ge \frac{1}{k(n-k)+1},
 \]
 which gives the concrete bound $F(P)\ge 1/10$ in the case $(6,3)$.
+For the first open case we prove a stronger relaxed theorem:
+\[
+  F(P)\ge \frac19,
+\]
+i.e. the GTZ bound with relaxation factor $\alpha=3/2$.
 The remaining global problem is isolated precisely as the exclusion of critical
 points with value below $1/6$.
 \end{abstract}
@@ -115,6 +120,9 @@ as concrete as possible.
 inequality for $k=2$, implying the usual good-pair step in the core case.
 \item We record a standard volume-sampling corollary which gives the relaxed
 bound $F(P)\ge 1/10$ for all $P\in\Gr(3,6)$.
+\item We prove the stronger relaxed bound $F(P)\ge1/9$ in the case $(6,3)$.
+The proof combines a leverage deletion using the known $(5,3)$ case with a
+shifted determinant-sum identity on the high-leverage core.
 \item We rederive the tight equality projectors in the weighted graphic-matroid
 family and verify exactly that $F=1/6$ there.
 \item We give exact sharpness certificates at all six projectors in this
@@ -243,6 +251,76 @@ It only removes rows of leverage at most $1/n$.  To prove all $(n,3)$ by
 induction, one must still prove the core case, where every leverage is $>1/n$,
 at every intermediate size.
 \end{remark}
+
+\begin{theorem}[A relaxed \texorpdfstring{\(\alpha=3/2\)}{alpha=3/2} bound]\label{thm:one-ninth}
+For every $P\in\Gr(3,6)$,
+\[
+  F(P)=\max_{|T|=3}\lambda_{\min}(P_{TT})\ge \frac19.
+\]
+\end{theorem}
+
+\begin{proof}
+Write $P=AA^T$ with $A\in\St(6,3)$, and let $\ell_i=P_{ii}$.
+
+First suppose some leverage satisfies $\ell_i\le4/9$.  Repeat the deletion and
+column-rescaling argument from Lemma~\ref{lem:caseA}.  The resulting matrix
+lies in $\St(5,3)$.  The case $(5,3)$ is known by duality from the $k=2$
+theorem, so there are three rows of the rescaled matrix with squared least
+singular value at least $1/5$.  Scaling back to the original matrix gives
+\[
+  \sigma_{\min}(A_J)^2\ge \frac{1-\ell_i}{5}\ge \frac19.
+\]
+
+It remains to treat the high-leverage core, where $\ell_i>4/9$ for all $i$.
+Then every triple $T$ has
+\[
+  \tr(P_{TT})=\sum_{i\in T}\ell_i>\frac43.
+\]
+Let the eigenvalues of $P_{TT}$ be
+$0\le\lambda_1\le\lambda_2\le\lambda_3\le1$.  If
+$\lambda_2\le1/9$, then
+\[
+  \tr(P_{TT})\le 1+\frac19+\frac19=\frac{11}{9}<\frac43,
+\]
+a contradiction.  Hence $\lambda_2>1/9$ for every triple.  With $t=1/9$, this
+means
+\[
+  \lambda_{\min}(P_{TT})\le t
+  \quad\Longleftrightarrow\quad
+  \det(P_{TT}-tI_3)\le0
+\]
+throughout the high-leverage core.
+
+Assume for contradiction that every triple is bad at level $t=1/9$.  Then
+\[
+  \det(P_{TT}-tI_3)\le0
+  \qquad\text{for all } |T|=3.
+\]
+On the other hand, summing the characteristic-polynomial coefficients over all
+triples gives a positive number.  Indeed, if $e_r(P_{TT})$ denotes the $r$-th
+elementary symmetric polynomial of the eigenvalues of $P_{TT}$, then
+\[
+  \det(P_{TT}-tI_3)=e_3(P_{TT})-t e_2(P_{TT})+t^2e_1(P_{TT})-t^3.
+\]
+Since $P$ is a rank-three projector,
+\[
+  \sum_{|T|=3}e_3(P_{TT})=1,\qquad
+  \sum_{|T|=3}e_2(P_{TT})=4\binom32=12,\qquad
+  \sum_{|T|=3}e_1(P_{TT})=\binom52\tr P=30.
+\]
+Therefore
+\[
+  \sum_{|T|=3}\det(P_{TT}-tI_3)
+  =1-12t+30t^2-20t^3.
+\]
+At $t=1/9$ this is
+\[
+  1-\frac{12}{9}+\frac{30}{81}-\frac{20}{729}
+  =\frac7{729}>0,
+\]
+contradicting the nonpositivity of every summand.  Thus at least one triple has
+$\lambda_{\min}(P_{TT})>1/9$ in the high-leverage core, and the theorem follows.
+\end{proof}
 
 \section{A Perron-free Frobenius proof for the case \texorpdfstring{\(k=2\)}{k=2}}
 
@@ -1209,7 +1287,8 @@ The accompanying repository contains the following verification scripts in
 \texttt{v17\_active\_orbits.py} & active-set orbit counts\\
 \texttt{v18\_kkt\_screen.py} & numerical active-set KKT screens\\
 \texttt{v20\_finiteness\_probe.py} & actual-active-set classifier for equality hits\\
-\texttt{v21\_semialgebraic\_route.py} & semialgebraic obstruction sizing
+\texttt{v21\_semialgebraic\_route.py} & semialgebraic obstruction sizing\\
+\texttt{v35\_relaxed\_one\_ninth.py} & exact constants in the \(F(P)\ge1/9\) proof
 \end{tabular}
 \end{center}
 The CAD cascade in Section~\ref{sec:cad-cascade} is supported by the following

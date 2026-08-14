@@ -2590,6 +2590,30 @@ minimum.  At `9/70` and above, the 26-active seventh-extremal boundary becomes
 the best orbit.  Thus an exact KKT attack should first target the 24-active
 orbit, not the full family of relaxed obstruction inequalities.
 
+`verify/v43_relaxed_kkt_diagnostic.py` checks the constrained minimax KKT
+balance for these relaxed sweep candidates in a well-conditioned Grassmann
+chart.  For both `t=1/8` and `t=16/125`, the best 24-active candidate has:
+
+```text
+24 active triple objective constraints,
+4 active leverage-wall constraints,
+no active pair constraints,
+positive beta and mu multipliers,
+KKT residual norm about 1e-15.
+```
+
+The recorded outputs are
+`verify/out/v43_relaxed_kkt_1over8_best.json` and
+`verify/out/v43_relaxed_kkt_16over125_best.json`.  This makes the next exact
+certificate target sharper again: prove that the 24-active, four-leverage-wall
+KKT stratum is the only local minimax boundary below the seventh-transition
+level, and then exclude lower `s`.
+
+For unattended continuation, `verify/v44_relaxed_long_attack.py` repeatedly runs
+the relaxed sweep, the KKT diagnostic, and the active-pattern quotient.  Its
+status file compares each best `s` against the exact ansatz prediction
+`q_lower(t)-t` and records any lower-than-ansatz hit.
+
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
 and `min_radius=0.25`, the center-high runs gave:

@@ -2365,19 +2365,21 @@ computational relaxed-threshold experiments below should therefore be read as
 diagnostics for whether the interval machinery can approach the sharp `1/6`
 frontier, not as the natural proof of the `1/10` relaxation.
 
-There is now a stronger analytic relaxed result for the first open case:
+There is now a stronger analytic relaxed result for the first open case.  Let
+`t_* = (1 - sqrt(3/5))/2 = 0.112701665...`.  Then
 
 ```text
-GTZ(6,3) relaxed with alpha = 3/2:
-    F(P) >= 1/9  for every rank-three projector P in R^6.
+GTZ(6,3) relaxed with alpha < 3/2:
+    F(P) >= t_* > 1/9  for every rank-three projector P in R^6.
 ```
 
-The proof is short.  If some leverage satisfies `ell_i <= 4/9`, delete that row
+The proof is short.  For any `t < t_*`, if some leverage satisfies
+`ell_i <= 1 - 5t`, delete that row
 and use the known exact `(5,3)` case, dual to `k=2`; scaling back gives
-`sigma_min^2 >= (1-ell_i)/5 >= 1/9`.  Otherwise all leverages are `>4/9`, so
-every triple has trace `>4/3`.  At `t=1/9`, a bad triple cannot have two
-eigenvalues at or below `t`, since `1+2t=11/9 < 4/3`.  Hence on this
-high-leverage core
+`sigma_min^2 >= (1-ell_i)/5 >= t`.  Otherwise all leverages are `>1 - 5t`, so
+every triple has trace `>3(1 - 5t)`.  Since `t_* < 2/17`, a bad triple cannot
+have two eigenvalues at or below `t`: `1 + 2t < 3(1 - 5t)`.  Hence on this
+high-leverage core, for every `t < t_*`,
 
 ```text
 lambda_min(P_TT) <= t    iff    det(P_TT - t I) <= 0.
@@ -2390,9 +2392,32 @@ sum_T det(P_TT - t I) = 1 - 12 t + 30 t^2 - 20 t^3,
 ```
 
 using `sum e3=1`, `sum e2=12`, and `sum e1=30` over the twenty triples.  At
-`t=1/9` the right-hand side is `7/729 > 0`, so the determinants cannot all be
-nonpositive.  Therefore some triple has `lambda_min > 1/9` in the core case.
+every `t < t_*` the right-hand side is positive, so the determinants cannot all
+be nonpositive.  Therefore some triple has `lambda_min > t` in the core case;
+letting `t` increase to `t_*` gives `F(P) >= t_*`.
 The exact constant check is recorded in `verify/v35_relaxed_one_ninth.py`.
+
+The same determinant-sum method cannot reach `1/8`: at `t=1/8`,
+`1 - 12t + 30t^2 - 20t^3 = -9/128`, and the trace-separation step also fails
+because `1/8 > 2/17`.
+
+For the next target `t=1/8`, deletion gives a useful reduced obstruction.  A
+counterexample must satisfy all of the following:
+
+```text
+3/8 < ell_i < 5/8                         for every row i,
+lambda_max(P_{ij,ij}) > 1/2                for every row pair {i,j},
+lambda_min(P_{ij,ij}) < 1/2                for every row pair {i,j},
+lambda_min(P_TT) <= 1/8 and lambda_max(P_TT) >= 7/8
+                                              for every triple T.
+```
+
+The first line is one-row deletion plus duality.  The pair lines come from
+deleting two rows and using the exact `(4,3)` case, again plus duality.  The
+triple line is the target and its complementary-dual form.  Pair-spectrum and
+complement-pair moment relaxations with these bounds remain feasible, so `1/8`
+needs compatibility constraints between the different principal blocks
+(projector/Plucker constraints), not just the global `e1,e2,e3` moments.
 
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
@@ -2411,6 +2436,7 @@ A matched small calibration was run against the same cascade/hybrid setup, all
 | `verify/out/v19_exact_cascade_500_min025.json` | `1/6` | `152` | `152` | `348` | `216` | `167` |
 | `verify/out/v19_relaxed_1over12_cascade_500.json` | `1/12` | `152` | `110` | `348` | `216` | `167` |
 | `verify/out/v19_relaxed_010_cascade_500.json` | `0.1` | `151` | `116` | `349` | `218` | `167` |
+| `verify/out/v19_relaxed_1over8_cascade_500.json` | `1/8` | `152` | `127` | `348` | `216` | `167` |
 
 At this granularity even the analytic `1/10` target is essentially no easier
 for the interval cover than the sharp target: the same inverse/enclosure

@@ -71,9 +71,10 @@ We also record the known volume-sampling relaxation
 which gives the concrete bound $F(P)\ge 1/10$ in the case $(6,3)$.
 For the first open case we prove a stronger relaxed theorem:
 \[
-  F(P)\ge \frac19,
+  F(P)\ge \frac{1-\sqrt{3/5}}2>\frac19,
 \]
-i.e. the GTZ bound with relaxation factor $\alpha=3/2$.
+i.e. the GTZ bound with relaxation factor
+$\alpha=1/(6F(P))\le 1/(3(1-\sqrt{3/5}))<3/2$.
 The remaining global problem is isolated precisely as the exclusion of critical
 points with value below $1/6$.
 \end{abstract}
@@ -120,7 +121,8 @@ as concrete as possible.
 inequality for $k=2$, implying the usual good-pair step in the core case.
 \item We record a standard volume-sampling corollary which gives the relaxed
 bound $F(P)\ge 1/10$ for all $P\in\Gr(3,6)$.
-\item We prove the stronger relaxed bound $F(P)\ge1/9$ in the case $(6,3)$.
+\item We prove the stronger relaxed bound
+$F(P)\ge(1-\sqrt{3/5})/2>1/9$ in the case $(6,3)$.
 The proof combines a leverage deletion using the known $(5,3)$ case with a
 shifted determinant-sum identity on the high-leverage core.
 \item We rederive the tight equality projectors in the weighted graphic-matroid
@@ -252,38 +254,41 @@ induction, one must still prove the core case, where every leverage is $>1/n$,
 at every intermediate size.
 \end{remark}
 
-\begin{theorem}[A relaxed \texorpdfstring{\(\alpha=3/2\)}{alpha=3/2} bound]\label{thm:one-ninth}
+\begin{theorem}[A relaxed determinant-sum bound]\label{thm:det-relaxed}
 For every $P\in\Gr(3,6)$,
 \[
-  F(P)=\max_{|T|=3}\lambda_{\min}(P_{TT})\ge \frac19.
+  F(P)=\max_{|T|=3}\lambda_{\min}(P_{TT})
+  \ge t_*:=\frac{1-\sqrt{3/5}}2.
 \]
 \end{theorem}
 
 \begin{proof}
 Write $P=AA^T$ with $A\in\St(6,3)$, and let $\ell_i=P_{ii}$.
+We first prove $F(P)>t$ for every rational $t<t_*$; the stated closed bound
+then follows by letting $t\uparrow t_*$.
 
-First suppose some leverage satisfies $\ell_i\le4/9$.  Repeat the deletion and
+First suppose some leverage satisfies $\ell_i\le1-5t$.  Repeat the deletion and
 column-rescaling argument from Lemma~\ref{lem:caseA}.  The resulting matrix
 lies in $\St(5,3)$.  The case $(5,3)$ is known by duality from the $k=2$
 theorem, so there are three rows of the rescaled matrix with squared least
 singular value at least $1/5$.  Scaling back to the original matrix gives
 \[
-  \sigma_{\min}(A_J)^2\ge \frac{1-\ell_i}{5}\ge \frac19.
+  \sigma_{\min}(A_J)^2\ge \frac{1-\ell_i}{5}\ge t.
 \]
 
-It remains to treat the high-leverage core, where $\ell_i>4/9$ for all $i$.
+It remains to treat the high-leverage core, where $\ell_i>1-5t$ for all $i$.
 Then every triple $T$ has
 \[
-  \tr(P_{TT})=\sum_{i\in T}\ell_i>\frac43.
+  \tr(P_{TT})=\sum_{i\in T}\ell_i>3(1-5t).
 \]
 Let the eigenvalues of $P_{TT}$ be
 $0\le\lambda_1\le\lambda_2\le\lambda_3\le1$.  If
-$\lambda_2\le1/9$, then
+$\lambda_2\le t$, then
 \[
-  \tr(P_{TT})\le 1+\frac19+\frac19=\frac{11}{9}<\frac43,
+  \tr(P_{TT})\le 1+2t<3(1-5t),
 \]
-a contradiction.  Hence $\lambda_2>1/9$ for every triple.  With $t=1/9$, this
-means
+a contradiction, because $t<t_*<2/17$.  Hence $\lambda_2>t$ for every triple.
+This means
 \[
   \lambda_{\min}(P_{TT})\le t
   \quad\Longleftrightarrow\quad
@@ -291,7 +296,7 @@ means
 \]
 throughout the high-leverage core.
 
-Assume for contradiction that every triple is bad at level $t=1/9$.  Then
+Assume for contradiction that every triple is bad at level $t$.  Then
 \[
   \det(P_{TT}-tI_3)\le0
   \qquad\text{for all } |T|=3.
@@ -313,13 +318,18 @@ Therefore
   \sum_{|T|=3}\det(P_{TT}-tI_3)
   =1-12t+30t^2-20t^3.
 \]
-At $t=1/9$ this is
+For $t<t_*=(1-\sqrt{3/5})/2$, the cubic on the right is positive.  Indeed the
+cubic has roots
 \[
-  1-\frac{12}{9}+\frac{30}{81}-\frac{20}{729}
-  =\frac7{729}>0,
+  \frac{1-\sqrt{3/5}}2,\qquad \frac12,\qquad
+  \frac{1+\sqrt{3/5}}2,
+\]
+and value $1$ at $t=0$.  Thus
+\[
+  \sum_{|T|=3}\det(P_{TT}-tI_3)>0,
 \]
 contradicting the nonpositivity of every summand.  Thus at least one triple has
-$\lambda_{\min}(P_{TT})>1/9$ in the high-leverage core, and the theorem follows.
+$\lambda_{\min}(P_{TT})>t$ in the high-leverage core, and the theorem follows.
 \end{proof}
 
 \section{A Perron-free Frobenius proof for the case \texorpdfstring{\(k=2\)}{k=2}}
@@ -1288,7 +1298,7 @@ The accompanying repository contains the following verification scripts in
 \texttt{v18\_kkt\_screen.py} & numerical active-set KKT screens\\
 \texttt{v20\_finiteness\_probe.py} & actual-active-set classifier for equality hits\\
 \texttt{v21\_semialgebraic\_route.py} & semialgebraic obstruction sizing\\
-\texttt{v35\_relaxed\_one\_ninth.py} & exact constants in the \(F(P)\ge1/9\) proof
+\texttt{v35\_relaxed\_one\_ninth.py} & exact constants in the determinant relaxed proof
 \end{tabular}
 \end{center}
 The CAD cascade in Section~\ref{sec:cad-cascade} is supported by the following

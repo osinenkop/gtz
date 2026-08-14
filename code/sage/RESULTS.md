@@ -2580,6 +2580,16 @@ target `t=16/125`, it gives
 where the known seventh extremal enters the reduced obstruction.  This is now
 an exact description of the ansatz boundary, not a global proof.
 
+The active-pattern quotient in `verify/v42_relaxed_active_patterns.py` makes the
+next KKT target more concrete.  For the dedicated `16/125` sweep, all 21 stored
+top candidates lie in a single row-permutation orbit with 24 active triple
+constraints and best slack `0.040706800675`.  In the mixed sweeps near `1/8`,
+the same 24-active orbit is the best orbit for `1/8`, `0.127`, `0.1275`,
+`0.128`, and `0.1284`; a 26-active orbit is consistently the next local
+minimum.  At `9/70` and above, the 26-active seventh-extremal boundary becomes
+the best orbit.  Thus an exact KKT attack should first target the 24-active
+orbit, not the full family of relaxed obstruction inequalities.
+
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
 and `min_radius=0.25`, the center-high runs gave:

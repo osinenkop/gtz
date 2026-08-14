@@ -1,0 +1,82 @@
+{
+ "case": "s8_79656",
+ "characteristic": 32003,
+ "q_value": null,
+ "timeout_seconds": 900,
+ "singular_bin": "/usr/bin/Singular",
+ "methods": {
+  "slimgb": {
+   "case": "s8_79656",
+   "characteristic": 32003,
+   "order": "degrevlex",
+   "method": "slimgb",
+   "q_value": null,
+   "variables": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "y",
+    "e",
+    "q"
+   ],
+   "labels": [
+    "active:0:012",
+    "active:1:013",
+    "active:2:014",
+    "active:6:025",
+    "active:14:135",
+    "active:16:234",
+    "active:18:245",
+    "active:19:345",
+    "tie:10:123",
+    "tie:11:124",
+    "tie:15:145",
+    "ansatz:-d*x + c*y - 1"
+   ],
+   "extra_equalities": [],
+   "target_polynomials": [],
+   "n_equations": 12,
+   "degrees": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    10,
+    10,
+    10,
+    2
+   ],
+   "script": "code/sage/out/plucker_full_singular_s8_79656_p32003_smoke_slimgb.sing",
+   "basis_path": null,
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 57.546601759968325,
+   "stdout": "method\nslimgb\ncase\ns8_79656\nnvars\n8\nneqs\n12\nbase_neqs\n12\nextra_neqs\n0\nmax_degree\n10\ncharacteristic\n32003\nq_value\nunfixed\n//used time: 57.33 sec\nbasis_size\n1901\ndimension\n0\nvdim\n2832\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 2832\ntimer\n58\n",
+   "stderr": "",
+   "had_error": false,
+   "parsed": {
+    "method": "slimgb",
+    "case": "s8_79656",
+    "nvars": 8,
+    "neqs": 12,
+    "base_neqs": 12,
+    "extra_neqs": 0,
+    "max_degree": 10,
+    "characteristic": 32003,
+    "q_value": "unfixed",
+    "basis_size": 1901,
+    "dimension": 0,
+    "vdim": 2832,
+    "degree": "// dimension (affine) = 0",
+    "degree_value": 2832,
+    "timer": 58
+   }
+  }
+ }
+}

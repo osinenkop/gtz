@@ -2282,6 +2282,27 @@ q-fibers in the recorded q-eliminant data; the next exact targets would have to
 come from non-rational algebraic q-factors or from a different structural
 coordinate.
 
+The same Singular-backed helper was also extended to run without fixing `q`.
+As a smoke check, the full reduced Plucker ansatz over `F_32003` reproduces the
+known dimension-`0`, degree-`2832`, basis-size-`1901` quotient in about one
+minute:
+
+```text
+code/sage/out/plucker_full_singular_s8_79656_p32003_smoke.json
+```
+
+The analogous exact `QQ` monolithic run was tried with the same modular backend
+and a `3600` second timeout:
+
+```text
+code/sage/out/plucker_full_singular_s8_79656_QQ_probe.json
+```
+
+It timed out without producing a Groebner basis.  Thus fixed rational fibers are
+now easy to certify exactly, but the full degree-`2832` quotient still needs
+pre-decomposition, modular reconstruction, or a different structural coordinate
+before attempting characteristic-zero certification.
+
 ## Relaxed interval bound calibration
 
 Lowering the target threshold did not close the interval branch-and-bound

@@ -31,7 +31,9 @@ def singular_poly(poly) -> str:
     return f"({poly})"
 
 
-def parse_q_value(text: str):
+def parse_q_value(text: str | None):
+    if text is None:
+        return None
     return QQ(text)
 
 
@@ -98,8 +100,11 @@ def write_script(
 ) -> dict:
     ring, _z, _det_gram, polys, labels = build_system(case_name, characteristic, order)
     q = ring("q")
-    equations = list(polys) + [q - ring.base_ring()(q_value)]
-    equation_labels = list(labels) + [f"q:{q - ring.base_ring()(q_value)}"]
+    equations = list(polys)
+    equation_labels = list(labels)
+    if q_value is not None:
+        equations.append(q - ring.base_ring()(q_value))
+        equation_labels.append(f"q:{q - ring.base_ring()(q_value)}")
     equation_texts = [str(poly) for poly in equations] + list(extra_equalities)
     variables = tuple(str(name) for name in ring.variable_names())
     varlist = ",".join(variables)
@@ -108,7 +113,7 @@ def write_script(
         f"// method: {method}",
         f"// case: {case_name}",
         f"// characteristic: {characteristic}",
-        f"// q_value: {q_value}",
+        f"// q_value: {q_value if q_value is not None else 'unfixed'}",
         "timer = 1;",
         f"ring r = {characteristic},({varlist}),({singular_order(order)});",
         "",
@@ -136,7 +141,7 @@ def write_script(
             f"{singular_string('characteristic')};",
             f"{characteristic};",
             f"{singular_string('q_value')};",
-            f"{singular_string(str(q_value))};",
+            f"{singular_string(str(q_value) if q_value is not None else 'unfixed')};",
             "option(redSB);",
         ]
     )
@@ -201,7 +206,7 @@ def write_script(
         "characteristic": characteristic,
         "order": order,
         "method": method,
-        "q_value": str(q_value),
+        "q_value": str(q_value) if q_value is not None else None,
         "variables": list(variables),
         "labels": equation_labels,
         "extra_equalities": list(extra_equalities),
@@ -307,6 +312,7 @@ def main() -> int:
     parser.add_argument("--case", choices=sorted(CASES), default="s8_79656")
     parser.add_argument("--characteristic", type=int, default=0)
     parser.add_argument("--q-value", default="5")
+    parser.add_argument("--no-fix-q", action="store_true")
     parser.add_argument("--order", default="degrevlex")
     parser.add_argument("--methods", default="modslimgb")
     parser.add_argument("--extra-equalities", default="", help="semicolon-separated extra equations")
@@ -318,7 +324,7 @@ def main() -> int:
     parser.add_argument("--out-prefix", default="code/sage/out/plucker_q_value_singular")
     args = parser.parse_args()
 
-    q_value = parse_q_value(args.q_value)
+    q_value = None if args.no_fix_q else parse_q_value(args.q_value)
     extra_equalities = parse_extra_equalities(args.extra_equalities)
     targets = list(parse_target_polynomials(args.target_polynomials))
     if args.relations_json:
@@ -329,7 +335,7 @@ def main() -> int:
     results = {
         "case": args.case,
         "characteristic": args.characteristic,
-        "q_value": str(q_value),
+        "q_value": str(q_value) if q_value is not None else None,
         "timeout_seconds": args.timeout,
         "singular_bin": args.singular_bin,
         "methods": {},

@@ -39,6 +39,28 @@ def parse_prime(path: Path, data: dict) -> int:
     return int(match.group(1))
 
 
+def parse_int_list(text: str) -> tuple[int, ...]:
+    values = []
+    for part in text.split(","):
+        part = part.strip()
+        if part:
+            values.append(int(part))
+    return tuple(values)
+
+
+def monic_linear_root_mod_prime(poly_text: str, prime: int) -> int | None:
+    poly = poly_text.replace(" ", "")
+    if poly == "q":
+        return 0
+    match = re.fullmatch(r"q\+([0-9]+)", poly)
+    if match:
+        return (-int(match.group(1))) % prime
+    match = re.fullmatch(r"q-([0-9]+)", poly)
+    if match:
+        return int(match.group(1)) % prime
+    return None
+
+
 def center_coeff(value: int, modulus: int) -> int:
     value %= modulus
     if value > modulus // 2:
@@ -70,19 +92,37 @@ def score_centered_coeffs(coeffs: tuple[int, ...]) -> tuple[int, int]:
     return max(abs(c) for c in coeffs), sum(abs(c) for c in coeffs)
 
 
-def read_expanded_factors(path: Path, variable: str):
+def read_expanded_factors(path: Path, variable: str, excluded_roots: tuple[int, ...]):
     data = json.loads(path.read_text())
     prime = parse_prime(path, data)
     ring = PolynomialRing(GF(prime), variable)
+    excluded = {root % prime for root in excluded_roots}
     entries = []
-    for item in data["factors"]:
+    removed = []
+    for index, item in enumerate(data["factors"]):
         poly = ring(str(item["polynomial"]).replace("^", "**"))
         lead = poly.leading_coefficient()
         if lead != 1:
             poly = poly / lead
+        root = (
+            monic_linear_root_mod_prime(str(item["polynomial"]), prime)
+            if int(item["degree"]) == 1
+            else None
+        )
+        if root is not None and root in excluded:
+            removed.append(
+                {
+                    "index": index,
+                    "root": int(root),
+                    "degree": int(item["degree"]),
+                    "multiplicity": int(item["multiplicity"]),
+                    "polynomial": item["polynomial"],
+                }
+            )
+            continue
         for _ in range(int(item["multiplicity"])):
             entries.append((int(item["degree"]), poly))
-    return prime, ring, entries
+    return prime, ring, entries, removed
 
 
 def coeff_tuple(poly, q, degree: int) -> tuple[int, ...]:
@@ -92,8 +132,14 @@ def coeff_tuple(poly, q, degree: int) -> tuple[int, ...]:
     return tuple(int(poly.monomial_coefficient(q**i)) for i in range(degree + 1))
 
 
-def enumerate_products(path: Path, target_degree: int, variable: str, max_candidates: int):
-    prime, ring, entries = read_expanded_factors(path, variable)
+def enumerate_products(
+    path: Path,
+    target_degree: int,
+    variable: str,
+    max_candidates: int,
+    excluded_roots: tuple[int, ...],
+):
+    prime, ring, entries, removed = read_expanded_factors(path, variable, excluded_roots)
     q = ring.gen()
     entries = tuple(entries)
     suffix = [0] * (len(entries) + 1)
@@ -125,7 +171,7 @@ def enumerate_products(path: Path, target_degree: int, variable: str, max_candid
         rec(pos + 1, remaining, chosen, product)
 
     rec(0, target_degree, [], ring.one())
-    return prime, out, len(entries)
+    return prime, out, len(entries), removed
 
 
 def main() -> int:
@@ -134,18 +180,22 @@ def main() -> int:
     parser.add_argument("--variable", default="q")
     parser.add_argument("--beam", type=int, default=200)
     parser.add_argument("--max-candidates-per-prime", type=int, default=20000)
+    parser.add_argument("--exclude-rational-roots", default="")
+    parser.add_argument("--sort-by-candidate-count", action="store_true")
     parser.add_argument("--out", required=True)
     parser.add_argument("factor_jsons", nargs="+")
     args = parser.parse_args()
 
     per_prime = []
+    excluded_roots = parse_int_list(args.exclude_rational_roots)
     for factor_json in args.factor_jsons:
         path = Path(factor_json)
-        prime, candidates, expanded_count = enumerate_products(
+        prime, candidates, expanded_count, removed = enumerate_products(
             path,
             args.degree,
             args.variable,
             args.max_candidates_per_prime,
+            excluded_roots,
         )
         if not candidates:
             raise SystemExit(f"no degree-{args.degree} products in {path}")
@@ -154,6 +204,7 @@ def main() -> int:
                 "path": str(path),
                 "prime": prime,
                 "expanded_factor_count": expanded_count,
+                "removed": removed,
                 "candidate_count": len(candidates),
                 "candidates": candidates,
             }
@@ -163,6 +214,8 @@ def main() -> int:
             f"degree-{args.degree} candidates={len(candidates)}",
             flush=True,
         )
+    if args.sort_by_candidate_count:
+        per_prime.sort(key=lambda record: (record["candidate_count"], record["prime"]))
 
     first = per_prime[0]
     states = []
@@ -216,11 +269,14 @@ def main() -> int:
         "degree": args.degree,
         "beam": args.beam,
         "max_candidates_per_prime": args.max_candidates_per_prime,
+        "excluded_rational_roots": list(excluded_roots),
+        "sort_by_candidate_count": bool(args.sort_by_candidate_count),
         "inputs": [
             {
                 "path": record["path"],
                 "prime": record["prime"],
                 "expanded_factor_count": record["expanded_factor_count"],
+                "removed": record["removed"],
                 "candidate_count": record["candidate_count"],
             }
             for record in per_prime

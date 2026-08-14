@@ -2282,6 +2282,42 @@ q-fibers in the recorded q-eliminant data; the next exact targets would have to
 come from non-rational algebraic q-factors or from a different structural
 coordinate.
 
+A first non-rational q-factor screen was then run after removing the exact
+`q=1` and `q=5` branches from every modular factorization:
+
+```text
+code/sage/screen_q_factor_targets.py
+code/sage/out/qfactor_target_screen_s8_79656_exclude_q1_q5_D120.json
+```
+
+For target degrees `2,3,4,5`, the maximum number of modular factor-products per
+prime is still manageable:
+
+| Degree | Min products at a prime | Max products at a prime | Sum over 37 primes |
+| ---: | ---: | ---: | ---: |
+| `2` | `6` | `155` | `1616` |
+| `3` | `10` | `853` | `6095` |
+| `4` | `16` | `3386` | `18383` |
+| `5` | `22` | `10391` | `46749` |
+
+The factor-product CRT recovery was rerun with `q=1,5` excluded:
+
+```text
+code/sage/out/recover_s8_79656_qfactor_deg2_exclude_q1_q5_37primes_beam1000.json
+code/sage/out/recover_s8_79656_qfactor_deg3_exclude_q1_q5_37primes_beam1000.json
+code/sage/out/recover_s8_79656_qfactor_deg4_exclude_q1_q5_37primes_beam1000_sorted.json
+code/sage/out/recover_s8_79656_qfactor_deg5_exclude_q1_q5_37primes_beam500_sorted.json
+```
+
+All four are negative in the same sense as the earlier degree-`43`/`44` tests:
+the best centered coefficient sizes at 37 primes are `10^165.587`, `10^165.827`,
+`10^165.437`, and `10^165.805`, respectively, i.e. they track the CRT modulus
+instead of stabilizing.  Thus, after removing the two rational nuisance fibers,
+there is no evidence for an exact non-rational q-factor of degree `2` through
+`5`.  Degree `6` and above rapidly becomes a high-multiplicity product search,
+so the next step should not be blind degree-by-degree q-factor CRT unless a new
+component invariant narrows the candidates.
+
 The same Singular-backed helper was also extended to run without fixing `q`.
 As a smoke check, the full reduced Plucker ansatz over `F_32003` reproduces the
 known dimension-`0`, degree-`2832`, basis-size-`1901` quotient in about one

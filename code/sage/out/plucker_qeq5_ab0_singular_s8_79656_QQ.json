@@ -1,0 +1,101 @@
+{
+ "case": "s8_79656",
+ "characteristic": 0,
+ "q_value": "5",
+ "timeout_seconds": 1800,
+ "singular_bin": "/usr/bin/Singular",
+ "methods": {
+  "modslimgb": {
+   "case": "s8_79656",
+   "characteristic": 0,
+   "order": "degrevlex",
+   "method": "modslimgb",
+   "q_value": "5",
+   "variables": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "y",
+    "e",
+    "q"
+   ],
+   "labels": [
+    "active:0:012",
+    "active:1:013",
+    "active:2:014",
+    "active:6:025",
+    "active:14:135",
+    "active:16:234",
+    "active:18:245",
+    "active:19:345",
+    "tie:10:123",
+    "tie:11:124",
+    "tie:15:145",
+    "ansatz:-d*x + c*y - 1",
+    "q:q - 5"
+   ],
+   "extra_equalities": [
+    "a",
+    "b"
+   ],
+   "target_polynomials": [
+    {
+     "name": "target_0",
+     "polynomial": "e^2 + 1"
+    }
+   ],
+   "n_equations": 15,
+   "degrees": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    10,
+    10,
+    10,
+    2,
+    1,
+    1,
+    1
+   ],
+   "script": "code/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ_modslimgb.sing",
+   "basis_path": "code/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ_modslimgb_basis.txt",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 0.08729138993658125,
+   "stdout": "method\nmodslimgb\ncase\ns8_79656\nnvars\n8\nneqs\n15\nbase_neqs\n13\nextra_neqs\n2\nmax_degree\n10\ncharacteristic\n0\nq_value\n5\nbasis_size\n14\ndimension\n0\nvdim\n16\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 16\nbasis_path\ncode/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ_modslimgb_basis.txt\ntarget_0_name\ntarget_0\ntarget_0_polynomial\ne^2 + 1\ntarget_0_is_zero\n1\ntarget_0_terms\n0\ntarget_0_degree\n-1\ntarget_0_normal_form\n0\ntimer\n0\n",
+   "stderr": "",
+   "had_error": false,
+   "parsed": {
+    "method": "modslimgb",
+    "case": "s8_79656",
+    "nvars": 8,
+    "neqs": 15,
+    "base_neqs": 13,
+    "extra_neqs": 2,
+    "max_degree": 10,
+    "characteristic": 0,
+    "q_value": 5,
+    "basis_size": 14,
+    "dimension": 0,
+    "vdim": 16,
+    "degree": "// dimension (affine) = 0",
+    "degree_value": 16,
+    "basis_path": "code/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ_modslimgb_basis.txt",
+    "target_0_name": "target_0",
+    "target_0_polynomial": "e^2 + 1",
+    "target_0_is_zero": 1,
+    "target_0_terms": 0,
+    "target_0_degree": -1,
+    "target_0_normal_form": 0,
+    "timer": 0
+   }
+  }
+ }
+}

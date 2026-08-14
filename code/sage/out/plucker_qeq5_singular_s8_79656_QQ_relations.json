@@ -1,0 +1,166 @@
+{
+ "case": "s8_79656",
+ "characteristic": 0,
+ "q_value": "5",
+ "timeout_seconds": 1800,
+ "singular_bin": "/usr/bin/Singular",
+ "methods": {
+  "modslimgb": {
+   "case": "s8_79656",
+   "characteristic": 0,
+   "order": "degrevlex",
+   "method": "modslimgb",
+   "q_value": "5",
+   "variables": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "x",
+    "y",
+    "e",
+    "q"
+   ],
+   "labels": [
+    "active:0:012",
+    "active:1:013",
+    "active:2:014",
+    "active:6:025",
+    "active:14:135",
+    "active:16:234",
+    "active:18:245",
+    "active:19:345",
+    "tie:10:123",
+    "tie:11:124",
+    "tie:15:145",
+    "ansatz:-d*x + c*y - 1",
+    "q:q - 5"
+   ],
+   "extra_equalities": [],
+   "target_polynomials": [
+    {
+     "name": "a_eliminant",
+     "polynomial": "a^6 + 1/4*a^2"
+    },
+    {
+     "name": "b_eliminant",
+     "polynomial": "b^6 + 1/100*b^2"
+    },
+    {
+     "name": "c_eliminant",
+     "polynomial": "c^6 - 17/2*c^4 + 285/16*c^2 - 25/16"
+    },
+    {
+     "name": "d_eliminant",
+     "polynomial": "d^6 - 5/2*d^4 - 51/16*d^2 + 5/16"
+    },
+    {
+     "name": "e_eliminant",
+     "polynomial": "e^4 + 4/5*e^2 - 1/5"
+    },
+    {
+     "name": "q_eliminant",
+     "polynomial": "q - 5"
+    },
+    {
+     "name": "x_eliminant",
+     "polynomial": "x^8 - 17/10*x^6 + 69/80*x^4 - 17/40*x^2 + 49/320"
+    },
+    {
+     "name": "y_eliminant",
+     "polynomial": "y^8 - 17/10*y^6 + 249/400*y^4 - 17/1000*y^2 + 49/8000"
+    }
+   ],
+   "n_equations": 13,
+   "degrees": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    10,
+    10,
+    10,
+    2,
+    1
+   ],
+   "script": "code/sage/out/plucker_qeq5_singular_s8_79656_QQ_relations_modslimgb.sing",
+   "basis_path": "code/sage/out/plucker_qeq5_singular_s8_79656_QQ_relations_modslimgb_basis.txt",
+   "timed_out": false,
+   "exit_code": 0,
+   "elapsed_seconds": 10.742848949041218,
+   "stdout": "method\nmodslimgb\ncase\ns8_79656\nnvars\n8\nneqs\n13\nbase_neqs\n13\nextra_neqs\n0\nmax_degree\n10\ncharacteristic\n0\nq_value\n5\n//used time: 5.47 sec\n//used time: 5.47 sec\n//used time: 5.89 sec\n//used time: 5.89 sec\n//used time: 5.96 sec\n//used time: 5.96 sec\n//used time: 6.11 sec\n//used time: 6.12 sec\n//used time: 6.36 sec\n//used time: 6.36 sec\n//used time: 6.61 sec\n//used time: 6.62 sec\n//used time: 6.94 sec\n//used time: 6.94 sec\n//used time: 7.01 sec\n//used time: 7.02 sec\n//used time: 7.19 sec\n//used time: 7.19 sec\n//used time: 7.12 sec\n//used time: 7.12 sec\n//used time: 7.52 sec\n//used time: 7.53 sec\n//used time: 7.64 sec\n//used time: 7.63 sec\n//used time: 7.61 sec\n//used time: 7.62 sec\n//used time: 7.77 sec\n//used time: 7.76 sec\n//used time: 7.65 sec\n//used time: 7.66 sec\n//used time: 7.78 sec\n//used time: 7.78 sec\n//used time: 7.85 sec\n//used time: 7.86 sec\n//used time: 8.28 sec\n//used time: 8.28 sec\n//used time: 8.49 sec\n//used time: 8.49 sec\n//used time: 135.32 sec\n//used time: 2.09 sec\nbasis_size\n29\ndimension\n0\nvdim\n64\ndegree\n// dimension (affine) = 0\n// degree (affine)  = 64\nbasis_path\ncode/sage/out/plucker_qeq5_singular_s8_79656_QQ_relations_modslimgb_basis.txt\ntarget_0_name\na_eliminant\ntarget_0_polynomial\na^6 + 1/4*a^2\ntarget_0_is_zero\n1\ntarget_0_terms\n0\ntarget_0_degree\n-1\ntarget_0_normal_form\n0\ntarget_1_name\nb_eliminant\ntarget_1_polynomial\nb^6 + 1/100*b^2\ntarget_1_is_zero\n1\ntarget_1_terms\n0\ntarget_1_degree\n-1\ntarget_1_normal_form\n0\ntarget_2_name\nc_eliminant\ntarget_2_polynomial\nc^6 - 17/2*c^4 + 285/16*c^2 - 25/16\ntarget_2_is_zero\n1\ntarget_2_terms\n0\ntarget_2_degree\n-1\ntarget_2_normal_form\n0\ntarget_3_name\nd_eliminant\ntarget_3_polynomial\nd^6 - 5/2*d^4 - 51/16*d^2 + 5/16\ntarget_3_is_zero\n1\ntarget_3_terms\n0\ntarget_3_degree\n-1\ntarget_3_normal_form\n0\ntarget_4_name\ne_eliminant\ntarget_4_polynomial\ne^4 + 4/5*e^2 - 1/5\ntarget_4_is_zero\n1\ntarget_4_terms\n0\ntarget_4_degree\n-1\ntarget_4_normal_form\n0\ntarget_5_name\nq_eliminant\ntarget_5_polynomial\nq - 5\ntarget_5_is_zero\n1\ntarget_5_terms\n0\ntarget_5_degree\n-1\ntarget_5_normal_form\n0\ntarget_6_name\nx_eliminant\ntarget_6_polynomial\nx^8 - 17/10*x^6 + 69/80*x^4 - 17/40*x^2 + 49/320\ntarget_6_is_zero\n1\ntarget_6_terms\n0\ntarget_6_degree\n-1\ntarget_6_normal_form\n0\ntarget_7_name\ny_eliminant\ntarget_7_polynomial\ny^8 - 17/10*y^6 + 249/400*y^4 - 17/1000*y^2 + 49/8000\ntarget_7_is_zero\n1\ntarget_7_terms\n0\ntarget_7_degree\n-1\ntarget_7_normal_form\n0\ntimer\n138\n",
+   "stderr": "",
+   "had_error": false,
+   "parsed": {
+    "method": "modslimgb",
+    "case": "s8_79656",
+    "nvars": 8,
+    "neqs": 13,
+    "base_neqs": 13,
+    "extra_neqs": 0,
+    "max_degree": 10,
+    "characteristic": 0,
+    "q_value": 5,
+    "basis_size": 29,
+    "dimension": 0,
+    "vdim": 64,
+    "degree": "// dimension (affine) = 0",
+    "degree_value": 64,
+    "basis_path": "code/sage/out/plucker_qeq5_singular_s8_79656_QQ_relations_modslimgb_basis.txt",
+    "target_0_name": "a_eliminant",
+    "target_0_polynomial": "a^6 + 1/4*a^2",
+    "target_0_is_zero": 1,
+    "target_0_terms": 0,
+    "target_0_degree": -1,
+    "target_0_normal_form": 0,
+    "target_1_name": "b_eliminant",
+    "target_1_polynomial": "b^6 + 1/100*b^2",
+    "target_1_is_zero": 1,
+    "target_1_terms": 0,
+    "target_1_degree": -1,
+    "target_1_normal_form": 0,
+    "target_2_name": "c_eliminant",
+    "target_2_polynomial": "c^6 - 17/2*c^4 + 285/16*c^2 - 25/16",
+    "target_2_is_zero": 1,
+    "target_2_terms": 0,
+    "target_2_degree": -1,
+    "target_2_normal_form": 0,
+    "target_3_name": "d_eliminant",
+    "target_3_polynomial": "d^6 - 5/2*d^4 - 51/16*d^2 + 5/16",
+    "target_3_is_zero": 1,
+    "target_3_terms": 0,
+    "target_3_degree": -1,
+    "target_3_normal_form": 0,
+    "target_4_name": "e_eliminant",
+    "target_4_polynomial": "e^4 + 4/5*e^2 - 1/5",
+    "target_4_is_zero": 1,
+    "target_4_terms": 0,
+    "target_4_degree": -1,
+    "target_4_normal_form": 0,
+    "target_5_name": "q_eliminant",
+    "target_5_polynomial": "q - 5",
+    "target_5_is_zero": 1,
+    "target_5_terms": 0,
+    "target_5_degree": -1,
+    "target_5_normal_form": 0,
+    "target_6_name": "x_eliminant",
+    "target_6_polynomial": "x^8 - 17/10*x^6 + 69/80*x^4 - 17/40*x^2 + 49/320",
+    "target_6_is_zero": 1,
+    "target_6_terms": 0,
+    "target_6_degree": -1,
+    "target_6_normal_form": 0,
+    "target_7_name": "y_eliminant",
+    "target_7_polynomial": "y^8 - 17/10*y^6 + 249/400*y^4 - 17/1000*y^2 + 49/8000",
+    "target_7_is_zero": 1,
+    "target_7_terms": 0,
+    "target_7_degree": -1,
+    "target_7_normal_form": 0,
+    "timer": 138
+   }
+  }
+ }
+}

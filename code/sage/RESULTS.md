@@ -2230,16 +2230,41 @@ appropriate finite-field extensions; the `a,x` and `b,y` eliminants split into
 sign/factor choices.  This is a substantially better target for exact
 decomposition than the full degree-`48` support product.
 
-An exact `QQ` Groebner probe with `q=5` imposed was started via
+The exact `QQ` Groebner check is now completed via the Singular-backed helper
 
 ```text
-code/sage/probe_plucker_q_value_component.py
+code/sage/probe_plucker_q_value_singular.py
 ```
 
-but was stopped after it remained in the Groebner step for about fifteen
-minutes.  The present certificate status is therefore modular plus successful
-six-prime rational reconstruction of the coordinate eliminants; exact rational
-ideal verification is still pending.
+using Singular's modular rational backend `modGB("slimgb", ...)`.  The full
+`q=5` fiber over `QQ` has dimension `0`, degree `64`, and Groebner basis size
+`29`.  The run also reduces all eight reconstructed coordinate eliminants above
+to zero in the exact quotient:
+
+```text
+code/sage/out/plucker_qeq5_singular_s8_79656_QQ_relations.json
+```
+
+This turns the `q=5` observation from modular evidence into an exact rational
+certificate for this ansatz fiber.
+
+There is also a short real-exclusion certificate.  Over `R`, the exact
+eliminants
+
+```text
+a^2*(a^4 + 1/4) = 0,   b^2*(b^4 + 1/100) = 0
+```
+
+force `a=b=0`.  Adding `a=b=0` to the exact `q=5` fiber gives a
+zero-dimensional degree-`16` quotient, and the exact normal-form check reduces
+`e^2+1` to zero:
+
+```text
+code/sage/out/plucker_qeq5_ab0_singular_s8_79656_QQ.json
+```
+
+Hence the `q=5` fiber has no real points in the reduced Plucker ansatz.  It is
+a rigorously removable nuisance branch, not a source of real extremizers.
 
 ## Relaxed interval bound calibration
 

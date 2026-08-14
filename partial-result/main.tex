@@ -1279,7 +1279,38 @@ A relaxed bound $F(P)\ge 1/6-\varepsilon$ is also a useful intermediate target,
 but only as part of a gap-closing strategy.  By itself it would not imply the
 sharp hypothesis.  What it can do is separate the problem into a certified
 compact region with a margin gap and a small near-threshold region that must be
-handled by the exact equality and KKT machinery above.
+handled by the exact equality and KKT machinery above.  In particular, the
+deletion reduction for a target \(t<1/6\) leaves only the closed obstruction
+\[
+  1-5t\le P_{ii}\le 5t,\qquad
+  \lambda_{\min}(P_{\{i,j\},\{i,j\}})\le4t,\qquad
+  \lambda_{\max}(P_{\{i,j\},\{i,j\}})\ge1-4t,
+\]
+together with
+\[
+  \lambda_{\min}(P_{TT})\le t,\qquad
+  \lambda_{\max}(P_{TT})\ge1-t
+  \quad (|T|=3).
+\]
+Numerical minimax probes of this reduced obstruction have positive slack at
+\(t=1/8\) and slightly above it.  The recurring boundary ansatz can be checked
+exactly after putting \(\ell=1-5t\): its active determinant equations force
+\[
+  (2q-1)\bigl(3q^2-(3-\ell)q+\ell\bigr)=0,
+\]
+so the lower branch is
+\[
+  q(t)=\frac{2+5t-\sqrt{25t^2+80t-8}}6 .
+\]
+Thus \(q(1/8)=(7-\sqrt{17})/16\), and for the stronger rational target
+\(t=16/125\) one gets
+\[
+  q(t)=\frac{11-\sqrt{46}}{25}> \frac16 > \frac{16}{125}.
+\]
+At \(t=9/70\) this branch reaches \(q=1/6\), exactly where the known seventh
+equality point satisfies the reduced leverage bounds.  This identifies a
+concrete next certificate target: prove the reduced obstruction empty, first at
+\(t=1/8\) and then, if the same machinery survives, at \(t=16/125\).
 
 \section{Reproducibility}\label{sec:repro}
 
@@ -1299,7 +1330,7 @@ The accompanying repository contains the following verification scripts in
 \texttt{v20\_finiteness\_probe.py} & actual-active-set classifier for equality hits\\
 \texttt{v21\_semialgebraic\_route.py} & semialgebraic obstruction sizing\\
 \texttt{v35\_relaxed\_one\_ninth.py} & exact constants in the determinant relaxed proof\\
-\texttt{v36--v40} & reduced relaxed-bound obstruction probes
+\texttt{v36--v41} & reduced relaxed-bound obstruction probes
 \end{tabular}
 \end{center}
 The CAD cascade in Section~\ref{sec:cad-cascade} is supported by the following

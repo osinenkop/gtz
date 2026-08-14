@@ -2522,6 +2522,7 @@ closed core/pair region.  Compact runs give:
 | `verify/out/v40_relaxed_target_sweep_transition.json` | `0.127` | `0.045332084117` | `0.172332084117` | same lower-boundary family |
 | `verify/out/v40_relaxed_target_sweep_transition.json` | `0.1275` | `0.043010529782` | `0.170510529782` | same lower-boundary family |
 | `verify/out/v40_relaxed_target_sweep_transition.json` | `0.128` | `0.040706800675` | `0.168706800675` | same lower-boundary family |
+| `verify/out/v40_relaxed_target_sweep_16over125.json` | `16/125` | `0.040706800675` | `0.168706800675` | dedicated 84-start check |
 | `verify/out/v40_relaxed_target_sweep_transition.json` | `0.1284` | `0.038876359222` | `0.167276359222` | same lower-boundary family |
 | `verify/out/v40_relaxed_target_sweep_near_1over8.json` | `9/70` | `4/105` | `1/6` | known seventh-extremal boundary |
 | `verify/out/v40_relaxed_target_sweep_near_1over8.json` | `0.13` | `0.036666666667` | `1/6` | known seventh-extremal boundary |
@@ -2534,6 +2535,50 @@ point, proving the reduced obstruction empty is essentially back to separating
 from the sharp equality set.  The best near-term target remains a rigorous
 `1/8` certificate; a slightly stronger rational target such as `0.128 = 16/125`
 is plausible only after the `1/8` certificate machinery is in place.
+
+The lower boundary pattern from the `1/8` run is not a numerical accident.  The
+parametric exact checker `verify/v41_relaxed_parametric_ansatz.py` sets
+`l = 1 - 5t`, `u = 5t`, and verifies over `QQ(l)` that the structured ansatz
+
+```text
+[  u  -x  -l  -y  -z  -z ]
+[ -x   a  -x   w   y   y ]
+[ -l  -x   u  -y  -z  -z ]
+[ -y   w  -y 1-a -x  -x ]
+[ -z   y  -z  -x   l   l ]
+[ -z   y  -z  -x   l   l ]
+```
+
+is idempotent exactly when
+
+```text
+2*l^2 - l + x^2 + y^2 + 2*z^2 = 0,
+-a*x + 2*l*x - w*y - 2*y*z = 0,
+a*y + 2*l*y - w*x + 2*x*z - y = 0,
+a^2 - a + w^2 + 2*x^2 + 2*y^2 = 0.
+```
+
+Adding the active determinant equations
+`det(P_013 - qI)=0`, `det(P_014 - qI)=0`, and
+`det(P_014 - (1-q)I)=0` forces the exact q-only factor
+
+```text
+(2*q - 1)*(l*q + l + 3*q^2 - 3*q).
+```
+
+Equivalently, with `l=1-5t`,
+
+```text
+3*q^2 - (2 + 5*t)*q + (1 - 5*t) = 0,
+q_lower(t) = (2 + 5*t - sqrt(25*t^2 + 80*t - 8))/6.
+```
+
+This recovers `q=(7-sqrt(17))/16` at `t=1/8`.  At the stronger rational
+target `t=16/125`, it gives
+`q=(11-sqrt(46))/25 = 0.168706800674...`, still above both `16/125` and
+`1/6`.  At `t=9/70`, the lower branch reaches `q=1/6`, matching the transition
+where the known seventh extremal enters the reduced obstruction.  This is now
+an exact description of the ansatz boundary, not a global proof.
 
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,

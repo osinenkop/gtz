@@ -2419,6 +2419,89 @@ complement-pair moment relaxations with these bounds remain feasible, so `1/8`
 needs compatibility constraints between the different principal blocks
 (projector/Plucker constraints), not just the global `e1,e2,e3` moments.
 
+A new set of numerical probes now makes this target much more concrete.
+`verify/v36_relaxed_1over8_obstruction.py` minimizes the maximum violation of
+the closed reduced obstruction above over actual rank-three projectors.  On a
+run with 60 random starts and 20 conference-matrix starts,
+
+```text
+verify/out/v36_relaxed_1over8_obstruction_80.json
+```
+
+the best point has maximum violation `0.0416946719` and lands at the known
+out-of-family extremal with leverage pattern close to `(5/14)^3,(9/14)^3`.
+Evaluating the certified seventh extremal directly gives the exact value
+`1/24`; the TTSP extremals violate the leverage core more strongly, by `7/72`.
+Thus the nearest obvious obstruction is still sharp-threshold geometry, not a
+plausible `1/8` counterexample.
+
+To remove that distraction, `verify/v37_relaxed_1over8_core_probe.py` enforces
+the leverage core and pair-straddling constraints by a large quadratic penalty
+and minimizes only the triple obstruction.  On
+
+```text
+verify/out/v37_relaxed_1over8_core_probe_100.json
+```
+
+68 of 100 local runs reached core violation below `1e-5`, and the best such
+point still had triple violation about `5.734e-2` (`F = 0.182342191...`).
+Polishing the best candidates with the explicit constrained SLSQP minimax
+formulation in `verify/v38_relaxed_1over8_slsqp_polish.py` gives a cleaner
+boundary:
+
+```text
+s = (5 - sqrt(17))/16 = 0.054805898398...
+F = 1/8 + s = (7 - sqrt(17))/16 = 0.179805898398...
+```
+
+with Stiefel equalities and all closed core/pair inequalities satisfied to
+machine precision.  Multiple independent starts polish to the same lower
+boundary; several others polish to a higher local boundary
+`F = 1/2 - sqrt(10)/10 = 0.183772233983...`.
+
+The lower SLSQP boundary has a small symmetry pattern after row permutation:
+
+```text
+P =
+[ 5/8  -x  -3/8  -y  -z  -z ]
+[ -x    a   -x    w   y   y ]
+[ -3/8 -x   5/8  -y  -z  -z ]
+[ -y    w   -y   1-a -x  -x ]
+[ -z    y   -z   -x  3/8 3/8]
+[ -z    y   -z   -x  3/8 3/8]
+```
+
+Substituting this ansatz into `P^2=P` leaves only the equations
+
+```text
+32*x^2 + 32*y^2 + 64*z^2 - 3 = 0,
+4*a*x + 4*w*y - 3*x + 8*y*z = 0,
+4*a*y - 4*w*x + 8*x*z - y = 0,
+a^2 - a + w^2 + 2*x^2 + 2*y^2 = 0.
+```
+
+The exact ansatz algebra is recorded in
+`verify/v39_relaxed_1over8_ansatz_exact.py`.  It verifies symbolically that
+adding the active determinant equations for triples `(0,1,3)` and `(0,1,4)` to
+the ansatz ideal gives a Groebner basis containing
+
+```text
+8*q^2 - 7*q + 1.
+```
+
+The lower root is exactly `q = (7 - sqrt(17))/16`, with slack
+`q - 1/8 = (5 - sqrt(17))/16`.
+
+This suggests a realistic exact relaxed route:
+
+```text
+core + pair-straddling  ==>  F(P) >= (7 - sqrt(17))/16 > 1/8.
+```
+
+Together with the deletion reduction, such a certificate would prove the relaxed
+`1/8` theorem.  This is still numerical evidence, not a proof, but it is a much
+smaller semialgebraic target than the original exact `1/6` hypothesis.
+
 Lowering the target threshold did not close the interval branch-and-bound
 route.  With cascade projectors, hybrid bounds, all 20 charts, `max_boxes=2000`,
 and `min_radius=0.25`, the center-high runs gave:
